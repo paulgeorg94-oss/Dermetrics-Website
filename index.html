@@ -21,6 +21,7 @@
       <span class="brandmark">DERMETRICS</span>
     </a>
     <nav class="navlinks">
+      <a href="#kernbereiche">Kernbereiche</a>
       <a href="#konzept">Konzept</a>
       <a href="#precheck">Pre-Check</a>
       <a href="#weg">Ihr Weg</a>
@@ -29,8 +30,9 @@
       <a href="#wissen">Wissen</a>
       <a href="#kontakt">Termin</a>
       <span class="lang">DE&nbsp;/&nbsp;<span style="opacity:.5;cursor:default;">EN</span></span>
+      <a class="cta" href="#precheck">Pre-Check starten</a>
     </nav>
-    <a class="cta" href="#precheck">Pre-Check starten</a>
+    <a class="cta cta-desktop" href="#precheck">Pre-Check starten</a>
     <button class="navtoggle" id="navtoggle" aria-label="Menü öffnen">Menü</button>
   </div>
 </header>
@@ -55,6 +57,39 @@
       </div>
       <div class="hero-media">
         <div class="portrait">Bildplatzhalter — ruhiges Studiolicht, Dermetrics-Farbverlauf<br><span style="font-size:11px;">(finales Bildmaterial folgt)</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Kernbereiche ===== -->
+<section class="block" id="kernbereiche">
+  <div class="wrap">
+    <p class="kicker">Kernbereiche</p>
+    <h2>Die drei Säulen von Dermetrics</h2>
+    <div class="pillars">
+      <div class="pillar">
+        <div class="pillar-icon">
+          <svg width="34" height="34" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 34 L22 18"></path><path d="M22 18 L30 10 L34 14 L26 22 Z"></path></svg>
+        </div>
+        <h3 class="pillar-title">Diagnose und Behandlung von Hautkrebs</h3>
+        <p>Aktinische Keratosen, Spinaliome, Basalzellkarzinome. Das gesamte Spektrum der operativen Dermatologie.</p>
+      </div>
+      <div class="pillar-divider"></div>
+      <div class="pillar">
+        <div class="pillar-icon">
+          <svg width="34" height="34" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 C20 6 10 20 10 27 C10 32.5 14.5 37 20 37 C25.5 37 30 32.5 30 27 C30 20 20 6 20 6 Z"></path></svg>
+        </div>
+        <h3 class="pillar-title">Allgemeine Dermatologie</h3>
+        <p>Fokus auf entzündliche Hauterkrankungen wie Rosazea, Hidradenitis suppurativa, Acne vulgaris und Plaque-Psoriasis.</p>
+      </div>
+      <div class="pillar-divider"></div>
+      <div class="pillar">
+        <div class="pillar-icon">
+          <svg width="34" height="34" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 5 L33 10 V19 C33 27 28 33 20 36 C12 33 7 27 7 19 V10 Z"></path><path d="M14 20 L18 24 L26 15"></path></svg>
+        </div>
+        <h3 class="pillar-title">Prävention und Patientenedukation</h3>
+        <p>Ein personenzentriertes Präventionskonzept zur Vermeidung von Hautkrebs und entzündlichen Erkrankungen.</p>
       </div>
     </div>
   </div>
@@ -409,6 +444,7 @@
     <div class="col">
       <h5>Navigation</h5>
       <ul>
+        <li><a href="#kernbereiche">Kernbereiche</a></li>
         <li><a href="#konzept">Konzept</a></li>
         <li><a href="#precheck">Pre-Check</a></li>
         <li><a href="#weg">Ihr Weg</a></li>
@@ -436,12 +472,8 @@
   </div>
 </footer>
 
+<script src="assets/nav.js"></script>
 <script>
-// Mobile-Nav-Toggle
-document.getElementById('navtoggle').addEventListener('click', function () {
-  document.getElementById('topnav').classList.toggle('open');
-});
-
 // Wahr/Falsch-Check
 (function () {
   var items = document.querySelectorAll('#tf-list .tf-item');

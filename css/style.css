@@ -32,14 +32,19 @@ a { color: var(--aubergine-mid); }
 .wrap { max-width: 1040px; margin: 0 auto; padding: 0 32px; }
 
 /* ---------- Top navigation ---------- */
+body { padding-top: 60px; }
 .topnav {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 20;
   background: rgba(251, 248, 246, 0.92);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--line);
+  transition: transform 0.28s ease;
 }
+.topnav.nav-hidden { transform: translateY(-100%); }
 .topnav .wrap {
   display: flex;
   align-items: center;
@@ -71,9 +76,11 @@ a { color: var(--aubergine-mid); }
   white-space: nowrap;
 }
 .topnav .navtoggle { display: none; }
+.topnav nav.navlinks .cta { display: none; }
 
 @media (max-width: 860px) {
   .topnav nav.navlinks { display: none; }
+  .topnav .cta { display: none; }
   .topnav .navtoggle {
     display: inline-flex;
     background: none;
@@ -94,6 +101,10 @@ a { color: var(--aubergine-mid); }
     border-bottom: 1px solid var(--line);
     padding: 16px 32px 20px;
     gap: 14px;
+  }
+  .topnav.open nav.navlinks .cta {
+    display: inline-block;
+    text-align: center;
   }
 }
 
@@ -191,6 +202,22 @@ h3 { font-size: 15px; font-weight: 500; color: var(--ink); margin: 0 0 8px; }
 
 @media (max-width: 720px) {
   .options { flex-direction: column; }
+}
+
+/* ---------- Pillars (Kernbereiche) ---------- */
+.pillars { display: flex; align-items: flex-start; gap: 0; margin-top: 32px; flex-wrap: wrap; }
+.pillar { flex: 1 1 220px; min-width: 220px; padding: 0 32px; }
+.pillar:first-child { padding-left: 0; }
+.pillar:last-child { padding-right: 0; }
+.pillar-icon { color: var(--aubergine); margin-bottom: 20px; }
+.pillar-icon svg { width: 34px; height: 34px; display: block; }
+.pillar-title { font-size: 18px; font-weight: 500; color: var(--ink); line-height: 1.35; margin: 0 0 12px; }
+.pillar p { font-size: 14.5px; color: var(--muted); line-height: 1.6; margin: 0; }
+.pillar-divider { width: 1px; align-self: stretch; background: var(--line); flex: 0 0 auto; }
+@media (max-width: 780px) {
+  .pillars { flex-direction: column; gap: 32px; }
+  .pillar { padding: 0 !important; }
+  .pillar-divider { display: none; }
 }
 
 /* ---------- Simple list ---------- */
