@@ -2,8 +2,13 @@
 // Erzeugt den QR-Code clientseitig aus der aktuellen Seiten-URL (window.location.href),
 // damit kein Hosting-Domain fest im Code verankert werden muss.
 (function () {
+  var isEn = (document.documentElement.lang || '').toLowerCase().indexOf('en') === 0;
+  var t = isEn
+    ? { copyPrompt: 'Copy link:', copied: 'Link copied' }
+    : { copyPrompt: 'Link kopieren:', copied: 'Link kopiert' };
+
   function copyLinkFallback(url, feedback) {
-    window.prompt('Link kopieren:', url);
+    window.prompt(t.copyPrompt, url);
   }
 
   function init() {
@@ -32,7 +37,7 @@
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(url).then(function () {
           if (feedback) {
-            feedback.textContent = 'Link kopiert';
+            feedback.textContent = t.copied;
             setTimeout(function () { feedback.textContent = ''; }, 2500);
           }
         }).catch(function () { copyLinkFallback(url, feedback); });

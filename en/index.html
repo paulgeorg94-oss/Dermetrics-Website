@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dermetrics – Dermatology Clinic Selnau Zurich | Dr. med. P. Georg</title>
+<meta content="Skin health is measurable: skin cancer prevention, 3D full-body screening and skin-ageing analysis at Clinic Selnau Zurich. Practice of Dr. med. Paul Georg, board-certified dermatologist (FMH)." name="description"/>
+<meta content="noindex" name="robots"/>
+<!-- noindex bis Praxiseröffnung Okt. 2026 bzw. Go-live-Entscheid, siehe CLAUDE.md Abschnitt 8.5 -->
+<link href="../assets/logo-placeholder.png" rel="icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="topnav" id="topnav">
+<div class="wrap">
+<a class="brandrow" href="index.html">
+<img alt="Dermetrics emblem" src="../assets/logo-placeholder.png"/>
+<span class="brandmark">DERMETRICS</span>
+</a>
+<nav class="navlinks">
+<a href="#kernbereiche">Core Areas</a>
+<a href="#precheck">Pre-Check</a>
+<a href="#weg">Your Journey</a>
+<a href="#clinic-selnau">Clinic Selnau</a>
+<a href="#app">App</a>
+<a href="#praxis">Practice</a>
+<a href="#wissen">Knowledge</a>
+<a href="skin-conditions-explained.html">For Patients</a>
+<a href="#kontakt">Appointment</a>
+<span class="lang"><a href="../index.html">DE</a> / <span class="current">EN</span></span>
+<a class="cta" href="#precheck">Start Pre-Check</a>
+</nav>
+<a class="cta cta-desktop" href="#precheck">Start Pre-Check</a>
+<button aria-label="Open menu" class="navtoggle" id="navtoggle">Menu</button>
+</div>
+</header>
+<!-- ===== Hero ===== -->
+<section class="header">
+<div class="wrap">
+<div class="hero-grid">
+<div class="hero-copy">
+<p class="kicker">Science. Care. Longevity.</p>
+<h1>Skin health is measurable.</h1>
+<p class="subhead">Dermetrics is the dermatology practice of Dr. med. Paul Georg at Clinic Selnau Zurich — specialising in skin cancer prevention, skin-ageing analysis and documented progress measurement.</p>
+<div class="ctarow">
+<a class="btn btn-primary" href="#precheck">Start Pre-Check</a>
+<a class="btn btn-secondary" href="https://onedoc.ch" rel="noopener" target="_blank">Book appointment →</a>
+</div>
+<ul class="trustbullets">
+<li>Board-certified dermatologist (FMH)</li>
+<li>3D full-body screening</li>
+<li>Clinic Selnau, Zurich</li>
+</ul>
+</div>
+<div class="hero-media">
+<div class="portrait">
+<img alt="Dr. med. Paul Georg" height="990" src="../assets/dr-georg-portrait.png" width="920"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ===== Kernbereiche ===== -->
+<section class="block" id="kernbereiche">
+<div class="wrap">
+<p class="kicker">Core Areas</p>
+<h2>The three pillars of Dermetrics</h2>
+<div class="pillars">
+<div class="pillar">
+<div class="pillar-icon">
+<svg fill="none" height="34" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 40 40" width="34"><path d="M6 34 L22 18"></path><path d="M22 18 L30 10 L34 14 L26 22 Z"></path></svg>
+</div>
+<h3 class="pillar-title">Diagnosis and treatment of skin cancer</h3>
+<p>Actinic keratoses, squamous cell carcinomas, basal cell carcinomas. The full spectrum of surgical dermatology.</p>
+</div>
+<div class="pillar-divider"></div>
+<div class="pillar">
+<div class="pillar-icon">
+<svg fill="none" height="34" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 40 40" width="34"><path d="M20 6 C20 6 10 20 10 27 C10 32.5 14.5 37 20 37 C25.5 37 30 32.5 30 27 C30 20 20 6 20 6 Z"></path></svg>
+</div>
+<h3 class="pillar-title">General Dermatology</h3>
+<p>Focus on inflammatory skin conditions such as rosacea, hidradenitis suppurativa, acne vulgaris and plaque psoriasis.</p>
+</div>
+<div class="pillar-divider"></div>
+<div class="pillar">
+<div class="pillar-icon">
+<svg fill="none" height="34" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 40 40" width="34"><path d="M20 5 L33 10 V19 C33 27 28 33 20 36 C12 33 7 27 7 19 V10 Z"></path><path d="M14 20 L18 24 L26 15"></path></svg>
+</div>
+<h3 class="pillar-title">Prevention and Patient Education</h3>
+<p>A person-centred prevention concept to help avoid skin cancer and inflammatory conditions.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ===== Pre-Check ===== -->
+<section class="block" id="precheck">
+<div class="wrap">
+<div class="precheck-content">
+<p class="eyebrow">Risk Triage</p>
+<h2>Pre-Check</h2>
+<div class="intro">
+<p>Thirteen questions about your history, skin type and UV exposure. The result places you within a body of research — it is not a diagnosis.</p>
+</div>
+<div class="demo-card" id="precheck-demo">
+<p class="progress">Question 1 / 13</p>
+<p class="question">Have you personally ever been diagnosed with skin cancer? (melanoma or non-melanoma skin cancer)</p>
+<div class="answers">
+<button data-answer="ja" type="button">Yes</button>
+<button data-answer="nein" type="button">No</button>
+</div>
+<p class="response" id="precheck-response"></p>
+<p class="footnote">Based on validated risk models (incl. QSkin/MP16) · Does not replace a medical diagnosis.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ===== Ihr Weg ===== -->
+<section class="block" id="weg">
+<div class="wrap">
+<p class="eyebrow">The Skin x Longevity Journey</p>
+<h2>Your Journey with Dermetrics</h2>
+<div class="steps">
+<div class="step">
+<div class="stepnum">1</div>
+<div class="stepbody">
+<h3>Check — Find out online whether and when</h3>
+<p>A short Pre-Check to assess your risk.</p>
+</div>
+</div>
+<div class="step">
+<div class="stepnum">2</div>
+<div class="stepbody">
+<h3>Measure — Full-body screening on site</h3>
+<p>Scan using DeviScan, results by email within a maximum of 72 hours.</p>
+</div>
+</div>
+<div class="step">
+<div class="stepnum">3</div>
+<div class="stepbody">
+<h3>Understand — Discuss findings, plan your treatment path</h3>
+<p>Follow-up appointment, your personal skin age, optional skin-ageing analysis as an add-on service.</p>
+</div>
+</div>
+<div class="step">
+<div class="stepnum">4</div>
+<div class="stepbody">
+<h3>Act — Bringing skin health and healthy ageing together</h3>
+<p>Three areas — prevention, longevity and, where appropriate, aesthetics — building on one another, based on medical evidence.</p>
+</div>
+</div>
+<div class="step">
+<div class="stepnum">5</div>
+<div class="stepbody">
+<h3>Stay on track — Follow your skin health and check-up intervals in the app</h3>
+<p>UV overview, your next check-up date, relevant knowledge content.</p>
+</div>
+</div>
+</div>
+<div class="pullquote">
+<p>Holistic. Objective. Understandable.</p>
+</div>
+<div class="notice">
+<p><strong>Data today. Health tomorrow.</strong> · Science. Care. Longevity.</p>
+</div>
+</div>
+</section>
+<!-- ===== About Clinic Selnau ===== -->
+<section class="block" id="clinic-selnau">
+<div class="wrap">
+<p class="eyebrow">Clinic Selnau</p>
+<h2>About Clinic Selnau</h2>
+<div class="intro">
+<p>Clinic Selnau is a specialised group practice in the centre of Zurich: each physician deliberately focuses on one clearly defined specialty rather than covering the full spectrum. This focus shapes how an indication is assessed and a procedure is planned, always with the goal of respecting each person's individual anatomy and changing only what genuinely benefits from it — to a high specialist standard.</p>
+</div>
+<div class="clinic-gallery">
+<img alt="Operating room at Clinic Selnau" loading="lazy" src="../assets/clinic-selnau/op-saal.webp"/>
+<img alt="Reception area at Clinic Selnau" loading="lazy" src="../assets/clinic-selnau/empfang.webp"/>
+<img alt="Lounge area at Clinic Selnau" loading="lazy" src="../assets/clinic-selnau/lounge.webp"/>
+<img alt="Entrance to Clinic Selnau" loading="lazy" src="../assets/clinic-selnau/eingang.webp"/>
+</div>
+</div>
+</section>
+<!-- ===== App ===== -->
+<section class="block" id="app">
+<div class="wrap">
+<p class="eyebrow">Dermetrics App</p>
+<h2>Your progress, always in view</h2>
+<div class="appmock">
+<div class="phone">
+<div class="statline">
+<span class="score">82<span style="font-size:16px;">/100</span></span>
+<span class="scorelabel">Skin Score</span>
+</div>
+<p style="font-size:12px;color:var(--muted);margin:0 0 10px;">Good progress · +4 since May · next measurement Feb 2027</p>
+<div class="row"><span>UV index today</span><span>3 · moderate</span></div>
+<div class="row"><span>Protection recommended after</span><span>30 min. outdoors</span></div>
+<div class="row"><span>Next appointment</span><span>PDT · Wed 12 Aug, 10:30</span></div>
+<div class="row"><span>Location</span><span>Selnau</span></div>
+<div class="tabs">
+<span>Overview</span><span>Timeline</span><span>Mole Log</span><span>Knowledge</span><span>Reports</span>
+</div>
+<p class="disclaimer">Sample data — not real patient data.</p>
+</div>
+<div class="features">
+<span class="badge-soon">Coming soon</span>
+<ul class="simplelist">
+<li>All appointments and findings on one timeline</li>
+<li>Reminders for check-ups (automatic interval calculation)</li>
+<li>Your reports available any time (PDF, once released)</li>
+</ul>
+<p style="font-size:13px;color:var(--muted);margin:14px 0 18px;">Launching alongside the practice opening at Clinic Selnau. The app is free for patients of the practice.</p>
+<span class="btn btn-secondary" style="opacity:.6;cursor:default;">Notify me on the App Store → (coming soon)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ===== Praxis / Über Dr. Georg ===== -->
+<section class="block" id="praxis">
+<div class="wrap">
+<p class="eyebrow">Surgery and Measurability</p>
+<h2>How do you make medical quality visible?</h2>
+<div class="intro">
+<p>Dr. med. Paul Georg studied medicine at Hannover Medical School and carried out his doctoral research at St. Thomas' Hospital / King's College London — developing a method for objectively measuring outcomes of cleft lip and palate surgery, using 3D photography and a self-defined facial symmetry index.</p>
+<p>Years in surgery followed at Kantonsspital Münsterlingen (general surgery, intensive care, hand and plastic surgery), along with a placement abroad at New Somerset Hospital in Cape Town.</p>
+<p>Dermatology became his professional home: further training at the Skin and Laser Centre Weinfelden, the University Dermatology Clinic at Inselspital Bern, and the Bellevue Vein Clinic Kreuzlingen. As head of the wound care clinic at Spital Affoltern am Albis, he developed a semi-automated algorithm for digital wound measurement, published in the Journal of Clinical Medicine in 2024. He is a founding member and board member of the EWMA European Young Wound Experts Group.</p>
+<p>2026: Board examination in Dermatology and Venereology (FMH) and founding of Dermetrics.</p>
+</div>
+<h3 style="margin-top:36px;">Qualifications</h3>
+<ul class="simplelist">
+<li>Board-certified specialist in Dermatology and Venereology (FMH)</li>
+<li>Dr. med. (Hannover Medical School / King's College London)</li>
+<li>Head of the wound care clinic, Spital Affoltern a. A.</li>
+<li>EWMA Young Wound Experts Group, Founding and Board Member</li>
+<li>Certifications: dermatologic surgery, laser therapy, phlebology/SGUM, botulinum toxin and fillers (DGDC)</li>
+</ul>
+<h3 style="margin-top:36px;">Career</h3>
+<div class="tablewrap">
+<table class="plain">
+<thead><tr><th>Year</th><th>Stage</th></tr></thead>
+<tbody>
+<tr><td>2015</td><td>Dr. med., King's College London / Hannover Medical School · 3D measurement</td></tr>
+<tr><td>2019</td><td>Basic training in surgery, plastic surgery, intensive care, Münsterlingen</td></tr>
+<tr><td>2021</td><td>Resident physician, Dermatology, Inselspital Bern</td></tr>
+<tr><td>2024</td><td>Resident physician, Novaderm Affoltern a. A. · Head of wound care clinic, Spital Affoltern</td></tr>
+<tr><td>2024–2025</td><td>Concurrently, part-time: Resident physician, Bellevue Vein Clinic Kreuzlingen (phlebology, wound clinic, ultrasound diagnostics)</td></tr>
+<tr><td>2026</td><td>Board examination and founding of Dermetrics</td></tr>
+<tr><td>Oct. 2026</td><td>Dermetrics launches @ Clinic Selnau</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- ===== Wissen & Education ===== -->
+<section class="block" id="wissen">
+<div class="wrap">
+<p class="eyebrow">Knowledge &amp; Education</p>
+<h2>Six topics that come up again and again in consultations</h2>
+<div class="intro">
+<p>Explained briefly and without jargon.</p>
+</div>
+<div class="options">
+<div class="option">
+<h3>Understanding skin cancer: risk factors and early detection</h3>
+<p>The ABCDE rule helps to spot suspicious moles early: Asymmetry, Border, Colour, Diameter, Evolution.</p>
+</div>
+<div class="option">
+<h3>UV protection in everyday life – what really matters</h3>
+<p style="opacity:.65;">Content in preparation.</p>
+</div>
+<div class="option">
+<h3>Skin types and individual risk</h3>
+<p style="opacity:.65;">Content in preparation.</p>
+</div>
+<div class="option">
+<h3>Self-examination: how to check your skin</h3>
+<p style="opacity:.65;">Content in preparation.</p>
+</div>
+<div class="option">
+<h3>Actinic keratoses and photodynamic therapy</h3>
+<p>Detailed patient information available. <a href="patient-information/actinic-keratosis.html">Learn more →</a></p>
+</div>
+<div class="option">
+<h3>Skin ageing: what can be measured</h3>
+<p>Related topics: <a href="patient-information/solar-elastosis.html">Solar Elastosis</a> · <a href="treatment-protocols/anti-aging-skincare.html">Anti-Ageing Skincare</a></p>
+</div>
+</div>
+<p style="margin-top:8px;"><a href="skin-conditions-explained.html">Skin conditions explained →</a></p>
+<div class="ctarow">
+<a class="btn btn-secondary" href="#precheck">Questions about this? Start the Pre-Check →</a>
+</div>
+</div>
+</section>
+<!-- ===== Wahr/Falsch-Check ===== -->
+<section class="block" id="check">
+<div class="wrap">
+<p class="eyebrow">Self-Test</p>
+<h2>True or false: skin cancer prevention</h2>
+<div class="intro">
+<p>A short, evidence-based true-or-false check on skin cancer prevention — especially relevant for people with an elevated risk.</p>
+</div>
+<p class="progress" id="tf-progress" style="font-size:13px;color:var(--muted);">0/8 answered · 0 correct</p>
+<div class="tf-list" id="tf-list">
+<div class="tf-item" data-correct="wahr">
+<p>UV radiation gets through the clouds even on overcast days.</p>
+<div class="tf-buttons"><button data-answer="wahr">True</button><button data-answer="falsch">False</button></div>
+</div>
+<div class="tf-item" data-correct="wahr">
+<p>UV radiation is strongest between 10 a.m. and 4 p.m.</p>
+<div class="tf-buttons"><button data-answer="wahr">True</button><button data-answer="falsch">False</button></div>
+</div>
+<div class="tf-item" data-correct="falsch">
+<p>Pre-tanning on a sunbed protects the skin from sun damage on holiday.</p>
+<div class="tf-buttons"><button data-answer="wahr">True</button><button data-answer="falsch">False</button></div>
+</div>
+<div class="tf-item" data-correct="falsch">
+<p>A mole over 6 mm in diameter is automatically malignant.</p>
+<div class="tf-buttons"><button data-answer="wahr">True</button><button data-answer="falsch">False</button></div>
+</div>
+<div class="tf-item" data-correct="wahr">
+<p>Sunscreen should be reapplied roughly every 2 hours.</p>
+<div class="tf-buttons"><button data-answer="wahr">True</button><button data-answer="falsch">False</button></div>
+</div>
+<div class="tf-item" data-correct="wahr">
+<p>After a first skin cancer, a monthly skin self-examination is advisable.</p>
+<div class="tf-buttons"><button data-answer="wahr">True</button><button data-answer="falsch">False</button></div>
+</div>
+<div class="tf-item" data-correct="wahr">
+<p>A wound that hasn't healed after more than 4 weeks should be checked by a doctor.</p>
+<div class="tf-buttons"><button data-answer="wahr">True</button><button data-answer="falsch">False</button></div>
+</div>
+<div class="tf-item" data-correct="falsch">
+<p>Sunburn is impossible in the shade.</p>
+<div class="tf-buttons"><button data-answer="wahr">True</button><button data-answer="falsch">False</button></div>
+</div>
+</div>
+<div class="notice">
+<p>This short check is for general education only and does not replace a medical examination. If you have questions about your individual situation — for example about preventive measures such as nicotinamide — please speak with your doctor.</p>
+</div>
+</div>
+</section>
+<!-- ===== Standorte & Termin ===== -->
+<section class="block" id="kontakt">
+<div class="wrap">
+<p class="eyebrow">Locations &amp; Appointments</p>
+<h2>Three locations in the Zurich area</h2>
+<div class="intro">
+<p>Consultations, branch location and 3D scanning. New patients welcome.</p>
+</div>
+<div class="ctarow">
+<a class="btn btn-primary" href="https://onedoc.ch" rel="noopener" target="_blank">Book appointment (OneDoc) →</a>
+<a class="btn btn-secondary" href="tel:+41432345555">+41 43 234 55 55</a>
+</div>
+<div class="locations">
+<div class="location">
+<div>
+<p class="name">Clinic Selnau</p>
+<p class="role">Main location · every Monday</p>
+</div>
+<p>Brandschenkestrasse 45<br/>8002 Zurich</p>
+<p>Monday 10:00–18:00</p>
+</div>
+<div class="location">
+<div>
+<p class="name">Novaderm Affoltern am Albis</p>
+<p class="role">Branch location</p>
+</div>
+<p>Obstgartenstrasse 3<br/>8910 Affoltern am Albis</p>
+<p>Tuesday 08:00–17:00<br/>Thursday 08:00–17:00</p>
+</div>
+<div class="location">
+<div>
+<p class="name">MediX Zurich-Altstetten</p>
+<p class="role">Analysis location · 3D scan</p>
+</div>
+<p>Hohlstrasse 556<br/>8048 Zurich</p>
+<p>Wednesday 09:00–17:00, Friday 08:00–12:00<br/>3D scans daily by appointment</p>
+</div>
+</div>
+<form class="formcard" id="contact-form">
+<label for="cf-name">Name</label>
+<input id="cf-name" name="name" required="" type="text"/>
+<label for="cf-email">Email</label>
+<input id="cf-email" name="email" required="" type="email"/>
+<label for="cf-phone">Phone (optional)</label>
+<input id="cf-phone" name="phone" type="tel"/>
+<label for="cf-message">Message</label>
+<textarea id="cf-message" name="message" required=""></textarea>
+<div class="checkrow">
+<input id="cf-consent" name="consent" required="" type="checkbox"/>
+<label for="cf-consent">I agree that my information will be stored and processed in order to handle my enquiry.</label>
+</div>
+<button class="submit" type="submit">Send enquiry</button>
+</form>
+</div>
+</section>
+<!-- ===== Footer ===== -->
+<footer class="footer">
+<div class="wrap">
+<div class="col">
+<p class="tagline">Longevity meets<br/>measurable science.</p>
+<a class="btn btn-primary" href="https://onedoc.ch" rel="noopener" target="_blank">Book appointment →</a>
+<p class="practice" style="margin-top:26px;">Dermetrics – Dr. med. P. Georg</p>
+<p>Clinic Selnau<br/>Brandschenkestrasse 45<br/>8002 Zurich</p>
+<p><a href="tel:+41432345555">+41 43 234 55 55</a></p>
+</div>
+<div class="col">
+<h5>Navigation</h5>
+<ul>
+<li><a href="#kernbereiche">Core Areas</a></li>
+<li><a href="#precheck">Pre-Check</a></li>
+<li><a href="#weg">Your Journey</a></li>
+<li><a href="#clinic-selnau">Clinic Selnau</a></li>
+<li><a href="#app">Dermetrics App</a></li>
+<li><a href="#praxis">Practice</a></li>
+<li><a href="#wissen">Knowledge</a></li>
+<li><a href="skin-conditions-explained.html">Skin conditions explained</a></li>
+<li><a href="#kontakt">Locations &amp; Appointments</a></li>
+</ul>
+</div>
+<div class="col">
+<h5>Legal</h5>
+<ul>
+<li><a href="legal.html">Imprint</a></li>
+<li><a href="legal.html#datenschutz">Privacy Policy</a></li>
+<li><a href="#" onclick="return false;" style="opacity:.6;">Cookie Settings</a></li>
+</ul>
+</div>
+</div>
+<div class="wrap">
+<p class="fmh-note">This website provides factual information in accordance with the FMH code of conduct.</p>
+<div class="legalrow">
+<span>© 2026 Dermetrics – Dr. med. P. Georg</span>
+</div>
+</div>
+</footer>
+<script src="../assets/nav.js"></script>
+<script>
+// Pre-Check Demo-Frage
+(function () {
+  var card = document.getElementById('precheck-demo');
+  if (!card) return;
+  var buttons = card.querySelectorAll('.answers button');
+  var response = document.getElementById('precheck-response');
+  var responses = {
+    ja: 'Thank you for your answer. For a previously diagnosed skin cancer, the risk models generally call for closer check-up intervals — the full Pre-Check with all 13 questions covers this in detail.',
+    nein: 'Thank you for your answer. Next come questions about skin type and UV exposure — the full Pre-Check with all 13 questions is in preparation.'
+  };
+  buttons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      buttons.forEach(function (b) { b.classList.remove('selected'); b.disabled = true; });
+      btn.classList.add('selected');
+      response.textContent = responses[btn.dataset.answer] || '';
+      response.classList.add('visible');
+    });
+  });
+})();
+
+// Wahr/Falsch-Check
+(function () {
+  var items = document.querySelectorAll('#tf-list .tf-item');
+  var answered = 0, correct = 0;
+  var progress = document.getElementById('tf-progress');
+  items.forEach(function (item) {
+    var buttons = item.querySelectorAll('button');
+    buttons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        if (item.dataset.done) return;
+        item.dataset.done = '1';
+        answered++;
+        var isCorrect = btn.dataset.answer === item.dataset.correct;
+        if (isCorrect) { correct++; btn.style.borderColor = 'var(--aubergine)'; btn.style.color = 'var(--aubergine)'; }
+        buttons.forEach(function (b) { b.disabled = true; b.style.opacity = '0.55'; });
+        btn.style.opacity = '1';
+        progress.textContent = answered + '/8 answered · ' + correct + ' correct';
+      });
+    });
+  });
+})();
+
+// Kontaktformular (rein clientseitig, kein Backend angebunden)
+document.getElementById('contact-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+  alert('Thank you for your enquiry. We will get back to you as soon as possible.');
+  this.reset();
+});
+</script>
+</body>
+</html>
