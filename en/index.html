@@ -100,19 +100,40 @@
 <div class="wrap">
 <div class="precheck-content">
 <p class="eyebrow">Risk Triage</p>
-<h2>Pre-Check</h2>
+<h2>How high is your skin cancer risk?</h2>
 <div class="intro">
 <p>Thirteen questions about your history, skin type and UV exposure. The result places you within a body of research — it is not a diagnosis.</p>
 </div>
-<div class="demo-card" id="precheck-demo">
-<p class="progress">Question 1 / 13</p>
-<p class="question">Have you personally ever been diagnosed with skin cancer? (melanoma or non-melanoma skin cancer)</p>
-<div class="answers">
-<button data-answer="ja" type="button">Yes</button>
-<button data-answer="nein" type="button">No</button>
+<div class="pc-card">
+<div class="pc-qphase" id="pcQPhase">
+<div class="pc-meta">
+<p class="pc-blocklabel" id="pcBlock"></p>
+<p class="pc-step" id="pcStep"></p>
 </div>
-<p class="response" id="precheck-response"></p>
-<p class="footnote">Based on validated risk models (incl. QSkin/MP16) · Does not replace a medical diagnosis.</p>
+<div class="pc-bar"><i id="pcBar"></i></div>
+<h3 class="pc-question" id="pcQuestion"></h3>
+<p class="pc-hint" id="pcHint" hidden></p>
+<div class="pc-options" id="pcOptions"></div>
+<div class="pc-controls">
+<button type="button" class="pc-back" id="pcBack">Back</button>
+<p class="pc-note">Based on validated risk models (incl. QSkin/MP16) · Does not replace a medical diagnosis.</p>
+</div>
+</div>
+
+<div class="pc-rphase" id="pcRPhase" hidden>
+<div class="pc-scale" id="pcScale"></div>
+<h3 class="pc-resulthead" id="pcResultHead"></h3>
+<p class="pc-resulttext" id="pcResultText"></p>
+<div class="pc-scorerow">
+<p class="pc-scorelabel">Risk score</p>
+<div class="pc-scorevalue"><b id="pcScoreValue"></b><span>&nbsp;points</span></div>
+</div>
+<div class="pc-disclaimer"><b>Not a diagnostic tool.</b> This pre-check is a statistical orientation tool. The rates referred to come from epidemiological studies of risk groups and say nothing about actual disease in an individual case: a low result does not rule out melanoma, and a high one is not a diagnosis. Only a medical examination can confirm or exclude skin cancer.</div>
+<div class="pc-actions">
+<a class="btn btn-primary" id="pcCta" href="https://onedoc.ch" target="_blank" rel="noopener">Request an appointment</a>
+<button type="button" class="btn btn-secondary" id="pcRestart">Start again</button>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -438,24 +459,226 @@
 </footer>
 <script src="../assets/nav.js"></script>
 <script>
-// Pre-Check Demo-Frage
+// Pre-Check — full 13-question risk score with evaluation
+// Clinically validated rule set (based on QSkin/MP16), carried over unchanged.
 (function () {
-  var card = document.getElementById('precheck-demo');
-  if (!card) return;
-  var buttons = card.querySelectorAll('.answers button');
-  var response = document.getElementById('precheck-response');
-  var responses = {
-    ja: 'Thank you for your answer. For a previously diagnosed skin cancer, the risk models generally call for closer check-up intervals — the full Pre-Check with all 13 questions covers this in detail.',
-    nein: 'Thank you for your answer. Next come questions about skin type and UV exposure — the full Pre-Check with all 13 questions is in preparation.'
+  var root = document.getElementById('pcQPhase');
+  if (!root) return;
+
+  var THRESHOLD = 7;
+
+  var QUESTIONS = [
+    { block: 'Block A · Medical history',
+      q: 'Have you personally ever been diagnosed with skin cancer?',
+      hint: 'Melanoma or non-melanoma skin cancer',
+      opts: [{ l: 'Yes', flag: true }, { l: 'No', pts: 0 }] },
+    { block: 'Block A · Medical history',
+      q: 'Have you noticed a recent change in a mole?',
+      hint: 'e.g. itching, bleeding, colour change or rapid new growth',
+      opts: [{ l: 'Yes', flag: true }, { l: 'No', pts: 0 }] },
+    { block: 'Block A · Medical history',
+      q: 'Do you have immunosuppression or a genetic risk syndrome?',
+      hint: 'e.g. after organ transplantation, HIV, haematological disease, xeroderma pigmentosum, Gorlin syndrome',
+      opts: [{ l: 'Yes', flag: true }, { l: 'No', pts: 0 }] },
+    { block: 'Block A · Medical history',
+      q: 'Have you already been treated for actinic keratoses or skin cancer precursors?',
+      hint: 'Chronic sun damage, rough patches of skin',
+      opts: [{ l: 'Yes', pts: 3 }, { l: 'No', pts: 0 }] },
+    { block: 'Block A · Medical history',
+      q: 'Has a first-degree relative been diagnosed with skin cancer?',
+      hint: 'Parents, siblings or your own children',
+      opts: [{ l: 'Yes', pts: 4 }, { l: 'No', pts: 0 }] },
+    { block: 'Block B · Physical characteristics',
+      q: 'Which best describes the density of moles across your whole body?',
+      opts: [
+        { l: 'High density', s: 'More than 50 moles, irregular or unusual shapes', pts: 5 },
+        { l: 'Moderate density', s: '16–50 ordinary moles', pts: 2 },
+        { l: 'Low density', s: 'Fewer than 15 ordinary moles', pts: 0 }] },
+    { block: 'Block B · Physical characteristics',
+      q: 'How does your unprotected skin react to the first strong summer sun?',
+      opts: [
+        { l: 'Type I', s: 'Always burns immediately, never tans – very fair skin, often freckles', pts: 3 },
+        { l: 'Type II', s: 'Usually burns, tans only with difficulty', pts: 2 },
+        { l: 'Type III', s: 'Burns rarely, tans well and evenly', pts: 1 },
+        { l: 'Type IV–VI', s: 'Rarely or never burns, naturally darker skin', pts: 0 }] },
+    { block: 'Block B · Physical characteristics',
+      q: 'What is your natural hair colour (at around age 20)?',
+      opts: [{ l: 'Red / light blond', pts: 2 }, { l: 'Brown / black', pts: 0 }] },
+    { block: 'Block C · UV exposure',
+      q: 'Have you had severe, painful or blistering sunburns during your life?',
+      opts: [
+        { l: 'Yes, more than 3 times', pts: 3 },
+        { l: 'Yes, 1–2 times', pts: 1 },
+        { l: 'No, none', pts: 0 }] },
+    { block: 'Block C · UV exposure',
+      q: 'Did severe sunburns already occur in childhood or adolescence (under 13)?',
+      opts: [{ l: 'Yes', pts: 1 }, { l: 'No / not applicable', pts: 0 }] },
+    { block: 'Block C · UV exposure',
+      q: 'On average, how many hours a day do you spend outdoors?',
+      hint: 'For work or during intensive leisure activities',
+      opts: [
+        { l: 'More than 4 hours daily', pts: 2 },
+        { l: 'Occasionally, 1–4 hours a day', pts: 1 },
+        { l: 'Mostly indoors', pts: 0 }] },
+    { block: 'Block C · UV exposure',
+      q: 'Do you use, or have you ever used, a sunbed?',
+      opts: [
+        { l: 'Yes, regularly', s: 'First use before the age of 35', pts: 3 },
+        { l: 'Yes, occasionally / rarely', pts: 1 },
+        { l: 'No, never', pts: 0 }] },
+    { block: 'Block D · Demographics',
+      q: 'Which applies to you?',
+      opts: [
+        { l: 'Over 50 years old and male', pts: 2 },
+        { l: 'Over 50 years old or male', pts: 1 },
+        { l: 'Neither', pts: 0 }] }
+  ];
+
+  var MAX_PTS = QUESTIONS.reduce(function (s, q) {
+    return s + Math.max.apply(null, q.opts.map(function (o) { return o.pts || 0; }));
+  }, 0);
+
+  var RESULT = {
+    3: { head: 'Strongly increased rates in studies',
+         text: 'At least one medical warning sign (red flag) is present. In epidemiological studies, groups with comparable characteristics show strongly increased rates of melanoma. Prompt dermatological assessment is advisable; in this case the 3D full-body scan would be covered by Swiss basic insurance (KVG).' },
+    2: { head: 'Increased rates in studies',
+         text: 'Your score is above the threshold. In epidemiological studies, groups with a comparable score show increased rates of melanoma. A regular, standardised 3D skin examination is a sensible step and is assigned to Swiss basic insurance (KVG).' },
+    1: { head: 'Low rates in studies',
+         text: 'No warning signs, and your score is below the threshold. In epidemiological studies, groups with a comparable profile show low rates of melanoma. Consistent sun protection and regular self-examination nevertheless remain important.' }
   };
-  buttons.forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      buttons.forEach(function (b) { b.classList.remove('selected'); b.disabled = true; });
-      btn.classList.add('selected');
-      response.textContent = responses[btn.dataset.answer] || '';
-      response.classList.add('visible');
+
+  var TIERS = ['Low rates', 'Increased rates', 'Strongly increased rates'];
+  var TIER_WIDTHS = ['34%', '64%', '100%'];
+  var YOUR_RESULT_LABEL = 'Your result';
+
+  var idx = 0;
+  var answers = new Array(QUESTIONS.length).fill(null);
+  var phase = 'question';
+  var busy = false;
+
+  function $(id) { return document.getElementById(id); }
+  function pad(n) { return String(n).padStart(2, '0'); }
+
+  function evaluate() {
+    var flagged = QUESTIONS.some(function (q, i) {
+      return answers[i] !== null && !!q.opts[answers[i]].flag;
     });
+    var score = QUESTIONS.reduce(function (s, q, i) {
+      return s + (answers[i] !== null ? (q.opts[answers[i]].pts || 0) : 0);
+    }, 0);
+    if (flagged) { return { tier: 3, score: score, cta: true }; }
+    if (score > THRESHOLD) { return { tier: 2, score: score, cta: true }; }
+    return { tier: 1, score: score, cta: false };
+  }
+
+  function renderQuestion() {
+    var q = QUESTIONS[idx];
+    var progress = (idx / QUESTIONS.length) * 100;
+
+    $('pcBlock').textContent = q.block;
+    $('pcStep').textContent = 'Question ' + pad(idx + 1) + ' / ' + pad(QUESTIONS.length);
+    $('pcBar').style.width = progress + '%';
+    $('pcQuestion').textContent = q.q;
+
+    $('pcHint').textContent = q.hint || '';
+    $('pcHint').hidden = !q.hint;
+
+    var box = $('pcOptions');
+    box.innerHTML = '';
+    q.opts.forEach(function (o, i) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'pc-option';
+      var strong = document.createElement('b');
+      strong.textContent = o.l;
+      b.appendChild(strong);
+      if (o.s) {
+        var small = document.createElement('small');
+        small.textContent = o.s;
+        b.appendChild(small);
+      }
+      b.addEventListener('click', function () { select(i); });
+      box.appendChild(b);
+    });
+
+    $('pcBack').disabled = idx === 0;
+  }
+
+  function renderResult() {
+    var r = evaluate();
+    var txt = RESULT[r.tier];
+
+    var scale = $('pcScale');
+    scale.innerHTML = '';
+
+    TIERS.forEach(function (label, i) {
+      var row = document.createElement('div');
+      row.className = 'pc-scalerow' + (r.tier === i + 1 ? ' on' : '');
+
+      var num = document.createElement('span');
+      num.className = 'pc-scalenum';
+      num.textContent = pad(i + 1);
+
+      var track = document.createElement('span');
+      track.className = 'pc-track';
+      var fill = document.createElement('i');
+      track.appendChild(fill);
+
+      var tag = document.createElement('span');
+      tag.className = 'pc-tag';
+      tag.appendChild(document.createTextNode(label));
+      if (r.tier === i + 1) {
+        var m = document.createElement('span');
+        m.className = 'pc-marker';
+        m.textContent = YOUR_RESULT_LABEL;
+        tag.appendChild(m);
+      }
+
+      row.appendChild(num);
+      row.appendChild(track);
+      row.appendChild(tag);
+      scale.appendChild(row);
+
+      window.setTimeout(function () { fill.style.width = TIER_WIDTHS[i]; }, 80 + i * 100);
+    });
+
+    $('pcResultHead').textContent = txt.head;
+    $('pcResultText').textContent = txt.text;
+    $('pcScoreValue').textContent = r.score + ' / ' + MAX_PTS;
+    $('pcCta').hidden = !r.cta;
+  }
+
+  function render() {
+    $('pcQPhase').hidden = phase !== 'question';
+    $('pcRPhase').hidden = phase !== 'result';
+    if (phase === 'question') { renderQuestion(); } else { renderResult(); }
+  }
+
+  function select(optIndex) {
+    if (busy) { return; }
+    answers[idx] = optIndex;
+    busy = true;
+    $('pcQPhase').classList.add('fade');
+    window.setTimeout(function () {
+      if (idx < QUESTIONS.length - 1) { idx += 1; } else { phase = 'result'; }
+      busy = false;
+      $('pcQPhase').classList.remove('fade');
+      render();
+    }, 240);
+  }
+
+  $('pcBack').addEventListener('click', function () {
+    if (idx > 0 && !busy) { idx -= 1; render(); }
   });
+
+  $('pcRestart').addEventListener('click', function () {
+    answers = new Array(QUESTIONS.length).fill(null);
+    idx = 0;
+    phase = 'question';
+    render();
+  });
+
+  render();
 })();
 
 // Wahr/Falsch-Check

@@ -103,19 +103,40 @@
   <div class="wrap">
     <div class="precheck-content">
       <p class="eyebrow">Risiko-Triage</p>
-      <h2>Pre-Check</h2>
+      <h2>Wie hoch ist Ihr Hautkrebs-Risiko?</h2>
       <div class="intro">
         <p>Dreizehn Fragen zu Vorgeschichte, Hauttyp und UV-Exposition. Das Ergebnis ordnet Sie einer Studienlage zu — es stellt keine Diagnose.</p>
       </div>
-      <div class="demo-card" id="precheck-demo">
-        <p class="progress">Frage 1 / 13</p>
-        <p class="question">Wurde bei Ihnen persönlich jemals Hautkrebs diagnostiziert? (Melanom oder weisser Hautkrebs)</p>
-        <div class="answers">
-          <button type="button" data-answer="ja">Ja</button>
-          <button type="button" data-answer="nein">Nein</button>
+      <div class="pc-card">
+        <div class="pc-qphase" id="pcQPhase">
+          <div class="pc-meta">
+            <p class="pc-blocklabel" id="pcBlock"></p>
+            <p class="pc-step" id="pcStep"></p>
+          </div>
+          <div class="pc-bar"><i id="pcBar"></i></div>
+          <h3 class="pc-question" id="pcQuestion"></h3>
+          <p class="pc-hint" id="pcHint" hidden></p>
+          <div class="pc-options" id="pcOptions"></div>
+          <div class="pc-controls">
+            <button type="button" class="pc-back" id="pcBack">Zurück</button>
+            <p class="pc-note">Basiert auf validierten Risiko-Modellen (u.&nbsp;a. QSkin/MP16) · Ersetzt keine ärztliche Diagnose.</p>
+          </div>
         </div>
-        <p class="response" id="precheck-response"></p>
-        <p class="footnote">Basiert auf validierten Risiko-Modellen (u.&nbsp;a. QSkin/MP16) · Ersetzt keine ärztliche Diagnose.</p>
+
+        <div class="pc-rphase" id="pcRPhase" hidden>
+          <div class="pc-scale" id="pcScale"></div>
+          <h3 class="pc-resulthead" id="pcResultHead"></h3>
+          <p class="pc-resulttext" id="pcResultText"></p>
+          <div class="pc-scorerow">
+            <p class="pc-scorelabel">Risiko-Score</p>
+            <div class="pc-scorevalue"><b id="pcScoreValue"></b><span>&nbsp;Punkte</span></div>
+          </div>
+          <div class="pc-disclaimer"><b>Kein diagnostisches Werkzeug.</b> Dieser Pre-Check ist ein statistisches Orientierungsinstrument. Die genannten Raten stammen aus epidemiologischen Studien zu Risikogruppen und sagen nichts über eine tatsächliche Erkrankung im Einzelfall aus: Ein niedriges Ergebnis schliesst schwarzen Hautkrebs nicht aus, ein hohes bedeutet keine Diagnose. Nur eine ärztliche Untersuchung kann Hautkrebs feststellen oder ausschliessen.</div>
+          <div class="pc-actions">
+            <a class="btn btn-primary" id="pcCta" href="https://onedoc.ch" target="_blank" rel="noopener">Termin anfragen</a>
+            <button type="button" class="btn btn-secondary" id="pcRestart">Neu starten</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -451,24 +472,226 @@
 
 <script src="assets/nav.js"></script>
 <script>
-// Pre-Check Demo-Frage
+// Pre-Check — vollständiger 13-Fragen-Risiko-Score mit Auswertung
+// Klinisch validiertes Regelwerk (Basis: QSkin/MP16), unverändert übernommen.
 (function () {
-  var card = document.getElementById('precheck-demo');
-  if (!card) return;
-  var buttons = card.querySelectorAll('.answers button');
-  var response = document.getElementById('precheck-response');
-  var responses = {
-    ja: 'Danke für Ihre Antwort. Bei einer bereits diagnostizierten Hautkrebserkrankung sehen die Risiko-Modelle in der Regel engmaschigere Kontrollintervalle vor — das klärt der vollständige Pre-Check mit allen 13 Fragen.',
-    nein: 'Danke für Ihre Antwort. Weiter geht es mit Fragen zu Hauttyp und UV-Exposition — der vollständige Pre-Check mit allen 13 Fragen ist in Vorbereitung.'
+  var root = document.getElementById('pcQPhase');
+  if (!root) return;
+
+  var THRESHOLD = 7;
+
+  var QUESTIONS = [
+    { block: 'Block A · Vorgeschichte',
+      q: 'Wurde bei Ihnen persönlich jemals Hautkrebs diagnostiziert?',
+      hint: 'Melanom oder weisser Hautkrebs',
+      opts: [{ l: 'Ja', flag: true }, { l: 'Nein', pts: 0 }] },
+    { block: 'Block A · Vorgeschichte',
+      q: 'Haben Sie eine akute Veränderung an einem Muttermal bemerkt?',
+      hint: 'z. B. Jucken, Bluten, Farbveränderung oder rasches Neuwachstum',
+      opts: [{ l: 'Ja', flag: true }, { l: 'Nein', pts: 0 }] },
+    { block: 'Block A · Vorgeschichte',
+      q: 'Liegt bei Ihnen eine Immunsuppression oder ein genetisches Risiko-Syndrom vor?',
+      hint: 'z. B. nach Organtransplantation, HIV, hämatologische Erkrankung, Xeroderma pigmentosum, Gorlin-Syndrom',
+      opts: [{ l: 'Ja', flag: true }, { l: 'Nein', pts: 0 }] },
+    { block: 'Block A · Vorgeschichte',
+      q: 'Wurden bei Ihnen bereits aktinische Keratosen oder Hautkrebs-Vorstufen behandelt?',
+      hint: 'Chronische Sonnenschäden, raue Hautstellen',
+      opts: [{ l: 'Ja', pts: 3 }, { l: 'Nein', pts: 0 }] },
+    { block: 'Block A · Vorgeschichte',
+      q: 'Wurde bei Verwandten 1. Grades Hautkrebs diagnostiziert?',
+      hint: 'Eltern, Geschwister oder eigene Kinder',
+      opts: [{ l: 'Ja', pts: 4 }, { l: 'Nein', pts: 0 }] },
+    { block: 'Block B · Körperliche Merkmale',
+      q: 'Welche Darstellung entspricht am ehesten Ihrer Muttermaldichte am gesamten Körper?',
+      opts: [
+        { l: 'Hohe Dichte', s: 'Mehr als 50 Muttermale, unregelmässige oder auffällige Formen', pts: 5 },
+        { l: 'Moderate Dichte', s: '16–50 normale Muttermale', pts: 2 },
+        { l: 'Geringe Dichte', s: 'Weniger als 15 normale Muttermale', pts: 0 }] },
+    { block: 'Block B · Körperliche Merkmale',
+      q: 'Wie reagiert Ihre ungeschützte Haut auf die erste intensive Sommersonne?',
+      opts: [
+        { l: 'Typ I', s: 'Immer sofort Sonnenbrand, bräunt nie – sehr helle Haut, oft Sommersprossen', pts: 3 },
+        { l: 'Typ II', s: 'Meistens Sonnenbrand, bräunt nur sehr schwer', pts: 2 },
+        { l: 'Typ III', s: 'Seltener Sonnenbrand, bräunt gut und gleichmässig', pts: 1 },
+        { l: 'Typ IV–VI', s: 'Kaum oder nie Sonnenbrand, von Natur aus dunklere Haut', pts: 0 }] },
+    { block: 'Block B · Körperliche Merkmale',
+      q: 'Welches ist Ihre natürliche Haarfarbe (im Alter von ca. 20 Jahren)?',
+      opts: [{ l: 'Rot / Hellblond', pts: 2 }, { l: 'Braun / Schwarz', pts: 0 }] },
+    { block: 'Block C · UV-Exposition',
+      q: 'Hatten Sie im Laufe Ihres Lebens schwere, schmerzhafte oder blasenbildende Sonnenbrände?',
+      opts: [
+        { l: 'Ja, mehr als 3-mal', pts: 3 },
+        { l: 'Ja, 1–2-mal', pts: 1 },
+        { l: 'Nein, keine', pts: 0 }] },
+    { block: 'Block C · UV-Exposition',
+      q: 'Traten schwere Sonnenbrände bereits in der Kindheit oder Jugend auf (unter 13 Jahren)?',
+      opts: [{ l: 'Ja', pts: 1 }, { l: 'Nein / Nicht zutreffend', pts: 0 }] },
+    { block: 'Block C · UV-Exposition',
+      q: 'Wie viele Stunden verbringen Sie durchschnittlich pro Tag im Freien?',
+      hint: 'Beruflich oder bei intensiven Freizeitaktivitäten',
+      opts: [
+        { l: 'Täglich mehr als 4 Stunden', pts: 2 },
+        { l: 'Gelegentlich, 1–4 Stunden am Tag', pts: 1 },
+        { l: 'Überwiegend in Innenräumen', pts: 0 }] },
+    { block: 'Block C · UV-Exposition',
+      q: 'Nutzen oder nutzten Sie jemals ein Solarium?',
+      opts: [
+        { l: 'Ja, regelmässig', s: 'Erstnutzung vor dem 35. Lebensjahr', pts: 3 },
+        { l: 'Ja, gelegentlich / selten', pts: 1 },
+        { l: 'Nein, nie', pts: 0 }] },
+    { block: 'Block D · Demographie',
+      q: 'Was trifft auf Sie zu?',
+      opts: [
+        { l: 'Älter als 50 Jahre und männlich', pts: 2 },
+        { l: 'Älter als 50 Jahre oder männlich', pts: 1 },
+        { l: 'Keines von beidem', pts: 0 }] }
+  ];
+
+  var MAX_PTS = QUESTIONS.reduce(function (s, q) {
+    return s + Math.max.apply(null, q.opts.map(function (o) { return o.pts || 0; }));
+  }, 0);
+
+  var RESULT = {
+    3: { head: 'Stark erhöhte Raten in Studien',
+         text: 'Mindestens ein medizinisches Warnsignal (Red Flag) liegt vor. In epidemiologischen Studien weisen Personengruppen mit vergleichbaren Merkmalen stark erhöhte Raten von schwarzem Hautkrebs (Melanom) auf. Eine zeitnahe dermatologische Abklärung ist ratsam; der 3D-Ganzkörperscan wäre in diesem Fall eine Leistung der Grundversicherung (KVG).' },
+    2: { head: 'Erhöhte Raten in Studien',
+         text: 'Ihr Score liegt über dem Schwellenwert. In epidemiologischen Studien zeigen Personengruppen mit einem vergleichbaren Score erhöhte Raten von schwarzem Hautkrebs (Melanom). Eine regelmässige, standardisierte 3D-Hautkontrolle ist naheliegend und wird der Grundversicherung (KVG) zugewiesen.' },
+    1: { head: 'Niedrige Raten in Studien',
+         text: 'Keine Warnsignale, Ihr Score liegt unter dem Schwellenwert. In epidemiologischen Studien weisen Personengruppen mit einem vergleichbaren Profil niedrige Raten von schwarzem Hautkrebs (Melanom) auf. Konsequenter Sonnenschutz und regelmässige Selbstkontrollen bleiben dennoch wichtig.' }
   };
-  buttons.forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      buttons.forEach(function (b) { b.classList.remove('selected'); b.disabled = true; });
-      btn.classList.add('selected');
-      response.textContent = responses[btn.dataset.answer] || '';
-      response.classList.add('visible');
+
+  var TIERS = ['Niedrige Raten', 'Erhöhte Raten', 'Stark erhöhte Raten'];
+  var TIER_WIDTHS = ['34%', '64%', '100%'];
+  var YOUR_RESULT_LABEL = 'Ihr Ergebnis';
+
+  var idx = 0;
+  var answers = new Array(QUESTIONS.length).fill(null);
+  var phase = 'question';
+  var busy = false;
+
+  function $(id) { return document.getElementById(id); }
+  function pad(n) { return String(n).padStart(2, '0'); }
+
+  function evaluate() {
+    var flagged = QUESTIONS.some(function (q, i) {
+      return answers[i] !== null && !!q.opts[answers[i]].flag;
     });
+    var score = QUESTIONS.reduce(function (s, q, i) {
+      return s + (answers[i] !== null ? (q.opts[answers[i]].pts || 0) : 0);
+    }, 0);
+    if (flagged) { return { tier: 3, score: score, cta: true }; }
+    if (score > THRESHOLD) { return { tier: 2, score: score, cta: true }; }
+    return { tier: 1, score: score, cta: false };
+  }
+
+  function renderQuestion() {
+    var q = QUESTIONS[idx];
+    var progress = (idx / QUESTIONS.length) * 100;
+
+    $('pcBlock').textContent = q.block;
+    $('pcStep').textContent = 'Frage ' + pad(idx + 1) + ' / ' + pad(QUESTIONS.length);
+    $('pcBar').style.width = progress + '%';
+    $('pcQuestion').textContent = q.q;
+
+    $('pcHint').textContent = q.hint || '';
+    $('pcHint').hidden = !q.hint;
+
+    var box = $('pcOptions');
+    box.innerHTML = '';
+    q.opts.forEach(function (o, i) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'pc-option';
+      var strong = document.createElement('b');
+      strong.textContent = o.l;
+      b.appendChild(strong);
+      if (o.s) {
+        var small = document.createElement('small');
+        small.textContent = o.s;
+        b.appendChild(small);
+      }
+      b.addEventListener('click', function () { select(i); });
+      box.appendChild(b);
+    });
+
+    $('pcBack').disabled = idx === 0;
+  }
+
+  function renderResult() {
+    var r = evaluate();
+    var txt = RESULT[r.tier];
+
+    var scale = $('pcScale');
+    scale.innerHTML = '';
+
+    TIERS.forEach(function (label, i) {
+      var row = document.createElement('div');
+      row.className = 'pc-scalerow' + (r.tier === i + 1 ? ' on' : '');
+
+      var num = document.createElement('span');
+      num.className = 'pc-scalenum';
+      num.textContent = pad(i + 1);
+
+      var track = document.createElement('span');
+      track.className = 'pc-track';
+      var fill = document.createElement('i');
+      track.appendChild(fill);
+
+      var tag = document.createElement('span');
+      tag.className = 'pc-tag';
+      tag.appendChild(document.createTextNode(label));
+      if (r.tier === i + 1) {
+        var m = document.createElement('span');
+        m.className = 'pc-marker';
+        m.textContent = YOUR_RESULT_LABEL;
+        tag.appendChild(m);
+      }
+
+      row.appendChild(num);
+      row.appendChild(track);
+      row.appendChild(tag);
+      scale.appendChild(row);
+
+      window.setTimeout(function () { fill.style.width = TIER_WIDTHS[i]; }, 80 + i * 100);
+    });
+
+    $('pcResultHead').textContent = txt.head;
+    $('pcResultText').textContent = txt.text;
+    $('pcScoreValue').textContent = r.score + ' / ' + MAX_PTS;
+    $('pcCta').hidden = !r.cta;
+  }
+
+  function render() {
+    $('pcQPhase').hidden = phase !== 'question';
+    $('pcRPhase').hidden = phase !== 'result';
+    if (phase === 'question') { renderQuestion(); } else { renderResult(); }
+  }
+
+  function select(optIndex) {
+    if (busy) { return; }
+    answers[idx] = optIndex;
+    busy = true;
+    $('pcQPhase').classList.add('fade');
+    window.setTimeout(function () {
+      if (idx < QUESTIONS.length - 1) { idx += 1; } else { phase = 'result'; }
+      busy = false;
+      $('pcQPhase').classList.remove('fade');
+      render();
+    }, 240);
+  }
+
+  $('pcBack').addEventListener('click', function () {
+    if (idx > 0 && !busy) { idx -= 1; render(); }
   });
+
+  $('pcRestart').addEventListener('click', function () {
+    answers = new Array(QUESTIONS.length).fill(null);
+    idx = 0;
+    phase = 'question';
+    render();
+  });
+
+  render();
 })();
 
 // Wahr/Falsch-Check
