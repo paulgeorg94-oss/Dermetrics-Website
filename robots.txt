@@ -1,0 +1,56 @@
+# Dermetrics — robots.txt
+# Static informational site for a dermatology practice.
+# Traditional search engines and AI/answer-engine crawlers are both
+# welcome; nothing on this site is paywalled or account-gated.
+
+User-agent: *
+Allow: /
+
+# ---- Explicit allow for major traditional search bots ----
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# ---- Explicit allow for AI / answer-engine crawlers (GEO/AEO) ----
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+Sitemap: https://dermetrics.ch/sitemap.xml

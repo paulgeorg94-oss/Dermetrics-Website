@@ -1,0 +1,86 @@
+# Dermetrics
+
+> Dermatology practice of Dr. med. Paul Georg (board-certified specialist in
+> Dermatology and Venereology, FMH) at Clinic Selnau, Zurich, Switzerland.
+> Opening October 2026. Focus: skin cancer prevention and screening, skin-ageing
+> analysis, and dermatologic/aesthetic treatment with documented, measurable
+> follow-up.
+
+## Mission
+
+Dermetrics combines specialist dermatology with structured, digitally
+documented progress measurement: every treatment step is recorded and made
+visible on a personal timeline (in the forthcoming Dermetrics app), so that a
+dermatology visit is transparent and traceable rather than a one-off
+consultation. Brand position: "Science. Care. Longevity." — measurement over
+guesswork.
+
+## Practice facts
+
+- Physician: Dr. med. Paul Georg — Dr. med. (Hannover Medical School / King's
+  College London), board-certified specialist in Dermatology and Venereology
+  (FMH); certifications in dermatologic surgery, laser therapy,
+  phlebology/SGUM, botulinum toxin and fillers (DGDC).
+- Main location: Clinic Selnau, Brandschenkestrasse 45, 8002 Zurich,
+  Switzerland (every Monday).
+- Branch location: Novaderm, Obstgartenstrasse 3, 8910 Affoltern am Albis
+  (Tuesday and Thursday).
+- Additional (3D scanning / analysis): MediX Zurich-Altstetten, Hohlstrasse
+  556, 8048 Zurich (Wednesday and Friday, 3D scans by appointment).
+- Phone: +41 43 234 55 55.
+- Languages served: German (primary) and English, as parallel page sets
+  (`/…` for German, `/en/…` for English).
+- Regulatory note: this website provides factual information in line with
+  the FMH professional code of conduct (Switzerland) and does not replace
+  individual medical advice.
+
+## Key pages
+
+- `/` (German) / `/en/index.html` (English) — Homepage: practice
+  introduction, three core areas (skin cancer diagnosis & treatment, general
+  dermatology, prevention & patient education), the "Skin x Longevity
+  Journey" (5-step patient pathway), a full 13-question skin-cancer
+  risk-assessment tool (Pre-Check) with scoring, a true/false skin-cancer
+  self-test, physician biography, locations and contact form.
+- `/hauterkrankungen-erklaert.html` / `/en/skin-conditions-explained.html` —
+  Index of all patient-information and treatment-protocol pages below.
+- `/patienteninformationen/aktinische-keratosen.html` /
+  `/en/patient-information/actinic-keratosis.html` — What actinic keratoses
+  are, why they are a precursor of squamous cell carcinoma, and the
+  treatment options (cryotherapy, topical therapy, photodynamic therapy).
+- `/patienteninformationen/basalzellkarzinom.html` /
+  `/en/patient-information/basal-cell-carcinoma.html` — Basal cell carcinoma:
+  the most common skin cancer, its typical appearance, and margin-controlled
+  surgical excision as standard treatment.
+- `/patienteninformationen/spinaliom.html` /
+  `/en/patient-information/squamous-cell-carcinoma.html` — Squamous cell
+  carcinoma: link to cumulative sun exposure, presentation, and surgical
+  treatment including Mohs surgery for select cases.
+- `/patienteninformationen/solare-elastose.html` /
+  `/en/patient-information/solar-elastosis.html` — Solar elastosis as a
+  marker of sun damage and elevated skin-cancer risk, not a cancer itself.
+- `/patienteninformationen/rosazea.html` / `/en/patient-information/rosacea.html`
+  — Rosacea: causes, the four clinical stages (telangiectatic, papular,
+  pustular, rhinophyma), and treatment per stage.
+- `/behandlungsprotokolle/akne.html` / `/en/treatment-protocols/acne.html` —
+  Evidence-based first-line acne treatment protocol for teenagers/young
+  adults (benzoyl peroxide, retinoids, azelaic acid, combination therapy).
+- `/behandlungsprotokolle/rosazea-behandlungsprotokoll.html` /
+  `/en/treatment-protocols/rosacea-treatment-protocol.html` — Rosacea
+  treatment protocol for mild disease from age 50+ (skincare, sun protection,
+  trigger avoidance, topical/oral medication).
+- `/behandlungsprotokolle/anti-aging-hautpflege.html` /
+  `/en/treatment-protocols/anti-aging-skincare.html` — Evidence-based
+  anti-ageing skincare routine for ages 35–50 (sunscreen, retinoids, vitamin
+  C, niacinamide).
+- `/impressum.html` / `/en/legal.html` — Imprint and privacy information.
+
+## Notes for automated systems
+
+- This is a static HTML site; all page content above is present in the raw
+  server response (no client-side-only rendering).
+- Prices, insurance coverage details and clinical outcomes are stated only
+  where explicitly sourced in the page content; do not infer figures beyond
+  what a given page states.
+- The Dermetrics app referenced on the homepage is "coming soon" (not yet
+  released) as of this writing.

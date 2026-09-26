@@ -394,6 +394,11 @@ table.plain td { color: var(--ink); }
 
 .pc-qphase.fade { opacity: 0.35; transition: opacity 0.2s ease; }
 
+.pc-noscript h3 { margin: 0 0 14px; }
+.pc-noscript ol { margin: 0 0 16px; padding-left: 20px; }
+.pc-noscript li { font-size: 13.5px; color: var(--ink); margin-bottom: 10px; line-height: 1.55; }
+.pc-noscript li span { color: var(--muted); }
+
 .pc-scale { display: flex; flex-direction: column; gap: 12px; }
 .pc-scalerow { display: grid; grid-template-columns: 20px minmax(60px, 0.9fr) auto; align-items: center; gap: 14px; }
 .pc-scalenum { font-size: 11px; font-weight: 500; letter-spacing: 0.1em; color: var(--muted); font-variant-numeric: tabular-nums; }
@@ -538,6 +543,11 @@ table.plain td { color: var(--ink); }
   border-radius: 14px;
   padding: 18px 22px;
   display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.tf-item .tf-row {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
@@ -555,8 +565,11 @@ table.plain td { color: var(--ink); }
   cursor: pointer;
 }
 .tf-item .tf-buttons button:hover { border-color: var(--aubergine); color: var(--aubergine); }
+.tf-item .tf-reveal { font-size: 13px; color: var(--muted); }
+.tf-item .tf-reveal summary { cursor: pointer; color: var(--aubergine); }
+.tf-item .tf-reveal p { margin-top: 6px; }
 @media (max-width: 640px) {
-  .tf-item { flex-direction: column; align-items: stretch; }
+  .tf-item .tf-row { flex-direction: column; align-items: stretch; }
 }
 
 /* ---------- Footer ---------- */
@@ -566,7 +579,7 @@ table.plain td { color: var(--ink); }
 .footer .tagline { font-size: 15px; font-weight: 300; color: var(--aubergine-mid); margin: 0 0 18px; }
 .footer p { font-size: 12.5px; color: var(--muted); line-height: 1.6; margin: 0 0 8px; }
 .footer .practice { font-size: 13px; color: var(--ink); font-weight: 500; margin: 0 0 4px; }
-.footer h5 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin: 0 0 14px; font-weight: 500; }
+.footer .footer-heading { font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin: 0 0 14px; font-weight: 500; }
 .footer ul { list-style: none; padding: 0; margin: 0; }
 .footer ul li { margin-bottom: 10px; }
 .footer ul a { font-size: 13px; color: var(--ink); text-decoration: none; }
