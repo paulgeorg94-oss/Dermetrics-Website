@@ -347,6 +347,7 @@ a.dm-tile:hover .dm-tile__link { text-decoration: underline; }
 .dm-cta-btn:hover { border-color: var(--aubergine); color: var(--aubergine); }
 .dm-cta-btn--whatsapp { border-color: #25D366; color: #128C4A; }
 .dm-cta-btn--whatsapp:hover { border-color: #128C4A; color: #128C4A; }
+.dm-cta-btn--icon { width: 44px; height: 44px; padding: 0; justify-content: center; }
 
 /* ---------- Simple list ---------- */
 .simplelist { list-style: none; padding: 0; margin: 20px 0; }
