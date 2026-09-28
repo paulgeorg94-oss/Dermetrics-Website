@@ -41,9 +41,13 @@ body { padding-top: 60px; }
   right: 0;
   z-index: 20;
   background: rgba(251, 248, 246, 0.92);
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--line);
   transition: transform 0.28s ease;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
 }
 .topnav.nav-hidden { transform: translateY(-100%); }
 .topnav .wrap {
