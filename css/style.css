@@ -228,6 +228,117 @@ h3 { font-size: 15px; font-weight: 500; color: var(--ink); margin: 0 0 8px; }
   .pillar-divider { display: none; }
 }
 
+/* ---------- Leistungen-Karussell ---------- */
+/* Lokale Variablen auf die bestehenden Design-Tokens gemappt, damit das
+   Karussell dieselbe Aubergine-Palette nutzt statt eine zweite einzuführen. */
+.dm-carousel {
+  --dm-ink: var(--ink);
+  --dm-muted: var(--muted);
+  --dm-line: var(--line);
+  --dm-accent: var(--aubergine-mid);
+  --dm-focus: var(--aubergine);
+  --dm-tile-active-bg:
+    radial-gradient(70% 90% at 10% 90%, rgba(196,178,235,0.45), transparent 68%),
+    radial-gradient(45% 55% at 95% 5%, rgba(245,190,150,0.35), transparent 68%),
+    #FBF6F1;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 40px;
+}
+.dm-carousel__track {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding-bottom: 4px;
+}
+.dm-carousel__track::-webkit-scrollbar { display: none; }
+.dm-carousel__slide { flex: 0 0 300px; scroll-snap-align: start; display: flex; }
+.dm-carousel__slide > * { width: 100%; }
+
+.dm-tile {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  box-sizing: border-box;
+  min-height: 250px;
+  padding: 26px;
+  background: #fff;
+  border: 1px solid var(--dm-line);
+  border-radius: 14px;
+  color: var(--dm-ink);
+  text-decoration: none;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+a.dm-tile:hover { border-color: var(--dm-accent); }
+a.dm-tile:focus-visible { outline: 2px solid var(--dm-focus); outline-offset: 2px; }
+.dm-tile--active { border-color: transparent; background: var(--dm-tile-active-bg); }
+.dm-tile__icon { color: var(--dm-accent); margin-bottom: 4px; }
+.dm-tile__icon svg { width: 30px; height: 30px; display: block; }
+.dm-tile__title { font-size: 17px; font-weight: 500; color: var(--dm-ink); margin: 0; line-height: 1.35; }
+.dm-tile__body { font-size: 14px; color: var(--dm-muted); line-height: 1.55; margin: 0; flex: 1; }
+.dm-tile__link {
+  font-size: 12px; font-weight: 500;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--dm-accent);
+}
+a.dm-tile:hover .dm-tile__link { text-decoration: underline; }
+
+.dm-carousel__controls {
+  display: flex; align-items: center; justify-content: space-between; gap: 20px;
+  border-top: 1px solid var(--dm-line);
+  padding-top: 20px;
+}
+.dm-carousel__dots { display: flex; gap: 10px; align-items: center; }
+.dm-carousel__dot {
+  width: 26px; height: 2px; padding: 0; border: 0;
+  border-radius: 999px;
+  background: var(--dm-line); cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+.dm-carousel__dot:hover { background: var(--dm-muted); }
+.dm-carousel__dot--current { background: var(--dm-accent); }
+.dm-carousel__dot:focus-visible { outline: 2px solid var(--dm-focus); outline-offset: 4px; }
+.dm-carousel__buttons { display: flex; gap: 8px; }
+.dm-carousel__button {
+  width: 40px; height: 40px;
+  display: inline-flex; align-items: center; justify-content: center;
+  border-radius: 999px;
+  border: 1px solid var(--dm-line);
+  background: transparent; color: var(--dm-ink); cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+.dm-carousel__button:hover { background: var(--notice-bg); }
+.dm-carousel__button:focus-visible { outline: 2px solid var(--dm-focus); outline-offset: 2px; }
+.dm-carousel__button[hidden] { display: none; }
+.dm-carousel__button svg[hidden] { display: none; }
+
+@media (max-width: 560px) {
+  .dm-carousel__slide { flex-basis: 82%; }
+}
+
+/* ---------- Leistungen-CTA-Reihe (WhatsApp / Anruf / Buchung) ---------- */
+.dm-cta-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 24px; }
+.dm-cta-btn {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-family: inherit; font-size: 13px; font-weight: 500;
+  padding: 9px 16px 9px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  text-decoration: none;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+.dm-cta-btn svg { flex: 0 0 auto; display: block; }
+.dm-cta-btn:hover { border-color: var(--aubergine); color: var(--aubergine); }
+.dm-cta-btn--whatsapp { border-color: #25D366; color: #128C4A; }
+.dm-cta-btn--whatsapp:hover { border-color: #128C4A; color: #128C4A; }
+
 /* ---------- Simple list ---------- */
 .simplelist { list-style: none; padding: 0; margin: 20px 0; }
 .simplelist li {
