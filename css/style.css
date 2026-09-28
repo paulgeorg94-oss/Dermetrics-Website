@@ -476,7 +476,7 @@ table.plain td { color: var(--ink); }
 }
 @media (max-width: 720px) {
   .clinic-gallery { flex-direction: column; }
-  .clinic-gallery img { aspect-ratio: 16/10; }
+  .clinic-gallery img { aspect-ratio: 16/10; width: 100%; flex: 0 0 auto; }
 }
 
 /* ---------- Sources ---------- */
