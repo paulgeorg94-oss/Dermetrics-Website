@@ -38,8 +38,8 @@ guesswork.
 
 - `/` (German) / `/en/index.html` (English) — Homepage: practice
   introduction, three core areas (skin cancer diagnosis & treatment, general
-  dermatology, prevention & patient education), the "Skin x Longevity
-  Journey" (5-step patient pathway), a full 13-question skin-cancer
+  dermatology, prevention & patient education), the "Dermetrics Journey"
+  (5-step patient pathway), a full 13-question skin-cancer
   risk-assessment tool (Pre-Check) with scoring, a true/false skin-cancer
   self-test, physician biography, locations and contact form.
 - `/hauterkrankungen-erklaert.html` / `/en/skin-conditions-explained.html` —

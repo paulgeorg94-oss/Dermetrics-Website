@@ -13,21 +13,27 @@
     });
   }
 
-  var lastY = window.scrollY;
+  var lastY = Math.max(0, window.scrollY);
   var ticking = false;
   var TOP_THRESHOLD = 12;
+  var DELTA_THRESHOLD = 6; // ignoriert Mini-Bewegungen (iOS-Bounce/Jitter)
 
   function onScroll() {
-    var currentY = window.scrollY;
+    // iOS-Safari/Chrome kann während des elastischen "Bounce" am Rand
+    // negative oder sprunghafte scrollY-Werte liefern — abklemmen.
+    var currentY = Math.max(0, window.scrollY);
+    var delta = currentY - lastY;
+
     if (currentY <= TOP_THRESHOLD) {
       topnav.classList.remove('nav-hidden');
-    } else if (currentY > lastY) {
+    } else if (delta > DELTA_THRESHOLD) {
       topnav.classList.add('nav-hidden');
       topnav.classList.remove('open');
-    } else if (currentY < lastY) {
+      lastY = currentY;
+    } else if (delta < -DELTA_THRESHOLD) {
       topnav.classList.remove('nav-hidden');
+      lastY = currentY;
     }
-    lastY = currentY;
     ticking = false;
   }
 
