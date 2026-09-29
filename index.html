@@ -259,14 +259,14 @@
 
           <div class="pc-pdfbox">
             <p class="pc-pdfbox-label">Ergebnis als PDF erhalten</p>
-            <p class="pc-pdfbox-text">Laden Sie Ihr Ergebnis als anonymes PDF herunter — ohne Namen oder sonstige personenbezogene Angaben. Optional können Sie es anschliessend über Ihr eigenes E-Mail-Programm an sich selbst senden.</p>
+            <p class="pc-pdfbox-text">Speichern Sie Ihr Ergebnis als anonymes PDF — ohne Namen oder sonstige personenbezogene Angaben. Der Button öffnet den Druckdialog Ihres Browsers; wählen Sie dort als Ziel „Als PDF speichern". Optional können Sie das gespeicherte PDF anschliessend über Ihr eigenes E-Mail-Programm an sich selbst senden.</p>
             <div class="pc-pdfbox-row">
               <input type="email" id="pcEmail" class="pc-pdfbox-input" placeholder="Ihre E-Mail-Adresse (für den optionalen Versand)" autocomplete="email">
-              <button type="button" class="btn btn-secondary" id="pcPdfDownload">PDF herunterladen</button>
+              <button type="button" class="btn btn-secondary" id="pcPdfDownload">Als PDF speichern</button>
               <button type="button" class="btn btn-secondary" id="pcPdfMail" disabled>Per E-Mail senden</button>
             </div>
             <p class="pc-pdfbox-status" id="pcPdfStatus" hidden></p>
-            <p class="pc-pdfbox-disclaimer"><strong>Hinweis zur Übermittlung:</strong> Das PDF wird ausschliesslich lokal in Ihrem Browser erstellt und enthält keine personenbezogenen Angaben — es wird nicht an einen Server übertragen oder dort gespeichert. Der optionale Versand per E-Mail erfolgt über Ihr eigenes E-Mail-Programm als reguläre, <strong>unverschlüsselte</strong> Übertragung — vergleichbar mit einer gewöhnlichen E-Mail. Für hochsensible Gesundheitsangaben ist unverschlüsselte E-Mail nicht geeignet; senden Sie das PDF entsprechend nicht an Dritte weiter.</p>
+            <p class="pc-pdfbox-disclaimer"><strong>Hinweis zur Übermittlung:</strong> Das PDF wird ausschliesslich lokal auf Ihrem Gerät erstellt und enthält keine personenbezogenen Angaben — es wird nicht an einen Server übertragen oder dort gespeichert. Der optionale Versand per E-Mail erfolgt über Ihr eigenes E-Mail-Programm als reguläre, <strong>unverschlüsselte</strong> Übertragung — vergleichbar mit einer gewöhnlichen E-Mail. Für hochsensible Gesundheitsangaben ist unverschlüsselte E-Mail nicht geeignet; senden Sie das PDF entsprechend nicht an Dritte weiter.</p>
           </div>
 
           <div class="pc-actions">
@@ -660,7 +660,19 @@
   </div>
 </footer>
 
-<script src="assets/vendor/jspdf.umd.min.js"></script>
+<div class="pc-print-area" id="pcPrintArea" aria-hidden="true">
+  <p class="pc-print-title">Dermetrics — Pre-Check Ergebnis</p>
+  <p class="pc-print-meta" id="pcPrintDate"></p>
+  <p class="pc-print-subhead" id="pcPrintResultHead"></p>
+  <p class="pc-print-resulttext" id="pcPrintResultText"></p>
+  <p class="pc-print-score" id="pcPrintScore"></p>
+  <p class="pc-print-note">Kein diagnostisches Werkzeug: Dieser Pre-Check ist ein statistisches Orientierungsinstrument und ersetzt keine ärztliche Untersuchung. Ein niedriges Ergebnis schliesst schwarzen Hautkrebs nicht aus, ein hohes bedeutet keine Diagnose. Nur eine ärztliche Untersuchung kann Hautkrebs feststellen oder ausschliessen.</p>
+  <p class="pc-print-subhead">Ihre Antworten</p>
+  <ol class="pc-print-answers" id="pcPrintAnswers"></ol>
+  <p class="pc-print-note">Hinweis zur Übermittlung: Dieses Dokument wurde lokal auf Ihrem Gerät erstellt — anonym, ohne Namen oder Kontaktdaten, und ohne Übertragung an einen Server.</p>
+  <p class="pc-print-note"><strong>Bitte bringen Sie dieses Dokument sowie die Unterlagen Ihrer bisherigen Arztbesuche beim Dermatologen zu Ihrem Termin mit.</strong></p>
+</div>
+
 <script src="assets/nav.js"></script>
 <script src="assets/carousel.js"></script>
 <script>
@@ -852,59 +864,39 @@
     $('pcScoreValue').textContent = r.score + ' / ' + MAX_PTS;
     $('pcCta').hidden = !r.cta;
 
-    pdfDownloaded = false;
+    pdfPrinted = false;
     $('pcEmail').value = '';
     $('pcPdfStatus').hidden = true;
     $('pcPdfMail').disabled = true;
   }
 
-  // PDF-Export des Ergebnisses (anonym, lokal im Browser erstellt) + optionaler
-  // Versand per mailto: über das eigene E-Mail-Programm des Nutzers.
-  var pdfDownloaded = false;
-  var PDF_FILENAME = 'dermetrics-precheck-ergebnis.pdf';
+  // PDF-Export des Ergebnisses über den nativen Druckdialog des Browsers
+  // ("Als PDF speichern") — anonym, vollständig lokal auf dem Gerät, ohne
+  // Drittanbieter-Bibliothek und ohne deren Zeichenkodierungs-Probleme.
+  // Optionaler Versand per mailto: über das eigene E-Mail-Programm.
+  var pdfPrinted = false;
 
-  function buildResultPdf() {
+  function populatePrintArea() {
     var r = evaluate();
     var txt = RESULT[r.tier];
-    var doc = new window.jspdf.jsPDF({ unit: 'mm', format: 'a4' });
-    var pageWidth = doc.internal.pageSize.getWidth();
-    var pageHeight = doc.internal.pageSize.getHeight();
-    var margin = 20;
-    var maxWidth = pageWidth - margin * 2;
-    var y = 22;
+    $('pcPrintDate').textContent = 'Erstellt am ' + new Date().toLocaleDateString('de-CH') + ' · anonym, ohne personenbezogene Angaben';
+    $('pcPrintResultHead').textContent = txt.head;
+    $('pcPrintResultText').textContent = txt.text;
+    $('pcPrintScore').textContent = 'Risiko-Score: ' + r.score + ' / ' + MAX_PTS + ' Punkte';
 
-    function addLine(text, opts) {
-      opts = opts || {};
-      doc.setFont('helvetica', opts.bold ? 'bold' : 'normal');
-      doc.setFontSize(opts.size || 10.5);
-      var lines = doc.splitTextToSize(text, maxWidth);
-      lines.forEach(function (line) {
-        if (y > pageHeight - margin) { doc.addPage(); y = 22; }
-        doc.text(line, margin, y);
-        y += (opts.lineHeight || 5.2);
-      });
-      y += (opts.gap || 0);
-    }
-
-    addLine('Dermetrics — Pre-Check Ergebnis', { bold: true, size: 15, lineHeight: 7, gap: 1 });
-    addLine('Erstellt am ' + new Date().toLocaleDateString('de-CH') + ' · anonym, ohne personenbezogene Angaben', { size: 9, gap: 5 });
-
-    addLine(txt.head, { bold: true, size: 12.5, lineHeight: 6, gap: 1 });
-    addLine(txt.text, { size: 10, gap: 3 });
-    addLine('Risiko-Score: ' + r.score + ' / ' + MAX_PTS + ' Punkte', { bold: true, size: 10.5, gap: 6 });
-
-    addLine('Kein diagnostisches Werkzeug: Dieser Pre-Check ist ein statistisches Orientierungsinstrument und ersetzt keine ärztliche Untersuchung. Ein niedriges Ergebnis schliesst schwarzen Hautkrebs nicht aus, ein hohes bedeutet keine Diagnose. Nur eine ärztliche Untersuchung kann Hautkrebs feststellen oder ausschliessen.', { size: 8.5, gap: 7 });
-
-    addLine('Ihre Antworten', { bold: true, size: 11.5, lineHeight: 6, gap: 2 });
+    var list = $('pcPrintAnswers');
+    list.innerHTML = '';
     QUESTIONS.forEach(function (q, i) {
       var chosen = answers[i] !== null ? q.opts[answers[i]].l : '—';
-      addLine((i + 1) + '. ' + q.q, { bold: true, size: 9.5, lineHeight: 4.6 });
-      addLine('Antwort: ' + chosen, { size: 9.5, gap: 3.5 });
+      var li = document.createElement('li');
+      var strong = document.createElement('strong');
+      strong.textContent = q.q;
+      li.appendChild(strong);
+      var ansLine = document.createElement('div');
+      ansLine.textContent = 'Antwort: ' + chosen;
+      li.appendChild(ansLine);
+      list.appendChild(li);
     });
-
-    addLine('Hinweis zur Übermittlung: Dieses PDF wurde lokal in Ihrem Browser erstellt — anonym, ohne Namen oder Kontaktdaten, und ohne Übertragung an einen Server. Ein anschliessender Versand per E-Mail erfolgt unverschlüsselt, wie bei gewöhnlicher E-Mail-Kommunikation.', { size: 8, gap: 0 });
-
-    return doc;
   }
 
   function isValidEmail(value) {
@@ -912,18 +904,22 @@
   }
 
   function updateMailButtonState() {
-    $('pcPdfMail').disabled = !(pdfDownloaded && isValidEmail($('pcEmail').value.trim()));
+    $('pcPdfMail').disabled = !(pdfPrinted && isValidEmail($('pcEmail').value.trim()));
   }
 
   $('pcEmail').addEventListener('input', updateMailButtonState);
 
   $('pcPdfDownload').addEventListener('click', function () {
-    if (!window.jspdf) { return; }
-    buildResultPdf().save(PDF_FILENAME);
-    pdfDownloaded = true;
+    populatePrintArea();
+    window.print();
+  });
+
+  window.addEventListener('afterprint', function () {
+    if ($('pcRPhase').hidden) { return; }
+    pdfPrinted = true;
     var status = $('pcPdfStatus');
     status.hidden = false;
-    status.textContent = 'PDF heruntergeladen (' + PDF_FILENAME + ') — Sie finden es in Ihrem Download-Ordner.';
+    status.textContent = 'Druckdialog geschlossen — falls Sie „Als PDF speichern" gewählt haben, finden Sie die Datei in Ihrem Download-Ordner.';
     updateMailButtonState();
   });
 
@@ -933,7 +929,8 @@
     var r = evaluate();
     var subject = 'Mein Dermetrics Pre-Check-Ergebnis';
     var body = 'Ergebnis: ' + RESULT[r.tier].head + ' (Score ' + r.score + ' / ' + MAX_PTS + ' Punkte)\n\n' +
-      'Bitte hängen Sie die soeben heruntergeladene Datei „' + PDF_FILENAME + '" an diese E-Mail an, bevor Sie sie senden.\n\n' +
+      'Bitte hängen Sie das soeben als PDF gespeicherte Dokument an diese E-Mail an, bevor Sie sie senden.\n\n' +
+      'Bitte bringen Sie die Unterlagen Ihrer bisherigen Arztbesuche beim Dermatologen und die Ergebnisse dieses Fragebogens mit zu Ihrem Termin.\n\n' +
       'Hinweis: Diese E-Mail wird unverschlüsselt über Ihr eigenes E-Mail-Programm versendet — wie bei gewöhnlicher E-Mail-Kommunikation.';
     window.location.href = 'mailto:' + encodeURIComponent(email) + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
   });

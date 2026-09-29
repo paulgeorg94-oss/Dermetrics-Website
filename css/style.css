@@ -593,6 +593,28 @@ table.plain td { color: var(--ink); }
   .pc-pdfbox-row { flex-direction: column; align-items: stretch; }
 }
 
+/* ---------- Pre-Check Druckansicht (für "Als PDF speichern") ---------- */
+.pc-print-area { display: none; }
+.pc-print-title { font-size: 20px; font-weight: 600; color: #000; margin: 0 0 4px; }
+.pc-print-meta { font-size: 11px; color: #444; margin: 0 0 18px; }
+.pc-print-subhead { font-size: 15px; font-weight: 600; color: #000; margin: 18px 0 8px; }
+.pc-print-resulttext { font-size: 12px; line-height: 1.5; color: #000; margin: 0 0 8px; }
+.pc-print-score { font-size: 13px; font-weight: 600; color: #000; margin: 0 0 16px; }
+.pc-print-note { font-size: 10.5px; line-height: 1.5; color: #333; margin: 12px 0 0; }
+.pc-print-answers { padding-left: 18px; margin: 0; }
+.pc-print-answers li { font-size: 11.5px; line-height: 1.5; color: #000; margin: 0 0 10px; }
+.pc-print-answers li div { color: #333; margin-top: 2px; }
+
+@media print {
+  body > header, body > main, body > footer { display: none !important; }
+  .pc-print-area {
+    display: block;
+    width: 100%;
+    padding: 12mm;
+    box-sizing: border-box;
+  }
+}
+
 @media (min-width: 781px) {
   .precheck-content { max-width: 720px; }
   .pc-card { max-width: 640px; padding: 40px; }
