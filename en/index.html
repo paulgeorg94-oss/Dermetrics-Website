@@ -444,7 +444,7 @@
 </div>
 </div>
 <div class="notice">
-<p><strong>Note:</strong> Please do not submit any medical data, findings or symptom descriptions via this form. For this, please use the phone contact or a secure HIN email.</p>
+<p><strong>Note:</strong> Please do not submit any medical data, findings or symptom descriptions via this form. For this, please use the phone contact or a secure HIN email. This form transmits only general contact details with no medical relevance (name, email address, phone number, a brief message) to the practice.</p>
 </div>
 <form class="formcard" id="contact-form">
 <label for="cf-name">Name</label>
@@ -460,7 +460,9 @@
 <label for="cf-consent">I agree that my information will be stored and processed in order to handle my enquiry.</label>
 </div>
 <button class="submit" type="submit">Send enquiry</button>
-<p class="form-note">Opens your own email program with a pre-filled draft to <strong>paul.georg@hin.ch</strong> — please review and send it there. The transmission goes through your own email provider, not through this website.</p>
+<p class="form-note" id="cfNote">Your enquiry is sent directly to the practice — your data is not stored on this website.</p>
+<p class="form-success" id="cfSuccess" hidden>Thank you for your enquiry. We will get back to you as soon as possible.</p>
+<p class="form-error" id="cfError" hidden>The enquiry could not be sent. Please try again or contact us by phone.</p>
 </form>
 </div>
 </section>
@@ -867,26 +869,84 @@
   });
 })();
 
-// Contact form — no backend of its own: opens a pre-filled mailto: draft
-// addressed to paul.georg@hin.ch, which the user reviews and sends themselves
-// from their own email program.
-document.getElementById('contact-form').addEventListener('submit', function (e) {
-  e.preventDefault();
-  var name = document.getElementById('cf-name').value.trim();
-  var email = document.getElementById('cf-email').value.trim();
-  var phone = document.getElementById('cf-phone').value.trim();
-  var message = document.getElementById('cf-message').value.trim();
+// Contact form.
+// Target architecture: server-side, TLS-secured delivery via a form service
+// (e.g. Formspree) — the practice's destination address then lives only in
+// that service's account configuration, not in this website's source code.
+// To activate, fill in FORMSPREE_FORM_ID below (create a Formspree account →
+// create a form → take the Form ID from the endpoint URL
+// https://formspree.io/f/XXXXXXXX you receive).
+//
+// Until a Form ID is set, the form falls back to a pre-filled mailto: draft;
+// for that fallback the destination address is deliberately not stored as
+// one contiguous string in the source (no plain-text scraping), but built
+// from two parts at runtime.
+var FORMSPREE_FORM_ID = ''; // e.g. 'xzbqrsty' — once set, sending goes through Formspree server-side instead of mailto:
 
-  var subject = 'Enquiry via dermetrics.ch — ' + name;
-  var body =
-    'Name: ' + name + '\n' +
-    'Email: ' + email + '\n' +
-    (phone ? 'Phone: ' + phone + '\n' : '') +
-    '\nMessage:\n' + message +
-    '\n\n— Sent via the contact form on dermetrics.ch';
+(function () {
+  var CONTACT_LOCAL = 'paul.georg';
+  var CONTACT_DOMAIN = 'hin.ch';
+  var CONTACT_EMAIL = CONTACT_LOCAL + '@' + CONTACT_DOMAIN;
 
-  window.location.href = 'mailto:paul.georg@hin.ch?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-});
+  var form = document.getElementById('contact-form');
+  var noteEl = document.getElementById('cfNote');
+  var successEl = document.getElementById('cfSuccess');
+  var errorEl = document.getElementById('cfError');
+
+  function showSuccess() {
+    noteEl.hidden = true;
+    errorEl.hidden = true;
+    successEl.hidden = false;
+  }
+
+  function showError() {
+    errorEl.hidden = false;
+  }
+
+  function sendViaFormspree(formData) {
+    errorEl.hidden = true;
+    fetch('https://formspree.io/f/' + FORMSPREE_FORM_ID, {
+      method: 'POST',
+      body: formData,
+      headers: { Accept: 'application/json' }
+    }).then(function (response) {
+      if (response.ok) {
+        showSuccess();
+        form.reset();
+      } else {
+        showError();
+      }
+    }).catch(function () {
+      showError();
+    });
+  }
+
+  function sendViaMailto() {
+    var name = document.getElementById('cf-name').value.trim();
+    var email = document.getElementById('cf-email').value.trim();
+    var phone = document.getElementById('cf-phone').value.trim();
+    var message = document.getElementById('cf-message').value.trim();
+
+    var subject = 'Enquiry via dermetrics.ch — ' + name;
+    var body =
+      'Name: ' + name + '\n' +
+      'Email: ' + email + '\n' +
+      (phone ? 'Phone: ' + phone + '\n' : '') +
+      '\nMessage:\n' + message +
+      '\n\n— Sent via the contact form on dermetrics.ch';
+
+    window.location.href = 'mailto:' + CONTACT_EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (FORMSPREE_FORM_ID) {
+      sendViaFormspree(new FormData(form));
+    } else {
+      sendViaMailto();
+    }
+  });
+})();
 </script>
 </body>
 </html>

@@ -738,6 +738,8 @@ table.plain td { color: var(--ink); }
 .formcard .checkrow label { margin: 0; font-size: 12.5px; line-height: 1.5; color: var(--muted); }
 .formcard .form-note { font-size: 12px; line-height: 1.55; color: var(--muted); margin: 12px 0 0; }
 .formcard .form-note strong { color: var(--ink); }
+.formcard .form-success { font-size: 13.5px; line-height: 1.55; color: var(--aubergine); margin: 12px 0 0; font-weight: 500; }
+.formcard .form-error { font-size: 13.5px; line-height: 1.55; color: #a8392f; margin: 12px 0 0; font-weight: 500; }
 .formcard button.submit {
   margin-top: 22px;
   font-family: inherit;

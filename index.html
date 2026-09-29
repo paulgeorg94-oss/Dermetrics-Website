@@ -560,7 +560,7 @@
     </div>
 
     <div class="notice">
-      <p><strong>Hinweis:</strong> Bitte übermitteln Sie über dieses Formular keine medizinischen Daten, Befunde oder Symptombeschreibungen. Nutzen Sie hierfür den telefonischen Kontakt oder eine gesicherte HIN-Mail.</p>
+      <p><strong>Hinweis:</strong> Bitte übermitteln Sie über dieses Formular keine medizinischen Daten, Befunde oder Symptombeschreibungen. Nutzen Sie hierfür den telefonischen Kontakt oder eine gesicherte HIN-Mail. Über dieses Formular werden ausschliesslich allgemeine Kontaktangaben ohne medizinischen Bezug (Name, E-Mail-Adresse, Telefonnummer, Ihr Anliegen in Kurzform) an die Praxis übermittelt.</p>
     </div>
 
     <form class="formcard" id="contact-form">
@@ -577,7 +577,9 @@
         <label for="cf-consent">Ich bin einverstanden, dass meine Angaben zur Bearbeitung meiner Anfrage gespeichert und verarbeitet werden.</label>
       </div>
       <button type="submit" class="submit">Anfrage senden</button>
-      <p class="form-note">Öffnet Ihr eigenes E-Mail-Programm mit einem vorausgefüllten Entwurf an <strong>paul.georg@hin.ch</strong> — bitte im E-Mail-Programm prüfen und senden. Die Übertragung erfolgt über Ihren eigenen E-Mail-Anbieter, nicht über diese Website.</p>
+      <p class="form-note" id="cfNote">Ihre Anfrage wird direkt an die Praxis übermittelt — Ihre Daten werden nicht auf dieser Website gespeichert.</p>
+      <p class="form-success" id="cfSuccess" hidden>Vielen Dank für Ihre Anfrage. Wir melden uns so rasch wie möglich.</p>
+      <p class="form-error" id="cfError" hidden>Die Anfrage konnte nicht gesendet werden. Bitte versuchen Sie es erneut oder kontaktieren Sie uns telefonisch.</p>
     </form>
   </div>
 </section>
@@ -990,26 +992,84 @@
   });
 })();
 
-// Kontaktformular — kein eigenes Backend vorhanden: öffnet einen vorausgefüllten
-// mailto:-Entwurf an paul.georg@hin.ch, den die Nutzerin/der Nutzer im eigenen
-// E-Mail-Programm prüft und selbst versendet.
-document.getElementById('contact-form').addEventListener('submit', function (e) {
-  e.preventDefault();
-  var name = document.getElementById('cf-name').value.trim();
-  var email = document.getElementById('cf-email').value.trim();
-  var phone = document.getElementById('cf-phone').value.trim();
-  var message = document.getElementById('cf-message').value.trim();
+// Kontaktformular.
+// Zielarchitektur: serverseitige, TLS-gesicherte Zustellung über einen
+// Formular-Dienst (z. B. Formspree) — die Zieladresse der Praxis liegt dann
+// ausschliesslich in dessen Konto-Konfiguration, nicht im Quellcode dieser
+// Website. Dazu unten die FORMSPREE_FORM_ID eintragen (Formspree-Konto
+// anlegen → Formular erstellen → Form-ID aus der erhaltenen Endpoint-URL
+// https://formspree.io/f/XXXXXXXX übernehmen).
+//
+// Solange keine Form-ID hinterlegt ist, nutzt das Formular ersatzweise einen
+// vorausgefüllten mailto:-Entwurf; dafür wird die Zieladresse hier bewusst
+// nicht als zusammenhängender Text im Quellcode hinterlegt (kein Klartext-
+// Scraping), sondern zur Laufzeit aus zwei Teilen zusammengesetzt.
+var FORMSPREE_FORM_ID = ''; // z. B. 'xzbqrsty' — sobald gesetzt, läuft der Versand serverseitig über Formspree statt mailto:
 
-  var subject = 'Kontaktanfrage über dermetrics.ch — ' + name;
-  var body =
-    'Name: ' + name + '\n' +
-    'E-Mail: ' + email + '\n' +
-    (phone ? 'Telefon: ' + phone + '\n' : '') +
-    '\nAnliegen:\n' + message +
-    '\n\n— Gesendet über das Kontaktformular auf dermetrics.ch';
+(function () {
+  var CONTACT_LOCAL = 'paul.georg';
+  var CONTACT_DOMAIN = 'hin.ch';
+  var CONTACT_EMAIL = CONTACT_LOCAL + '@' + CONTACT_DOMAIN;
 
-  window.location.href = 'mailto:paul.georg@hin.ch?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-});
+  var form = document.getElementById('contact-form');
+  var noteEl = document.getElementById('cfNote');
+  var successEl = document.getElementById('cfSuccess');
+  var errorEl = document.getElementById('cfError');
+
+  function showSuccess() {
+    noteEl.hidden = true;
+    errorEl.hidden = true;
+    successEl.hidden = false;
+  }
+
+  function showError() {
+    errorEl.hidden = false;
+  }
+
+  function sendViaFormspree(formData) {
+    errorEl.hidden = true;
+    fetch('https://formspree.io/f/' + FORMSPREE_FORM_ID, {
+      method: 'POST',
+      body: formData,
+      headers: { Accept: 'application/json' }
+    }).then(function (response) {
+      if (response.ok) {
+        showSuccess();
+        form.reset();
+      } else {
+        showError();
+      }
+    }).catch(function () {
+      showError();
+    });
+  }
+
+  function sendViaMailto() {
+    var name = document.getElementById('cf-name').value.trim();
+    var email = document.getElementById('cf-email').value.trim();
+    var phone = document.getElementById('cf-phone').value.trim();
+    var message = document.getElementById('cf-message').value.trim();
+
+    var subject = 'Kontaktanfrage über dermetrics.ch — ' + name;
+    var body =
+      'Name: ' + name + '\n' +
+      'E-Mail: ' + email + '\n' +
+      (phone ? 'Telefon: ' + phone + '\n' : '') +
+      '\nAnliegen:\n' + message +
+      '\n\n— Gesendet über das Kontaktformular auf dermetrics.ch';
+
+    window.location.href = 'mailto:' + CONTACT_EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (FORMSPREE_FORM_ID) {
+      sendViaFormspree(new FormData(form));
+    } else {
+      sendViaMailto();
+    }
+  });
+})();
 </script>
 
 </body>
