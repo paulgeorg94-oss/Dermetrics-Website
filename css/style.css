@@ -13,6 +13,39 @@
   --notice-bg: #F5F1FA;
 }
 
+/* Inter, lokal gehostet (assets/vendor/fonts) statt über fonts.googleapis.com
+   geladen — vermeidet die Übertragung der Besucher-IP an Google-Server beim
+   Seitenaufruf und macht die Seite dadurch ohne Cookie-Consent für Schriften
+   nutzbar (siehe Datenschutzerklärung). */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('../assets/vendor/fonts/Inter-Light.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../assets/vendor/fonts/Inter-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../assets/vendor/fonts/Inter-Medium.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../assets/vendor/fonts/Inter-SemiBold.woff2') format('woff2');
+}
+
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
 
@@ -197,6 +230,8 @@ section.block:first-of-type { border-top: none; }
 .eyebrow { font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin: 0 0 14px; }
 h2 { font-size: 28px; font-weight: 300; line-height: 1.3; margin: 0 0 18px; letter-spacing: -0.005em; }
 h3 { font-size: 15px; font-weight: 500; color: var(--ink); margin: 0 0 8px; }
+#datenschutz h3 { margin-top: 32px; }
+#datenschutz h3:first-of-type { margin-top: 0; }
 
 .intro p { font-size: 15.5px; color: var(--ink); line-height: 1.7; margin: 0 0 16px; max-width: 74ch; }
 .intro p:last-child { margin-bottom: 0; }
