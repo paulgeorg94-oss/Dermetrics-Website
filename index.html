@@ -256,6 +256,19 @@
             <div class="pc-scorevalue"><b id="pcScoreValue"></b><span>&nbsp;Punkte</span></div>
           </div>
           <div class="pc-disclaimer"><b>Kein diagnostisches Werkzeug.</b> Dieser Pre-Check ist ein statistisches Orientierungsinstrument. Die genannten Raten stammen aus epidemiologischen Studien zu Risikogruppen und sagen nichts über eine tatsächliche Erkrankung im Einzelfall aus: Ein niedriges Ergebnis schliesst schwarzen Hautkrebs nicht aus, ein hohes bedeutet keine Diagnose. Nur eine ärztliche Untersuchung kann Hautkrebs feststellen oder ausschliessen.</div>
+
+          <div class="pc-pdfbox">
+            <p class="pc-pdfbox-label">Ergebnis als PDF erhalten</p>
+            <p class="pc-pdfbox-text">Laden Sie Ihr Ergebnis als anonymes PDF herunter — ohne Namen oder sonstige personenbezogene Angaben. Optional können Sie es anschliessend über Ihr eigenes E-Mail-Programm an sich selbst senden.</p>
+            <div class="pc-pdfbox-row">
+              <input type="email" id="pcEmail" class="pc-pdfbox-input" placeholder="Ihre E-Mail-Adresse (für den optionalen Versand)" autocomplete="email">
+              <button type="button" class="btn btn-secondary" id="pcPdfDownload">PDF herunterladen</button>
+              <button type="button" class="btn btn-secondary" id="pcPdfMail" disabled>Per E-Mail senden</button>
+            </div>
+            <p class="pc-pdfbox-status" id="pcPdfStatus" hidden></p>
+            <p class="pc-pdfbox-disclaimer"><strong>Hinweis zur Übermittlung:</strong> Das PDF wird ausschliesslich lokal in Ihrem Browser erstellt und enthält keine personenbezogenen Angaben — es wird nicht an einen Server übertragen oder dort gespeichert. Der optionale Versand per E-Mail erfolgt über Ihr eigenes E-Mail-Programm als reguläre, <strong>unverschlüsselte</strong> Übertragung — vergleichbar mit einer gewöhnlichen E-Mail. Für hochsensible Gesundheitsangaben ist unverschlüsselte E-Mail nicht geeignet; senden Sie das PDF entsprechend nicht an Dritte weiter.</p>
+          </div>
+
           <div class="pc-actions">
             <a class="btn btn-primary" id="pcCta" href="https://onedoc.ch" target="_blank" rel="noopener">Termin anfragen</a>
             <button type="button" class="btn btn-secondary" id="pcRestart">Neu starten</button>
@@ -560,6 +573,7 @@
         <label for="cf-consent">Ich bin einverstanden, dass meine Angaben zur Bearbeitung meiner Anfrage gespeichert und verarbeitet werden.</label>
       </div>
       <button type="submit" class="submit">Anfrage senden</button>
+      <p class="form-note">Öffnet Ihr eigenes E-Mail-Programm mit einem vorausgefüllten Entwurf an <strong>paul.georg@hin.ch</strong> — bitte im E-Mail-Programm prüfen und senden. Die Übertragung erfolgt über Ihren eigenen E-Mail-Anbieter, nicht über diese Website.</p>
     </form>
   </div>
 </section>
@@ -642,6 +656,7 @@
   </div>
 </footer>
 
+<script src="assets/vendor/jspdf.umd.min.js"></script>
 <script src="assets/nav.js"></script>
 <script src="assets/carousel.js"></script>
 <script>
@@ -832,7 +847,92 @@
     $('pcResultText').textContent = txt.text;
     $('pcScoreValue').textContent = r.score + ' / ' + MAX_PTS;
     $('pcCta').hidden = !r.cta;
+
+    pdfDownloaded = false;
+    $('pcEmail').value = '';
+    $('pcPdfStatus').hidden = true;
+    $('pcPdfMail').disabled = true;
   }
+
+  // PDF-Export des Ergebnisses (anonym, lokal im Browser erstellt) + optionaler
+  // Versand per mailto: über das eigene E-Mail-Programm des Nutzers.
+  var pdfDownloaded = false;
+  var PDF_FILENAME = 'dermetrics-precheck-ergebnis.pdf';
+
+  function buildResultPdf() {
+    var r = evaluate();
+    var txt = RESULT[r.tier];
+    var doc = new window.jspdf.jsPDF({ unit: 'mm', format: 'a4' });
+    var pageWidth = doc.internal.pageSize.getWidth();
+    var pageHeight = doc.internal.pageSize.getHeight();
+    var margin = 20;
+    var maxWidth = pageWidth - margin * 2;
+    var y = 22;
+
+    function addLine(text, opts) {
+      opts = opts || {};
+      doc.setFont('helvetica', opts.bold ? 'bold' : 'normal');
+      doc.setFontSize(opts.size || 10.5);
+      var lines = doc.splitTextToSize(text, maxWidth);
+      lines.forEach(function (line) {
+        if (y > pageHeight - margin) { doc.addPage(); y = 22; }
+        doc.text(line, margin, y);
+        y += (opts.lineHeight || 5.2);
+      });
+      y += (opts.gap || 0);
+    }
+
+    addLine('Dermetrics — Pre-Check Ergebnis', { bold: true, size: 15, lineHeight: 7, gap: 1 });
+    addLine('Erstellt am ' + new Date().toLocaleDateString('de-CH') + ' · anonym, ohne personenbezogene Angaben', { size: 9, gap: 5 });
+
+    addLine(txt.head, { bold: true, size: 12.5, lineHeight: 6, gap: 1 });
+    addLine(txt.text, { size: 10, gap: 3 });
+    addLine('Risiko-Score: ' + r.score + ' / ' + MAX_PTS + ' Punkte', { bold: true, size: 10.5, gap: 6 });
+
+    addLine('Kein diagnostisches Werkzeug: Dieser Pre-Check ist ein statistisches Orientierungsinstrument und ersetzt keine ärztliche Untersuchung. Ein niedriges Ergebnis schliesst schwarzen Hautkrebs nicht aus, ein hohes bedeutet keine Diagnose. Nur eine ärztliche Untersuchung kann Hautkrebs feststellen oder ausschliessen.', { size: 8.5, gap: 7 });
+
+    addLine('Ihre Antworten', { bold: true, size: 11.5, lineHeight: 6, gap: 2 });
+    QUESTIONS.forEach(function (q, i) {
+      var chosen = answers[i] !== null ? q.opts[answers[i]].l : '—';
+      addLine((i + 1) + '. ' + q.q, { bold: true, size: 9.5, lineHeight: 4.6 });
+      addLine('Antwort: ' + chosen, { size: 9.5, gap: 3.5 });
+    });
+
+    addLine('Hinweis zur Übermittlung: Dieses PDF wurde lokal in Ihrem Browser erstellt — anonym, ohne Namen oder Kontaktdaten, und ohne Übertragung an einen Server. Ein anschliessender Versand per E-Mail erfolgt unverschlüsselt, wie bei gewöhnlicher E-Mail-Kommunikation.', { size: 8, gap: 0 });
+
+    return doc;
+  }
+
+  function isValidEmail(value) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+  }
+
+  function updateMailButtonState() {
+    $('pcPdfMail').disabled = !(pdfDownloaded && isValidEmail($('pcEmail').value.trim()));
+  }
+
+  $('pcEmail').addEventListener('input', updateMailButtonState);
+
+  $('pcPdfDownload').addEventListener('click', function () {
+    if (!window.jspdf) { return; }
+    buildResultPdf().save(PDF_FILENAME);
+    pdfDownloaded = true;
+    var status = $('pcPdfStatus');
+    status.hidden = false;
+    status.textContent = 'PDF heruntergeladen (' + PDF_FILENAME + ') — Sie finden es in Ihrem Download-Ordner.';
+    updateMailButtonState();
+  });
+
+  $('pcPdfMail').addEventListener('click', function () {
+    var email = $('pcEmail').value.trim();
+    if (!isValidEmail(email)) { return; }
+    var r = evaluate();
+    var subject = 'Mein Dermetrics Pre-Check-Ergebnis';
+    var body = 'Ergebnis: ' + RESULT[r.tier].head + ' (Score ' + r.score + ' / ' + MAX_PTS + ' Punkte)\n\n' +
+      'Bitte hängen Sie die soeben heruntergeladene Datei „' + PDF_FILENAME + '" an diese E-Mail an, bevor Sie sie senden.\n\n' +
+      'Hinweis: Diese E-Mail wird unverschlüsselt über Ihr eigenes E-Mail-Programm versendet — wie bei gewöhnlicher E-Mail-Kommunikation.';
+    window.location.href = 'mailto:' + encodeURIComponent(email) + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  });
 
   function render() {
     $('pcQPhase').hidden = phase !== 'question';
@@ -889,11 +989,25 @@
   });
 })();
 
-// Kontaktformular (rein clientseitig, kein Backend angebunden)
+// Kontaktformular — kein eigenes Backend vorhanden: öffnet einen vorausgefüllten
+// mailto:-Entwurf an paul.georg@hin.ch, den die Nutzerin/der Nutzer im eigenen
+// E-Mail-Programm prüft und selbst versendet.
 document.getElementById('contact-form').addEventListener('submit', function (e) {
   e.preventDefault();
-  alert('Vielen Dank für Ihre Anfrage. Wir melden uns so rasch wie möglich.');
-  this.reset();
+  var name = document.getElementById('cf-name').value.trim();
+  var email = document.getElementById('cf-email').value.trim();
+  var phone = document.getElementById('cf-phone').value.trim();
+  var message = document.getElementById('cf-message').value.trim();
+
+  var subject = 'Kontaktanfrage über dermetrics.ch — ' + name;
+  var body =
+    'Name: ' + name + '\n' +
+    'E-Mail: ' + email + '\n' +
+    (phone ? 'Telefon: ' + phone + '\n' : '') +
+    '\nAnliegen:\n' + message +
+    '\n\n— Gesendet über das Kontaktformular auf dermetrics.ch';
+
+  window.location.href = 'mailto:paul.georg@hin.ch?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
 });
 </script>
 
