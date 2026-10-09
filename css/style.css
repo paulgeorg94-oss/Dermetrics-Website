@@ -957,3 +957,5 @@ table.plain td { color: var(--ink); }
 .tile-media img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .4s ease; }
 .tile:hover .tile-media img, .tile:focus-visible .tile-media img { transform:scale(1.04); }
 @media (prefers-reduced-motion: reduce) { .tile-media img { transition:none; } .tile:hover .tile-media img { transform:none; } }
+.tile-media--duo { display:grid; grid-template-columns:1fr 1fr; gap:2px; }
+.tile-media--duo img { min-width:0; }
