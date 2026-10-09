@@ -22,6 +22,24 @@
   </url>
 
   <url>
+    <loc>https://dermetrics.ch/hautkrebs-selbsttest.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/hautkrebs-selbsttest.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/skin-cancer-self-test.html"/>
+  </url>
+
+  <url>
+    <loc>https://dermetrics.ch/en/skin-cancer-self-test.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/hautkrebs-selbsttest.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/skin-cancer-self-test.html"/>
+  </url>
+
+  <url>
     <loc>https://dermetrics.ch/impressum.html</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>yearly</changefreq>

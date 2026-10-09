@@ -40,10 +40,14 @@ guesswork.
   introduction, three core areas (skin cancer diagnosis & treatment, general
   dermatology, prevention & patient education), the "Dermetrics Journey"
   (5-step patient pathway), a full 13-question skin-cancer
-  risk-assessment tool (Pre-Check) with scoring, a true/false skin-cancer
-  self-test, physician biography, locations and contact form.
+  risk-assessment tool (Pre-Check) with scoring, patient-information tiles,
+  physician biography, locations and contact form.
 - `/hauterkrankungen-erklaert.html` / `/en/skin-conditions-explained.html` —
-  Index of all patient-information and treatment-protocol pages below.
+  "Patienteninformationen & Behandlungspläne": tile index of all patient-
+  information and treatment-plan pages below, plus further knowledge pages.
+- `/hautkrebs-selbsttest.html` / `/en/skin-cancer-self-test.html` — Short
+  evidence-based true/false self-test on skin-cancer prevention (8 statements)
+  with the ABCDE rule.
 - `/patienteninformationen/aktinische-keratosen.html` /
   `/en/patient-information/actinic-keratosis.html` — What actinic keratoses
   are, why they are a precursor of squamous cell carcinoma, and the
