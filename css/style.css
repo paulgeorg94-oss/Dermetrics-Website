@@ -951,3 +951,9 @@ table.plain td { color: var(--ink); }
   transition: background .2s ease, color .2s ease, border-color .2s ease;
 }
 .jumpnav a:hover { background: var(--aubergine); color: #fff; border-color: var(--aubergine); }
+
+/* Tile with photo */
+.tile-media { display:block; margin:-26px -24px 0; aspect-ratio:16/10; overflow:hidden; background:var(--notice-bg); }
+.tile-media img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .4s ease; }
+.tile:hover .tile-media img, .tile:focus-visible .tile-media img { transform:scale(1.04); }
+@media (prefers-reduced-motion: reduce) { .tile-media img { transition:none; } .tile:hover .tile-media img { transform:none; } }
