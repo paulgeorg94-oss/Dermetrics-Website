@@ -66,6 +66,10 @@ guesswork.
 - `/patienteninformationen/rosazea.html` / `/en/patient-information/rosacea.html`
   — Rosacea: causes, the four clinical stages (telangiectatic, papular,
   pustular, rhinophyma), and treatment per stage.
+- `/patienteninformationen/akne-formen.html` / `/en/patient-information/acne-forms.html`
+  — Acne: the main types (acne vulgaris, late-onset acne, comedonal acne) and
+  their treatment (topical, systemic, isotretinoin safety notes), based on the
+  German S2k guideline.
 - `/behandlungsprotokolle/akne.html` / `/en/treatment-protocols/acne.html` —
   Evidence-based first-line acne treatment protocol for teenagers/young
   adults (benzoyl peroxide, retinoids, azelaic acid, combination therapy).

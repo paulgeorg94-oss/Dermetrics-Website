@@ -94,6 +94,15 @@
   </url>
 
   <url>
+    <loc>https://dermetrics.ch/patienteninformationen/akne-formen.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/patienteninformationen/akne-formen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/patient-information/acne-forms.html"/>
+  </url>
+
+  <url>
     <loc>https://dermetrics.ch/behandlungsprotokolle/akne.html</loc>
     <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
@@ -191,6 +200,15 @@
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/patienteninformationen/rosazea.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/patient-information/rosacea.html"/>
+  </url>
+
+  <url>
+    <loc>https://dermetrics.ch/en/patient-information/acne-forms.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/patienteninformationen/akne-formen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/patient-information/acne-forms.html"/>
   </url>
 
   <url>
