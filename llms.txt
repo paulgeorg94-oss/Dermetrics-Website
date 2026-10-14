@@ -70,6 +70,11 @@ guesswork.
   — Acne: the main types (acne vulgaris, late-onset acne, comedonal acne) and
   their treatment (topical, systemic, isotretinoin safety notes), based on the
   German S2k guideline.
+- `/patienteninformationen/postinflammatorische-hyperpigmentierung.html`
+  (German only; no English translation published yet) — Post-inflammatory
+  hyperpigmentation (PIH): dark spots after skin inflammation such as acne,
+  treatment with sun protection, lightening creams, topical retinoids,
+  chemical peels and laser.
 - `/behandlungsprotokolle/akne.html` / `/en/treatment-protocols/acne.html` —
   Evidence-based first-line acne treatment protocol for teenagers/young
   adults (benzoyl peroxide, retinoids, azelaic acid, combination therapy).
