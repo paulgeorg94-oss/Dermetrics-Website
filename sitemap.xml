@@ -108,6 +108,11 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/patienteninformationen/mosaik-3d-erbium-laser.html"/>
+    <loc>https://dermetrics.ch/patienteninformationen/postinflammatorische-hyperpigmentierung.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/patienteninformationen/postinflammatorische-hyperpigmentierung.html"/>
   </url>
 
   <url>
@@ -135,6 +140,15 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/behandlungsprotokolle/anti-aging-hautpflege.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/treatment-protocols/anti-aging-skincare.html"/>
+  </url>
+
+  <url>
+    <loc>https://dermetrics.ch/behandlungsprotokolle/melasma-behandlungsprotokoll.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/behandlungsprotokolle/melasma-behandlungsprotokoll.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/treatment-protocols/melasma-treatment-protocol.html"/>
   </url>
 
   <url>
@@ -244,6 +258,15 @@
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/behandlungsprotokolle/anti-aging-hautpflege.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/treatment-protocols/anti-aging-skincare.html"/>
+  </url>
+
+  <url>
+    <loc>https://dermetrics.ch/en/treatment-protocols/melasma-treatment-protocol.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/behandlungsprotokolle/melasma-behandlungsprotokoll.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/treatment-protocols/melasma-treatment-protocol.html"/>
   </url>
 
 </urlset>

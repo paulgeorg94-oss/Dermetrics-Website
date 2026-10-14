@@ -73,6 +73,11 @@ guesswork.
 - `/patienteninformationen/mosaik-3d-erbium-laser.html` — Mosaic 3D (fractional
   erbium-glass laser): mechanism, studied uses and side effects, based on
   studies of related lasers (German only).
+- `/patienteninformationen/postinflammatorische-hyperpigmentierung.html`
+  (German only; no English translation published yet) — Post-inflammatory
+  hyperpigmentation (PIH): dark spots after skin inflammation such as acne,
+  treatment with sun protection, lightening creams, topical retinoids,
+  chemical peels and laser.
 - `/behandlungsprotokolle/akne.html` / `/en/treatment-protocols/acne.html` —
   Evidence-based first-line acne treatment protocol for teenagers/young
   adults (benzoyl peroxide, retinoids, azelaic acid, combination therapy).
@@ -84,6 +89,12 @@ guesswork.
   `/en/treatment-protocols/anti-aging-skincare.html` — Evidence-based
   anti-ageing skincare routine for ages 35–50 (sunscreen, retinoids, vitamin
   C, niacinamide).
+- `/behandlungsprotokolle/melasma-behandlungsprotokoll.html` /
+  `/en/treatment-protocols/melasma-treatment-protocol.html` — Melasma
+  treatment protocol: sun protection, skincare, pigment-reducing creams,
+  chemical peeling and laser treatment as a step-up therapy. Based on the
+  treating physician's own clinical description, not independently
+  cross-checked against published literature.
 - `/impressum.html` / `/en/legal.html` — Imprint and privacy information.
 
 ## Notes for automated systems
