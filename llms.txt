@@ -70,6 +70,9 @@ guesswork.
   — Acne: the main types (acne vulgaris, late-onset acne, comedonal acne) and
   their treatment (topical, systemic, isotretinoin safety notes), based on the
   German S2k guideline.
+- `/patienteninformationen/mosaik-3d-erbium-laser.html` — Mosaic 3D (fractional
+  erbium-glass laser): mechanism, studied uses and side effects, based on
+  studies of related lasers (German only).
 - `/patienteninformationen/postinflammatorische-hyperpigmentierung.html`
   (German only; no English translation published yet) — Post-inflammatory
   hyperpigmentation (PIH): dark spots after skin inflammation such as acne,
