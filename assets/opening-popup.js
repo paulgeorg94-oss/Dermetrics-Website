@@ -10,6 +10,8 @@
   var STORAGE_KEY = "dmp-eroeffnung-gesehen";
   var TARGET = "2026-12-07T10:00:00+01:00"; // Praxiseröffnung
   var UNTIL = "2026-12-14T20:30:00+01:00"; // Ende Eröffnungsapéro
+  var SHOW_DELAY_MS = 1500; // Verzögerung bis zum Erscheinen
+  var AUTO_CLOSE_MS = 20000; // automatisches Schliessen nach 20 Sekunden
 
   var isEn = (document.documentElement.lang || "").toLowerCase().indexOf("en") === 0;
   var depth = location.pathname.split("/").filter(Boolean).length - 1;
@@ -57,8 +59,10 @@
     "@font-face{font-family:'Jost';font-style:normal;font-weight:400;font-display:swap;src:url('" + toRoot + "assets/vendor/fonts/Jost-Regular.woff2') format('woff2');}" +
     "@font-face{font-family:'Jost';font-style:normal;font-weight:500;font-display:swap;src:url('" + toRoot + "assets/vendor/fonts/Jost-Medium.woff2') format('woff2');}" +
     ".dmp{--f:Jost,'Futura','Century Gothic','Helvetica Neue',Arial,sans-serif;--bg:#F8F6F2;--ink:#2A2238;--deep:#300C61;--mid:#4B2C86;--soft:#5E5470;--muted:#8A809A;--line:#E3DDE8;" +
-    "position:fixed;inset:0;z-index:65;display:flex;align-items:center;justify-content:center;padding:16px;background:rgba(36,28,46,.55);font-family:var(--f);}" +
+    "position:fixed;inset:0;z-index:65;display:none;align-items:center;justify-content:center;padding:16px;background:rgba(36,28,46,.55);font-family:var(--f);}" +
+    ".dmp.dmp-visible{display:flex;}" +
     ".dmp *{box-sizing:border-box;}" +
+    ".dmp [hidden]{display:none!important;}" +
     ".dmp-box{position:relative;width:100%;max-width:440px;background:var(--bg);color:var(--ink);border-radius:6px;padding:40px 32px 30px;text-align:center;box-shadow:0 24px 60px rgba(36,28,46,.25);animation:dmpIn .35s ease-out;}" +
     "@keyframes dmpIn{from{transform:translateY(12px);opacity:.4;}to{transform:none;opacity:1;}}" +
     "@media (prefers-reduced-motion:reduce){.dmp-box{animation:none;}}" +
@@ -83,7 +87,6 @@
   var overlay = document.createElement("div");
   overlay.className = "dmp";
   overlay.id = "dmp";
-  overlay.hidden = true;
 
   var box = document.createElement("div");
   box.className = "dmp-box";
@@ -162,7 +165,8 @@
 
   // ---------- Behaviour ----------
   var target = Date.parse(TARGET);
-  var timer = null;
+  var countdownTimer = null;
+  var autoCloseTimer = null;
   var lastFocused = null;
 
   function pad(n) { return n < 10 ? "0" + n : "" + n; }
@@ -172,7 +176,7 @@
     if (ms <= 0) {
       cd.hidden = true;
       openMsg.hidden = false;
-      clearInterval(timer);
+      clearInterval(countdownTimer);
       return;
     }
     var s = Math.floor(ms / 1000);
@@ -183,8 +187,9 @@
   }
 
   function close() {
-    overlay.hidden = true;
-    clearInterval(timer);
+    overlay.classList.remove("dmp-visible");
+    clearInterval(countdownTimer);
+    clearTimeout(autoCloseTimer);
     document.removeEventListener("keydown", onKey);
     try { window.sessionStorage.setItem(STORAGE_KEY, "1"); } catch (e) { /* ignore */ }
     if (lastFocused && lastFocused.focus) lastFocused.focus();
@@ -205,9 +210,10 @@
   setTimeout(function () {
     lastFocused = document.activeElement;
     tick();
-    timer = setInterval(tick, 1000);
-    overlay.hidden = false;
+    countdownTimer = setInterval(tick, 1000);
+    overlay.classList.add("dmp-visible");
     document.addEventListener("keydown", onKey);
     closeBtn.focus();
-  }, 1500);
+    autoCloseTimer = setTimeout(close, AUTO_CLOSE_MS);
+  }, SHOW_DELAY_MS);
 })();
