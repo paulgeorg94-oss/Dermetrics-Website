@@ -269,4 +269,22 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/treatment-protocols/melasma-treatment-protocol.html"/>
   </url>
 
+  <url>
+    <loc>https://dermetrics.ch/eroeffnung.html</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/eroeffnung.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/eroeffnung.html"/>
+  </url>
+
+  <url>
+    <loc>https://dermetrics.ch/en/eroeffnung.html</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/eroeffnung.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/eroeffnung.html"/>
+  </url>
+
 </urlset>

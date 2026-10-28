@@ -95,6 +95,9 @@ guesswork.
   chemical peeling and laser treatment as a step-up therapy. Based on the
   treating physician's own clinical description, not independently
   cross-checked against published literature.
+- `/eroeffnung.html` / `/en/eroeffnung.html` — Invitation and registration
+  page for the Dermetrics opening reception at Clinic Selnau, Monday,
+  14 December 2026, 18:00–20:30 (practice opens 7 December 2026).
 - `/impressum.html` / `/en/legal.html` — Imprint and privacy information.
 
 ## Notes for automated systems
