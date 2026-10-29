@@ -28,13 +28,13 @@
   // ---------- QR-Lightbox ----------
   var lightboxStyle = document.createElement('style');
   lightboxStyle.textContent =
-    '.dm-qr-overlay{position:fixed;inset:0;z-index:70;background:rgba(36,28,46,0.78);display:flex;align-items:center;justify-content:center;padding:24px;font-family:"Inter",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;}' +
-    '.dm-qr-modal{background:#fff;width:100%;max-width:360px;border-radius:20px;padding:30px 28px 26px;position:relative;box-shadow:0 20px 60px rgba(36,28,46,0.3);text-align:center;}' +
-    '.dm-qr-close{position:absolute;top:14px;right:14px;background:none;border:0;cursor:pointer;color:#756B82;font-size:20px;line-height:1;padding:6px;}' +
-    '.dm-qr-close:hover{color:#241C2E;}' +
-    '.dm-qr-box{width:min(70vw,280px);height:min(70vw,280px);margin:4px auto 18px;background:#fff;border:1px solid #E4DEE8;border-radius:14px;padding:16px;box-sizing:border-box;}' +
+    '.dm-qr-overlay{position:fixed;inset:0;z-index:70;background:rgba(37,16,61,0.6);display:flex;align-items:center;justify-content:center;padding:24px;font-family:Avenir,"Avenir Next","Nunito Sans",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;}' +
+    '.dm-qr-modal{background:#fff;width:100%;max-width:360px;border-radius:6px;padding:30px 28px 26px;position:relative;box-shadow:0 20px 60px rgba(37,16,61,0.2);text-align:center;}' +
+    '.dm-qr-close{position:absolute;top:14px;right:14px;background:none;border:0;cursor:pointer;color:#655273;font-size:20px;line-height:1;padding:6px;}' +
+    '.dm-qr-close:hover{color:#25103D;}' +
+    '.dm-qr-box{width:min(70vw,280px);height:min(70vw,280px);margin:4px auto 18px;background:#fff;border:1px solid #D9D0E3;border-radius:4px;padding:16px;box-sizing:border-box;}' +
     '.dm-qr-box svg{width:100%;height:100%;display:block;}' +
-    '.dm-qr-hint{font-size:13px;color:#756B82;margin:0;line-height:1.5;}';
+    '.dm-qr-hint{font-size:13px;color:#655273;margin:0;line-height:1.5;}';
   document.head.appendChild(lightboxStyle);
 
   var overlayEl = null;
