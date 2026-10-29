@@ -7,7 +7,7 @@
 (function () {
   "use strict";
 
-  var TARGET = "2026-12-14T10:00:00+01:00"; // Praxiseröffnung
+  var TARGET = "2026-12-14T18:00:00+01:00"; // Beginn Eröffnungsapéro
   var UNTIL = "2026-12-14T20:30:00+01:00"; // Ende Eröffnungsapéro
   var SHOW_DELAY_MS = 1500; // Verzögerung bis zum Erscheinen
   var AUTO_CLOSE_MS = 20000; // automatisches Schliessen nach 20 Sekunden
@@ -25,25 +25,27 @@
   var t = isEn
     ? {
         kicker: "Dermetrics · Clinic Selnau",
-        title1: "Practice opening on",
+        title1: "Practice opening reception on",
         title2: "14 December 2026",
         subtitle: "Dr. med. Paul Georg, board-certified specialist in Dermatology and Venereology",
         days: "Days", hours: "Hrs", minutes: "Min", seconds: "Sec",
         open: "The practice is open.",
         event: "Opening reception: Monday, 14 December 2026, 6:00–8:30 pm",
         cta: "Register for the opening",
+        note: "Appointments can be booked from 7 December 2026",
         close: "Close",
         logoAlt: "Dermetrics"
       }
     : {
         kicker: "Dermetrics · Clinic Selnau",
-        title1: "Praxiseröffnung am",
-        title2: "14. Dezember 2026",
+        title1: "Praxis-Eröffnungsapéro am",
+        title2: "14.12.2026",
         subtitle: "Dr. med. Paul Georg, Facharzt für Dermatologie und Venerologie",
         days: "Tage", hours: "Std.", minutes: "Min.", seconds: "Sek.",
         open: "Die Praxis ist eröffnet.",
         event: "Eröffnungsapéro: Montag, 14. Dezember 2026, 18:00–20:30 Uhr",
         cta: "Anmeldung zur Eröffnung",
+        note: "Terminvereinbarung ab 07.12.2026 möglich",
         close: "Schliessen",
         logoAlt: "Dermetrics"
       };
@@ -76,6 +78,7 @@
     ".dmp-ev{margin:16px 0 0;font-size:.85rem;color:var(--soft);}" +
     ".dmp-cta{display:inline-block;margin-top:18px;background:var(--deep);color:#fff;text-decoration:none;font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:.76rem;padding:14px 22px;border-radius:4px;}" +
     ".dmp-cta:hover{background:var(--mid);color:#fff;}" +
+    ".dmp-note{margin:16px 0 0;font-size:.75rem;color:var(--muted);}" +
     "@media (max-width:420px){.dmp-box{padding:34px 20px 24px;}.dmp-cd b{font-size:1.5rem;}}";
   document.head.appendChild(style);
 
@@ -155,6 +158,11 @@
   cta.href = eroeffnungHref;
   cta.textContent = t.cta;
   box.appendChild(cta);
+
+  var note = document.createElement("p");
+  note.className = "dmp-note";
+  note.textContent = t.note;
+  box.appendChild(note);
 
   overlay.appendChild(box);
   document.body.appendChild(overlay);
