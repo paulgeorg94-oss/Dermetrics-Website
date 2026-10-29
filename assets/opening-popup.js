@@ -1,5 +1,5 @@
 // Dermetrics — Popup Praxiseröffnung mit Countdown (ersetzt das frühere
-// assets/promo-banner.js). Erscheint einmal pro Browser-Sitzung, 1.5 Sekunden
+// assets/promo-banner.js). Erscheint bei jedem Seitenaufruf 1.5 Sekunden
 // nach dem Laden, auf allen Seiten ausser der Einladungsseite selbst
 // (eroeffnung.html / en/eroeffnung.html, dort via fehlenden Script-Tag
 // ausgeschlossen; die Pfadprüfung unten ist eine zusätzliche Absicherung).
@@ -7,7 +7,6 @@
 (function () {
   "use strict";
 
-  var STORAGE_KEY = "dmp-eroeffnung-gesehen";
   var TARGET = "2026-12-14T10:00:00+01:00"; // Praxiseröffnung
   var UNTIL = "2026-12-14T20:30:00+01:00"; // Ende Eröffnungsapéro
   var SHOW_DELAY_MS = 1500; // Verzögerung bis zum Erscheinen
@@ -22,9 +21,6 @@
   // Nicht anzeigen, wenn wir bereits auf der Einladungsseite selbst sind.
   if (/eroeffnung\.html$/.test(location.pathname)) return;
   if (Date.now() > Date.parse(UNTIL)) return;
-  try {
-    if (window.sessionStorage.getItem(STORAGE_KEY)) return;
-  } catch (e) { /* localStorage/sessionStorage nicht verfügbar — Popup erscheint dann bei jedem Aufruf erneut */ }
 
   var t = isEn
     ? {
@@ -191,7 +187,6 @@
     clearInterval(countdownTimer);
     clearTimeout(autoCloseTimer);
     document.removeEventListener("keydown", onKey);
-    try { window.sessionStorage.setItem(STORAGE_KEY, "1"); } catch (e) { /* ignore */ }
     if (lastFocused && lastFocused.focus) lastFocused.focus();
   }
 
@@ -202,9 +197,6 @@
   closeBtn.addEventListener("click", close);
   overlay.addEventListener("click", function (e) {
     if (e.target === overlay) close();
-  });
-  cta.addEventListener("click", function () {
-    try { window.sessionStorage.setItem(STORAGE_KEY, "1"); } catch (e) { /* ignore */ }
   });
 
   setTimeout(function () {
