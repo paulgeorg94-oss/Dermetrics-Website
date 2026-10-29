@@ -8,7 +8,7 @@
   "use strict";
 
   var STORAGE_KEY = "dmp-eroeffnung-gesehen";
-  var TARGET = "2026-12-07T10:00:00+01:00"; // Praxiseröffnung
+  var TARGET = "2026-12-14T10:00:00+01:00"; // Praxiseröffnung
   var UNTIL = "2026-12-14T20:30:00+01:00"; // Ende Eröffnungsapéro
   var SHOW_DELAY_MS = 1500; // Verzögerung bis zum Erscheinen
   var AUTO_CLOSE_MS = 20000; // automatisches Schliessen nach 20 Sekunden
@@ -30,7 +30,7 @@
     ? {
         kicker: "Dermetrics · Clinic Selnau",
         title1: "Practice opening on",
-        title2: "7 December 2026",
+        title2: "14 December 2026",
         subtitle: "Dr. med. Paul Georg, board-certified specialist in Dermatology and Venereology",
         days: "Days", hours: "Hrs", minutes: "Min", seconds: "Sec",
         open: "The practice is open.",
@@ -42,7 +42,7 @@
     : {
         kicker: "Dermetrics · Clinic Selnau",
         title1: "Praxiseröffnung am",
-        title2: "7. Dezember 2026",
+        title2: "14. Dezember 2026",
         subtitle: "Dr. med. Paul Georg, Facharzt für Dermatologie und Venerologie",
         days: "Tage", hours: "Std.", minutes: "Min.", seconds: "Sek.",
         open: "Die Praxis ist eröffnet.",
