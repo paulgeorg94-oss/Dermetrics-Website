@@ -16,7 +16,7 @@
   var depth = location.pathname.split("/").filter(Boolean).length - 1;
   var toRoot = depth > 0 ? new Array(depth + 1).join("../") : "";
   var eroeffnungHref = isEn ? toRoot + "en/eroeffnung.html" : toRoot + "eroeffnung.html";
-  var logoHref = toRoot + "assets/logo-placeholder.png";
+  var logoHref = toRoot + "assets/logo-dermetrics.svg";
 
   // Nicht anzeigen, wenn wir bereits auf der Einladungsseite selbst sind.
   if (/eroeffnung\.html$/.test(location.pathname)) return;
@@ -67,7 +67,7 @@
     ".dmp-x{position:absolute;top:10px;right:10px;width:36px;height:36px;border:0;background:none;color:var(--muted);font-size:22px;line-height:1;cursor:pointer;border-radius:50%;}" +
     ".dmp-x:hover{color:var(--deep);}" +
     ".dmp-x:focus-visible,.dmp-cta:focus-visible{outline:2px solid var(--mid);outline-offset:2px;}" +
-    ".dmp-box img{width:34px;height:auto;}" +
+    ".dmp-box img{width:auto;height:40px;}" +
     ".dmp-k{margin:14px 0 0;font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;color:var(--mid);font-weight:500;}" +
     ".dmp-h{margin:8px 0 0;font-weight:300;font-size:1.65rem;line-height:1.2;color:var(--deep);}" +
     ".dmp-p{margin:8px 0 0;color:var(--soft);font-weight:300;font-size:.95rem;}" +
@@ -103,8 +103,8 @@
   var logo = document.createElement("img");
   logo.src = logoHref;
   logo.alt = t.logoAlt;
-  logo.width = 34;
-  logo.height = 26;
+  logo.width = 27;
+  logo.height = 40;
   box.appendChild(logo);
 
   var kicker = document.createElement("p");

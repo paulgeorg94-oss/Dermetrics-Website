@@ -93,7 +93,7 @@ body { padding-top: 68px; }
   gap: 24px;
 }
 .topnav .brandrow { display: flex; align-items: center; gap: 12px; text-decoration: none; margin-bottom: 0; }
-.topnav .brandrow img { width: 30px; height: 30px; border-radius: 7px; display: block; }
+.topnav .brandrow img { width: auto; height: 30px; display: block; }
 .topnav .brandmark { font-size: 13px; letter-spacing: 0.14em; color: var(--aubergine); font-weight: 500; }
 .topnav nav { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
 .topnav nav a {
@@ -166,7 +166,7 @@ body { padding-top: 68px; }
 }
 .header.compact { padding: 40px 0 34px; }
 .brandrow { display: flex; align-items: center; gap: 14px; margin-bottom: 34px; }
-.brandrow img { width: 34px; height: 34px; border-radius: 8px; display: block; }
+.brandrow img { width: auto; height: 34px; display: block; }
 .brandmark { font-size: 14px; letter-spacing: 0.14em; color: var(--aubergine); font-weight: 500; }
 .brandmark .tagline { display: block; font-size: 10px; letter-spacing: 0.10em; color: var(--muted); font-weight: 400; margin-top: 3px; }
 .kicker { font-size: 13.5px; color: var(--muted); margin: 0 0 16px; letter-spacing: 0.02em; }
