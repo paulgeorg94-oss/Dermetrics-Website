@@ -11,6 +11,7 @@
 <link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
 <link href="../css/style.css" rel="stylesheet"/>
+<link rel="stylesheet" href="../assets/stageshow/stageshow.css">
 <link rel="canonical" href="https://dermetrics.ch/en/index.html">
 <link rel="alternate" hreflang="de-CH" href="https://dermetrics.ch/">
 <link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/index.html">
@@ -379,6 +380,8 @@
 <p class="eyebrow">Dermetrics App</p>
 <h2>Your progress, always in view</h2>
 <div class="appmock">
+<div class="app-col">
+<div class="app-stage" data-stageshow="app" data-signet="../assets/logo-dermetrics.svg">
 <div class="phone">
 <div class="statline">
 <span class="score">82<span style="font-size:16px;">/100</span></span>
@@ -392,7 +395,9 @@
 <div class="tabs">
 <span>Overview</span><span>Timeline</span><span>Mole Log</span><span>Knowledge</span><span>Reports</span>
 </div>
-<p class="disclaimer">Sample data — not real patient data.</p>
+</div>
+</div>
+<p class="app-sample">Sample data — not real patient data.</p>
 </div>
 <div class="features">
 <span class="badge-soon">Coming soon</span>
@@ -835,5 +840,6 @@ var FORMSPREE_FORM_ID = ''; // e.g. 'xzbqrsty' — once set, sending goes throug
   });
 })();
 </script>
+<script type="module" src="../assets/stageshow/stageshow.js"></script>
 </body>
 </html>

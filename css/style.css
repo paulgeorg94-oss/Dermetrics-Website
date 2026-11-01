@@ -959,3 +959,8 @@ table.plain td { color: var(--ink); }
 @media (prefers-reduced-motion: reduce) { .tile-media img { transition:none; } .tile:hover .tile-media img { transform:none; } }
 .tile-media--duo { display:grid; grid-template-columns:1fr 1fr; gap:2px; }
 .tile-media--duo img { min-width:0; }
+
+/* ---------- App illustration (Stageshow; source in src/stageshow, build in assets/stageshow) ---------- */
+.app-col { flex: 0 0 400px; max-width: 100%; }
+.app-col .app-stage .phone { max-width: 260px; }
+.app-sample { font-size: 11px; color: var(--muted); font-style: italic; margin: 10px 0 0; text-align: center; }

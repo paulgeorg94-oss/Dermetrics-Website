@@ -1,0 +1,210 @@
+/* Dermetrics scenes. Colors and type follow css/style.css (the site's tokens
+   are read with fallbacks, so the scenes match the page they sit on). */
+.dmx {
+  --dmx-aubergine: var(--aubergine, #300c61);
+  --dmx-mid: var(--aubergine-mid, #4b2c86);
+  --dmx-ink: var(--ink, #241c2e);
+  --dmx-muted: var(--muted, #756b82);
+  --dmx-line: var(--line, #e4dee8);
+  --dmx-tint: var(--notice-bg, #f5f1fa);
+
+  & .ss-stage {
+    --ss-accent: #300c61;
+    --ss-ink: #241c2e;
+    font-family: Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+    color: var(--dmx-ink);
+    overflow: hidden;
+  }
+
+  /* ---- Shared parts ---- */
+
+  .dmx-kicker {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--dmx-mid);
+  }
+
+  .dmx-muted {
+    color: var(--dmx-muted);
+  }
+
+  /* ---- App phone ---- */
+
+  .dmx-wash {
+    position: absolute;
+    inset: 0;
+    border-radius: 14px;
+    background:
+      radial-gradient(60% 80% at 18% 12%, rgba(196, 178, 235, 0.55), transparent 62%),
+      radial-gradient(70% 90% at 88% 82%, rgba(245, 190, 150, 0.4), transparent 62%),
+      #fbf6f1;
+  }
+
+  .dmx-phone {
+    position: absolute;
+    top: 48px;
+    left: 50px;
+  }
+
+  .dmx-screen {
+    position: absolute;
+    inset: 0;
+    background: #fbf8f6;
+  }
+
+  .dmx-signet {
+    display: block;
+  }
+
+  .dmx-head {
+    position: absolute;
+    top: 64px;
+    left: 37px;
+    right: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .dmx-title {
+    font-size: 30px;
+    font-weight: 300;
+    color: var(--dmx-aubergine);
+  }
+
+  .dmx-score {
+    position: absolute;
+    top: 122px;
+    left: 16px;
+    right: 16px;
+    display: grid;
+    gap: 6px;
+    padding: 18px 20px 20px;
+    border: 1px solid var(--dmx-line);
+    border-radius: 20px;
+    background: #fff;
+  }
+
+  .dmx-score .dmx-kicker {
+    font-size: 12px;
+    color: var(--dmx-muted);
+  }
+
+  .dmx-score__row {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+  }
+
+  .dmx-score__value {
+    font-size: 52px;
+    font-weight: 300;
+    line-height: 1;
+    color: var(--dmx-aubergine);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .dmx-score__max {
+    font-size: 17px;
+    color: var(--dmx-muted);
+  }
+
+  .dmx-delta {
+    margin-left: auto;
+    align-self: center;
+    padding: 5px 10px;
+    border-radius: 999px;
+    background: var(--dmx-tint);
+    color: var(--dmx-mid);
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateY(4px);
+    will-change: transform;
+    transition: opacity 0.4s ease, transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  .dmx-delta[data-show] {
+    opacity: 1;
+    transform: none;
+  }
+
+  .dmx-trend {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    height: 74px;
+    margin-top: 12px;
+  }
+
+  .dmx-trend__bar {
+    flex: 1;
+    border-radius: 5px 5px 2px 2px;
+    background: var(--dmx-line);
+  }
+
+  .dmx-trend__bar--now {
+    height: 60px;
+    background: var(--dmx-aubergine);
+    transition: height 0.9s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  .dmx-trend__bar--now[data-up] {
+    height: 70px;
+  }
+
+  .dmx-list {
+    position: absolute;
+    top: 352px;
+    left: 16px;
+    right: 16px;
+    padding: 0 18px;
+    border: 1px solid var(--dmx-line);
+    border-radius: 20px;
+    background: #fff;
+  }
+
+  .dmx-prow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    min-height: 52px;
+    font-size: 15px;
+  }
+
+  .dmx-prow + .dmx-prow {
+    border-top: 1px solid var(--dmx-line);
+  }
+
+  .dmx-prow .dmx-muted {
+    white-space: nowrap;
+  }
+
+  .dmx-banner {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(-28px);
+    will-change: transform;
+    transition: opacity 0.35s ease, transform 0.6s cubic-bezier(0.2, 0.9, 0.25, 1);
+  }
+
+  .dmx-banner[data-show] {
+    opacity: 1;
+    transform: none;
+  }
+
+  .dmx-appicon {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background: #fff;
+  }
+}
