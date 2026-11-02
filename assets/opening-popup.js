@@ -1,12 +1,14 @@
 // Dermetrics — Popup Praxiseröffnung mit Countdown (ersetzt das frühere
-// assets/promo-banner.js). Erscheint bei jedem Seitenaufruf 1.5 Sekunden
-// nach dem Laden, auf allen Seiten ausser der Einladungsseite selbst
+// assets/promo-banner.js). Erscheint einmal pro Besucher (localStorage),
+// 1.5 Sekunden nach dem Laden der ersten Seite, auf allen Seiten ausser der
+// Einladungsseite selbst
 // (eroeffnung.html / en/eroeffnung.html, dort via fehlenden Script-Tag
 // ausgeschlossen; die Pfadprüfung unten ist eine zusätzliche Absicherung).
 // Zweisprachig (DE/EN) über document.documentElement.lang.
 (function () {
   "use strict";
 
+  var STORAGE_KEY = "dmp-eroeffnung-gesehen";
   var TARGET = "2026-12-14T18:00:00+01:00"; // Beginn Eröffnungsapéro
   var UNTIL = "2026-12-14T20:30:00+01:00"; // Ende Eröffnungsapéro
   var SHOW_DELAY_MS = 1500; // Verzögerung bis zum Erscheinen
@@ -21,6 +23,9 @@
   // Nicht anzeigen, wenn wir bereits auf der Einladungsseite selbst sind.
   if (/eroeffnung\.html$/.test(location.pathname)) return;
   if (Date.now() > Date.parse(UNTIL)) return;
+  try {
+    if (window.localStorage.getItem(STORAGE_KEY)) return;
+  } catch (e) { /* localStorage nicht verfügbar (z. B. privater Modus) — Popup erscheint dann bei jedem Aufruf */ }
 
   var t = isEn
     ? {
@@ -212,6 +217,9 @@
     tick();
     countdownTimer = setInterval(tick, 1000);
     overlay.classList.add("dmp-visible");
+    // Als gesehen merken, sobald es erscheint: auch wer es nicht schliesst,
+    // bekommt es auf der nächsten Seite nicht noch einmal
+    try { window.localStorage.setItem(STORAGE_KEY, "1"); } catch (e) { /* ignore */ }
     document.addEventListener("keydown", onKey);
     closeBtn.focus();
     autoCloseTimer = setTimeout(close, AUTO_CLOSE_MS);
