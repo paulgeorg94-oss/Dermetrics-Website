@@ -65,17 +65,19 @@ body {
 .brandrow { display: flex; align-items: center; gap: 14px; margin-bottom: 34px; }
 .brandrow img { width: auto; height: 34px; display: block; }
 .brandmark { font-size: 14px; letter-spacing: 0.14em; color: var(--aubergine); font-weight: 500; }
-.brandmark .tagline { display: block; font-size: 10px; letter-spacing: 0.10em; color: var(--muted); font-weight: 400; margin-top: 3px; }
+.brandmark .tagline { display: block; font-size: 11px; letter-spacing: 0.10em; color: var(--muted); font-weight: 400; margin-top: 3px; }
 .kicker { font-size: 13.5px; color: var(--muted); margin: 0 0 16px; }
 h1 { font-size: 27px; font-weight: 300; line-height: 1.3; letter-spacing: -0.005em; margin: 0 0 8px; }
 .h1sub { font-size: 15px; font-weight: 400; color: var(--muted); display: block; margin-top: 4px; }
 .subhead { font-size: 15px; color: var(--muted); max-width: 52ch; margin: 14px 0 0; }
 
 .body { padding: 38px 32px 8px; }
-.tldr { background: #F3EEFA; border-radius: 12px; padding: 18px 20px; margin: 0 0 28px; }
+.tldr { background: #F3EEFA; border-radius: 16px; padding: 18px 20px; margin: 0 0 28px; }
 .tldr p { font-size: 14.5px; color: var(--ink); line-height: 1.6; margin: 0; }
 .tldr strong { color: var(--aubergine); }
 .list-label { font-size: 13px; color: var(--muted); margin: 0 0 14px; }
+/* A label after running text starts a new group: room above, close to what it introduces */
+.intro + .list-label { margin-top: 32px; }
 .intro p { font-size: 15px; color: var(--ink); line-height: 1.65; margin: 0 0 16px; }
 .intro p:last-child { margin-bottom: 0; }
 
@@ -92,12 +94,12 @@ h1 { font-size: 27px; font-weight: 300; line-height: 1.3; letter-spacing: -0.005
 .simplelist { margin: 0 0 40px; padding-left: 20px; }
 .simplelist li { font-size: 14.5px; color: var(--ink); line-height: 1.6; margin-bottom: 9px; }
 .simplelist li:last-child { margin-bottom: 0; }
-.simplelist.muted li { color: var(--muted); }
 
 .pullquote { padding: 4px 0 40px; border-top: 1px solid var(--line); margin-top: -8px; }
+.intro + .pullquote { margin-top: 32px; }
 .pullquote p { font-size: 17px; font-weight: 300; color: var(--aubergine-mid); line-height: 1.55; max-width: 54ch; margin: 24px 0 0; }
 
-.notice { background: var(--notice-bg); border-radius: 14px; padding: 22px 24px; margin: 0 0 40px; }
+.notice { background: var(--notice-bg); border-radius: 16px; padding: 22px 24px; margin: 0 0 40px; }
 .notice h3 { font-size: 13.5px; font-weight: 500; color: var(--aubergine); margin: 0 0 14px; }
 .notice ul { margin: 0; padding-left: 20px; }
 .notice li { font-size: 14px; color: var(--ink); line-height: 1.55; margin-bottom: 7px; }
@@ -148,6 +150,7 @@ h1 { font-size: 27px; font-weight: 300; line-height: 1.3; letter-spacing: -0.005
   border: none;
   border-radius: 999px;
   padding: 9px 18px;
+  line-height: 18px;
   cursor: pointer;
 }
 .share-btn:hover { opacity: .88; }

@@ -4,6 +4,10 @@
    Paul Hecker vorliegt — Struktur und Klassen bleiben dabei erhalten. */
 
 :root {
+  /* Shape scale: controls and inner boxes, cards and notices, large frames */
+  --r-sm: 10px;
+  --r-md: 16px;
+  --r-lg: 20px;
   --aubergine: #300C61;
   --aubergine-mid: #4B2C86;
   --ink: #241C2E;
@@ -113,7 +117,7 @@ body { padding-top: 68px; }
   font-weight: 500;
   color: #fff;
   background: var(--aubergine);
-  padding: 9px 18px;
+  padding: 9px 18px; line-height: 18px;
   border-radius: 999px;
   text-decoration: none;
   white-space: nowrap;
@@ -128,8 +132,10 @@ body { padding-top: 68px; }
     display: inline-flex;
     background: none;
     border: 1px solid var(--line);
-    border-radius: 8px;
-    padding: 8px 10px;
+    border-radius: var(--r-sm);
+    padding: 8px 12px;
+    min-height: 36px;
+    align-items: center;
     font-size: 13px;
     color: var(--ink);
   }
@@ -181,7 +187,7 @@ h1 { font-size: 40px; font-weight: 300; line-height: 1.2; letter-spacing: -0.01e
 .hero-media .portrait {
   width: 100%;
   aspect-ratio: 4/5;
-  border-radius: 20px;
+  border-radius: var(--r-lg);
   overflow: hidden;
   position: relative;
   background:
@@ -209,7 +215,9 @@ h1 { font-size: 40px; font-weight: 300; line-height: 1.2; letter-spacing: -0.01e
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
-  padding: 13px 24px;
+  padding: 12px 24px;
+  line-height: 18px;
+  border: 1px solid transparent;
   border-radius: 999px;
   transition: opacity 0.15s ease;
 }
@@ -246,7 +254,7 @@ h3 { font-size: 15px; font-weight: 500; color: var(--ink); margin: 0 0 8px; }
   padding: 26px 24px;
   background: #fff;
   border: 1px solid var(--line);
-  border-radius: 16px;
+  border-radius: var(--r-md);
 }
 .option .num { font-size: 12px; color: var(--muted); letter-spacing: 0.08em; margin: 0 0 12px; }
 .option .icon { color: var(--aubergine); margin-bottom: 14px; }
@@ -264,7 +272,7 @@ h3 { font-size: 15px; font-weight: 500; color: var(--ink); margin: 0 0 8px; }
 .pillar:first-child { padding-left: 0; }
 .pillar:last-child { padding-right: 0; }
 .pillar-icon { color: var(--aubergine); margin-bottom: 20px; }
-.pillar-icon svg { width: 34px; height: 34px; display: block; }
+.pillar-icon svg { width: 28px; height: 28px; display: block; stroke-width: 1.5; }
 .pillar-title { font-size: 18px; font-weight: 500; color: var(--ink); line-height: 1.35; margin: 0 0 12px; }
 .pillar p { font-size: 14.5px; color: var(--muted); line-height: 1.6; margin: 0; }
 .pillar-divider { width: 1px; align-self: stretch; background: var(--line); flex: 0 0 auto; }
@@ -315,7 +323,7 @@ h3 { font-size: 15px; font-weight: 500; color: var(--ink); margin: 0 0 8px; }
   padding: 26px;
   background: #fff;
   border: 1px solid var(--dm-line);
-  border-radius: 14px;
+  border-radius: var(--r-md);
   color: var(--dm-ink);
   text-decoration: none;
   transition: border-color 0.15s ease, background-color 0.15s ease;
@@ -324,14 +332,14 @@ a.dm-tile:hover { border-color: var(--dm-accent); }
 a.dm-tile:focus-visible { outline: 2px solid var(--dm-focus); outline-offset: 2px; }
 .dm-tile--active { border-color: transparent; background: var(--dm-tile-active-bg); }
 .dm-tile__icon { color: var(--dm-accent); margin-bottom: 4px; }
-.dm-tile__icon svg { width: 30px; height: 30px; display: block; }
+.dm-tile__icon svg { width: 28px; height: 28px; display: block; stroke-width: 1.5; }
 .dm-tile__title { font-size: 17px; font-weight: 500; color: var(--dm-ink); margin: 0; line-height: 1.35; }
 .dm-tile__body { font-size: 14px; color: var(--dm-muted); line-height: 1.55; margin: 0; flex: 1; }
 .dm-tile__link {
-  font-size: 12px; font-weight: 500;
-  letter-spacing: 0.06em; text-transform: uppercase;
+  font-size: 13.5px; font-weight: 500;
   color: var(--dm-accent);
 }
+.dm-tile__link::after { content: " →"; }
 a.dm-tile:hover .dm-tile__link { text-decoration: underline; }
 
 .dm-carousel__controls {
@@ -379,8 +387,8 @@ a.dm-tile:hover .dm-tile__link { text-decoration: underline; }
   color: var(--ink);
   text-decoration: none;
   transition: border-color 0.15s ease, color 0.15s ease;
-}
-.dm-cta-btn svg { flex: 0 0 auto; display: block; }
+ min-height: 44px;}
+.dm-cta-btn svg { flex: 0 0 auto; display: block; stroke-width: 1.5; }
 .dm-cta-btn:hover { border-color: var(--aubergine); color: var(--aubergine); }
 .dm-cta-btn--whatsapp { border-color: #25D366; color: #128C4A; }
 .dm-cta-btn--whatsapp:hover { border-color: #128C4A; color: #128C4A; }
@@ -420,11 +428,12 @@ a.dm-tile:hover .dm-tile__link { text-decoration: underline; }
 /* ---------- Notice ---------- */
 .notice {
   background: var(--notice-bg);
-  border-radius: 14px;
+  border-radius: var(--r-md);
   padding: 22px 26px;
   margin: 28px 0;
 }
 .notice p { font-size: 14px; color: var(--ink); line-height: 1.6; margin: 0; }
+.block .wrap > .notice:first-child { margin-top: 0; }
 .notice strong { color: var(--aubergine); }
 
 /* ---------- Pullquote ---------- */
@@ -485,7 +494,7 @@ table.plain td { color: var(--ink); }
 .pc-card {
   background: #fff;
   border: 1px solid var(--line);
-  border-radius: 20px;
+  border-radius: var(--r-lg);
   padding: 32px 28px 28px;
   margin: 28px auto 0;
   max-width: 560px;
@@ -524,7 +533,7 @@ table.plain td { color: var(--ink); }
   text-align: left;
   width: 100%;
   padding: 15px 18px;
-  border-radius: 12px;
+  border-radius: var(--r-sm);
   border: 1px solid var(--line);
   background: var(--ivory);
   cursor: pointer;
@@ -589,7 +598,7 @@ table.plain td { color: var(--ink); }
 .pc-disclaimer {
   margin-top: 20px;
   padding: 16px 18px;
-  border-radius: 12px;
+  border-radius: var(--r-sm);
   background: var(--notice-bg);
   font-size: 13px;
   line-height: 1.6;
@@ -603,7 +612,7 @@ table.plain td { color: var(--ink); }
 .pc-pdfbox {
   margin-top: 20px;
   padding: 20px;
-  border-radius: 12px;
+  border-radius: var(--r-sm);
   border: 1px solid var(--line);
   background: #fff;
 }
@@ -615,7 +624,7 @@ table.plain td { color: var(--ink); }
   font-family: inherit;
   font-size: 13.5px;
   padding: 11px 14px;
-  border-radius: 8px;
+  border-radius: var(--r-sm);
   border: 1px solid var(--line);
   background: var(--ivory);
   color: var(--ink);
@@ -672,7 +681,7 @@ table.plain td { color: var(--ink); }
   min-width: 0;
   aspect-ratio: 4/3;
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: var(--r-md);
   display: block;
 }
 @media (max-width: 720px) {
@@ -703,7 +712,7 @@ table.plain td { color: var(--ink); }
   height: 96px;
   background: #fff;
   border: 1px solid var(--line);
-  border-radius: 10px;
+  border-radius: var(--r-sm);
   padding: 6px;
   display: flex;
   align-items: center;
@@ -723,6 +732,7 @@ table.plain td { color: var(--ink); }
   border: none;
   border-radius: 999px;
   padding: 9px 18px;
+  line-height: 18px;
   cursor: pointer;
 }
 .share-btn:hover { opacity: .88; }
@@ -749,10 +759,17 @@ table.plain td { color: var(--ink); }
 .formcard {
   background: #fff;
   border: 1px solid var(--line);
-  border-radius: 16px;
+  border-radius: var(--r-md);
   padding: 32px;
   margin-top: 32px;
   max-width: 560px;
+}
+.contact-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 28px; align-items: start; margin-top: 32px; }
+.contact-grid > .notice { margin: 0; }
+.contact-grid > .formcard { margin-top: 0; max-width: none; }
+@media (max-width: 860px) {
+  .contact-grid { grid-template-columns: 1fr; }
+  .contact-grid > .notice { order: -1; }
 }
 .formcard label { display: block; font-size: 13px; color: var(--muted); margin: 16px 0 6px; }
 .formcard label:first-child { margin-top: 0; }
@@ -784,9 +801,9 @@ table.plain td { color: var(--ink); }
   font-weight: 500;
   color: #fff;
   background: var(--aubergine);
-  border: none;
+  border: 1px solid transparent;
   border-radius: 999px;
-  padding: 13px 26px;
+  padding: 12px 24px; line-height: 18px;
   cursor: pointer;
 }
 
@@ -795,7 +812,7 @@ table.plain td { color: var(--ink); }
 .tf-item {
   background: #fff;
   border: 1px solid var(--line);
-  border-radius: 14px;
+  border-radius: var(--r-md);
   padding: 18px 22px;
   display: flex;
   flex-direction: column;
@@ -811,7 +828,8 @@ table.plain td { color: var(--ink); }
 .tf-item .tf-buttons { display: flex; gap: 8px; flex: 0 0 auto; }
 .tf-item .tf-buttons button {
   font-family: inherit;
-  font-size: 12.5px;
+  font-size: 13px;
+  line-height: 18px;
   padding: 8px 16px;
   border-radius: 999px;
   border: 1px solid var(--line);
@@ -840,15 +858,22 @@ table.plain td { color: var(--ink); }
 .footer ul a { font-size: 13px; color: var(--ink); text-decoration: none; }
 .footer ul a:hover { color: var(--aubergine-mid); }
 .footer .legalrow { margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+/* The closing row (FMH note, then copyright) runs the full width as one block */
+.footer .wrap + .wrap { display: block; }
+.footer .wrap + .wrap .legalrow { margin-top: 18px; padding-top: 18px; }
+.footer .legalrow > span { font-size: 12px; color: var(--muted); }
 .footer .legalrow a { font-size: 12px; color: var(--muted); text-decoration: none; margin-right: 18px; }
 .footer .fmh-note { font-size: 11.5px; color: var(--muted); max-width: 640px; margin-top: 18px; }
 
 /* ---------- Tiles (Patienteninformationen & Behandlungspläne) ---------- */
 .tilegrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin: 28px 0 0;
+}
+@media (max-width: 960px) {
+  .tilegrid { grid-template-columns: repeat(2, 1fr); }
 }
 .tile {
   --tile-grad:
@@ -862,7 +887,7 @@ table.plain td { color: var(--ink); }
   padding: 26px 24px 22px;
   background: #fff;
   border: 1px solid var(--line);
-  border-radius: 18px;
+  border-radius: var(--r-md);
   color: var(--ink);
   text-decoration: none;
   overflow: hidden;
@@ -893,12 +918,12 @@ table.plain td { color: var(--ink); }
   justify-content: center;
   width: 46px;
   height: 46px;
-  border-radius: 13px;
+  border-radius: var(--r-sm);
   background: rgba(255,255,255,0.85);
   color: var(--aubergine);
   transition: background .25s ease, color .25s ease;
 }
-.tile-icon svg { width: 24px; height: 24px; display: block; }
+.tile-icon svg { width: 24px; height: 24px; display: block; stroke-width: 1.5; }
 .tile-body { display: flex; flex-direction: column; gap: 6px; }
 .tile-title { font-size: 17px; font-weight: 500; line-height: 1.3; color: var(--ink); }
 .tile-text { font-size: 14px; line-height: 1.55; color: var(--muted); }
@@ -927,6 +952,38 @@ table.plain td { color: var(--ink); }
 .tile--wide { grid-column: 1 / -1; flex-direction: row; align-items: center; gap: 20px; }
 .tile--wide .tile-body { flex: 1 1 auto; }
 .tile--wide .tile-cta { margin-top: 0; padding-top: 0; white-space: nowrap; }
+/* A card without a photo shows its icon on the media slot, so it is as tall
+   as its neighbours instead of ending in an empty band */
+.tilegrid > .tile:not(.tile--wide):not(:has(.tile-media)) .tile-icon {
+  width: auto;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  margin: -26px -24px 0;
+  border-radius: 0;
+  background: var(--notice-bg);
+}
+.tilegrid > .tile:not(.tile--wide):not(:has(.tile-media)) .tile-icon svg { width: 40px; height: 40px; stroke-width: 1.25; }
+.tilegrid > .tile:not(.tile--wide):not(:has(.tile-media)):hover .tile-icon,
+.tilegrid > .tile:not(.tile--wide):not(:has(.tile-media)):focus-visible .tile-icon { background: var(--notice-bg); color: var(--aubergine); }
+
+/* A card left alone in its row runs across it, photo beside text, instead of
+   leaving empty cells next to it */
+@media (min-width: 961px) {
+  .tilegrid > .tile:last-child:nth-child(3n+1) { grid-column: 1 / -1; flex-direction: row; align-items: center; gap: 24px; }
+  .tilegrid > .tile:last-child:nth-child(3n+1) .tile-media { flex: 0 0 34%; align-self: stretch; aspect-ratio: auto; min-height: 150px; margin: -26px 0 -22px -24px; }
+  .tilegrid > .tile:last-child:nth-child(3n+1) .tile-body { flex: 1 1 auto; }
+  .tilegrid > .tile:last-child:nth-child(3n+1) .tile-cta { margin-top: 0; padding-top: 0; white-space: nowrap; }
+  .tilegrid > .tile:last-child:nth-child(3n+1):not(:has(.tile-media)) .tile-icon { flex: none; width: 46px; height: 46px; aspect-ratio: auto; margin: 0; border-radius: var(--r-sm); background: rgba(255,255,255,0.85); }
+  .tilegrid > .tile:last-child:nth-child(3n+1):not(:has(.tile-media)) .tile-icon svg { width: 24px; height: 24px; stroke-width: 1.5; }
+}
+@media (min-width: 721px) and (max-width: 960px) {
+  .tilegrid > .tile:last-child:nth-child(odd) { grid-column: 1 / -1; flex-direction: row; align-items: center; gap: 24px; }
+  .tilegrid > .tile:last-child:nth-child(odd) .tile-media { flex: 0 0 40%; align-self: stretch; aspect-ratio: auto; min-height: 150px; margin: -26px 0 -22px -24px; }
+  .tilegrid > .tile:last-child:nth-child(odd) .tile-body { flex: 1 1 auto; }
+  .tilegrid > .tile:last-child:nth-child(odd) .tile-cta { margin-top: 0; padding-top: 0; white-space: nowrap; }
+  .tilegrid > .tile:last-child:nth-child(odd):not(:has(.tile-media)) .tile-icon { flex: none; width: 46px; height: 46px; aspect-ratio: auto; margin: 0; border-radius: var(--r-sm); background: rgba(255,255,255,0.85); }
+  .tilegrid > .tile:last-child:nth-child(odd):not(:has(.tile-media)) .tile-icon svg { width: 24px; height: 24px; stroke-width: 1.5; }
+}
 @media (max-width: 720px) {
   .tilegrid { grid-template-columns: 1fr; gap: 16px; }
   .tile--wide { flex-direction: column; align-items: flex-start; gap: 14px; }
