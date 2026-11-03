@@ -1030,3 +1030,27 @@ table.plain td { color: var(--ink); }
 .wa-btn { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 20px; border: 1px solid #25D366; border-radius: 999px; background: #fff; color: #128C4A; font-size: 14px; font-weight: 500; line-height: 18px; text-decoration: none; }
 .wa-btn:hover { border-color: #128C4A; }
 .wa-btn svg { flex: none; display: block; }
+
+/* ---------- Leistungsübersicht, Qualifikation, FAQ (Startseite) ---------- */
+.svc-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin-top: 28px; }
+.svc-card { background: #fff; border: 1px solid var(--line); border-radius: var(--r-md); padding: 24px 26px; }
+.svc-card h3 { font-size: 17px; font-weight: 500; color: var(--ink); margin: 0 0 12px; }
+.svc-card ul { margin: 0; padding-left: 18px; }
+.svc-card li { font-size: 14.5px; color: var(--ink); line-height: 1.6; margin-bottom: 8px; }
+.svc-card li:last-child { margin-bottom: 0; }
+.svc-more { font-size: 14px; color: var(--muted); margin: 22px 0 0; }
+@media (max-width: 720px) {
+  .svc-grid { grid-template-columns: 1fr; gap: 16px; }
+}
+.qual-list { margin-top: 20px; }
+.qual-list strong { font-weight: 500; color: var(--ink); }
+.faq-list { margin-top: 24px; border-top: 1px solid var(--line); }
+.faq-item { border-bottom: 1px solid var(--line); }
+.faq-item summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 16px; padding: 18px 0; font-size: 15.5px; font-weight: 500; color: var(--ink); }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: "+"; flex: none; font-weight: 300; font-size: 20px; line-height: 1; color: var(--aubergine); }
+.faq-item[open] summary::after { content: "–"; }
+.faq-item summary:focus-visible { outline: 2px solid var(--aubergine-mid); outline-offset: 2px; border-radius: 4px; }
+.faq-item p { font-size: 14.5px; color: var(--muted); line-height: 1.65; margin: 0 0 18px; max-width: 74ch; }
+.referrals { font-size: 14px; color: var(--ink); margin: 28px 0 0; }
+.referrals strong { font-weight: 500; color: var(--aubergine); }

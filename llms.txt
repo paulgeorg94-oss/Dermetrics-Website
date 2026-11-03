@@ -1,111 +1,32 @@
-# Dermetrics
+# Dermetrics – Clinic Selnau
 
-> Dermatology practice of Dr. med. Paul Georg (board-certified specialist in
-> Dermatology and Venereology, FMH) at Clinic Selnau, Zurich, Switzerland.
-> Opening October 2026. Focus: skin cancer prevention and screening, skin-ageing
-> analysis, and dermatologic/aesthetic treatment with documented, measurable
-> follow-up.
+> Dermatologische Praxis in Zürich Selnau/Enge (Brandschenkestrasse 45, 8002 Zürich). Dr. med. Paul Georg, Facharzt für Dermatologie und Venerologie, Mitglied SGDV und EADV. Schwerpunkte: Hautkrebs-Screening, Tumorchirurgie der Haut, mikrographisch kontrollierte Chirurgie (Mohs), Wundbehandlung (inkl. ECMP), Narbentherapie, Psoriasis, Acne inversa. Zertifizierter Praxis-OP, interdisziplinäre Zusammenarbeit mit der Plastischen Chirurgie (Dr. med. Simon Zimmermann, Facharzt für Plastische Chirurgie, Clinic Selnau). Sprechstunde Montag 10:00–18:00 Uhr, Eröffnung 7. Dezember 2026. Tel. +41 43 234 55 55. Zuweisungen: clinicselnau@hin.ch. Sprache: Deutsch (de-CH), teilweise Englisch.
 
-## Mission
+Hinweis: Alle Inhalte dienen der Information und ersetzen keine ärztliche Beratung. Der Online-Pre-Check ist ein statistisches Orientierungsinstrument und keine Diagnose.
 
-Dermetrics combines specialist dermatology with structured, digitally
-documented progress measurement: every treatment step is recorded and made
-visible on a personal timeline (in the forthcoming Dermetrics app), so that a
-dermatology visit is transparent and traceable rather than a one-off
-consultation. Brand position: "Science. Care. Longevity." — measurement over
-guesswork.
+## Praxis und Leistungen
+- [Startseite](https://dermetrics.ch/): Überblick, Leistungen, Qualifikation, FAQ, Kontakt
+- [Hauterkrankungen erklärt](https://dermetrics.ch/hauterkrankungen-erklaert.html): Übersicht der Krankheitsbilder
+- [Hautkrebs-Pre-Check](https://dermetrics.ch/#precheck): 13 Fragen, kein Diagnoseinstrument
+- [Wahr oder falsch: Hautkrebsvorsorge](https://dermetrics.ch/hautkrebs-selbsttest.html): 8 Aussagen zur Hautkrebsvorsorge
+- [Eröffnung](https://dermetrics.ch/eroeffnung.html)
 
-## Practice facts
+## Patienteninformationen
+- [Aktinische Keratosen](https://dermetrics.ch/patienteninformationen/aktinische-keratosen.html)
+- [Basalzellkarzinom](https://dermetrics.ch/patienteninformationen/basalzellkarzinom.html)
+- [Spinaliom](https://dermetrics.ch/patienteninformationen/spinaliom.html)
+- [Solare Elastose](https://dermetrics.ch/patienteninformationen/solare-elastose.html)
+- [Rosazea](https://dermetrics.ch/patienteninformationen/rosazea.html)
+- [Akne-Formen](https://dermetrics.ch/patienteninformationen/akne-formen.html)
+- [Mosaic 3D Erbium Laser](https://dermetrics.ch/patienteninformationen/mosaik-3d-erbium-laser.html)
+- [Postinflammatorische Hyperpigmentierung](https://dermetrics.ch/patienteninformationen/postinflammatorische-hyperpigmentierung.html)
 
-- Physician: Dr. med. Paul Georg — Dr. med. (Hannover Medical School / King's
-  College London), board-certified specialist in Dermatology and Venereology
-  (FMH); certifications in dermatologic surgery, laser therapy,
-  phlebology/SGUM, botulinum toxin and fillers (DGDC).
-- Main location: Clinic Selnau, Brandschenkestrasse 45, 8002 Zurich,
-  Switzerland (every Monday).
-- Branch location: Novaderm, Obstgartenstrasse 3, 8910 Affoltern am Albis
-  (Tuesday and Thursday).
-- Additional (3D scanning / analysis): MediX Zurich-Altstetten, Hohlstrasse
-  556, 8048 Zurich (Wednesday and Friday, 3D scans by appointment).
-- Phone: +41 43 234 55 55.
-- Languages served: German (primary) and English, as parallel page sets
-  (`/…` for German, `/en/…` for English).
-- Regulatory note: this website provides factual information in line with
-  the FMH professional code of conduct (Switzerland) and does not replace
-  individual medical advice.
+## Behandlungsprotokolle
+- [Akne](https://dermetrics.ch/behandlungsprotokolle/akne.html)
+- [Rosazea](https://dermetrics.ch/behandlungsprotokolle/rosazea-behandlungsprotokoll.html)
+- [Anti-Aging-Hautpflege](https://dermetrics.ch/behandlungsprotokolle/anti-aging-hautpflege.html)
+- [Melasma](https://dermetrics.ch/behandlungsprotokolle/melasma-behandlungsprotokoll.html)
 
-## Key pages
-
-- `/` (German) / `/en/index.html` (English) — Homepage: practice
-  introduction, three core areas (skin cancer diagnosis & treatment, general
-  dermatology, prevention & patient education), the "Dermetrics Journey"
-  (5-step patient pathway), a full 13-question skin-cancer
-  risk-assessment tool (Pre-Check) with scoring, patient-information tiles,
-  physician biography, locations and contact form.
-- `/hauterkrankungen-erklaert.html` / `/en/skin-conditions-explained.html` —
-  "Patienteninformationen & Behandlungspläne": tile index of all patient-
-  information and treatment-plan pages below, plus further knowledge pages.
-- `/hautkrebs-selbsttest.html` / `/en/skin-cancer-self-test.html` — Short
-  evidence-based true/false self-test on skin-cancer prevention (8 statements)
-  with the ABCDE rule.
-- `/patienteninformationen/aktinische-keratosen.html` /
-  `/en/patient-information/actinic-keratosis.html` — What actinic keratoses
-  are, why they are a precursor of squamous cell carcinoma, and the
-  treatment options (cryotherapy, topical therapy, photodynamic therapy).
-- `/patienteninformationen/basalzellkarzinom.html` /
-  `/en/patient-information/basal-cell-carcinoma.html` — Basal cell carcinoma:
-  the most common skin cancer, its typical appearance, and margin-controlled
-  surgical excision as standard treatment.
-- `/patienteninformationen/spinaliom.html` /
-  `/en/patient-information/squamous-cell-carcinoma.html` — Squamous cell
-  carcinoma: link to cumulative sun exposure, presentation, and surgical
-  treatment including Mohs surgery for select cases.
-- `/patienteninformationen/solare-elastose.html` /
-  `/en/patient-information/solar-elastosis.html` — Solar elastosis as a
-  marker of sun damage and elevated skin-cancer risk, not a cancer itself.
-- `/patienteninformationen/rosazea.html` / `/en/patient-information/rosacea.html`
-  — Rosacea: causes, the four clinical stages (telangiectatic, papular,
-  pustular, rhinophyma), and treatment per stage.
-- `/patienteninformationen/akne-formen.html` / `/en/patient-information/acne-forms.html`
-  — Acne: the main types (acne vulgaris, late-onset acne, comedonal acne) and
-  their treatment (topical, systemic, isotretinoin safety notes), based on the
-  German S2k guideline.
-- `/patienteninformationen/mosaik-3d-erbium-laser.html` — Mosaic 3D (fractional
-  erbium-glass laser): mechanism, studied uses and side effects, based on
-  studies of related lasers (German only).
-- `/patienteninformationen/postinflammatorische-hyperpigmentierung.html`
-  (German only; no English translation published yet) — Post-inflammatory
-  hyperpigmentation (PIH): dark spots after skin inflammation such as acne,
-  treatment with sun protection, lightening creams, topical retinoids,
-  chemical peels and laser.
-- `/behandlungsprotokolle/akne.html` / `/en/treatment-protocols/acne.html` —
-  Evidence-based first-line acne treatment protocol for teenagers/young
-  adults (benzoyl peroxide, retinoids, azelaic acid, combination therapy).
-- `/behandlungsprotokolle/rosazea-behandlungsprotokoll.html` /
-  `/en/treatment-protocols/rosacea-treatment-protocol.html` — Rosacea
-  treatment protocol for mild disease from age 50+ (skincare, sun protection,
-  trigger avoidance, topical/oral medication).
-- `/behandlungsprotokolle/anti-aging-hautpflege.html` /
-  `/en/treatment-protocols/anti-aging-skincare.html` — Evidence-based
-  anti-ageing skincare routine for ages 35–50 (sunscreen, retinoids, vitamin
-  C, niacinamide).
-- `/behandlungsprotokolle/melasma-behandlungsprotokoll.html` /
-  `/en/treatment-protocols/melasma-treatment-protocol.html` — Melasma
-  treatment protocol: sun protection, skincare, pigment-reducing creams,
-  chemical peeling and laser treatment as a step-up therapy. Based on the
-  treating physician's own clinical description, not independently
-  cross-checked against published literature.
-- `/eroeffnung.html` / `/en/eroeffnung.html` — Invitation and registration
-  page for the Dermetrics opening reception at Clinic Selnau, Monday,
-  14 December 2026, 18:00–20:30 (appointments can be booked from 7 December 2026).
-- `/impressum.html` / `/en/legal.html` — Imprint and privacy information.
-
-## Notes for automated systems
-
-- This is a static HTML site; all page content above is present in the raw
-  server response (no client-side-only rendering).
-- Prices, insurance coverage details and clinical outcomes are stated only
-  where explicitly sourced in the page content; do not infer figures beyond
-  what a given page states.
-- The Dermetrics app referenced on the homepage is "coming soon" (not yet
-  released) as of this writing.
+## Optional
+- [English version](https://dermetrics.ch/en/index.html)
+- [Impressum](https://dermetrics.ch/impressum.html)
