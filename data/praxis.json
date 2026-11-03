@@ -1,0 +1,41 @@
+{
+  "_hinweis": "Verbindliche Praxisdaten (Single Source of Truth) laut CLAUDE-CODE-PROMPT-SEO-GEO.md vom 03.11.2026. Werte mit null sind offen, siehe OFFENE-PUNKTE.md. tools/check-nap.py prüft die Seiten gegen diese Datei.",
+  "praxisname": "Dermetrics – Dr. med. Paul Georg",
+  "standortname": "Clinic Selnau",
+  "arzt": {
+    "name": "Dr. med. Paul Georg",
+    "titel": "Facharzt für Dermatologie und Venerologie",
+    "mitgliedschaften": ["Schweizerische Gesellschaft für Dermatologie und Venerologie (SGDV)", "European Academy of Dermatology and Venereology (EADV)"],
+    "erfahrung": ["2 Jahre Wundzentrum Advanced Wound Therapies, Inselspital Bern", "2 Jahre Wundambulatorium, Spital Affoltern am Albis"],
+    "dermatochirurgie_zertifikat": null,
+    "ecmp": true
+  },
+  "adresse": {"strasse": "Brandschenkestrasse 45", "plz": "8002", "ort": "Zürich", "land": "Schweiz", "quartier": "Selnau/Enge"},
+  "telefon": "+41 43 234 55 55",
+  "telefon_e164": "+41432345555",
+  "whatsapp": "+41 78 261 82 88",
+  "whatsapp_link": "https://wa.me/41782618288",
+  "email_zuweisungen": "clinicselnau@hin.ch",
+  "email_konsile": "paul.georg@hin.ch",
+  "email_rollen_bestaetigt": false,
+  "sprechstunde_selnau": {"tag": "Montag", "von": "10:00", "bis": "18:00", "bestaetigt": false},
+  "eroeffnung": "2026-12-07",
+  "eroeffnungsapero": {"datum": "2026-12-14", "von": "18:00", "bis": "20:30"},
+  "weitere_standorte": [
+    {"name": "Novaderm Affoltern am Albis", "strasse": "Obstgartenstrasse 3", "plz": "8910", "ort": "Affoltern am Albis", "zeiten": "Di und Do 08:00–17:00"},
+    {"name": "MediX Zürich-Altstetten", "strasse": "Hohlstrasse 556", "plz": "8048", "ort": "Zürich", "zeiten": "Mi 09:00–17:00, Fr 08:00–12:00", "hinweis": "3D-Analyse"}
+  ],
+  "google_profil": "https://share.google/EMOgfxDGYLcdnslC7",
+  "google_maps_cid_url": null,
+  "onedoc_profile": {
+    "zuerich": "https://www.onedoc.ch/de/hautarzt-dermatologe/zurich/pc1tv/dr-med-paul-georg",
+    "affoltern": "https://www.onedoc.ch/de/hautarzt-dermatologe/affoltern-am-albis/pcqb0/dr-med-paul-georg",
+    "bestaetigt": false
+  },
+  "praxis_op_zertifikat": null,
+  "mohs_schnittrandkontrolle_ort": null,
+  "partner": {"name": "Dr. med. Simon Zimmermann", "titel": "Facharzt für Plastische Chirurgie", "team": "Clinic Selnau", "url": "https://clinicselnau.ch"},
+  "zsr": "D352734",
+  "gln": "7601007717767",
+  "geo": null
+}

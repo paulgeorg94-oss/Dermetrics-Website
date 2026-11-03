@@ -1,1 +1,7 @@
-
+# GitHub Pages (Jekyll): interne Arbeitsdateien nicht veröffentlichen
+exclude:
+  - audit
+  - tools
+  - data
+  - src
+  - OFFENE-PUNKTE.md
