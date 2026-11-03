@@ -104,18 +104,38 @@
 
   <url>
     <loc>https://dermetrics.ch/patienteninformationen/mosaik-3d-erbium-laser.html</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/patienteninformationen/mosaik-3d-erbium-laser.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/patient-information/mosaic-3d-erbium-laser.html"/>
+  </url>
+
+  <url>
+    <loc>https://dermetrics.ch/en/patient-information/mosaic-3d-erbium-laser.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/patienteninformationen/mosaik-3d-erbium-laser.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/patient-information/mosaic-3d-erbium-laser.html"/>
   </url>
 
   <url>
     <loc>https://dermetrics.ch/patienteninformationen/postinflammatorische-hyperpigmentierung.html</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/patienteninformationen/postinflammatorische-hyperpigmentierung.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/patient-information/post-inflammatory-hyperpigmentation.html"/>
+  </url>
+
+  <url>
+    <loc>https://dermetrics.ch/en/patient-information/post-inflammatory-hyperpigmentation.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/patienteninformationen/postinflammatorische-hyperpigmentierung.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/patient-information/post-inflammatory-hyperpigmentation.html"/>
   </url>
 
   <url>
@@ -166,7 +186,7 @@
 
   <url>
     <loc>https://dermetrics.ch/en/skin-conditions-explained.html</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/hauterkrankungen-erklaert.html"/>

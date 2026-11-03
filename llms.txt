@@ -39,6 +39,8 @@ Hinweis: Alle Inhalte dienen der Information und ersetzen keine ärztliche Berat
 - [Solar elastosis](https://dermetrics.ch/en/patient-information/solar-elastosis.html)
 - [Rosacea](https://dermetrics.ch/en/patient-information/rosacea.html)
 - [Acne: types and treatment](https://dermetrics.ch/en/patient-information/acne-forms.html)
+- [Mosaic 3D erbium laser](https://dermetrics.ch/en/patient-information/mosaic-3d-erbium-laser.html)
+- [Post-inflammatory hyperpigmentation](https://dermetrics.ch/en/patient-information/post-inflammatory-hyperpigmentation.html)
 - [Treatment protocol: acne](https://dermetrics.ch/en/treatment-protocols/acne.html)
 - [Treatment protocol: rosacea](https://dermetrics.ch/en/treatment-protocols/rosacea-treatment-protocol.html)
 - [Treatment protocol: anti-ageing skincare](https://dermetrics.ch/en/treatment-protocols/anti-aging-skincare.html)
