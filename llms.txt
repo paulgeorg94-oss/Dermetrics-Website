@@ -27,6 +27,24 @@ Hinweis: Alle Inhalte dienen der Information und ersetzen keine ärztliche Berat
 - [Anti-Aging-Hautpflege](https://dermetrics.ch/behandlungsprotokolle/anti-aging-hautpflege.html)
 - [Melasma](https://dermetrics.ch/behandlungsprotokolle/melasma-behandlungsprotokoll.html)
 
+## English
+- [Home](https://dermetrics.ch/en/index.html): overview, services, qualifications, FAQ, contact
+- [Patient information and treatment plans](https://dermetrics.ch/en/skin-conditions-explained.html): overview of skin conditions
+- [Skin cancer Pre-Check](https://dermetrics.ch/en/index.html#precheck): 13 questions, not a diagnostic tool
+- [True or false: skin cancer prevention](https://dermetrics.ch/en/skin-cancer-self-test.html): 8 statements on skin cancer prevention
+- [Opening reception](https://dermetrics.ch/en/eroeffnung.html)
+- [Actinic keratoses](https://dermetrics.ch/en/patient-information/actinic-keratosis.html)
+- [Basal cell carcinoma](https://dermetrics.ch/en/patient-information/basal-cell-carcinoma.html)
+- [Squamous cell carcinoma](https://dermetrics.ch/en/patient-information/squamous-cell-carcinoma.html)
+- [Solar elastosis](https://dermetrics.ch/en/patient-information/solar-elastosis.html)
+- [Rosacea](https://dermetrics.ch/en/patient-information/rosacea.html)
+- [Acne: types and treatment](https://dermetrics.ch/en/patient-information/acne-forms.html)
+- [Treatment protocol: acne](https://dermetrics.ch/en/treatment-protocols/acne.html)
+- [Treatment protocol: rosacea](https://dermetrics.ch/en/treatment-protocols/rosacea-treatment-protocol.html)
+- [Treatment protocol: anti-ageing skincare](https://dermetrics.ch/en/treatment-protocols/anti-aging-skincare.html)
+- [Treatment protocol: melasma](https://dermetrics.ch/en/treatment-protocols/melasma-treatment-protocol.html)
+- [Imprint and privacy](https://dermetrics.ch/en/legal.html)
+
 ## Optional
-- [English version](https://dermetrics.ch/en/index.html)
 - [Impressum](https://dermetrics.ch/impressum.html)
+- [Sitemap](https://dermetrics.ch/sitemap.xml)

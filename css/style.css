@@ -1054,3 +1054,4 @@ table.plain td { color: var(--ink); }
 .faq-item p { font-size: 14.5px; color: var(--muted); line-height: 1.65; margin: 0 0 18px; max-width: 74ch; }
 .referrals { font-size: 14px; color: var(--ink); margin: 28px 0 0; }
 .referrals strong { font-weight: 500; color: var(--aubergine); }
+.svc-card li a { color: var(--aubergine-mid); }
