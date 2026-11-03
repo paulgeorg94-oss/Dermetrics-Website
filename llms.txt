@@ -1,15 +1,15 @@
 # Dermetrics – Clinic Selnau
 
-> Dermatologische Praxis in Zürich Selnau/Enge (Brandschenkestrasse 45, 8002 Zürich). Dr. med. Paul Georg, Facharzt für Dermatologie und Venerologie, Mitglied SGDV und EADV. Schwerpunkte: Hautkrebs-Screening, Tumorchirurgie der Haut, mikrographisch kontrollierte Chirurgie (Mohs), Wundbehandlung (inkl. ECMP), Narbentherapie, Psoriasis, Acne inversa. Zertifizierter Praxis-OP, interdisziplinäre Zusammenarbeit mit der Plastischen Chirurgie (Dr. med. Simon Zimmermann, Facharzt für Plastische Chirurgie, Clinic Selnau). Sprechstunde Montag 10:00–18:00 Uhr, Eröffnung 7. Dezember 2026. Tel. +41 43 234 55 55. Zuweisungen: clinicselnau@hin.ch. Sprache: Deutsch (de-CH), teilweise Englisch.
+> Dermatologische Praxis in Zürich Selnau/Enge (Brandschenkestrasse 45, 8002 Zürich). Dr. med. Paul Georg, Facharzt für Dermatologie und Venerologie, Mitglied SGDV und EADV. Schwerpunkte: Hautkrebs-Screening, Tumorchirurgie der Haut, mikrographisch kontrollierte Chirurgie (Mohs), Wundbehandlung (inkl. ECMP), Narbentherapie, Psoriasis, Acne inversa. Zertifizierter Praxis-OP, interdisziplinäre Zusammenarbeit mit der Plastischen Chirurgie (Dr. med. Simon Zimmermann, Facharzt für Plastische Chirurgie, Clinic Selnau). Sprechstunde Montag 10:00–18:00 Uhr, Eröffnung 7. Dezember 2026. Tel. +41 43 234 55 55. WhatsApp +41 78 261 82 88. Zuweisungen: clinicselnau@hin.ch. Sprachen: Deutsch (de-CH) und Englisch.
 
 Hinweis: Alle Inhalte dienen der Information und ersetzen keine ärztliche Beratung. Der Online-Pre-Check ist ein statistisches Orientierungsinstrument und keine Diagnose.
 
 ## Praxis und Leistungen
-- [Startseite](https://dermetrics.ch/): Überblick, Leistungen, Qualifikation, FAQ, Kontakt
-- [Hauterkrankungen erklärt](https://dermetrics.ch/hauterkrankungen-erklaert.html): Übersicht der Krankheitsbilder
+- [Startseite](https://dermetrics.ch/): Überblick, Auf einen Blick, Leistungen, Qualifikation, FAQ, Kontakt
 - [Hautkrebs-Pre-Check](https://dermetrics.ch/#precheck): 13 Fragen, kein Diagnoseinstrument
+- [Patienteninformationen & Behandlungspläne](https://dermetrics.ch/hauterkrankungen-erklaert.html): Übersicht der Krankheitsbilder und Behandlungspläne
 - [Wahr oder falsch: Hautkrebsvorsorge](https://dermetrics.ch/hautkrebs-selbsttest.html): 8 Aussagen zur Hautkrebsvorsorge
-- [Eröffnung](https://dermetrics.ch/eroeffnung.html)
+- [Eröffnungsapéro Clinic Selnau](https://dermetrics.ch/eroeffnung.html)
 
 ## Patienteninformationen
 - [Aktinische Keratosen](https://dermetrics.ch/patienteninformationen/aktinische-keratosen.html)
@@ -17,36 +17,37 @@ Hinweis: Alle Inhalte dienen der Information und ersetzen keine ärztliche Berat
 - [Spinaliom](https://dermetrics.ch/patienteninformationen/spinaliom.html)
 - [Solare Elastose](https://dermetrics.ch/patienteninformationen/solare-elastose.html)
 - [Rosazea](https://dermetrics.ch/patienteninformationen/rosazea.html)
-- [Akne-Formen](https://dermetrics.ch/patienteninformationen/akne-formen.html)
-- [Mosaic 3D Erbium Laser](https://dermetrics.ch/patienteninformationen/mosaik-3d-erbium-laser.html)
+- [Akne](https://dermetrics.ch/patienteninformationen/akne-formen.html)
+- [Mosaic 3D](https://dermetrics.ch/patienteninformationen/mosaik-3d-erbium-laser.html)
 - [Postinflammatorische Hyperpigmentierung](https://dermetrics.ch/patienteninformationen/postinflammatorische-hyperpigmentierung.html)
 
 ## Behandlungsprotokolle
-- [Akne](https://dermetrics.ch/behandlungsprotokolle/akne.html)
-- [Rosazea](https://dermetrics.ch/behandlungsprotokolle/rosazea-behandlungsprotokoll.html)
-- [Anti-Aging-Hautpflege](https://dermetrics.ch/behandlungsprotokolle/anti-aging-hautpflege.html)
-- [Melasma](https://dermetrics.ch/behandlungsprotokolle/melasma-behandlungsprotokoll.html)
+- [Akne (Behandlungsprotokoll)](https://dermetrics.ch/behandlungsprotokolle/akne.html)
+- [Rosazea-Behandlungsprotokoll](https://dermetrics.ch/behandlungsprotokolle/rosazea-behandlungsprotokoll.html)
+- [Anti-Aging-Hautpflege (Behandlungsprotokoll)](https://dermetrics.ch/behandlungsprotokolle/anti-aging-hautpflege.html)
+- [Melasma-Behandlungsprotokoll](https://dermetrics.ch/behandlungsprotokolle/melasma-behandlungsprotokoll.html)
 
 ## English
-- [Home](https://dermetrics.ch/en/index.html): overview, services, qualifications, FAQ, contact
-- [Patient information and treatment plans](https://dermetrics.ch/en/skin-conditions-explained.html): overview of skin conditions
+- [Home](https://dermetrics.ch/en/index.html): overview, at a glance, services, qualifications, FAQ, contact
 - [Skin cancer Pre-Check](https://dermetrics.ch/en/index.html#precheck): 13 questions, not a diagnostic tool
 - [True or false: skin cancer prevention](https://dermetrics.ch/en/skin-cancer-self-test.html): 8 statements on skin cancer prevention
-- [Opening reception](https://dermetrics.ch/en/eroeffnung.html)
-- [Actinic keratoses](https://dermetrics.ch/en/patient-information/actinic-keratosis.html)
-- [Basal cell carcinoma](https://dermetrics.ch/en/patient-information/basal-cell-carcinoma.html)
-- [Squamous cell carcinoma](https://dermetrics.ch/en/patient-information/squamous-cell-carcinoma.html)
-- [Solar elastosis](https://dermetrics.ch/en/patient-information/solar-elastosis.html)
-- [Rosacea](https://dermetrics.ch/en/patient-information/rosacea.html)
-- [Acne: types and treatment](https://dermetrics.ch/en/patient-information/acne-forms.html)
-- [Mosaic 3D erbium laser](https://dermetrics.ch/en/patient-information/mosaic-3d-erbium-laser.html)
+- [Patient Information & Treatment Plans](https://dermetrics.ch/en/skin-conditions-explained.html)
+- [Opening Reception Clinic Selnau](https://dermetrics.ch/en/eroeffnung.html)
+- [Mosaic 3D](https://dermetrics.ch/en/patient-information/mosaic-3d-erbium-laser.html)
 - [Post-inflammatory hyperpigmentation](https://dermetrics.ch/en/patient-information/post-inflammatory-hyperpigmentation.html)
-- [Treatment protocol: acne](https://dermetrics.ch/en/treatment-protocols/acne.html)
-- [Treatment protocol: rosacea](https://dermetrics.ch/en/treatment-protocols/rosacea-treatment-protocol.html)
-- [Treatment protocol: anti-ageing skincare](https://dermetrics.ch/en/treatment-protocols/anti-aging-skincare.html)
-- [Treatment protocol: melasma](https://dermetrics.ch/en/treatment-protocols/melasma-treatment-protocol.html)
-- [Imprint and privacy](https://dermetrics.ch/en/legal.html)
+- [Actinic Keratoses](https://dermetrics.ch/en/patient-information/actinic-keratosis.html)
+- [Basal Cell Carcinoma](https://dermetrics.ch/en/patient-information/basal-cell-carcinoma.html)
+- [Squamous Cell Carcinoma](https://dermetrics.ch/en/patient-information/squamous-cell-carcinoma.html)
+- [Solar Elastosis](https://dermetrics.ch/en/patient-information/solar-elastosis.html)
+- [Rosacea](https://dermetrics.ch/en/patient-information/rosacea.html)
+- [Acne](https://dermetrics.ch/en/patient-information/acne-forms.html)
+- [Treatment protocol: Acne](https://dermetrics.ch/en/treatment-protocols/acne.html)
+- [Rosacea Treatment Protocol](https://dermetrics.ch/en/treatment-protocols/rosacea-treatment-protocol.html)
+- [Treatment protocol: Anti-Ageing Skincare](https://dermetrics.ch/en/treatment-protocols/anti-aging-skincare.html)
+- [Melasma Treatment Protocol](https://dermetrics.ch/en/treatment-protocols/melasma-treatment-protocol.html)
+- [Imprint & Privacy](https://dermetrics.ch/en/legal.html)
 
 ## Optional
-- [Impressum](https://dermetrics.ch/impressum.html)
+- [Impressum & Datenschutz](https://dermetrics.ch/impressum.html)
+- [Google-Profil Clinic Selnau](https://share.google/EMOgfxDGYLcdnslC7)
 - [Sitemap](https://dermetrics.ch/sitemap.xml)

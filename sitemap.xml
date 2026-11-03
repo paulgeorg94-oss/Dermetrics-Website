@@ -14,29 +14,32 @@
 
   <url>
     <loc>https://dermetrics.ch/hauterkrankungen-erklaert.html</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/hauterkrankungen-erklaert.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/skin-conditions-explained.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/hauterkrankungen-erklaert.html"/>
   </url>
 
   <url>
     <loc>https://dermetrics.ch/hautkrebs-selbsttest.html</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/hautkrebs-selbsttest.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/skin-cancer-self-test.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/hautkrebs-selbsttest.html"/>
   </url>
 
   <url>
     <loc>https://dermetrics.ch/en/skin-cancer-self-test.html</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/hautkrebs-selbsttest.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/skin-cancer-self-test.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/hautkrebs-selbsttest.html"/>
   </url>
 
   <url>
@@ -46,60 +49,67 @@
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/impressum.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/legal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/impressum.html"/>
   </url>
 
   <url>
     <loc>https://dermetrics.ch/patienteninformationen/aktinische-keratosen.html</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/patienteninformationen/aktinische-keratosen.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/patient-information/actinic-keratosis.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/patienteninformationen/aktinische-keratosen.html"/>
   </url>
 
   <url>
     <loc>https://dermetrics.ch/patienteninformationen/basalzellkarzinom.html</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/patienteninformationen/basalzellkarzinom.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/patient-information/basal-cell-carcinoma.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/patienteninformationen/basalzellkarzinom.html"/>
   </url>
 
   <url>
     <loc>https://dermetrics.ch/patienteninformationen/spinaliom.html</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/patienteninformationen/spinaliom.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/patient-information/squamous-cell-carcinoma.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/patienteninformationen/spinaliom.html"/>
   </url>
 
   <url>
     <loc>https://dermetrics.ch/patienteninformationen/solare-elastose.html</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/patienteninformationen/solare-elastose.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/patient-information/solar-elastosis.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/patienteninformationen/solare-elastose.html"/>
   </url>
 
   <url>
     <loc>https://dermetrics.ch/patienteninformationen/rosazea.html</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/patienteninformationen/rosazea.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/patient-information/rosacea.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/patienteninformationen/rosazea.html"/>
   </url>
 
   <url>
     <loc>https://dermetrics.ch/patienteninformationen/akne-formen.html</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/patienteninformationen/akne-formen.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/patient-information/acne-forms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/patienteninformationen/akne-formen.html"/>
   </url>
 
   <url>
@@ -109,6 +119,7 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/patienteninformationen/mosaik-3d-erbium-laser.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/patient-information/mosaic-3d-erbium-laser.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/patienteninformationen/mosaik-3d-erbium-laser.html"/>
   </url>
 
   <url>
@@ -118,6 +129,7 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/patienteninformationen/mosaik-3d-erbium-laser.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/patient-information/mosaic-3d-erbium-laser.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/patienteninformationen/mosaik-3d-erbium-laser.html"/>
   </url>
 
   <url>
@@ -127,6 +139,7 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/patienteninformationen/postinflammatorische-hyperpigmentierung.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/patient-information/post-inflammatory-hyperpigmentation.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/patienteninformationen/postinflammatorische-hyperpigmentierung.html"/>
   </url>
 
   <url>
@@ -136,42 +149,47 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/patienteninformationen/postinflammatorische-hyperpigmentierung.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/patient-information/post-inflammatory-hyperpigmentation.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/patienteninformationen/postinflammatorische-hyperpigmentierung.html"/>
   </url>
 
   <url>
     <loc>https://dermetrics.ch/behandlungsprotokolle/akne.html</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/behandlungsprotokolle/akne.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/treatment-protocols/acne.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/behandlungsprotokolle/akne.html"/>
   </url>
 
   <url>
     <loc>https://dermetrics.ch/behandlungsprotokolle/rosazea-behandlungsprotokoll.html</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/behandlungsprotokolle/rosazea-behandlungsprotokoll.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/treatment-protocols/rosacea-treatment-protocol.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/behandlungsprotokolle/rosazea-behandlungsprotokoll.html"/>
   </url>
 
   <url>
     <loc>https://dermetrics.ch/behandlungsprotokolle/anti-aging-hautpflege.html</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/behandlungsprotokolle/anti-aging-hautpflege.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/treatment-protocols/anti-aging-skincare.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/behandlungsprotokolle/anti-aging-hautpflege.html"/>
   </url>
 
   <url>
     <loc>https://dermetrics.ch/behandlungsprotokolle/melasma-behandlungsprotokoll.html</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/behandlungsprotokolle/melasma-behandlungsprotokoll.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/treatment-protocols/melasma-treatment-protocol.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/behandlungsprotokolle/melasma-behandlungsprotokoll.html"/>
   </url>
 
   <url>
@@ -191,6 +209,7 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/hauterkrankungen-erklaert.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/skin-conditions-explained.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/hauterkrankungen-erklaert.html"/>
   </url>
 
   <url>
@@ -200,114 +219,127 @@
     <priority>0.2</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/impressum.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/legal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/impressum.html"/>
   </url>
 
   <url>
     <loc>https://dermetrics.ch/en/patient-information/actinic-keratosis.html</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/patienteninformationen/aktinische-keratosen.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/patient-information/actinic-keratosis.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/patienteninformationen/aktinische-keratosen.html"/>
   </url>
 
   <url>
     <loc>https://dermetrics.ch/en/patient-information/basal-cell-carcinoma.html</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/patienteninformationen/basalzellkarzinom.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/patient-information/basal-cell-carcinoma.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/patienteninformationen/basalzellkarzinom.html"/>
   </url>
 
   <url>
     <loc>https://dermetrics.ch/en/patient-information/squamous-cell-carcinoma.html</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/patienteninformationen/spinaliom.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/patient-information/squamous-cell-carcinoma.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/patienteninformationen/spinaliom.html"/>
   </url>
 
   <url>
     <loc>https://dermetrics.ch/en/patient-information/solar-elastosis.html</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/patienteninformationen/solare-elastose.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/patient-information/solar-elastosis.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/patienteninformationen/solare-elastose.html"/>
   </url>
 
   <url>
     <loc>https://dermetrics.ch/en/patient-information/rosacea.html</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/patienteninformationen/rosazea.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/patient-information/rosacea.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/patienteninformationen/rosazea.html"/>
   </url>
 
   <url>
     <loc>https://dermetrics.ch/en/patient-information/acne-forms.html</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/patienteninformationen/akne-formen.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/patient-information/acne-forms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/patienteninformationen/akne-formen.html"/>
   </url>
 
   <url>
     <loc>https://dermetrics.ch/en/treatment-protocols/acne.html</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/behandlungsprotokolle/akne.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/treatment-protocols/acne.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/behandlungsprotokolle/akne.html"/>
   </url>
 
   <url>
     <loc>https://dermetrics.ch/en/treatment-protocols/rosacea-treatment-protocol.html</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/behandlungsprotokolle/rosazea-behandlungsprotokoll.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/treatment-protocols/rosacea-treatment-protocol.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/behandlungsprotokolle/rosazea-behandlungsprotokoll.html"/>
   </url>
 
   <url>
     <loc>https://dermetrics.ch/en/treatment-protocols/anti-aging-skincare.html</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/behandlungsprotokolle/anti-aging-hautpflege.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/treatment-protocols/anti-aging-skincare.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/behandlungsprotokolle/anti-aging-hautpflege.html"/>
   </url>
 
   <url>
     <loc>https://dermetrics.ch/en/treatment-protocols/melasma-treatment-protocol.html</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/behandlungsprotokolle/melasma-behandlungsprotokoll.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/treatment-protocols/melasma-treatment-protocol.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/behandlungsprotokolle/melasma-behandlungsprotokoll.html"/>
   </url>
 
   <url>
     <loc>https://dermetrics.ch/eroeffnung.html</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/eroeffnung.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/eroeffnung.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/eroeffnung.html"/>
   </url>
 
   <url>
     <loc>https://dermetrics.ch/en/eroeffnung.html</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/eroeffnung.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/eroeffnung.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/eroeffnung.html"/>
   </url>
 
 </urlset>
