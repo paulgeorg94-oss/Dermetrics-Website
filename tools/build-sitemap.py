@@ -17,6 +17,9 @@ for p,u in url.items():
     if u in order: continue
     s=open(p,encoding='utf-8').read()
     de=re.search(r'hreflang="de-CH" href="([^"]+)"', s)
+    if p.startswith('leistungen/'):  # Leistungsseiten direkt nach der Startseite
+        i=order.index(BASE)+1+sum(1 for x in order if x.startswith(BASE+'leistungen/'))
+        order.insert(i,u); meta[u]=('monthly','0.8'); continue
     i=order.index(de.group(1))+1 if de and de.group(1) in order else len(order)
     order.insert(i,u); meta[u]=meta.get(de.group(1) if de else '',('monthly','0.7'))
 today=datetime.date.today().isoformat()

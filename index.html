@@ -2,16 +2,110 @@
 <html lang="de-CH">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; img-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self' https://formspree.io; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; img-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self' https://formspree.io; frame-src https://www.google.com https://maps.google.com; object-src 'none'; base-uri 'self'; form-action 'self'">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hautarzt Zürich Selnau/Enge – Dermatologie &amp; Hautchirurgie</title>
-<meta name="description" content="Dermatologie Zürich Selnau/Enge: Hautkrebs-Screening, Mohs-Chirurgie, Tumorchirurgie, Narben, Psoriasis, Acne inversa. Zertifizierter Praxis-OP.">
+<meta name="description" content="Hautarzt in Zürich Kreis 2 (Selnau/Enge): Dermatologie, Hautkrebs-Screening, Mohs-Chirurgie, Narben, Psoriasis, Acne inversa. Zertifizierter Praxis-OP.">
 <link rel="icon" href="assets/logo-dermetrics.svg" type="image/svg+xml">
 <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preload" href="assets/vendor/fonts/Inter-Light.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/vendor/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="css/style.css">
+<style id="critical-css">:root { --r-sm: 10px; --r-md: 16px; --r-lg: 20px; --aubergine: #300C61; --aubergine-mid: #4B2C86; --ink: #241C2E; --muted: #756B82; --line: #E4DEE8; --ivory: #FBF8F6; --notice-bg: #F5F1FA; }
+@font-face { font-family: Inter; font-style: normal; font-weight: 300; font-display: swap; src: url("assets/vendor/fonts/Inter-Light.woff2") format("woff2"); }
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font-display: swap; src: url("assets/vendor/fonts/Inter-Regular.woff2") format("woff2"); }
+@font-face { font-family: Inter; font-style: normal; font-weight: 500; font-display: swap; src: url("assets/vendor/fonts/Inter-Medium.woff2") format("woff2"); }
+@font-face { font-family: Inter; font-style: normal; font-weight: 600; font-display: swap; src: url("assets/vendor/fonts/Inter-SemiBold.woff2") format("woff2"); }
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+body { margin: 0px; background: var(--ivory); color: var(--ink); font-family: Inter, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; line-height: 1.6; font-weight: 400; }
+a { color: var(--aubergine-mid); }
+.wrap { max-width: 1040px; margin: 0px auto; padding: 0px 32px; }
+body { padding-top: 68px; }
+.topnav { position: fixed; top: 0px; left: 0px; right: 0px; z-index: 20; background: rgba(251, 248, 246, 0.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); transition: transform 0.28s; transform: translateZ(0px); will-change: transform; }
+.topnav .wrap { max-width: 1280px; display: flex; align-items: center; justify-content: space-between; padding-top: 14px; padding-bottom: 14px; gap: 24px; }
+.topnav .brandrow { display: flex; align-items: center; gap: 12px; text-decoration: none; margin-bottom: 0px; }
+.topnav .brandrow img { width: auto; height: 30px; display: block; }
+.topnav .brandmark { font-size: 13px; letter-spacing: 0.14em; color: var(--aubergine); font-weight: 500; }
+.topnav nav { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.topnav nav a { white-space: nowrap; font-size: 13px; color: var(--ink); text-decoration: none; font-weight: 400; }
+.topnav nav a:hover { color: var(--aubergine-mid); }
+.topnav .lang { font-size: 12.5px; color: var(--muted); }
+.topnav .lang a { color: var(--muted); text-decoration: none; }
+.topnav .lang a:hover { color: var(--aubergine-mid); }
+.topnav .lang .current { color: var(--ink); font-weight: 500; }
+.topnav .cta { font-size: 13px; font-weight: 500; color: rgb(255, 255, 255); background: var(--aubergine); padding: 9px 18px; line-height: 18px; border-radius: 999px; text-decoration: none; white-space: nowrap; }
+.topnav .navtoggle { display: none; }
+.topnav nav.navlinks .cta { display: none; }
+@media (max-width: 1240px){.topnav nav.navlinks { display: none; }.topnav .cta { display: none; }.topnav .navtoggle { display: inline-flex; background: none; border: 1px solid var(--line); border-radius: var(--r-sm); padding: 8px 12px; min-height: 36px; align-items: center; font-size: 13px; color: var(--ink); }}
+.header { padding: 56px 0px 48px; background: radial-gradient(60% 80% at 18% 12%, rgba(196, 178, 235, 0.55), transparent 62%), radial-gradient(70% 90% at 88% 82%, rgba(245, 190, 150, 0.4), transparent 62%), rgb(251, 246, 241); }
+.brandrow { display: flex; align-items: center; gap: 14px; margin-bottom: 34px; }
+.brandrow img { width: auto; height: 34px; display: block; }
+.brandmark { font-size: 14px; letter-spacing: 0.14em; color: var(--aubergine); font-weight: 500; }
+.kicker { font-size: 13.5px; color: var(--muted); margin: 0px 0px 16px; letter-spacing: 0.02em; }
+h1 { font-size: 40px; font-weight: 300; line-height: 1.2; letter-spacing: -0.01em; margin: 0px 0px 14px; }
+.subhead { font-size: 17px; color: var(--muted); max-width: 58ch; margin: 14px 0px 0px; line-height: 1.6; }
+.hero-grid { display: flex; gap: 56px; align-items: center; }
+.hero-copy { flex: 1 1 480px; min-width: 0px; }
+.hero-media { flex: 0 0 320px; }
+.hero-media .portrait { width: 100%; aspect-ratio: 4 / 5; border-radius: var(--r-lg); overflow: hidden; position: relative; background: radial-gradient(60% 80% at 18% 12%, rgba(196, 178, 235, 0.55), transparent 62%), radial-gradient(70% 90% at 88% 82%, rgba(245, 190, 150, 0.4), transparent 62%), rgb(251, 246, 241); }
+.hero-media .portrait img { position: absolute; inset: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
+@media (max-width: 780px){.hero-grid { flex-direction: column-reverse; }.hero-media { flex-basis: auto; width: 100%; max-width: 320px; }}
+.ctarow { display: flex; gap: 14px; flex-wrap: wrap; margin: 28px 0px 0px; }
+.btn { display: inline-block; font-size: 14px; font-weight: 500; text-decoration: none; padding: 12px 24px; line-height: 18px; border: 1px solid transparent; border-radius: 999px; transition: opacity 0.15s; }
+.btn:hover { opacity: 0.85; }
+.btn-primary { background: var(--aubergine); color: rgb(255, 255, 255); }
+.btn-secondary { background: transparent; color: var(--aubergine); border: 1px solid var(--aubergine); }
+.trustbullets { list-style: none; padding: 0px; margin: 30px 0px 0px; display: flex; gap: 22px; flex-wrap: wrap; }
+.trustbullets li { font-size: 13px; color: var(--muted); display: flex; align-items: center; gap: 8px; }
+.trustbullets li::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--aubergine); display: inline-block; }
+section.block { padding: 64px 0px; border-top: 1px solid var(--line); scroll-margin-top: 76px; }
+.eyebrow { font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin: 0px 0px 14px; }
+h2 { font-size: 28px; font-weight: 300; line-height: 1.3; margin: 0px 0px 18px; letter-spacing: -0.005em; }
+h3 { font-size: 15px; font-weight: 500; color: var(--ink); margin: 0px 0px 8px; }
+.pillar-divider { width: 1px; align-self: stretch; background: var(--line); flex: 0 0 auto; }
+@media (max-width: 780px){.pillar-divider { display: none; }}
+.dm-carousel__button svg[hidden] { display: none; }
+.pc-scale { display: flex; flex-direction: column; gap: 12px; }
+.pc-resulthead { font-size: 22px; font-weight: 300; line-height: 1.25; margin: 28px 0px 0px; color: var(--ink); }
+.pc-resulttext { font-size: 14.5px; line-height: 1.65; color: var(--muted); margin: 12px 0px 0px; }
+.pc-scorerow { margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--line); }
+.pc-scorelabel { font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin: 0px 0px 8px; }
+.pc-scorevalue { display: flex; align-items: baseline; gap: 4px; }
+.pc-scorevalue b { font-size: 34px; font-weight: 300; letter-spacing: -0.02em; color: var(--aubergine); }
+.pc-scorevalue span { font-size: 13px; color: var(--muted); }
+.pc-disclaimer { margin-top: 20px; padding: 16px 18px; border-radius: var(--r-sm); background: var(--notice-bg); font-size: 13px; line-height: 1.6; color: var(--ink); }
+.pc-disclaimer b { color: var(--aubergine); }
+.pc-actions { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 12px; }
+.pc-actions button.btn { border: 1px solid var(--aubergine); font-family: inherit; }
+.pc-pdfbox { margin-top: 20px; padding: 20px; border-radius: var(--r-sm); border: 1px solid var(--line); background: rgb(255, 255, 255); }
+.pc-pdfbox-label { font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--aubergine); margin: 0px 0px 8px; }
+.pc-pdfbox-text { font-size: 13.5px; line-height: 1.6; color: var(--muted); margin: 0px 0px 16px; }
+.pc-pdfbox-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.pc-pdfbox-input { flex: 1 1 220px; font-family: inherit; font-size: 13.5px; padding: 11px 14px; border-radius: var(--r-sm); border: 1px solid var(--line); background: var(--ivory); color: var(--ink); }
+.pc-pdfbox-input:focus { outline: none; border-color: var(--aubergine); }
+.pc-pdfbox-row button.btn { flex: 0 0 auto; border: 1px solid var(--aubergine); font-family: inherit; }
+.pc-pdfbox-row button.btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.pc-pdfbox-status { font-size: 12.5px; color: var(--aubergine-mid); margin: 12px 0px 0px; }
+.pc-pdfbox-disclaimer { font-size: 12px; line-height: 1.6; color: var(--muted); margin: 16px 0px 0px; padding-top: 14px; border-top: 1px solid var(--line); }
+.pc-pdfbox-disclaimer strong { color: var(--ink); }
+@media (max-width: 480px){.pc-pdfbox-row { flex-direction: column; align-items: stretch; }}
+.pc-print-area { display: none; }
+.pc-print-title { font-size: 20px; font-weight: 600; color: rgb(0, 0, 0); margin: 0px 0px 4px; }
+.pc-print-meta { font-size: 11px; color: rgb(68, 68, 68); margin: 0px 0px 18px; }
+.pc-print-subhead { font-size: 15px; font-weight: 600; color: rgb(0, 0, 0); margin: 18px 0px 8px; }
+.pc-print-resulttext { font-size: 12px; line-height: 1.5; color: rgb(0, 0, 0); margin: 0px 0px 8px; }
+.pc-print-score { font-size: 13px; font-weight: 600; color: rgb(0, 0, 0); margin: 0px 0px 16px; }
+.pc-print-note { font-size: 10.5px; line-height: 1.5; color: rgb(51, 51, 51); margin: 12px 0px 0px; }
+.pc-print-answers { padding-left: 18px; margin: 0px; }
+.formcard .form-success { font-size: 13.5px; line-height: 1.55; color: var(--aubergine); margin: 12px 0px 0px; font-weight: 500; }
+.formcard .form-error { font-size: 13.5px; line-height: 1.55; color: rgb(168, 57, 47); margin: 12px 0px 0px; font-weight: 500; }
+.facts { display: grid; grid-template-columns: max-content minmax(0px, 1fr); gap: 0px; margin: 24px 0px 0px; border-top: 1px solid var(--line); }
+.facts dt, .facts dd { padding: 12px 0px; border-bottom: 1px solid var(--line); font-size: 14.5px; margin: 0px; }
+.facts dt { padding-right: 32px; font-weight: 500; color: var(--muted); }
+.facts dd { color: var(--ink); }</style>
+<link rel="preload" href="css/style.css" as="style" data-critical>
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <link rel="canonical" href="https://dermetrics.ch/">
 <link rel="alternate" hreflang="de-CH" href="https://dermetrics.ch/">
@@ -20,15 +114,15 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Dermetrics – Clinic Selnau">
 <meta property="og:title" content="Hautarzt Zürich Selnau/Enge – Dermatologie &amp; Hautchirurgie">
-<meta property="og:description" content="Hautkrebs-Screening, Tumorchirurgie, Wund- und Narbentherapie in Zürich Selnau/Enge.">
+<meta property="og:description" content="Hautarzt in Zürich Selnau/Enge (Kreis 2): Hautkrebs-Screening, Tumorchirurgie, Wund- und Narbentherapie.">
 <meta property="og:url" content="https://dermetrics.ch/">
 <meta property="og:image" content="https://dermetrics.ch/assets/dr-georg-portrait.png">
 <meta property="og:locale" content="de_CH">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Hautarzt Zürich Selnau/Enge – Dermatologie &amp; Hautchirurgie">
-<meta name="twitter:description" content="Hautkrebs-Screening, Tumorchirurgie, Wund- und Narbentherapie in Zürich Selnau/Enge.">
+<meta name="twitter:description" content="Hautarzt in Zürich Selnau/Enge (Kreis 2): Hautkrebs-Screening, Tumorchirurgie, Wund- und Narbentherapie.">
 <meta name="twitter:image" content="https://dermetrics.ch/assets/dr-georg-portrait.png">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://dermetrics.ch/#webpage","url":"https://dermetrics.ch/","name":"Hautarzt Zürich Selnau/Enge – Dermatologie & Hautchirurgie","inLanguage":"de-CH","dateModified":"2026-11-03","about":{"@id":"https://dermetrics.ch/#practice"},"mainEntity":{"@id":"https://dermetrics.ch/#practice"}},{"@id":"https://dermetrics.ch/#practice","@type":"MedicalClinic","name":"Dermetrics – Clinic Selnau","url":"https://dermetrics.ch/","logo":"https://dermetrics.ch/assets/logo-dermetrics-512.png","image":"https://dermetrics.ch/assets/clinic-selnau/eingang.webp","telephone":"+41432345555","medicalSpecialty":"Dermatology","address":{"@type":"PostalAddress","streetAddress":"Brandschenkestrasse 45","postalCode":"8002","addressLocality":"Zürich","addressCountry":"CH","addressRegion":"ZH"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":"Monday","opens":"10:00","closes":"18:00","validFrom":"2026-12-07"}],"founder":{"@id":"https://dermetrics.ch/#dr-georg"},"department":[{"@id":"https://dermetrics.ch/#affoltern"},{"@id":"https://dermetrics.ch/#altstetten"}],"description":"Dermatologische Praxis in Zürich Selnau/Enge mit Schwerpunkten Hautkrebs-Screening, mikrographisch kontrollierte Chirurgie (Mohs), Tumorchirurgie, Wundbehandlung, Narbentherapie sowie Psoriasis und Acne inversa. Zertifizierter Praxis-OP, interdisziplinäre Zusammenarbeit mit der Plastischen Chirurgie (Dr. med. Simon Zimmermann).","contactPoint":[{"@type":"ContactPoint","contactType":"Zuweisungen","email":"clinicselnau@hin.ch","availableLanguage":"de"}],"areaServed":[{"@type":"City","name":"Zürich"},{"@type":"AdministrativeArea","name":"Zürich-Selnau"},{"@type":"AdministrativeArea","name":"Zürich-Enge"}],"physician":[{"@id":"https://dermetrics.ch/#dr-georg"},{"@id":"https://dermetrics.ch/#zimmermann"}],"availableService":[{"@type":"MedicalProcedure","name":"Hautkrebs-Screening (Ganzkörper-Dermatoskopie, 3D-Scan)"},{"@type":"MedicalProcedure","name":"Mikrographisch kontrollierte Chirurgie (Mohs-Chirurgie)"},{"@type":"MedicalProcedure","name":"Tumorchirurgie der Haut (Exzision von Basalzellkarzinom, Spinaliom, Melanom-Verdacht)"},{"@type":"MedicalProcedure","name":"Entfernung gutartiger Hautveränderungen aus ästhetischer Indikation"},{"@type":"MedicalTherapy","name":"Behandlung aktinischer Keratosen"},{"@type":"MedicalTherapy","name":"Wundbehandlung inkl. ECMP (Extracellular-Matrix-like Products)"},{"@type":"MedicalTherapy","name":"Narbentherapie (Aknenarben, Operationsnarben, hypertrophe Narben, Keloide)"},{"@type":"MedicalTherapy","name":"Psoriasis-Behandlung"},{"@type":"MedicalTherapy","name":"Acne-inversa-Behandlung"},{"@type":"MedicalTherapy","name":"Akne- und Rosazea-Behandlung"},{"@type":"MedicalTherapy","name":"Behandlung von Melasma und postinflammatorischer Hyperpigmentierung"},{"@type":"MedicalTherapy","name":"Laserbehandlung (Mosaic 3D Erbium)"}],"hasMap":"https://share.google/EMOgfxDGYLcdnslC7","sameAs":["https://share.google/EMOgfxDGYLcdnslC7"]},{"@id":"https://dermetrics.ch/#dr-georg","@type":["Person","Physician"],"name":"Dr. med. Paul Georg","jobTitle":"Facharzt für Dermatologie und Venerologie FMH","medicalSpecialty":"Dermatology","image":"https://dermetrics.ch/assets/dr-georg-portrait.png","alumniOf":[{"@type":"CollegeOrUniversity","name":"Medizinische Hochschule Hannover"},{"@type":"CollegeOrUniversity","name":"King's College London"}],"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"Facharzttitel FMH","name":"Facharzt für Dermatologie und Venerologie FMH"},{"@type":"EducationalOccupationalCredential","credentialCategory":"certificate","name":"Dermatochirurgie"},{"@type":"EducationalOccupationalCredential","credentialCategory":"certificate","name":"Lasertherapie"},{"@type":"EducationalOccupationalCredential","credentialCategory":"certificate","name":"Phlebologie/SGUM"},{"@type":"EducationalOccupationalCredential","credentialCategory":"certificate","name":"Botulinumtoxin und Filler (DGDC)"}],"worksFor":{"@id":"https://dermetrics.ch/#practice"},"memberOf":[{"@type":"Organization","name":"Schweizerische Gesellschaft für Dermatologie und Venerologie (SGDV)"},{"@type":"Organization","name":"European Academy of Dermatology and Venereology (EADV)"}],"knowsAbout":["Dermatologie","Venerologie","Dermatochirurgie","Tumorchirurgie der Haut","Hautkrebs","Mikrographisch kontrollierte Chirurgie (Mohs)","Wundbehandlung","Extracellular-Matrix-like Products (ECMP)","Narbentherapie","Psoriasis","Acne inversa"]},{"@type":"WebSite","url":"https://dermetrics.ch/","name":"Dermetrics","publisher":{"@id":"https://dermetrics.ch/#practice"},"inLanguage":"de-CH","@id":"https://dermetrics.ch/#website"},{"@type":"Physician","@id":"https://dermetrics.ch/#zimmermann","name":"Dr. med. Simon Zimmermann","jobTitle":"Facharzt für Plastische Chirurgie","medicalSpecialty":"PlasticSurgery","affiliation":{"@type":"MedicalClinic","name":"Clinic Selnau","url":"https://clinicselnau.ch"},"worksFor":{"@id":"https://dermetrics.ch/#practice"}},{"@type":"FAQPage","@id":"https://dermetrics.ch/#faq","mainEntity":[{"@type":"Question","name":"Welche Behandlungen bietet Dermetrics in Zürich Selnau/Enge an?","acceptedAnswer":{"@type":"Answer","text":"Wir behandeln Hauttumoren und führen Hautkrebs-Screening durch. Wir behandeln ausserdem Wunden, Narben, Psoriasis, Acne inversa, Akne, Rosazea, Melasma sowie gutartige Hautveränderungen aus ästhetischer Indikation."}},{"@type":"Question","name":"Wo befindet sich die Praxis?","acceptedAnswer":{"@type":"Answer","text":"Die Clinic Selnau befindet sich an der Brandschenkestrasse 45, 8002 Zürich. Weitere Standorte sind Affoltern am Albis (Obstgartenstrasse 3, 8910) und Zürich-Altstetten (Hohlstrasse 556, 8048, 3D-Analyse)."}},{"@type":"Question","name":"Wann ist die Clinic Selnau geöffnet?","acceptedAnswer":{"@type":"Answer","text":"Die Sprechstunde findet montags von 10:00 bis 18:00 Uhr statt. Die Praxiseröffnung ist am 7. Dezember 2026."}},{"@type":"Question","name":"Wie läuft ein Hautkrebs-Screening ab?","acceptedAnswer":{"@type":"Answer","text":"Beim Screening untersuchen wir die Haut mit der Ganzkörper-Dermatoskopie. 3D-Scans werden am Standort Zürich-Altstetten erstellt, das Ergebnis erhalten Sie innert 72 Stunden per E-Mail. Der Online-Pre-Check ist ein statistisches Orientierungsinstrument und keine Diagnose."}},{"@type":"Question","name":"Werden Operationen direkt in der Praxis durchgeführt?","acceptedAnswer":{"@type":"Answer","text":"Ja. Dermatochirurgische Eingriffe wie die Entfernung von Hauttumoren führen wir in unserem zertifizierten Praxis-OP durch."}},{"@type":"Question","name":"Bieten Sie mikrographisch kontrollierte Chirurgie (Mohs-Chirurgie) an?","acceptedAnswer":{"@type":"Answer","text":"Ja. Bei der mikrographisch kontrollierten Chirurgie wird der Tumor schichtweise entfernt und die Schnittränder werden mikroskopisch auf Tumorfreiheit untersucht, bevor der Defekt versorgt wird. Ob dieses Verfahren für Ihren Befund infrage kommt, klären wir in der ärztlichen Beurteilung."}},{"@type":"Question","name":"Arbeiten Sie mit der Plastischen Chirurgie zusammen?","acceptedAnswer":{"@type":"Answer","text":"Ja. Bei komplexen Befunden oder grösseren Defekten arbeiten wir interdisziplinär mit der Plastischen Chirurgie an der Clinic Selnau zusammen (Dr. med. Simon Zimmermann)."}},{"@type":"Question","name":"Wie werden chronische Wunden behandelt?","acceptedAnswer":{"@type":"Answer","text":"Wir behandeln chronische und komplexe Wunden auf Basis von Erfahrung aus dem Wundzentrum Advanced Wound Therapies am Inselspital Bern und dem Wundambulatorium am Spital Affoltern am Albis, einschliesslich der Anwendung von ECMP (Extracellular-Matrix-like Products)."}},{"@type":"Question","name":"Wie vereinbare ich einen Termin?","acceptedAnswer":{"@type":"Answer","text":"Sie erreichen uns telefonisch unter +41 43 234 55 55 oder per WhatsApp unter +41 78 261 82 88."}}]},{"@type":"MedicalClinic","name":"Novaderm","address":{"@type":"PostalAddress","streetAddress":"Obstgartenstrasse 3","postalCode":"8910","addressLocality":"Affoltern am Albis","addressCountry":"CH"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":"Tuesday","opens":"08:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Thursday","opens":"08:00","closes":"17:00"}],"@id":"https://dermetrics.ch/#affoltern","medicalSpecialty":"Dermatology"},{"@type":"MedicalClinic","name":"MediX Zürich-Altstetten","address":{"@type":"PostalAddress","streetAddress":"Hohlstrasse 556","postalCode":"8048","addressLocality":"Zürich","addressCountry":"CH"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"09:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"08:00","closes":"12:00"}],"@id":"https://dermetrics.ch/#altstetten","medicalSpecialty":"Dermatology"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://dermetrics.ch/#webpage","url":"https://dermetrics.ch/","name":"Hautarzt Zürich Selnau/Enge – Dermatologie & Hautchirurgie","inLanguage":"de-CH","dateModified":"2026-11-03","about":{"@id":"https://dermetrics.ch/#practice"},"mainEntity":{"@id":"https://dermetrics.ch/#practice"}},{"@id":"https://dermetrics.ch/#practice","@type":"MedicalClinic","name":"Dermetrics – Clinic Selnau","url":"https://dermetrics.ch/","logo":"https://dermetrics.ch/assets/logo-dermetrics-512.png","image":"https://dermetrics.ch/assets/clinic-selnau/eingang.webp","telephone":"+41432345555","medicalSpecialty":"Dermatology","address":{"@type":"PostalAddress","streetAddress":"Brandschenkestrasse 45","postalCode":"8002","addressLocality":"Zürich","addressCountry":"CH","addressRegion":"ZH"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":"Monday","opens":"10:00","closes":"18:00","validFrom":"2026-12-07"}],"founder":{"@id":"https://dermetrics.ch/#dr-georg"},"department":[{"@id":"https://dermetrics.ch/#affoltern"},{"@id":"https://dermetrics.ch/#altstetten"}],"description":"Dermatologische Praxis in Zürich Selnau/Enge mit Schwerpunkten Hautkrebs-Screening, mikrographisch kontrollierte Chirurgie (Mohs), Tumorchirurgie, Wundbehandlung, Narbentherapie sowie Psoriasis und Acne inversa. Zertifizierter Praxis-OP, interdisziplinäre Zusammenarbeit mit der Plastischen Chirurgie (Dr. med. Simon Zimmermann).","contactPoint":[{"@type":"ContactPoint","contactType":"Zuweisungen","email":"clinicselnau@hin.ch","availableLanguage":"de"}],"areaServed":[{"@type":"City","name":"Zürich"},{"@type":"AdministrativeArea","name":"Zürich-Selnau"},{"@type":"AdministrativeArea","name":"Zürich-Enge"},{"@type":"AdministrativeArea","name":"Zürich Kreis 2"}],"physician":[{"@id":"https://dermetrics.ch/#dr-georg"},{"@id":"https://dermetrics.ch/#zimmermann"}],"availableService":[{"@type":"MedicalProcedure","name":"Hautkrebs-Screening (Ganzkörper-Dermatoskopie, 3D-Scan)","url":"https://dermetrics.ch/leistungen/hautkrebs-screening.html"},{"@type":"MedicalProcedure","name":"Mikrographisch kontrollierte Chirurgie (Mohs-Chirurgie)","url":"https://dermetrics.ch/leistungen/mohs-chirurgie.html"},{"@type":"MedicalProcedure","name":"Tumorchirurgie der Haut (Exzision von Basalzellkarzinom, Spinaliom, Melanom-Verdacht)"},{"@type":"MedicalProcedure","name":"Entfernung gutartiger Hautveränderungen aus ästhetischer Indikation","url":"https://dermetrics.ch/leistungen/gutartige-hautveraenderungen.html"},{"@type":"MedicalTherapy","name":"Behandlung aktinischer Keratosen"},{"@type":"MedicalTherapy","name":"Wundbehandlung inkl. ECMP (Extracellular-Matrix-like Products)"},{"@type":"MedicalTherapy","name":"Narbentherapie (Aknenarben, Operationsnarben, hypertrophe Narben, Keloide)"},{"@type":"MedicalTherapy","name":"Psoriasis-Behandlung"},{"@type":"MedicalTherapy","name":"Acne-inversa-Behandlung","url":"https://dermetrics.ch/leistungen/acne-inversa.html"},{"@type":"MedicalTherapy","name":"Akne- und Rosazea-Behandlung","url":"https://dermetrics.ch/leistungen/akne-rosazea.html"},{"@type":"MedicalTherapy","name":"Behandlung von Melasma und postinflammatorischer Hyperpigmentierung"},{"@type":"MedicalTherapy","name":"Laserbehandlung (Mosaic 3D Erbium)"}],"hasMap":"https://share.google/EMOgfxDGYLcdnslC7","sameAs":["https://share.google/EMOgfxDGYLcdnslC7"]},{"@id":"https://dermetrics.ch/#dr-georg","@type":["Person","Physician"],"name":"Dr. med. Paul Georg","jobTitle":"Facharzt für Dermatologie und Venerologie FMH","medicalSpecialty":"Dermatology","image":"https://dermetrics.ch/assets/dr-georg-portrait.png","alumniOf":[{"@type":"CollegeOrUniversity","name":"Medizinische Hochschule Hannover"},{"@type":"CollegeOrUniversity","name":"King's College London"}],"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"Facharzttitel FMH","name":"Facharzt für Dermatologie und Venerologie FMH"},{"@type":"EducationalOccupationalCredential","credentialCategory":"certificate","name":"Dermatochirurgie"},{"@type":"EducationalOccupationalCredential","credentialCategory":"certificate","name":"Lasertherapie"},{"@type":"EducationalOccupationalCredential","credentialCategory":"certificate","name":"Phlebologie/SGUM"},{"@type":"EducationalOccupationalCredential","credentialCategory":"certificate","name":"Botulinumtoxin und Filler (DGDC)"}],"worksFor":{"@id":"https://dermetrics.ch/#practice"},"memberOf":[{"@type":"Organization","name":"Schweizerische Gesellschaft für Dermatologie und Venerologie (SGDV)"},{"@type":"Organization","name":"European Academy of Dermatology and Venereology (EADV)"}],"knowsAbout":["Dermatologie","Venerologie","Dermatochirurgie","Tumorchirurgie der Haut","Hautkrebs","Mikrographisch kontrollierte Chirurgie (Mohs)","Wundbehandlung","Extracellular-Matrix-like Products (ECMP)","Narbentherapie","Psoriasis","Acne inversa"]},{"@type":"WebSite","url":"https://dermetrics.ch/","name":"Dermetrics","publisher":{"@id":"https://dermetrics.ch/#practice"},"inLanguage":"de-CH","@id":"https://dermetrics.ch/#website"},{"@type":"Physician","@id":"https://dermetrics.ch/#zimmermann","name":"Dr. med. Simon Zimmermann","jobTitle":"Facharzt für Plastische Chirurgie","medicalSpecialty":"PlasticSurgery","affiliation":{"@type":"MedicalClinic","name":"Clinic Selnau","url":"https://clinicselnau.ch"},"worksFor":{"@id":"https://dermetrics.ch/#practice"}},{"@type":"FAQPage","@id":"https://dermetrics.ch/#faq","mainEntity":[{"@type":"Question","name":"Welche Behandlungen bietet Dermetrics in Zürich Selnau/Enge an?","acceptedAnswer":{"@type":"Answer","text":"Wir behandeln Hauttumoren und führen Hautkrebs-Screening durch. Wir behandeln ausserdem Wunden, Narben, Psoriasis, Acne inversa, Akne, Rosazea, Melasma sowie gutartige Hautveränderungen aus ästhetischer Indikation."}},{"@type":"Question","name":"Wo befindet sich die Praxis?","acceptedAnswer":{"@type":"Answer","text":"Die Clinic Selnau befindet sich an der Brandschenkestrasse 45, 8002 Zürich, im Kreis 2 (Selnau/Enge). Weitere Standorte sind Affoltern am Albis (Obstgartenstrasse 3, 8910) und Zürich-Altstetten (Hohlstrasse 556, 8048, 3D-Analyse)."}},{"@type":"Question","name":"Wann ist die Clinic Selnau geöffnet?","acceptedAnswer":{"@type":"Answer","text":"Die Sprechstunde findet montags von 10:00 bis 18:00 Uhr statt. Die Praxiseröffnung ist am 7. Dezember 2026."}},{"@type":"Question","name":"Wie läuft ein Hautkrebs-Screening ab?","acceptedAnswer":{"@type":"Answer","text":"Beim Screening untersuchen wir die Haut mit der Ganzkörper-Dermatoskopie. 3D-Scans werden am Standort Zürich-Altstetten erstellt, das Ergebnis erhalten Sie innert 72 Stunden per E-Mail. Der Online-Pre-Check ist ein statistisches Orientierungsinstrument und keine Diagnose."}},{"@type":"Question","name":"Werden Operationen direkt in der Praxis durchgeführt?","acceptedAnswer":{"@type":"Answer","text":"Ja. Dermatochirurgische Eingriffe wie die Entfernung von Hauttumoren führen wir in unserem zertifizierten Praxis-OP durch."}},{"@type":"Question","name":"Bieten Sie mikrographisch kontrollierte Chirurgie (Mohs-Chirurgie) an?","acceptedAnswer":{"@type":"Answer","text":"Ja. Bei der mikrographisch kontrollierten Chirurgie wird der Tumor schichtweise entfernt und die Schnittränder werden mikroskopisch auf Tumorfreiheit untersucht, bevor der Defekt versorgt wird. Ob dieses Verfahren für Ihren Befund infrage kommt, klären wir in der ärztlichen Beurteilung."}},{"@type":"Question","name":"Arbeiten Sie mit der Plastischen Chirurgie zusammen?","acceptedAnswer":{"@type":"Answer","text":"Ja. Bei komplexen Befunden oder grösseren Defekten arbeiten wir interdisziplinär mit der Plastischen Chirurgie an der Clinic Selnau zusammen (Dr. med. Simon Zimmermann)."}},{"@type":"Question","name":"Wie werden chronische Wunden behandelt?","acceptedAnswer":{"@type":"Answer","text":"Wir behandeln chronische und komplexe Wunden auf Basis von Erfahrung aus dem Wundzentrum Advanced Wound Therapies am Inselspital Bern und dem Wundambulatorium am Spital Affoltern am Albis, einschliesslich der Anwendung von ECMP (Extracellular-Matrix-like Products)."}},{"@type":"Question","name":"Wie vereinbare ich einen Termin?","acceptedAnswer":{"@type":"Answer","text":"Sie erreichen uns telefonisch unter +41 43 234 55 55 oder per WhatsApp unter +41 78 261 82 88."}}]},{"@type":"MedicalClinic","name":"Novaderm","address":{"@type":"PostalAddress","streetAddress":"Obstgartenstrasse 3","postalCode":"8910","addressLocality":"Affoltern am Albis","addressCountry":"CH"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":"Tuesday","opens":"08:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Thursday","opens":"08:00","closes":"17:00"}],"@id":"https://dermetrics.ch/#affoltern","medicalSpecialty":"Dermatology"},{"@type":"MedicalClinic","name":"MediX Zürich-Altstetten","address":{"@type":"PostalAddress","streetAddress":"Hohlstrasse 556","postalCode":"8048","addressLocality":"Zürich","addressCountry":"CH"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"09:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"08:00","closes":"12:00"}],"@id":"https://dermetrics.ch/#altstetten","medicalSpecialty":"Dermatology"}]}</script>
 </head>
 <body>
 
@@ -500,7 +594,17 @@
 
     <p class="referrals"><strong>Zuweisungen für Ärztinnen und Ärzte:</strong> <a href="mailto:clinicselnau@hin.ch">clinicselnau@hin.ch</a></p>
 
-    <p class="referrals"><a href="https://share.google/EMOgfxDGYLcdnslC7" target="_blank" rel="noopener">Google-Profil der Clinic Selnau</a></p>
+    <div class="mapcard" id="karte">
+      <div class="mapcard-text">
+        <p class="name">Clinic Selnau, Zürich Kreis 2</p>
+        <p>Dermetrics – Dr. med. Paul Georg<br>Brandschenkestrasse 45<br>8002 Zürich (Selnau/Enge)</p>
+        <p><a href="https://share.google/EMOgfxDGYLcdnslC7" target="_blank" rel="noopener">Google-Profil der Clinic Selnau</a></p>
+      </div>
+      <div class="mapbox" data-src="https://www.google.com/maps?q=Clinic+Selnau,+Brandschenkestrasse+45,+8002+Z%C3%BCrich&amp;output=embed" data-title="Karte: Clinic Selnau, Brandschenkestrasse 45, 8002 Zürich">
+        <button type="button" class="map-btn" id="load-map">Karte laden</button>
+        <p>Die Karte stammt von Google Maps. Erst nach dem Klick werden Daten (z.&nbsp;B. Ihre IP-Adresse) an Google übertragen. Mehr dazu in der <a href="impressum.html#datenschutz">Datenschutzerklärung</a>.</p>
+      </div>
+    </div>
 
     <div class="contact-grid">
 
@@ -524,7 +628,7 @@
     </form>
 
     <div class="notice">
-      <p><strong>Hinweis:</strong> Bitte übermitteln Sie über dieses Formular keine medizinischen Daten, Befunde oder Symptombeschreibungen. Nutzen Sie hierfür den telefonischen Kontakt oder eine gesicherte HIN-Mail. Über dieses Formular werden ausschliesslich allgemeine Kontaktangaben ohne medizinischen Bezug (Name, E-Mail-Adresse, Telefonnummer, Ihr Anliegen in Kurzform) an die Praxis übermittelt.</p>
+      <p><strong>Hinweis:</strong> Bitte übermitteln Sie über dieses Formular keine medizinischen Daten, Befunde oder Symptombeschreibungen. Nutzen Sie hierfür den telefonischen Kontakt oder eine gesicherte HIN-Mail an <a href="mailto:clinicselnau@hin.ch">clinicselnau@hin.ch</a>. Über dieses Formular werden ausschliesslich allgemeine Kontaktangaben ohne medizinischen Bezug (Name, E-Mail-Adresse, Telefonnummer, Ihr Anliegen in Kurzform) an die Praxis übermittelt.</p>
     </div>
 
     </div>
@@ -574,42 +678,16 @@
 <section class="block" id="leistungsuebersicht">
   <div class="wrap">
     <p class="eyebrow">Leistungsübersicht</p>
-    <h2>Leistungen der Dermatologie in Zürich</h2>
-    <div class="svc-grid">
-      <article class="svc-card">
-        <h3>Hautkrebs und Tumorchirurgie</h3>
-        <ul>
-          <li>Wir behandeln Hautkrebs und führen Hautkrebs-Screening durch (Ganzkörper-Dermatoskopie, 3D-Scan).</li>
-          <li>Wir behandeln <a href="patienteninformationen/basalzellkarzinom.html">Basalzellkarzinom</a>, <a href="patienteninformationen/spinaliom.html">Spinaliom</a> und <a href="patienteninformationen/aktinische-keratosen.html">aktinische Keratosen</a>.</li>
-          <li>Wir behandeln Hauttumoren aller Art chirurgisch im zertifizierten Praxis-OP.</li>
-          <li>Wir behandeln Hauttumoren mit mikrographisch kontrollierter Chirurgie (Mohs-Chirurgie).</li>
-          <li>Wir behandeln Muttermale und Leberflecke bei auffälligem Befund (Kontrolle und Exzision).</li>
-        </ul>
-      </article>
-      <article class="svc-card">
-        <h3>Wunden und Narben</h3>
-        <ul>
-          <li>Wir behandeln chronische und komplexe Wunden, auch mit ECMP.</li>
-          <li>Wir behandeln Narben: Aknenarben, Operationsnarben, hypertrophe Narben und Keloide.</li>
-          <li>Wir behandeln Narben auch mit <a href="patienteninformationen/mosaik-3d-erbium-laser.html">Laser (Mosaic 3D Erbium)</a>.</li>
-        </ul>
-      </article>
-      <article class="svc-card">
-        <h3>Chronische Hauterkrankungen</h3>
-        <ul>
-          <li>Wir behandeln Psoriasis.</li>
-          <li>Wir behandeln Acne inversa.</li>
-          <li>Wir behandeln <a href="patienteninformationen/akne-formen.html">Akne</a> und <a href="patienteninformationen/rosazea.html">Rosazea</a>.</li>
-          <li>Wir behandeln <a href="behandlungsprotokolle/melasma-behandlungsprotokoll.html">Melasma</a> und <a href="patienteninformationen/postinflammatorische-hyperpigmentierung.html">postinflammatorische Hyperpigmentierung</a>.</li>
-        </ul>
-      </article>
-      <article class="svc-card">
-        <h3>Ästhetische Dermatologie</h3>
-        <ul>
-          <li>Wir behandeln gutartige Hautveränderungen aus ästhetischer Indikation (zum Beispiel Fibrome, Warzen, Alterswarzen).</li>
-          <li>Wir behandeln sonnenbedingte Hautalterung (<a href="patienteninformationen/solare-elastose.html">solare Elastose</a>) und beraten zur <a href="behandlungsprotokolle/anti-aging-hautpflege.html">Hautpflege</a>.</li>
-        </ul>
-      </article>
+    <h2>Dermatologie in Zürich Selnau/Enge: unsere Leistungen</h2>
+    <div class="intro">
+      <p>Hautarzt in Zürich Kreis 2 (Selnau/Enge): Jede Leistung ist auf einer eigenen Seite erklärt.</p>
+    </div>
+    <div class="tilegrid">
+<a class="tile tile--plan" href="leistungen/hautkrebs-screening.html"><span class="tile-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg></span><span class="tile-body"><span class="tile-title">Hautkrebs-Screening</span><span class="tile-text">Die Haut wird systematisch auf auffällige Veränderungen untersucht. Wie oft das sinnvoll ist, hängt von Ihrem persönlichen Risiko ab.</span></span><span class="tile-cta">Zur Leistung <span class="tile-arrow" aria-hidden="true">→</span></span></a>
+<a class="tile tile--plan" href="leistungen/mohs-chirurgie.html"><span class="tile-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg></span><span class="tile-body"><span class="tile-title">Mohs-Chirurgie</span><span class="tile-text">Ein schrittweises Verfahren, bei dem die Schnittränder systematisch untersucht werden, damit möglichst wenig gesundes Gewebe verloren geht.</span></span><span class="tile-cta">Zur Leistung <span class="tile-arrow" aria-hidden="true">→</span></span></a>
+<a class="tile tile--plan" href="leistungen/gutartige-hautveraenderungen.html"><span class="tile-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.2"/></svg></span><span class="tile-body"><span class="tile-title">Gutartige Hautveränderungen</span><span class="tile-text">Viele Hautveränderungen sind harmlos. Entfernt werden sie, wenn sie stören oder wenn eine Abklärung nötig ist.</span></span><span class="tile-cta">Zur Leistung <span class="tile-arrow" aria-hidden="true">→</span></span></a>
+<a class="tile tile--plan" href="leistungen/akne-rosazea.html"><span class="tile-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="9" r="1.6"/><circle cx="15" cy="8" r="1.2"/><circle cx="12" cy="14" r="1.8"/><circle cx="7" cy="16" r="1.1"/><circle cx="16.5" cy="15.5" r="1.4"/></svg></span><span class="tile-body"><span class="tile-title">Akne und Rosazea</span><span class="tile-text">Beide Erkrankungen betreffen häufig das Gesicht, werden aber unterschiedlich behandelt.</span></span><span class="tile-cta">Zur Leistung <span class="tile-arrow" aria-hidden="true">→</span></span></a>
+<a class="tile tile--plan" href="leistungen/acne-inversa.html"><span class="tile-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg></span><span class="tile-body"><span class="tile-title">Acne inversa</span><span class="tile-text">Eine chronische Entzündung der Haut in den Körperfalten. Medikamente und Operation können kombiniert werden.</span></span><span class="tile-cta">Zur Leistung <span class="tile-arrow" aria-hidden="true">→</span></span></a>
     </div>
     <p class="svc-more">Mehr zu Krankheitsbildern: <a href="hauterkrankungen-erklaert.html">Hauterkrankungen erklärt</a> · <a href="#precheck">Hautkrebs-Pre-Check</a></p>
   </div>
@@ -639,12 +717,12 @@
     <p class="eyebrow">FAQ</p>
     <h2>Häufige Fragen</h2>
     <div class="faq-list">
-      <details class="faq-item"><summary>Welche Behandlungen bietet Dermetrics in Zürich Selnau/Enge an?</summary><p>Wir behandeln Hauttumoren und führen Hautkrebs-Screening durch. Wir behandeln ausserdem Wunden, Narben, Psoriasis, Acne inversa, Akne, Rosazea, Melasma sowie gutartige Hautveränderungen aus ästhetischer Indikation.</p></details>
-      <details class="faq-item"><summary>Wo befindet sich die Praxis?</summary><p>Die Clinic Selnau befindet sich an der Brandschenkestrasse 45, 8002 Zürich. Weitere Standorte sind Affoltern am Albis (Obstgartenstrasse 3, 8910) und Zürich-Altstetten (Hohlstrasse 556, 8048, 3D-Analyse).</p></details>
+      <details class="faq-item"><summary>Welche Behandlungen bietet Dermetrics in Zürich Selnau/Enge an?</summary><p>Wir behandeln Hauttumoren und führen <a href="leistungen/hautkrebs-screening.html">Hautkrebs-Screening</a> durch. Wir behandeln ausserdem Wunden, Narben, Psoriasis, <a href="leistungen/acne-inversa.html">Acne inversa</a>, <a href="leistungen/akne-rosazea.html">Akne, Rosazea</a>, Melasma sowie <a href="leistungen/gutartige-hautveraenderungen.html">gutartige Hautveränderungen</a> aus ästhetischer Indikation.</p></details>
+      <details class="faq-item"><summary>Wo befindet sich die Praxis?</summary><p>Die Clinic Selnau befindet sich an der Brandschenkestrasse 45, 8002 Zürich, im Kreis 2 (Selnau/Enge). Weitere Standorte sind Affoltern am Albis (Obstgartenstrasse 3, 8910) und Zürich-Altstetten (Hohlstrasse 556, 8048, 3D-Analyse).</p></details>
       <details class="faq-item"><summary>Wann ist die Clinic Selnau geöffnet?</summary><p>Die Sprechstunde findet montags von 10:00 bis 18:00 Uhr statt. Die Praxiseröffnung ist am 7. Dezember 2026.</p></details>
-      <details class="faq-item"><summary>Wie läuft ein Hautkrebs-Screening ab?</summary><p>Beim Screening untersuchen wir die Haut mit der Ganzkörper-Dermatoskopie. 3D-Scans werden am Standort Zürich-Altstetten erstellt, das Ergebnis erhalten Sie innert 72 Stunden per E-Mail. Der Online-Pre-Check ist ein statistisches Orientierungsinstrument und keine Diagnose.</p></details>
+      <details class="faq-item"><summary>Wie läuft ein Hautkrebs-Screening ab?</summary><p>Beim <a href="leistungen/hautkrebs-screening.html">Screening</a> untersuchen wir die Haut mit der Ganzkörper-Dermatoskopie. 3D-Scans werden am Standort Zürich-Altstetten erstellt, das Ergebnis erhalten Sie innert 72 Stunden per E-Mail. Der Online-Pre-Check ist ein statistisches Orientierungsinstrument und keine Diagnose.</p></details>
       <details class="faq-item"><summary>Werden Operationen direkt in der Praxis durchgeführt?</summary><p>Ja. Dermatochirurgische Eingriffe wie die Entfernung von Hauttumoren führen wir in unserem zertifizierten Praxis-OP durch.</p></details>
-      <details class="faq-item"><summary>Bieten Sie mikrographisch kontrollierte Chirurgie (Mohs-Chirurgie) an?</summary><p>Ja. Bei der mikrographisch kontrollierten Chirurgie wird der Tumor schichtweise entfernt und die Schnittränder werden mikroskopisch auf Tumorfreiheit untersucht, bevor der Defekt versorgt wird. Ob dieses Verfahren für Ihren Befund infrage kommt, klären wir in der ärztlichen Beurteilung.</p></details>
+      <details class="faq-item"><summary>Bieten Sie mikrographisch kontrollierte Chirurgie (Mohs-Chirurgie) an?</summary><p>Ja. Bei der <a href="leistungen/mohs-chirurgie.html">mikrographisch kontrollierten Chirurgie</a> wird der Tumor schichtweise entfernt und die Schnittränder werden mikroskopisch auf Tumorfreiheit untersucht, bevor der Defekt versorgt wird. Ob dieses Verfahren für Ihren Befund infrage kommt, klären wir in der ärztlichen Beurteilung.</p></details>
       <details class="faq-item"><summary>Arbeiten Sie mit der Plastischen Chirurgie zusammen?</summary><p>Ja. Bei komplexen Befunden oder grösseren Defekten arbeiten wir interdisziplinär mit der Plastischen Chirurgie an der Clinic Selnau zusammen (Dr. med. Simon Zimmermann).</p></details>
       <details class="faq-item"><summary>Wie werden chronische Wunden behandelt?</summary><p>Wir behandeln chronische und komplexe Wunden auf Basis von Erfahrung aus dem Wundzentrum Advanced Wound Therapies am Inselspital Bern und dem Wundambulatorium am Spital Affoltern am Albis, einschliesslich der Anwendung von ECMP (Extracellular-Matrix-like Products).</p></details>
       <details class="faq-item"><summary>Wie vereinbare ich einen Termin?</summary><p>Sie erreichen uns telefonisch unter +41 43 234 55 55 oder per WhatsApp unter +41 78 261 82 88.</p></details>
@@ -660,6 +738,7 @@
       <p class="tagline">Longevity meets<br>measurable science.</p>
       <a class="btn btn-primary" href="https://wa.me/41782618288" target="_blank" rel="noopener">Termin buchen →</a>
       <p class="practice" style="margin-top:26px;">Dermetrics – Dr. med. Paul Georg</p>
+      <p class="footer-area">Hautarzt in Zürich Kreis 2 (Selnau/Enge) · Dermatologie und Venerologie</p>
       <p>Clinic Selnau<br>Brandschenkestrasse 45<br>8002 Zürich</p>
       <p><a href="tel:+41432345555">+41 43 234 55 55</a></p>
       <p><a href="https://share.google/EMOgfxDGYLcdnslC7" target="_blank" rel="noopener">Google-Profil der Clinic Selnau</a></p>
@@ -712,7 +791,9 @@
   <p class="pc-print-note"><strong>Bitte bringen Sie dieses Dokument sowie die Unterlagen Ihrer bisherigen Arztbesuche beim Dermatologen zu Ihrem Termin mit.</strong></p>
 </div>
 
+<link rel="stylesheet" href="css/style.css" data-full-css>
 <script src="assets/nav.js" defer></script>
+<script src="assets/map-consent.js" defer></script>
 <script src="assets/cookiebanner.js" defer></script>
 <script src="assets/opening-popup.js" defer></script>
 <script src="assets/carousel.js" defer></script>
@@ -1024,7 +1105,7 @@
 var FORMSPREE_FORM_ID = ''; // z. B. 'xzbqrsty' — sobald gesetzt, läuft der Versand serverseitig über Formspree statt mailto:
 
 (function () {
-  var CONTACT_LOCAL = 'paul.georg';
+  var CONTACT_LOCAL = 'clinicselnau';
   var CONTACT_DOMAIN = 'hin.ch';
   var CONTACT_EMAIL = CONTACT_LOCAL + '@' + CONTACT_DOMAIN;
 

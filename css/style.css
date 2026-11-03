@@ -695,6 +695,9 @@ table.plain td { color: var(--ink); }
 .sources ol { margin: 0; padding-left: 18px; }
 .sources li { font-size: 12px; color: var(--muted); margin-bottom: 6px; line-height: 1.5; }
 .sources a { color: var(--aubergine-mid); text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; }
+.sources p { font-size: 12px; color: var(--muted); line-height: 1.5; margin: 0; max-width: 74ch; }
+.subblock { margin-top: 40px; }
+.related a { color: var(--aubergine-mid); }
 
 /* ---------- QR-Code & Teilen (Patienteninformationen) ---------- */
 .qrshare {
@@ -1071,3 +1074,18 @@ table.plain td { color: var(--ink); }
 .page-lead { font-size: 14.5px; color: var(--ink); line-height: 1.6; max-width: 62ch; margin: 16px 0 0; }
 .page-lead a { color: var(--aubergine-mid); }
 .page-meta { font-size: 12.5px; color: var(--muted); margin: 6px 0 0; }
+
+/* ===== Google-Karte per Klick ===== */
+.mapcard { margin-top: 28px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); gap: 20px; align-items: stretch; }
+.mapcard-text { background: #fff; border: 1px solid var(--line); border-radius: var(--r-md); padding: 24px 26px; }
+.mapcard-text .name { font-size: 15.5px; font-weight: 500; color: var(--ink); margin: 0 0 8px; }
+.mapcard-text p { font-size: 14px; color: var(--muted); line-height: 1.6; margin: 0 0 10px; }
+.mapcard-text a { color: var(--aubergine-mid); }
+.mapbox { position: relative; min-height: 300px; border: 1px solid var(--line); border-radius: var(--r-md); background: var(--notice-bg); overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 24px; text-align: center; }
+.mapbox p { font-size: 13px; color: var(--muted); line-height: 1.55; margin: 0; max-width: 46ch; }
+.mapbox.is-loaded { padding: 0; }
+.mapbox iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.map-btn { font: inherit; font-size: 14px; font-weight: 500; color: #fff; background: var(--aubergine); border: 0; border-radius: 999px; padding: 11px 20px; cursor: pointer; }
+.map-btn:hover { background: var(--aubergine-mid); }
+.map-btn:focus-visible { outline: 2px solid var(--aubergine-mid); outline-offset: 3px; }
+@media (max-width: 720px) { .mapcard { grid-template-columns: 1fr; } }

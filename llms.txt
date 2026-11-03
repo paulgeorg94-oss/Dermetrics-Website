@@ -1,6 +1,6 @@
 # Dermetrics – Clinic Selnau
 
-> Dermatologische Praxis in Zürich Selnau/Enge (Brandschenkestrasse 45, 8002 Zürich). Dr. med. Paul Georg, Facharzt für Dermatologie und Venerologie, Mitglied SGDV und EADV. Schwerpunkte: Hautkrebs-Screening, Tumorchirurgie der Haut, mikrographisch kontrollierte Chirurgie (Mohs), Wundbehandlung (inkl. ECMP), Narbentherapie, Psoriasis, Acne inversa. Zertifizierter Praxis-OP, interdisziplinäre Zusammenarbeit mit der Plastischen Chirurgie (Dr. med. Simon Zimmermann, Facharzt für Plastische Chirurgie, Clinic Selnau). Sprechstunde Montag 10:00–18:00 Uhr, Eröffnung 7. Dezember 2026. Tel. +41 43 234 55 55. WhatsApp +41 78 261 82 88. Zuweisungen: clinicselnau@hin.ch. Sprachen: Deutsch (de-CH) und Englisch.
+> Dermatologische Praxis (Hautarzt) in Zürich Kreis 2 (Selnau/Enge), Brandschenkestrasse 45, 8002 Zürich. Dr. med. Paul Georg, Facharzt für Dermatologie und Venerologie, Mitglied SGDV und EADV. Schwerpunkte: Hautkrebs-Screening, Tumorchirurgie der Haut, mikrographisch kontrollierte Chirurgie (Mohs), Wundbehandlung (inkl. ECMP), Narbentherapie, Psoriasis, Acne inversa. Zertifizierter Praxis-OP, interdisziplinäre Zusammenarbeit mit der Plastischen Chirurgie (Dr. med. Simon Zimmermann, Facharzt für Plastische Chirurgie, Clinic Selnau). Sprechstunde Montag 10:00–18:00 Uhr, Eröffnung 7. Dezember 2026. Tel. +41 43 234 55 55. WhatsApp +41 78 261 82 88. Zuweisungen: clinicselnau@hin.ch. Sprachen: Deutsch (de-CH) und Englisch.
 
 Hinweis: Alle Inhalte dienen der Information und ersetzen keine ärztliche Beratung. Der Online-Pre-Check ist ein statistisches Orientierungsinstrument und keine Diagnose.
 
@@ -10,6 +10,13 @@ Hinweis: Alle Inhalte dienen der Information und ersetzen keine ärztliche Berat
 - [Patienteninformationen & Behandlungspläne](https://dermetrics.ch/hauterkrankungen-erklaert.html): Übersicht der Krankheitsbilder und Behandlungspläne
 - [Wahr oder falsch: Hautkrebsvorsorge](https://dermetrics.ch/hautkrebs-selbsttest.html): 8 Aussagen zur Hautkrebsvorsorge
 - [Eröffnungsapéro Clinic Selnau](https://dermetrics.ch/eroeffnung.html)
+
+## Leistungen (Hautarzt Zürich Selnau/Enge)
+- [Acne inversa](https://dermetrics.ch/leistungen/acne-inversa.html): Eine chronische Entzündung der Haut in den Körperfalten. Medikamente und Operation können kombiniert werden.
+- [Akne und Rosazea](https://dermetrics.ch/leistungen/akne-rosazea.html): Beide Erkrankungen betreffen häufig das Gesicht, werden aber unterschiedlich behandelt.
+- [Gutartige Hautveränderungen](https://dermetrics.ch/leistungen/gutartige-hautveraenderungen.html): Viele Hautveränderungen sind harmlos. Entfernt werden sie, wenn sie stören oder wenn eine Abklärung nötig ist.
+- [Hautkrebs-Screening](https://dermetrics.ch/leistungen/hautkrebs-screening.html): Die Haut wird systematisch auf auffällige Veränderungen untersucht. Wie oft das sinnvoll ist, hängt von Ihrem persönlichen Risiko ab.
+- [Mohs-Chirurgie](https://dermetrics.ch/leistungen/mohs-chirurgie.html): Ein schrittweises Verfahren, bei dem die Schnittränder systematisch untersucht werden, damit möglichst wenig gesundes Gewebe verloren geht.
 
 ## Patienteninformationen
 - [Aktinische Keratosen](https://dermetrics.ch/patienteninformationen/aktinische-keratosen.html)

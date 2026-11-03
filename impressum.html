@@ -9,7 +9,49 @@
 <link rel="icon" href="assets/logo-dermetrics.svg" type="image/svg+xml">
 <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="stylesheet" href="css/style.css">
+<style id="critical-css">:root { --r-sm: 10px; --r-md: 16px; --r-lg: 20px; --aubergine: #300C61; --aubergine-mid: #4B2C86; --ink: #241C2E; --muted: #756B82; --line: #E4DEE8; --ivory: #FBF8F6; --notice-bg: #F5F1FA; }
+@font-face { font-family: Inter; font-style: normal; font-weight: 300; font-display: swap; src: url("assets/vendor/fonts/Inter-Light.woff2") format("woff2"); }
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font-display: swap; src: url("assets/vendor/fonts/Inter-Regular.woff2") format("woff2"); }
+@font-face { font-family: Inter; font-style: normal; font-weight: 500; font-display: swap; src: url("assets/vendor/fonts/Inter-Medium.woff2") format("woff2"); }
+@font-face { font-family: Inter; font-style: normal; font-weight: 600; font-display: swap; src: url("assets/vendor/fonts/Inter-SemiBold.woff2") format("woff2"); }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0px; background: var(--ivory); color: var(--ink); font-family: Inter, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; line-height: 1.6; font-weight: 400; }
+a { color: var(--aubergine-mid); }
+.wrap { max-width: 1040px; margin: 0px auto; padding: 0px 32px; }
+body { padding-top: 68px; }
+.topnav { position: fixed; top: 0px; left: 0px; right: 0px; z-index: 20; background: rgba(251, 248, 246, 0.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); transition: transform 0.28s; transform: translateZ(0px); will-change: transform; }
+.topnav .wrap { max-width: 1280px; display: flex; align-items: center; justify-content: space-between; padding-top: 14px; padding-bottom: 14px; gap: 24px; }
+.topnav .brandrow { display: flex; align-items: center; gap: 12px; text-decoration: none; margin-bottom: 0px; }
+.topnav .brandrow img { width: auto; height: 30px; display: block; }
+.topnav .brandmark { font-size: 13px; letter-spacing: 0.14em; color: var(--aubergine); font-weight: 500; }
+.topnav nav { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.topnav nav a { white-space: nowrap; font-size: 13px; color: var(--ink); text-decoration: none; font-weight: 400; }
+.topnav nav a:hover { color: var(--aubergine-mid); }
+.topnav .lang { font-size: 12.5px; color: var(--muted); }
+.topnav .lang a { color: var(--muted); text-decoration: none; }
+.topnav .lang a:hover { color: var(--aubergine-mid); }
+.topnav .lang .current { color: var(--ink); font-weight: 500; }
+.topnav .cta { font-size: 13px; font-weight: 500; color: rgb(255, 255, 255); background: var(--aubergine); padding: 9px 18px; line-height: 18px; border-radius: 999px; text-decoration: none; white-space: nowrap; }
+.topnav .navtoggle { display: none; }
+.topnav nav.navlinks .cta { display: none; }
+@media (max-width: 1240px){.topnav nav.navlinks { display: none; }.topnav .cta { display: none; }.topnav .navtoggle { display: inline-flex; background: none; border: 1px solid var(--line); border-radius: var(--r-sm); padding: 8px 12px; min-height: 36px; align-items: center; font-size: 13px; color: var(--ink); }}
+.header { padding: 56px 0px 48px; background: radial-gradient(60% 80% at 18% 12%, rgba(196, 178, 235, 0.55), transparent 62%), radial-gradient(70% 90% at 88% 82%, rgba(245, 190, 150, 0.4), transparent 62%), rgb(251, 246, 241); }
+.header.compact { padding: 40px 0px 34px; }
+.brandrow { display: flex; align-items: center; gap: 14px; margin-bottom: 34px; }
+.brandrow img { width: auto; height: 34px; display: block; }
+.brandmark { font-size: 14px; letter-spacing: 0.14em; color: var(--aubergine); font-weight: 500; }
+.kicker { font-size: 13.5px; color: var(--muted); margin: 0px 0px 16px; letter-spacing: 0.02em; }
+h1 { font-size: 40px; font-weight: 300; line-height: 1.2; letter-spacing: -0.01em; margin: 0px 0px 14px; }
+.header.compact h1 { font-size: 30px; }
+section.block { padding: 64px 0px; border-top: 1px solid var(--line); scroll-margin-top: 76px; }
+h2 { font-size: 28px; font-weight: 300; line-height: 1.3; margin: 0px 0px 18px; letter-spacing: -0.005em; }
+h3 { font-size: 15px; font-weight: 500; color: var(--ink); margin: 0px 0px 8px; }
+#datenschutz h3 { margin-top: 32px; }
+#datenschutz h3:first-of-type { margin-top: 0px; }
+.intro p { font-size: 15.5px; color: var(--ink); line-height: 1.7; margin: 0px 0px 16px; max-width: 74ch; }
+.intro p:last-child { margin-bottom: 0px; }</style>
+<link rel="preload" href="css/style.css" as="style" data-critical>
 <link rel="canonical" href="https://dermetrics.ch/impressum.html">
 <link rel="alternate" hreflang="de-CH" href="https://dermetrics.ch/impressum.html">
 <link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/legal.html">
@@ -106,7 +148,7 @@
 
     <h3>5. Empfänger der Daten</h3>
     <div class="intro">
-      <p>Über das Kontaktformular eingegebene Daten werden ausschliesslich an die Praxis übermittelt, konkret an die verschlüsselte HIN-Mailbox <strong>paul.georg@hin.ch</strong> als einzigen Empfänger. Je nach technischer Ausgestaltung des Formulars zum Zeitpunkt Ihres Besuchs geschieht dies entweder direkt über Ihr eigenes E-Mail-Programm (Ihre Angaben werden dabei nicht an einen Server dieser Website übermittelt) oder über einen Formular-Dienstleister als Auftragsbearbeiter, der die Daten ausschliesslich zur Weiterleitung an obige Adresse verwendet. Eine Weitergabe an weitere Dritte, insbesondere zu Werbe- oder Analysezwecken, findet nicht statt. Formulardaten werden auf keinem von dieser Website selbst betriebenen Server zwischengespeichert — die Website ist statisch aufgebaut und verfügt über keine eigene Datenbank.</p>
+      <p>Über das Kontaktformular eingegebene Daten werden ausschliesslich an die Praxis übermittelt, konkret an die verschlüsselte HIN-Mailbox <strong>clinicselnau@hin.ch</strong> als einzigen Empfänger. Je nach technischer Ausgestaltung des Formulars zum Zeitpunkt Ihres Besuchs geschieht dies entweder direkt über Ihr eigenes E-Mail-Programm (Ihre Angaben werden dabei nicht an einen Server dieser Website übermittelt) oder über einen Formular-Dienstleister als Auftragsbearbeiter, der die Daten ausschliesslich zur Weiterleitung an obige Adresse verwendet. Eine Weitergabe an weitere Dritte, insbesondere zu Werbe- oder Analysezwecken, findet nicht statt. Formulardaten werden auf keinem von dieser Website selbst betriebenen Server zwischengespeichert — die Website ist statisch aufgebaut und verfügt über keine eigene Datenbank.</p>
     </div>
 
     <h3>6. Aufbewahrungsdauer</h3>
@@ -121,7 +163,7 @@
 
     <h3>8. Kontakt für Datenschutzanfragen</h3>
     <div class="intro">
-      <p>Für Fragen zum Datenschutz sowie zur Ausübung Ihrer Rechte wenden Sie sich bitte telefonisch an <a href="tel:+41432345555">+41 43 234 55 55</a> oder postalisch an die oben genannte Praxisadresse.</p>
+      <p>Für Fragen zum Datenschutz sowie zur Ausübung Ihrer Rechte wenden Sie sich bitte telefonisch an <a href="tel:+41432345555">+41 43 234 55 55</a>, per E-Mail an <a href="mailto:clinicselnau@hin.ch">clinicselnau@hin.ch</a> oder postalisch an die oben genannte Praxisadresse.</p>
     </div>
 
     <h3>9. Ärztliches Berufsgeheimnis</h3>
@@ -131,7 +173,7 @@
 
     <h3>10. Kontaktformular — wichtiger Hinweis</h3>
     <div class="notice">
-      <p><strong>Bitte übermitteln Sie über das Kontaktformular keine medizinischen Daten, Befunde oder Symptombeschreibungen.</strong> Nutzen Sie hierfür den telefonischen Kontakt oder eine gesicherte HIN-Mail. Das Kontaktformular ist ausschliesslich für allgemeine, nicht-medizinische Anfragen vorgesehen.</p>
+      <p><strong>Bitte übermitteln Sie über das Kontaktformular keine medizinischen Daten, Befunde oder Symptombeschreibungen.</strong> Nutzen Sie hierfür den telefonischen Kontakt oder eine gesicherte HIN-Mail an <a href="mailto:clinicselnau@hin.ch">clinicselnau@hin.ch</a>. Das Kontaktformular ist ausschliesslich für allgemeine, nicht-medizinische Anfragen vorgesehen.</p>
     </div>
 
     <h3>11. Hosting</h3>
@@ -141,7 +183,7 @@
 
     <h3>12. Cookies</h3>
     <div class="intro">
-      <p>Diese Website setzt aktuell <strong>keine</strong> Cookies ein. Es werden weder Statistik-/Analyse-Cookies noch Marketing- oder Tracking-Cookies verwendet. Schriftarten werden lokal von dieser Website ausgeliefert statt von einem externen Anbieter geladen, sodass beim Seitenaufruf keine Verbindung zu Drittanbieter-Servern für Schriften aufgebaut wird. Lediglich Ihre Wahl beim Cookie-Hinweis-Banner (gesehen/nicht gesehen) und die Angabe, dass Sie das Popup zur Praxiseröffnung bereits gesehen haben, werden lokal in Ihrem Browser (localStorage) gespeichert — hierbei handelt es sich technisch nicht um Cookies und es werden keine Daten an einen Server übertragen.</p>
+      <p>Diese Website selbst setzt aktuell <strong>keine</strong> Cookies ein. Es werden weder Statistik-/Analyse-Cookies noch Marketing- oder Tracking-Cookies verwendet. Schriftarten werden lokal von dieser Website ausgeliefert statt von einem externen Anbieter geladen, sodass beim Seitenaufruf keine Verbindung zu Drittanbieter-Servern für Schriften aufgebaut wird. Lediglich Ihre Wahl beim Cookie-Hinweis-Banner (gesehen/nicht gesehen) und die Angabe, dass Sie das Popup zur Praxiseröffnung bereits gesehen haben, werden lokal in Ihrem Browser (localStorage) gespeichert — hierbei handelt es sich technisch nicht um Cookies und es werden keine Daten an einen Server übertragen. Ausnahme: Wenn Sie auf der Startseite die Google-Karte laden, kann Google eigene Cookies setzen (siehe Abschnitt 13).</p>
     </div>
     <div class="tablewrap">
       <table class="plain">
@@ -152,6 +194,14 @@
           <tr><td>Marketing</td><td>Personalisierte Werbung, websiteübergreifendes Tracking</td><td>Nein, nicht im Einsatz</td></tr>
         </tbody>
       </table>
+    </div>
+
+    <h3 id="google-maps">13. Google Maps (Karte per Klick)</h3>
+    <div class="intro">
+      <p>Auf der Startseite zeigen wir den Standort der Clinic Selnau in Zürich Kreis 2 mit einer Karte von Google Maps. Die Karte wird erst geladen, wenn Sie auf «Karte laden» klicken. Vorher wird keine Verbindung zu Google aufgebaut.</p>
+      <p>Nach dem Klick verbindet sich Ihr Browser mit Servern von Google. Dabei erhält Google technische Daten wie Ihre IP-Adresse, die aufgerufene Seite sowie Browser- und Geräteangaben. Google kann Cookies setzen und die Daten auch in Länder ausserhalb der Schweiz übermitteln, zum Beispiel in die USA. Auf diese Bearbeitung durch Google haben wir keinen Einfluss.</p>
+      <p>Rechtsgrundlage ist Ihre Einwilligung, die Sie mit dem Klick auf «Karte laden» erteilen. Sie gilt nur für den jeweiligen Seitenaufruf. Laden Sie die Karte nicht, entstehen Ihnen keine Nachteile: Die Adresse steht direkt daneben. Weitere Informationen finden Sie in der <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Datenschutzerklärung von Google</a>.</p>
+      <p>Der Link «Google-Profil der Clinic Selnau» öffnet eine Seite von Google. Daten werden erst übertragen, wenn Sie den Link anklicken.</p>
     </div>
   </div>
 </section>
@@ -189,6 +239,7 @@
     <div class="col">
       <p class="tagline">Longevity meets<br>measurable science.</p>
       <p class="practice" style="margin-top:26px;">Dermetrics – Dr. med. Paul Georg</p>
+      <p class="footer-area">Hautarzt in Zürich Kreis 2 (Selnau/Enge) · Dermatologie und Venerologie</p>
       <p>Clinic Selnau<br>Brandschenkestrasse 45<br>8002 Zürich</p>
       <p><a href="tel:+41432345555">+41 43 234 55 55</a></p>
       <p><a href="https://share.google/EMOgfxDGYLcdnslC7" target="_blank" rel="noopener">Google-Profil der Clinic Selnau</a></p>
@@ -202,6 +253,7 @@
   </div>
 </footer>
 
+<link rel="stylesheet" href="css/style.css" data-full-css>
 <script src="assets/nav.js" defer></script>
 <script src="assets/cookiebanner.js" defer></script>
 <script src="assets/opening-popup.js" defer></script>

@@ -20,16 +20,17 @@ d = datetime.date.fromisoformat(P['eroeffnung'])
 MON = ['Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember']
 a, arzt = P['adresse'], P['arzt']
 sp = P['sprechstunde_selnau']
-summary = (f"Dermatologische Praxis in Zürich {a['quartier']} ({a['strasse']}, {a['plz']} {a['ort']}). {arzt['name']}, {arzt['titel']}, "
+summary = (f"Dermatologische Praxis (Hautarzt) in Zürich {a['kreis']} ({a['quartier']}), {a['strasse']}, {a['plz']} {a['ort']}. {arzt['name']}, {arzt['titel']}, "
            f"Mitglied SGDV und EADV. Schwerpunkte: Hautkrebs-Screening, Tumorchirurgie der Haut, mikrographisch kontrollierte Chirurgie (Mohs), "
            f"Wundbehandlung (inkl. ECMP), Narbentherapie, Psoriasis, Acne inversa. Zertifizierter Praxis-OP, interdisziplinäre Zusammenarbeit mit der "
            f"Plastischen Chirurgie ({P['partner']['name']}, {P['partner']['titel']}, {P['partner']['team']}). Sprechstunde {sp['tag']} {sp['von']}–{sp['bis']} Uhr, "
            f"Eröffnung {d.day}. {MON[d.month-1]} {d.year}. Tel. {P['telefon']}. WhatsApp {P['whatsapp']}. Zuweisungen: {P['email_zuweisungen']}. "
            f"Sprachen: Deutsch (de-CH) und Englisch.")
-sec = {'de_main': [], 'pi': [], 'bp': [], 'en': [], 'opt': []}
+sec = {'de_main': [], 'le': [], 'pi': [], 'bp': [], 'en': [], 'opt': []}
 for u in urls:
     f = file_of(u)
     if f.startswith('en/'): sec['en'].append(u)
+    elif f.startswith('leistungen/'): sec['le'].append(u)
     elif f.startswith('patienteninformationen/'): sec['pi'].append(u)
     elif f.startswith('behandlungsprotokolle/'): sec['bp'].append(u)
     elif f == 'impressum.html': sec['opt'].append(u)
@@ -46,6 +47,10 @@ out = [f"# Dermetrics – {P['standortname']}", '', '> ' + summary, '',
 for u in sec['de_main']:
     out.append(line(u, NOTES.get(u, '')))
     if u == BASE: out.append(f'- [Hautkrebs-Pre-Check]({BASE}#precheck): 13 Fragen, kein Diagnoseinstrument')
+def subhead(u):
+    m = re.search(r'<p class="subhead">(.*?)</p>', open(file_of(u), encoding='utf-8').read(), re.S)
+    return html.unescape(re.sub(r'<[^>]+>', '', m.group(1))).strip() if m else ''
+out += ['', '## Leistungen (Hautarzt Zürich Selnau/Enge)'] + [line(u, subhead(u)) for u in sec['le']]
 out += ['', '## Patienteninformationen'] + [line(u) for u in sec['pi']]
 out += ['', '## Behandlungsprotokolle'] + [line(u) for u in sec['bp']]
 ORDER = lambda u: (-1 if u == BASE + 'en/index.html' else 0 if '/patient-information/' not in u and '/treatment-protocols/' not in u and 'legal' not in u else 1 if '/patient-information/' in u else 2 if '/treatment-protocols/' in u else 3)
