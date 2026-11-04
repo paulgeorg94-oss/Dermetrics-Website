@@ -13,7 +13,7 @@ Bitte je Frage kurz antworten (Nummer + Antwort). Ich setze die Antworten danach
 | **C2** | „Zertifizierter Praxis-OP“: Welches Zertifikat, welcher Aussteller? | wie C1 | Startseite: Leistungsübersicht, Qualifikation, FAQ |
 | **C3** | Mohs-Chirurgie: Wo findet die Schnittrandkontrolle statt (eigenes Labor, Pathologie-Partner)? | Die FAQ beschreibt das Verfahren; der Ablauf bei Ihnen ist nicht belegt. | Startseite: FAQ |
 | **C4** | Der Link zum Google-Profil führt auf eine Seite, auf der Bewertungen erscheinen können. Ist das für Sie mit der FMH-Standesordnung (keine Patientenbewertungen in eigener Werbung) vereinbar, oder soll der Link nur auf die Karte zeigen? | Ich habe den Link bewusst ohne das Wort „Bewertungen“ gesetzt. | Fusszeilen aller Seiten, Kontakt |
-| ~~A2~~ | **Erledigt (3.11.2026):** Alle Adressen lauten jetzt `clinicselnau@hin.ch` (Zuweisungen, Konsile, Kontaktformular, Apéro-Anmeldung, Datenschutz). | | |
+| ~~A2~~ | **Erledigt (3.11.2026):** `clinicselnau@hin.ch` für Zuweisungen, Konsile, Kontaktformular und Datenschutz; `paul.georg@hin.ch` für die Apéro-Anmeldung (Ihre Angabe vom 4.11.2026). | | |
 | **A3** | Datenschutztext Google Maps (Abschnitt 13, DE/EN) ist ein Entwurf. Bitte rechtlich prüfen lassen, besonders die Aussagen zu Cookies und Datenübermittlung in die USA. | Ich habe den Text nicht juristisch geprüft. | `impressum.html#google-maps`, `en/legal.html#google-maps` |
 | **A4** | Hautkrebs-Screening-Seite: Dort steht „3D-Ganzkörperscan (DB-Scan)“, auf der Startseite „DeviScan“. Welcher Name stimmt? | Ich habe Ihren Text wortgleich übernommen. | `leistungen/hautkrebs-screening.html` |
 

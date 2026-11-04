@@ -10,49 +10,7 @@
 <link rel="icon" href="../assets/logo-dermetrics.svg" type="image/svg+xml">
 <link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
-<style id="critical-css">:root { --r-sm: 10px; --r-md: 16px; --r-lg: 20px; --aubergine: #300C61; --aubergine-mid: #4B2C86; --ink: #241C2E; --muted: #756B82; --line: #E4DEE8; --ivory: #FBF8F6; --notice-bg: #F5F1FA; }
-@font-face { font-family: Inter; font-style: normal; font-weight: 300; font-display: swap; src: url("../assets/vendor/fonts/Inter-Light.woff2") format("woff2"); }
-@font-face { font-family: Inter; font-style: normal; font-weight: 400; font-display: swap; src: url("../assets/vendor/fonts/Inter-Regular.woff2") format("woff2"); }
-@font-face { font-family: Inter; font-style: normal; font-weight: 500; font-display: swap; src: url("../assets/vendor/fonts/Inter-Medium.woff2") format("woff2"); }
-@font-face { font-family: Inter; font-style: normal; font-weight: 600; font-display: swap; src: url("../assets/vendor/fonts/Inter-SemiBold.woff2") format("woff2"); }
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body { margin: 0px; background: var(--ivory); color: var(--ink); font-family: Inter, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; line-height: 1.6; font-weight: 400; }
-a { color: var(--aubergine-mid); }
-.wrap { max-width: 1040px; margin: 0px auto; padding: 0px 32px; }
-body { padding-top: 68px; }
-.topnav { position: fixed; top: 0px; left: 0px; right: 0px; z-index: 20; background: rgba(251, 248, 246, 0.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); transition: transform 0.28s; transform: translateZ(0px); will-change: transform; }
-.topnav .wrap { max-width: 1280px; display: flex; align-items: center; justify-content: space-between; padding-top: 14px; padding-bottom: 14px; gap: 24px; }
-.topnav .brandrow { display: flex; align-items: center; gap: 12px; text-decoration: none; margin-bottom: 0px; }
-.topnav .brandrow img { width: auto; height: 30px; display: block; }
-.topnav .brandmark { font-size: 13px; letter-spacing: 0.14em; color: var(--aubergine); font-weight: 500; }
-.topnav nav { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
-.topnav nav a { white-space: nowrap; font-size: 13px; color: var(--ink); text-decoration: none; font-weight: 400; }
-.topnav nav a:hover { color: var(--aubergine-mid); }
-.topnav .lang { font-size: 12.5px; color: var(--muted); }
-.topnav .lang a { color: var(--muted); text-decoration: none; }
-.topnav .lang a:hover { color: var(--aubergine-mid); }
-.topnav .lang .current { color: var(--ink); font-weight: 500; }
-.topnav .cta { font-size: 13px; font-weight: 500; color: rgb(255, 255, 255); background: var(--aubergine); padding: 9px 18px; line-height: 18px; border-radius: 999px; text-decoration: none; white-space: nowrap; }
-.topnav .navtoggle { display: none; }
-.topnav nav.navlinks .cta { display: none; }
-@media (max-width: 1240px){.topnav nav.navlinks { display: none; }.topnav .cta { display: none; }.topnav .navtoggle { display: inline-flex; background: none; border: 1px solid var(--line); border-radius: var(--r-sm); padding: 8px 12px; min-height: 36px; align-items: center; font-size: 13px; color: var(--ink); }}
-.header { padding: 56px 0px 48px; background: radial-gradient(60% 80% at 18% 12%, rgba(196, 178, 235, 0.55), transparent 62%), radial-gradient(70% 90% at 88% 82%, rgba(245, 190, 150, 0.4), transparent 62%), rgb(251, 246, 241); }
-.header.compact { padding: 40px 0px 34px; }
-.brandrow { display: flex; align-items: center; gap: 14px; margin-bottom: 34px; }
-.brandrow img { width: auto; height: 34px; display: block; }
-.brandmark { font-size: 14px; letter-spacing: 0.14em; color: var(--aubergine); font-weight: 500; }
-.kicker { font-size: 13.5px; color: var(--muted); margin: 0px 0px 16px; letter-spacing: 0.02em; }
-h1 { font-size: 40px; font-weight: 300; line-height: 1.2; letter-spacing: -0.01em; margin: 0px 0px 14px; }
-.header.compact h1 { font-size: 30px; }
-section.block { padding: 64px 0px; border-top: 1px solid var(--line); scroll-margin-top: 76px; }
-h2 { font-size: 28px; font-weight: 300; line-height: 1.3; margin: 0px 0px 18px; letter-spacing: -0.005em; }
-h3 { font-size: 15px; font-weight: 500; color: var(--ink); margin: 0px 0px 8px; }
-#datenschutz h3 { margin-top: 32px; }
-#datenschutz h3:first-of-type { margin-top: 0px; }
-.intro p { font-size: 15.5px; color: var(--ink); line-height: 1.7; margin: 0px 0px 16px; max-width: 74ch; }
-.intro p:last-child { margin-bottom: 0px; }</style>
-<link rel="preload" href="../css/style.css" as="style" data-critical>
+<link rel="stylesheet" href="../css/style.css">
 <link rel="canonical" href="https://dermetrics.ch/en/legal.html">
 <link rel="alternate" hreflang="de-CH" href="https://dermetrics.ch/impressum.html">
 <link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/legal.html">
@@ -144,7 +102,7 @@ Phone: <a href="tel:+41432345555">+41 43 234 55 55</a></p>
 
 <h3>5. Recipients of data</h3>
 <div class="intro">
-<p>Data entered via the contact form are transmitted solely to the practice, specifically to the encrypted HIN mailbox <strong>clinicselnau@hin.ch</strong> as the sole recipient. Depending on the technical setup of the form at the time of your visit, this happens either directly via your own email program (your details are then not transmitted to any server of this website) or via a form service provider acting as a processor, used solely to forward the data to the address above. Data are not passed on to any other third parties, in particular not for advertising or analytics purposes. Form data are not cached on any server operated by this website itself — the website is static and has no database of its own.</p>
+<p>Data entered via the contact form are transmitted solely to the practice, specifically to the encrypted HIN mailbox <strong>clinicselnau@hin.ch</strong> as the sole recipient. Depending on the technical setup of the form at the time of your visit, this happens either directly via your own email program (your details are then not transmitted to any server of this website) or via a form service provider acting as a processor, used solely to forward the data to the address above. Registrations for the opening reception go to <strong>paul.georg@hin.ch</strong>. Data are not passed on to any other third parties, in particular not for advertising or analytics purposes. Form data are not cached on any server operated by this website itself — the website is static and has no database of its own.</p>
 </div>
 
 <h3>6. Retention period</h3>
@@ -246,7 +204,6 @@ Phone: <a href="tel:+41432345555">+41 43 234 55 55</a></p>
 </div>
 </div>
 </footer>
-<link rel="stylesheet" href="../css/style.css" data-full-css>
 <script src="../assets/nav.js" defer></script>
 <script src="../assets/cookiebanner.js" defer></script>
 <script src="../assets/opening-popup.js" defer></script>

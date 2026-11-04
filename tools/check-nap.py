@@ -17,7 +17,7 @@ for p in pages:
             if label.startswith('Telefon') and m.group(0) in (P['telefon'], P['telefon_e164']): continue
             issues += 1; print(f'{p}: {label}: «{m.group(0)}»')
     for mail in {m.rstrip('.') for m in re.findall(r'[\w.+-]+@[\w-]+\.[\w.]+', s)}:
-        if mail not in (P['email_zuweisungen'], P['email_konsile']): issues += 1; print(f'{p}: unbekannte E-Mail «{mail}»')
+        if mail not in (P['email_zuweisungen'], P['email_konsile'], P['email_apero']): issues += 1; print(f'{p}: unbekannte E-Mail «{mail}»')
     foot = re.search(r'<(footer|div) class="footer">.*?</\1>', s, re.S)
     if foot:
         f = foot.group(0)
