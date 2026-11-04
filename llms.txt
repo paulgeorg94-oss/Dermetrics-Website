@@ -15,6 +15,7 @@ Hinweis: Alle Inhalte dienen der Information und ersetzen keine ärztliche Berat
 - [Acne inversa](https://dermetrics.ch/leistungen/acne-inversa.html): Eine chronische Entzündung der Haut in den Körperfalten. Medikamente und Operation können kombiniert werden.
 - [Akne und Rosazea](https://dermetrics.ch/leistungen/akne-rosazea.html): Beide Erkrankungen betreffen häufig das Gesicht, werden aber unterschiedlich behandelt.
 - [Gutartige Hautveränderungen](https://dermetrics.ch/leistungen/gutartige-hautveraenderungen.html): Viele Hautveränderungen sind harmlos. Entfernt werden sie, wenn sie stören oder wenn eine Abklärung nötig ist.
+- [Photodynamische Therapie (PDT)](https://dermetrics.ch/leistungen/photodynamische-therapie.html): Die Behandlung findet in der Praxis unter einer speziellen Lampe statt, die das Licht des Tageshimmels nachahmt – unabhängig vom Wetter, der Jahreszeit und der Tageszeit.
 - [Hautkrebs-Screening](https://dermetrics.ch/leistungen/hautkrebs-screening.html): Die Haut wird systematisch auf auffällige Veränderungen untersucht. Wie oft das sinnvoll ist, hängt von Ihrem persönlichen Risiko ab.
 - [Mohs-Chirurgie](https://dermetrics.ch/leistungen/mohs-chirurgie.html): Ein schrittweises Verfahren, bei dem die Schnittränder systematisch untersucht werden, damit möglichst wenig gesundes Gewebe verloren geht.
 
@@ -45,6 +46,7 @@ Hinweis: Alle Inhalte dienen der Information und ersetzen keine ärztliche Berat
 - [True or false: skin cancer prevention](https://dermetrics.ch/en/skin-cancer-self-test.html): 8 statements on skin cancer prevention
 - [Patient Information & Treatment Plans](https://dermetrics.ch/en/skin-conditions-explained.html)
 - [Opening Reception Clinic Selnau](https://dermetrics.ch/en/eroeffnung.html)
+- [Photodynamic therapy (PDT)](https://dermetrics.ch/en/services/photodynamic-therapy.html): The treatment takes place in the practice under a special lamp that imitates the light of the daytime sky – independent of the weather, the season and the time of day.
 - [Mosaic 3D](https://dermetrics.ch/en/patient-information/mosaic-3d-erbium-laser.html)
 - [Post-inflammatory hyperpigmentation](https://dermetrics.ch/en/patient-information/post-inflammatory-hyperpigmentation.html)
 - [Actinic Keratoses](https://dermetrics.ch/en/patient-information/actinic-keratosis.html)

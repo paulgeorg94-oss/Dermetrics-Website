@@ -1118,3 +1118,7 @@ table.plain td { color: var(--ink); }
   .welcome { order: -1; }
   .welcome img { max-width: 420px; }
 }
+/* Vier Schritt-Karten im 2×2-Raster (z. B. MediX-Ablauf auf der PDT-Seite) */
+.options.options--grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.options.options--grid .option { min-width: 0; }
+@media (max-width: 720px) { .options.options--grid { grid-template-columns: 1fr; gap: 16px; } }

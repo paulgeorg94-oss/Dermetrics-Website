@@ -16,6 +16,7 @@ Bitte je Frage kurz antworten (Nummer + Antwort). Ich setze die Antworten danach
 | ~~A2~~ | **Erledigt (3.11.2026):** `clinicselnau@hin.ch` für Zuweisungen, Konsile, Kontaktformular und Datenschutz; `paul.georg@hin.ch` für die Apéro-Anmeldung (Ihre Angabe vom 4.11.2026). | | |
 | **A3** | Datenschutztext Google Maps (Abschnitt 13, DE/EN) ist ein Entwurf. Bitte rechtlich prüfen lassen, besonders die Aussagen zu Cookies und Datenübermittlung in die USA. | Ich habe den Text nicht juristisch geprüft. | `impressum.html#google-maps`, `en/legal.html#google-maps` |
 | ~~A4~~ | **Erledigt (4.11.2026):** Überall „DeviScan“ (vorher „DB-Scan“ auf der Screening-Seite). | | |
+| **A5** | PDT-Seite: Der Abschnitt „Was zeigen wissenschaftliche Untersuchungen …“ nennt eine Untersuchung an Hautarztpraxen in Deutschland ohne Quellenangabe. Welche Studie ist es (Autoren, Journal, Jahr, Link)? | Ohne Quelle ist die Aussage für Leserinnen und Leser nicht prüfbar. | `leistungen/photodynamische-therapie.html` |
 
 ## Priorität 2: Fakten bestätigen oder ergänzen
 
