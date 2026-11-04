@@ -8,7 +8,7 @@ Bitte je Frage kurz antworten (Nummer + Antwort). Ich setze die Antworten danach
 
 | # | Frage | Warum es zählt | Wo es steht |
 |---|---|---|---|
-| **D1** | Darf der Branch `seo-geo-2026-11` live gehen (Übernahme auf `claude/website-erstellung-wxrt0v`)? Alternativ: welche Teile nicht? | Ihr Prompt verlangt eine Freigabe vor jedem Deploy. | ganzer Branch |
+| ~~D1~~ | **Erledigt (4.11.2026):** Freigabe für den ganzen Branch erteilt; `seo-geo-2026-11` ist auf `claude/website-erstellung-wxrt0v` übernommen (live). | | |
 | ~~C1~~ | **Erledigt (4.11.2026):** „Zertifizierter Experte für Dermatochirurgie“ bleibt so; laut Ihrer Angabe liegen die Nachweise vor. | | |
 | ~~C2~~ | **Erledigt (4.11.2026):** „Zertifizierter Praxis-OP“ bleibt so; laut Ihrer Angabe liegen die Nachweise vor. | | |
 | ~~C3~~ | **Erledigt (4.11.2026):** Beschreibung der Mohs-Chirurgie bleibt so (Ihre Angabe). | | |
