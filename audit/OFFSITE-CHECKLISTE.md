@@ -2,7 +2,7 @@
 
 Überall dieselben Angaben verwenden, wörtlich aus `data/praxis.json`:
 
-- **Name:** Dermetrics – Dr. med. Paul Georg
+- **Name:** Dermetrics – Dr. med. Paul J. Georg
 - **Adresse:** Brandschenkestrasse 45, 8002 Zürich, Schweiz
 - **Telefon:** +41 43 234 55 55 · **WhatsApp:** +41 78 261 82 88
 - **Website:** https://dermetrics.ch/

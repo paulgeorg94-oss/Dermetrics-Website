@@ -4,7 +4,7 @@ data/praxis.json: voller Name, Adresse, Telefon, Link zum Google-Profil.
 Idempotent. Aufruf aus dem Repository-Wurzelverzeichnis."""
 import glob, json, re
 P = json.load(open('data/praxis.json', encoding='utf-8'))
-NAME = P['praxisname']                       # Dermetrics – Dr. med. Paul Georg
+NAME = P['praxisname']                       # Dermetrics – Dr. med. Paul J. Georg
 A = P['adresse']; ADDR = f"{A['strasse']}<br>{A['plz']} {A['ort']}"
 TEL = f'<a href="tel:{P["telefon_e164"]}">{P["telefon"]}</a>'
 GOOGLE = {'de': 'Google-Profil der Clinic Selnau', 'en': 'Clinic Selnau on Google'}
@@ -24,7 +24,7 @@ for p in pages:
     m = re.search(r'<div class="footer">.*?</div>', s, re.S)
     if m and 'class="practice"' in m.group(0):
         f = m.group(0)
-        f = re.sub(r'<p class="practice">Dermetrics . Dr\. med\. Paul Georg</p>', f'<p class="practice">{NAME}</p>', f)
+        f = re.sub(r'<p class="practice">Dermetrics . Dr\. med\. Paul (?:J\. )?Georg</p>', f'<p class="practice">{NAME}</p>', f)
         if P['google_profil'] not in f:
             line = f'<p>{P["standortname"]}, {A["strasse"]}, {A["plz"]} {A["ort"]} · {TEL} · {glink}</p>'
             f = f.replace(f'<p class="practice">{NAME}</p>', f'<p class="practice">{NAME}</p>\n<p>{line[3:-4]}</p>', 1)

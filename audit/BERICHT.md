@@ -28,7 +28,7 @@ Offene Fragen stehen in [`OFFENE-PUNKTE.md`](../OFFENE-PUNKTE.md).
 |---|---|---|---|
 | Eröffnungsdatum widersprüchlich | **Bestätigt:** Laufbahn „Okt. 2026“ vs. FAQ „7. Dezember 2026“. | `index.html` Laufbahn-Tabelle, `en/index.html` „Oct. 2026“ | Behoben: Laufbahn jetzt „7. Dez. 2026“ (DE/EN). Einladung „Ab Dezember 2026“ ist kein Widerspruch und blieb unverändert. |
 | E-Mail uneinheitlich | **Bestätigt:** `clinicselnau@hin.ch` (Zuweisungen) und `paul.georg@hin.ch` (Kontaktformular, Apéro-Anmeldung, Datenschutz). | `index.html` Kontakt, `assets/eroeffnung-form.js`, `impressum.html` | Offen: Rollen bestätigen (Frage A2). |
-| Name uneinheitlich | **Bestätigt:** „Dr. med. P. Georg“ in Fusszeilen, „Dr. med. Paul Georg“ im Impressum. | alle Fusszeilen | Behoben: überall „Dermetrics – Dr. med. Paul Georg“. |
+| Name uneinheitlich | **Bestätigt:** „Dr. med. P. Georg“ in Fusszeilen, „Dr. med. Paul J. Georg“ im Impressum. | alle Fusszeilen | Behoben: überall „Dermetrics – Dr. med. Paul J. Georg“. |
 | sitemap.xml defekt | **Bestätigt** (bereits am 03.11. behoben, Commit `bd48394`). | – | Jetzt per `tools/build-sitemap.py`; `xmllint --noout` ohne Fehler. |
 | Interne Links auf `index.html`, Canonical auf `/` | **Bestätigt.** | alle Unterseiten | Behoben: Links auf `/` bzw. `/en/index.html`. Englische Seiten verlinkten zudem die deutsche Startseite und das deutsche Impressum; jetzt die englischen. |
 | H1 ohne Leerzeichen | **Bestätigt:** 24 Seiten (z. B. „BasalzellkarzinomWeisser Hautkrebs“), dazu die Einladung („EröffnungsapéroClinic Selnau“). | H1 mit `<span class="h1sub">` | Behoben: Untertitel ist ein eigenes `<p class="h1sub">`. |

@@ -2905,8 +2905,8 @@
                 "width": 320,
                 "height": 400
               },
-              "snippet": "<img alt=\"Dr. med. Paul Georg\" height=\"990\" src=\"../assets/dr-georg-portrait.webp\" width=\"920\" fetchpriority=\"high\">",
-              "nodeLabel": "Dr. med. Paul Georg"
+              "snippet": "<img alt=\"Dr. med. Paul J. Georg\" height=\"990\" src=\"../assets/dr-georg-portrait.webp\" width=\"920\" fetchpriority=\"high\">",
+              "nodeLabel": "Dr. med. Paul J. Georg"
             },
             "url": "http://localhost:8765/assets/dr-georg-portrait.webp",
             "totalBytes": 64838,
@@ -3118,7 +3118,7 @@
                 "height": 731
               },
               "snippet": "<dl class=\"facts\">",
-              "nodeLabel": "Practice\nDermetrics – Dr. med. Paul Georg, Clinic Selnau\nSpecialty\nDermatology …"
+              "nodeLabel": "Practice\nDermetrics – Dr. med. Paul J. Georg, Clinic Selnau\nSpecialty\nDermatology …"
             },
             "statistic": "Maximum Child Elements",
             "value": {

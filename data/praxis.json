@@ -1,9 +1,9 @@
 {
   "_hinweis": "Verbindliche Praxisdaten (Single Source of Truth) laut CLAUDE-CODE-PROMPT-SEO-GEO.md vom 03.11.2026. Werte mit null sind offen, siehe OFFENE-PUNKTE.md. tools/check-nap.py prüft die Seiten gegen diese Datei.",
-  "praxisname": "Dermetrics – Dr. med. Paul Georg",
+  "praxisname": "Dermetrics – Dr. med. Paul J. Georg",
   "standortname": "Clinic Selnau",
   "arzt": {
-    "name": "Dr. med. Paul Georg",
+    "name": "Dr. med. Paul J. Georg",
     "titel": "Facharzt für Dermatologie und Venerologie",
     "mitgliedschaften": [
       "Schweizerische Gesellschaft für Dermatologie und Venerologie (SGDV)",

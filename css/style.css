@@ -1104,3 +1104,17 @@ table.plain td { color: var(--ink); }
 @media (min-width: 961px) {
   .tilegrid.tilegrid--2 > .tile.tile--list:not(.tile--wide):not(:has(.tile-media)) .tile-icon { aspect-ratio: 24 / 10; }
 }
+
+/* ===== Auf einen Blick: Fakten neben Portrait ===== */
+.glance { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 48px; align-items: start; }
+.welcome { margin: 0; }
+.welcome-title { font-size: 20px; font-weight: 300; line-height: 1.35; color: var(--ink); margin: 0 0 16px; }
+.welcome img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: var(--r-md); border: 1px solid var(--line); background: var(--notice-bg); }
+@media (max-width: 860px) {
+  .glance { grid-template-columns: minmax(0, 1fr) 260px; gap: 32px; }
+}
+@media (max-width: 720px) {
+  .glance { grid-template-columns: 1fr; gap: 28px; }
+  .welcome { order: -1; }
+  .welcome img { max-width: 420px; }
+}

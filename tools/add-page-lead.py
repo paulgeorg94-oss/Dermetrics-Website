@@ -53,14 +53,14 @@ for page, phrase in list(DE.items()) + list(EN.items()):
     url = wp['url']
     h1 = re.sub(r'<[^>]+>', '', re.search(r'<h1[^>]*>(.*?)</h1>', s, re.S).group(1)).strip()
     if en:
-        lead = f'At Dermetrics, the practice of Dr. med. Paul Georg at Clinic Selnau in Zurich Selnau/Enge, {phrase}. <a href="/en/index.html#leistungsuebersicht">All services</a>'
-        if wp.get('lastReviewed'): meta = f'Responsible: Dr. med. Paul Georg, specialist in Dermatology and Venereology · Last reviewed: {fmt(wp["lastReviewed"], True)}'
-        else: meta = f'Responsible: Dr. med. Paul Georg, specialist in Dermatology and Venereology · Updated: {fmt(wp["dateModified"], True)}'
+        lead = f'At Dermetrics, the practice of Dr. med. Paul J. Georg at Clinic Selnau in Zurich Selnau/Enge, {phrase}. <a href="/en/index.html#leistungsuebersicht">All services</a>'
+        if wp.get('lastReviewed'): meta = f'Responsible: Dr. med. Paul J. Georg, specialist in Dermatology and Venereology · Last reviewed: {fmt(wp["lastReviewed"], True)}'
+        else: meta = f'Responsible: Dr. med. Paul J. Georg, specialist in Dermatology and Venereology · Updated: {fmt(wp["dateModified"], True)}'
         crumbs = [('Dermetrics', 'https://dermetrics.ch/en/index.html'), ('Patient information and treatment plans', 'https://dermetrics.ch/en/skin-conditions-explained.html'), (h1, url)]
     else:
-        lead = f'In der Praxis Dermetrics von Dr. med. Paul Georg in der Clinic Selnau, Zürich Selnau/Enge, {phrase}. <a href="/#leistungsuebersicht">Zur Leistungsübersicht</a>'
-        if wp.get('lastReviewed'): meta = f'Verantwortlich: Dr. med. Paul Georg, Facharzt für Dermatologie und Venerologie · Zuletzt geprüft: {fmt(wp["lastReviewed"], False)}'
-        else: meta = f'Verantwortlich: Dr. med. Paul Georg, Facharzt für Dermatologie und Venerologie · Stand: {fmt(wp["dateModified"], False)}'
+        lead = f'In der Praxis Dermetrics von Dr. med. Paul J. Georg in der Clinic Selnau, Zürich Selnau/Enge, {phrase}. <a href="/#leistungsuebersicht">Zur Leistungsübersicht</a>'
+        if wp.get('lastReviewed'): meta = f'Verantwortlich: Dr. med. Paul J. Georg, Facharzt für Dermatologie und Venerologie · Zuletzt geprüft: {fmt(wp["lastReviewed"], False)}'
+        else: meta = f'Verantwortlich: Dr. med. Paul J. Georg, Facharzt für Dermatologie und Venerologie · Stand: {fmt(wp["dateModified"], False)}'
         crumbs = [('Dermetrics', 'https://dermetrics.ch/'), ('Patienteninformationen & Behandlungspläne', 'https://dermetrics.ch/hauterkrankungen-erklaert.html'), (h1, url)]
     sub = re.search(r'(\s*)<p class="subhead">.*?</p>', s, re.S)
     ind = sub.group(1)
