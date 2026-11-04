@@ -9,13 +9,13 @@ Bitte je Frage kurz antworten (Nummer + Antwort). Ich setze die Antworten danach
 | # | Frage | Warum es zählt | Wo es steht |
 |---|---|---|---|
 | **D1** | Darf der Branch `seo-geo-2026-11` live gehen (Übernahme auf `claude/website-erstellung-wxrt0v`)? Alternativ: welche Teile nicht? | Ihr Prompt verlangt eine Freigabe vor jedem Deploy. | ganzer Branch |
-| **C1** | „Zertifizierter Experte für Dermatochirurgie“: Welches Zertifikat, welcher Aussteller, welches Jahr? | Unbelegte Qualifikationen sind nach FMH-Standesordnung und UWG heikel; die Angabe steht sichtbar auf der Startseite. | Startseite: Qualifikation, Kopfbereich („Experte für Dermatochirurgie“) |
-| **C2** | „Zertifizierter Praxis-OP“: Welches Zertifikat, welcher Aussteller? | wie C1 | Startseite: Leistungsübersicht, Qualifikation, FAQ |
-| **C3** | Mohs-Chirurgie: Wo findet die Schnittrandkontrolle statt (eigenes Labor, Pathologie-Partner)? | Die FAQ beschreibt das Verfahren; der Ablauf bei Ihnen ist nicht belegt. | Startseite: FAQ |
-| **C4** | Der Link zum Google-Profil führt auf eine Seite, auf der Bewertungen erscheinen können. Ist das für Sie mit der FMH-Standesordnung (keine Patientenbewertungen in eigener Werbung) vereinbar, oder soll der Link nur auf die Karte zeigen? | Ich habe den Link bewusst ohne das Wort „Bewertungen“ gesetzt. | Fusszeilen aller Seiten, Kontakt |
+| ~~C1~~ | **Erledigt (4.11.2026):** „Zertifizierter Experte für Dermatochirurgie“ bleibt so; laut Ihrer Angabe liegen die Nachweise vor. | | |
+| ~~C2~~ | **Erledigt (4.11.2026):** „Zertifizierter Praxis-OP“ bleibt so; laut Ihrer Angabe liegen die Nachweise vor. | | |
+| ~~C3~~ | **Erledigt (4.11.2026):** Beschreibung der Mohs-Chirurgie bleibt so (Ihre Angabe). | | |
+| ~~C4~~ | **Erledigt (4.11.2026):** Link zum Google-Profil bleibt so (Ihre Angabe). | | |
 | ~~A2~~ | **Erledigt (3.11.2026):** `clinicselnau@hin.ch` für Zuweisungen, Konsile, Kontaktformular und Datenschutz; `paul.georg@hin.ch` für die Apéro-Anmeldung (Ihre Angabe vom 4.11.2026). | | |
 | **A3** | Datenschutztext Google Maps (Abschnitt 13, DE/EN) ist ein Entwurf. Bitte rechtlich prüfen lassen, besonders die Aussagen zu Cookies und Datenübermittlung in die USA. | Ich habe den Text nicht juristisch geprüft. | `impressum.html#google-maps`, `en/legal.html#google-maps` |
-| **A4** | Hautkrebs-Screening-Seite: Dort steht „3D-Ganzkörperscan (DB-Scan)“, auf der Startseite „DeviScan“. Welcher Name stimmt? | Ich habe Ihren Text wortgleich übernommen. | `leistungen/hautkrebs-screening.html` |
+| ~~A4~~ | **Erledigt (4.11.2026):** Überall „DeviScan“ (vorher „DB-Scan“ auf der Screening-Seite). | | |
 
 ## Priorität 2: Fakten bestätigen oder ergänzen
 
@@ -36,8 +36,8 @@ Bitte je Frage kurz antworten (Nummer + Antwort). Ich setze die Antworten danach
 | **E1** | Standortseiten (Selnau/Enge, Affoltern, Altstetten): Anfahrt (ÖV, Parkplätze), eigene Texte je Standort, Leistungen je Standort. Wer liefert die Texte? | 3.3 |
 | ~~E2~~ | **Erledigt:** „Kreis 2“ von Ihnen bestätigt und eingebaut (Startseite, Fusszeilen, Leistungsseiten, JSON-LD, `llms.txt`). | 3.5 |
 | ~~E3~~ | **Erledigt:** Karte per Klick im Kontaktbereich (DE/EN), `frame-src` für Google, Datenschutz-Abschnitt 13. Ob die Karte lädt, konnte ich nicht prüfen: `www.google.com` ist aus der Arbeitsumgebung gesperrt. Nach dem Deploy bitte einmal anklicken. | 2.5 / 3.3 |
-| **E4** | Leistungsseiten: 5 Seiten von Ihnen geliefert und eingebaut (Hautkrebs-Screening, Mohs-Chirurgie, gutartige Hautveränderungen, Akne und Rosazea, Acne inversa). Es fehlen noch: Psoriasis, Wundbehandlung, Narbentherapie, Tumorchirurgie (in Ihren Vorlagen verlinkt, Links vorerst entfernt). Englische Fassungen der 5 Seiten: übersetzen? | 6 |
-| **E6** | Startseite: Die Leistungsübersicht zeigt jetzt nur noch die 5 Kacheln. Die bisherigen Listen (Wunden, Narben, Psoriasis, Melasma, ECMP) stehen dort nicht mehr, sondern nur noch in „Auf einen Blick“, in der FAQ und im JSON-LD. So gewollt? | Startseite |
+| **E4** | Leistungsseiten: 5 Seiten DE und EN (`leistungen/`, `en/services/`). Es fehlen noch: Psoriasis, Wundbehandlung, Narbentherapie, Tumorchirurgie. Wer liefert die Texte? | 6 |
+| ~~E6~~ | **Erledigt (4.11.2026):** Kacheln und die bisherigen Listen stehen beide in der Leistungsübersicht (DE/EN). | Startseite |
 | **E5** | Sollen die 13 älteren Seiten (Behandlungsprotokolle DE/EN, ältere englische Patientenseiten) auf das neue Seitenlayout mit Navigation umgestellt werden? Heute haben sie ein eigenes, schlichteres Layout. | Technik |
 
 ## Zu klärende Probleme
@@ -51,4 +51,4 @@ Bitte je Frage kurz antworten (Nummer + Antwort). Ich setze die Antworten danach
 | **P5** | **Schriftlizenz:** Die Inter-Schriften wurden auf die verwendeten Zeichen reduziert. Ob die Lizenz dafür eine Umbenennung verlangt (Reserved Font Name), habe ich nicht geprüft. | Prüfen oder auf die vollen Dateien zurückgehen (Leistung sinkt dann). |
 | **P6** | **Aufgezählte Leistungen:** Für Acne inversa und Mohs gibt es jetzt Seiten. Für Psoriasis, Wundbehandlung, ECMP und Narbentherapie noch nicht. | Siehe E4. |
 | **P7** | **Text auf 24 Seiten:** Der neue Einleitungssatz lautet „In der Praxis Dermetrics … behandeln wir [Thema]“. Für das Anti-Aging-Protokoll steht „beraten wir zur Hautpflege“, für Mosaic 3D „behandeln wir Narben auch mit Laser“. Bitte die Formulierungen bestätigen. | `patienteninformationen/*`, `behandlungsprotokolle/*`, EN-Pendants |
-| **P8** | **Kopfbereich:** Der Satz „Experte für Dermatochirurgie“ im Kopfbereich und „zertifizierter Experte“ in der Qualifikation sollten gleich lauten, sobald C1 geklärt ist. | Startseite |
+| ~~P8~~ | **Erledigt:** C1 ist geklärt; die Formulierungen bleiben wie sie sind. | Startseite |

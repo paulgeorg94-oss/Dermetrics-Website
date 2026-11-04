@@ -57,7 +57,7 @@ ORDER = lambda u: (-1 if u == BASE + 'en/index.html' else 0 if '/patient-informa
 sec['en'].sort(key=ORDER)
 out += ['', '## English']
 for u in sec['en']:
-    out.append(line(u, NOTES.get(u, '')))
+    out.append(line(u, NOTES.get(u, '') or (subhead(u) if '/en/services/' in u else '')))
     if u == BASE + 'en/index.html': out.append(f'- [Skin cancer Pre-Check]({BASE}en/index.html#precheck): 13 questions, not a diagnostic tool')
 out += ['', '## Optional'] + [line(u) for u in sec['opt']] + [f'- [Google-Profil Clinic Selnau]({P["google_profil"]})', f'- [Sitemap]({BASE}sitemap.xml)', '']
 open('llms.txt', 'w', encoding='utf-8').write('\n'.join(out))

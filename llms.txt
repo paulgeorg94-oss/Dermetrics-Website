@@ -37,6 +37,11 @@ Hinweis: Alle Inhalte dienen der Information und ersetzen keine ärztliche Berat
 ## English
 - [Home](https://dermetrics.ch/en/index.html): overview, at a glance, services, qualifications, FAQ, contact
 - [Skin cancer Pre-Check](https://dermetrics.ch/en/index.html#precheck): 13 questions, not a diagnostic tool
+- [Hidradenitis suppurativa](https://dermetrics.ch/en/services/hidradenitis-suppurativa.html): A chronic inflammation of the skin in the body folds. Medication and surgery can be combined.
+- [Acne and rosacea](https://dermetrics.ch/en/services/acne-rosacea.html): Both conditions often affect the face but are treated differently.
+- [Benign skin lesions](https://dermetrics.ch/en/services/benign-skin-lesions.html): Many skin lesions are harmless. They are removed if they bother you or if they need to be investigated.
+- [Skin cancer screening](https://dermetrics.ch/en/services/skin-cancer-screening.html): The skin is examined systematically for conspicuous changes. How often this makes sense depends on your personal risk.
+- [Mohs surgery](https://dermetrics.ch/en/services/mohs-surgery.html): A step-by-step procedure in which the surgical margins are examined systematically so that as little healthy tissue as possible is lost.
 - [True or false: skin cancer prevention](https://dermetrics.ch/en/skin-cancer-self-test.html): 8 statements on skin cancer prevention
 - [Patient Information & Treatment Plans](https://dermetrics.ch/en/skin-conditions-explained.html)
 - [Opening Reception Clinic Selnau](https://dermetrics.ch/en/eroeffnung.html)
