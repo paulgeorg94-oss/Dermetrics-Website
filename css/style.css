@@ -1123,3 +1123,17 @@ table.plain td { color: var(--ink); }
 .options.options--grid .option { min-width: 0; }
 @media (max-width: 720px) { .options.options--grid { grid-template-columns: 1fr; gap: 16px; } }
 .glance:not(:has(.welcome)) { grid-template-columns: 1fr; }
+
+/* ===== MediX-Zuweisung: Formular-Auswahlfelder, Zweierreihen, QR-Hinweis ===== */
+.formcard select {
+  width: 100%; font-family: inherit; font-size: 14px; color: var(--ink);
+  background: var(--ivory); border: 1px solid var(--line); border-radius: 10px; padding: 11px 14px;
+}
+.formcard .formrow { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0 16px; }
+.formcard .formrow label { margin-top: 0; }
+.formcard input:focus-visible, .formcard select:focus-visible, .formcard textarea:focus-visible { outline: 2px solid var(--aubergine-mid); outline-offset: 1px; }
+@media (max-width: 560px) { .formcard .formrow { grid-template-columns: 1fr; gap: 16px; } }
+.medix-qr { margin-top: 28px; }
+.medix-qr .qrshare-code img { display: block; width: 96px; height: 96px; }
+.btn-medix { display: inline-flex; align-items: center; gap: 8px; }
+.medix-qr .share-btn { display: inline-block; text-decoration: none; }

@@ -49,10 +49,7 @@ h1 { font-size: 40px; font-weight: 300; line-height: 1.2; letter-spacing: -0.01e
 .subhead { font-size: 17px; color: var(--muted); max-width: 58ch; margin: 14px 0px 0px; line-height: 1.6; }
 .hero-grid { display: flex; gap: 56px; align-items: center; }
 .hero-copy { flex: 1 1 480px; min-width: 0px; }
-.hero-media { flex: 0 0 320px; }
-.hero-media .portrait { width: 100%; aspect-ratio: 4 / 5; border-radius: var(--r-lg); overflow: hidden; position: relative; background: radial-gradient(60% 80% at 18% 12%, rgba(196, 178, 235, 0.55), transparent 62%), radial-gradient(70% 90% at 88% 82%, rgba(245, 190, 150, 0.4), transparent 62%), rgb(251, 246, 241); }
-.hero-media .portrait img { position: absolute; inset: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
-@media (max-width: 780px){.hero-grid { flex-direction: column-reverse; }.hero-media { flex-basis: auto; width: 100%; max-width: 320px; }}
+@media (max-width: 780px){.hero-grid { flex-direction: column-reverse; }}
 .ctarow { display: flex; gap: 14px; flex-wrap: wrap; margin: 28px 0px 0px; }
 .btn { display: inline-block; font-size: 14px; font-weight: 500; text-decoration: none; padding: 12px 24px; line-height: 18px; border: 1px solid transparent; border-radius: 999px; transition: opacity 0.15s; }
 .btn:hover { opacity: 0.85; }
@@ -109,7 +106,8 @@ h3 { font-size: 15px; font-weight: 500; color: var(--ink); margin: 0px 0px 8px; 
 .welcome { margin: 0px; }
 .welcome-title { font-size: 20px; font-weight: 300; line-height: 1.35; color: var(--ink); margin: 0px 0px 16px; }
 .welcome img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: var(--r-md); border: 1px solid var(--line); background: var(--notice-bg); }
-@media (max-width: 860px){.glance { grid-template-columns: minmax(0px, 1fr) 260px; gap: 32px; }}</style>
+@media (max-width: 860px){.glance { grid-template-columns: minmax(0px, 1fr) 260px; gap: 32px; }}
+@media (max-width: 720px){.glance { grid-template-columns: 1fr; gap: 28px; }.welcome { order: -1; }}</style>
 <link rel="preload" href="../css/style.css" as="style" data-critical>
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <link rel="canonical" href="https://dermetrics.ch/en/index.html">
@@ -172,11 +170,6 @@ h3 { font-size: 15px; font-weight: 500; color: var(--ink); margin: 0px 0px 8px; 
 <li>Skin cancer prevention</li>
 </ul>
 </div>
-<div class="hero-media">
-<div class="portrait">
-<img alt="Dr. med. Paul J. Georg" height="990" src="../assets/dr-georg-portrait.webp" width="920" fetchpriority="high"/>
-</div>
-</div>
 </div>
 </div>
 </section>
@@ -198,6 +191,14 @@ h3 { font-size: 15px; font-weight: 500; color: var(--ink); margin: 0px 0px 8px; 
         <dt>Opening</dt><dd>7 December 2026</dd>
         <dt>Further locations</dt><dd>Affoltern am Albis, Zurich-Altstetten</dd>
       </dl>
+      <div class="qrshare medix-qr">
+        <div class="qrshare-code"><img src="../assets/qr-medix.svg" alt="QR code for the referral page for MediX patients" width="96" height="96" loading="lazy"></div>
+        <div class="qrshare-text">
+          <h3>Patients of MediX Praxis Altstetten</h3>
+          <p>Scan the QR code or go directly to the registration for referral to Clinic Selnau (page in German).</p>
+          <div class="qrshare-actions"><a class="share-btn" href="../medix.html">Referral Clinic Selnau (MediX)</a></div>
+        </div>
+      </div>
       </div>
       <figure class="welcome">
         <p class="welcome-title">Welcome to my practice at Clinic Selnau</p>
