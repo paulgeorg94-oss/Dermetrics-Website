@@ -101,3 +101,4 @@ Zusammenfassung (Fakten):
 - U6 Video: bleibt aussen vor.
 - U7 MediX und andere Zuweisungen: gleich handhaben (Phase 4.3, `/zuweisende.html`; `medix.html` bleibt wegen QR-Code bestehen).
 - U8 Anfrageformular im Termin-Panel: das bestehende Kontaktformular (`#contact-form`).
+- Nr. 7 «Ihr Weg mit Dermetrics»: auf der Startseite als aufklappbarer Eintrag im FAQ-Bereich unten (DE/EN, `#weg`, Deep-Link öffnet den Eintrag), zusätzlich wie geplant als Ablauf auf den Anliegenseiten (Ihre Vorgabe vom 05.11.2026).
