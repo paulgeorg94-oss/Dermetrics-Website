@@ -90,3 +90,14 @@ Zusammenfassung (Fakten):
 - U6 **Video:** `dermetrics_video_paul-georg_graded.mp4` liegt nicht vor (Drive-Download ist aus der Arbeitsumgebung gesperrt, siehe 04.11.).
 - U7 **MediX:** `medix.html`/`medix-anmeldung.html` behalten und von `/zuweisende.html` verlinken, oder in `/zuweisende.html` aufgehen lassen? Der QR-Code zeigt heute auf `medix.html`; eine Umleitung ist auf GitHub Pages nicht möglich, die Adresse sollte also bestehen bleiben.
 - U8 **Termin-Panel «Anfrageformular»:** Gemeint ist das bestehende Kontaktformular (mailto/Formspree) aus Abschnitt 12? Ich nehme das an.
+
+## 5. Ihre Entscheidungen (05.11.2026)
+
+- U1 Portrait: Das bearbeitete Foto (`assets/dr-paul-j-georg-*.webp`) ist das Bild für den Hero.
+- U2 Name: «Dr. med. Paul J. Georg» bleibt.
+- U3 `og:site_name`: «Dermetrics – Dermatologie Clinic Selnau» (umgesetzt in Phase 2 auf allen 48 Seiten).
+- U4 FAQ «Kasse»: noch offen.
+- U5 OneDoc: aus dem Impressum DE/EN entfernt (Phase 2).
+- U6 Video: bleibt aussen vor.
+- U7 MediX und andere Zuweisungen: gleich handhaben (Phase 4.3, `/zuweisende.html`; `medix.html` bleibt wegen QR-Code bestehen).
+- U8 Anfrageformular im Termin-Panel: das bestehende Kontaktformular (`#contact-form`).

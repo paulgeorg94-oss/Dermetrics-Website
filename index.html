@@ -115,7 +115,7 @@ h3 { font-size: 15px; font-weight: 500; color: var(--ink); margin: 0px 0px 8px; 
 <link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/index.html">
 <link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Dermetrics">
+<meta property="og:site_name" content="Dermetrics – Dermatologie Clinic Selnau">
 <meta property="og:title" content="Hautarzt Zürich Selnau/Enge – Dermatologie &amp; Hautchirurgie">
 <meta property="og:description" content="Hautarzt in Zürich Selnau/Enge (Kreis 2): Hautkrebs-Screening, Tumorchirurgie, Wund- und Narbentherapie.">
 <meta property="og:url" content="https://dermetrics.ch/">
@@ -143,11 +143,11 @@ h3 { font-size: 15px; font-weight: 500; color: var(--ink); margin: 0px 0px 8px; 
       <a href="#praxis">Praxis</a>
       <a href="#laserbehandlungen">Laserbehandlungen</a>
       <a href="hauterkrankungen-erklaert.html">Patienteninformationen &amp; Behandlungspläne</a>
-      <a href="#kontakt">Termin</a>
+      <a href="#kontakt">Kontakt</a>
       <span class="lang"><span class="current">DE</span>&nbsp;/&nbsp;<a href="/en/index.html">EN</a></span>
-      <a class="cta" href="#precheck">Pre-Check starten</a>
+      <a class="cta-termin cta" href="#termin" data-cta="termin">Termin buchen</a>
     </nav>
-    <a class="cta cta-desktop" href="#precheck">Pre-Check starten</a>
+    <a class="cta-termin cta cta-desktop" href="#termin" data-cta="termin">Termin buchen</a>
     <button class="navtoggle" id="navtoggle" aria-label="Menü öffnen">Menü</button>
   </div>
 </header>
@@ -162,8 +162,8 @@ h3 { font-size: 15px; font-weight: 500; color: var(--ink); margin: 0px 0px 8px; 
         <h1>Hautarzt in Zürich Selnau/Enge – Hautgesundheit ist messbar.</h1>
         <p class="subhead">Dermetrics ist die dermatologische Praxis von Dr. med. Paul J. Georg in der Clinic Selnau Zürich — spezialisiert auf Hautkrebs-Prävention, Hautalterungs-Analyse und dokumentierte Verlaufsmessung.</p>
         <div class="ctarow">
-          <a class="btn btn-primary" href="#precheck">Pre-Check starten</a>
-          <a class="btn btn-secondary" href="https://wa.me/41782618288" target="_blank" rel="noopener">Termin buchen →</a>
+          <a class="btn btn-primary cta-termin" href="#termin" data-cta="termin">Termin buchen</a>
+          <a class="btn btn-secondary" href="#precheck">Hautkrebs-Pre-Check starten</a>
         </div>
         <ul class="trustbullets">
           <li>Facharzt Dermatologie</li>
@@ -256,11 +256,11 @@ h3 { font-size: 15px; font-weight: 500; color: var(--ink); margin: 0px 0px 8px; 
 
       <div class="dm-carousel__track" role="group" aria-label="Leistungen">
         <div class="dm-carousel__slide" role="group" aria-roledescription="Kachel" aria-label="1 von 5: Hautkrebs-Screening">
-          <a class="dm-tile dm-tile--active" href="#kontakt">
+          <a class="dm-tile dm-tile--active" href="#termin" data-cta="termin">
             <span class="dm-tile__icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="9.5" r="5.8"/><ellipse cx="10" cy="9.5" rx="2.6" ry="1.9" transform="rotate(-24 10 9.5)"/><path d="M14.3 13.6 19 18.3a1.6 1.6 0 0 1-2.3 2.3L12 15.9"/><path d="M4.2 3.4 5.6 4.8"/><path d="M2.6 8.2h2"/></svg></span>
             <h3 class="dm-tile__title">Hautkrebs-Screening</h3>
             <p class="dm-tile__body">Ganzkörper-Dermatoskopie mit strukturierter Befundung und einem klaren Kontrollintervall.</p>
-            <span class="dm-tile__link">Termin vereinbaren</span>
+            <span class="dm-tile__link">Termin buchen</span>
           </a>
         </div>
         <div class="dm-carousel__slide" role="group" aria-roledescription="Kachel" aria-label="2 von 5: Lasertherapie">
@@ -288,11 +288,11 @@ h3 { font-size: 15px; font-weight: 500; color: var(--ink); margin: 0px 0px 8px; 
           </a>
         </div>
         <div class="dm-carousel__slide" role="group" aria-roledescription="Kachel" aria-label="5 von 5: Dermatochirurgie">
-          <a class="dm-tile" href="#kontakt">
+          <a class="dm-tile" href="#termin" data-cta="termin">
             <span class="dm-tile__icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.8 12C6.9 6.7 17.1 6.7 21.2 12c-4.1 5.3-14.3 5.3-18.4 0z"/><path d="M8.4 9.5v5"/><path d="M12 9v6"/><path d="M15.6 9.5v5"/></svg></span>
             <h3 class="dm-tile__title">Dermatochirurgie</h3>
             <p class="dm-tile__body">Termine zur Entfernung gutartiger und bösartiger Läsionen, inklusive histologischer Abklärung.</p>
-            <span class="dm-tile__link">Termin vereinbaren</span>
+            <span class="dm-tile__link">Termin buchen</span>
           </a>
         </div>
       </div>
@@ -394,7 +394,7 @@ h3 { font-size: 15px; font-weight: 500; color: var(--ink); margin: 0px 0px 8px; 
           </div>
 
           <div class="pc-actions">
-            <a class="btn btn-primary" id="pcCta" href="https://wa.me/41782618288" target="_blank" rel="noopener">Termin anfragen</a>
+            <a class="btn btn-primary cta-termin" id="pcCta" href="#termin" data-cta="termin">Termin buchen</a>
             <button type="button" class="btn btn-secondary" id="pcRestart">Neu starten</button>
           </div>
         </div>
@@ -548,7 +548,7 @@ h3 { font-size: 15px; font-weight: 500; color: var(--ink); margin: 0px 0px 8px; 
 <a class="tile tile--know tile--wide" href="hauterkrankungen-erklaert.html"><span class="tile-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/></svg></span><span class="tile-body"><span class="tile-title">Alle Patienteninformationen ansehen</span><span class="tile-text">Behandlungspläne nach Krankheitsbild und Alter, dazu der Selbsttest zur Hautkrebsvorsorge.</span></span><span class="tile-cta">Zur Übersicht <span class="tile-arrow" aria-hidden="true">→</span></span></a>
     </div>
     <div class="ctarow">
-      <a class="btn btn-secondary" href="#precheck">Fragen dazu? Pre-Check starten →</a>
+      <a class="btn btn-secondary" href="#precheck">Hautkrebs-Pre-Check starten</a>
     </div>
   </div>
 </section>
@@ -575,10 +575,16 @@ h3 { font-size: 15px; font-weight: 500; color: var(--ink); margin: 0px 0px 8px; 
     <div class="intro">
       <p>Sprechstunde, Zweigstandort und 3D-Scan. Neue Patientinnen und Patienten willkommen.</p>
     </div>
-    <div class="ctarow">
-      <a class="btn btn-primary" href="https://wa.me/41782618288" target="_blank" rel="noopener">Termin per WhatsApp buchen →</a>
-      <a class="btn btn-secondary" href="tel:+41432345555">+41 43 234 55 55</a>
+    <!-- termin-panel:start -->
+    <div class="termin-panel" id="termin">
+      <p class="termin-panel-title">Termin buchen</p>
+      <div class="termin-ways">
+        <a class="termin-way" href="tel:+41432345555"><span>Telefon</span><strong>+41 43 234 55 55</strong></a>
+        <a class="termin-way" href="https://wa.me/41782618288" target="_blank" rel="noopener"><span>WhatsApp</span><strong>+41 78 261 82 88</strong></a>
+        <a class="termin-way" href="#contact-form"><span>Anfrageformular</span><strong>Anfrage senden</strong></a>
+      </div>
     </div>
+    <!-- termin-panel:end -->
     <div class="locations">
       <div class="location">
         <div>
@@ -776,7 +782,7 @@ h3 { font-size: 15px; font-weight: 500; color: var(--ink); margin: 0px 0px 8px; 
   <div class="wrap">
     <div class="col">
       <p class="tagline">Longevity meets<br>measurable science.</p>
-      <a class="btn btn-primary" href="https://wa.me/41782618288" target="_blank" rel="noopener">Termin buchen →</a>
+      <a class="btn btn-primary cta-termin" href="#termin" data-cta="termin">Termin buchen</a>
       <p class="practice" style="margin-top:26px;">Dermetrics – Dr. med. Paul J. Georg</p>
       <p class="footer-area">Hautarzt in Zürich Kreis 2 (Selnau/Enge) · Dermatologie und Venerologie</p>
       <p>Clinic Selnau<br>Brandschenkestrasse 45<br>8002 Zürich</p>
@@ -795,7 +801,7 @@ h3 { font-size: 15px; font-weight: 500; color: var(--ink); margin: 0px 0px 8px; 
         <li><a href="#wissen">Wissen</a></li>
         <li><a href="#laserbehandlungen">Laserbehandlungen</a></li>
         <li><a href="hauterkrankungen-erklaert.html">Hauterkrankungen erklärt</a></li>
-        <li><a href="#kontakt">Standorte &amp; Termin</a></li>
+        <li><a href="#kontakt">Standorte &amp; Kontakt</a></li>
         <li><a href="#leistungsuebersicht">Leistungsübersicht</a></li>
         <li><a href="#faq">Häufige Fragen</a></li>
         <li><a href="eroeffnung.html">Praxiseröffnung</a></li>
@@ -1211,5 +1217,6 @@ var FORMSPREE_FORM_ID = ''; // z. B. 'xzbqrsty' — sobald gesetzt, läuft der V
 </script>
 
 <script src="assets/stageshow-loader.js" defer></script>
+<script src="assets/termin.js" defer></script>
 </body>
 </html>
