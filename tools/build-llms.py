@@ -41,7 +41,7 @@ NOTES = {BASE: 'Überblick, Auf einen Blick, Leistungen, Qualifikation, FAQ, Kon
          BASE + 'hautkrebs-selbsttest.html': '8 Aussagen zur Hautkrebsvorsorge',
          BASE + 'en/index.html': 'overview, at a glance, services, qualifications, FAQ, contact',
          BASE + 'en/skin-cancer-self-test.html': '8 statements on skin cancer prevention'}
-out = [f"# Dermetrics – {P['standortname']}", '', '> ' + summary, '',
+out = [f"# {P['praxisname']}", '', '> ' + summary, '',
        'Hinweis: Alle Inhalte dienen der Information und ersetzen keine ärztliche Beratung. Der Online-Pre-Check ist ein statistisches Orientierungsinstrument und keine Diagnose.', '',
        '## Praxis und Leistungen']
 for u in sec['de_main']:
