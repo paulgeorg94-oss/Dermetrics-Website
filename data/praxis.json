@@ -80,5 +80,6 @@
   "gln": "7601007717767",
   "geo": null,
   "email_hinweis": "clinicselnau@hin.ch ist laut Ihrer Angabe vom 03.11.2026 die Klinikadresse für Anmeldungen, Zuweisungen und den Versand medizinischer Informationen. Ausnahme laut Ihrer Angabe vom 04.11.2026: Anmeldungen zum Eröffnungs-Apéro gehen an paul.georg@hin.ch.",
-  "email_apero": "paul.georg@hin.ch"
+  "email_apero": "paul.georg@hin.ch",
+  "_stand_geprueft": "05.11.2026: gegen alle 48 Seiten geprüft (tools/check-nap.py, 0 Abweichungen); Widersprüche zum Relaunch-Prompt in relaunch/INHALTSINVENTAR.md, Abschnitt 4"
 }
