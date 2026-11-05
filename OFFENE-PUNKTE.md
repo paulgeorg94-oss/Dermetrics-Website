@@ -52,3 +52,15 @@ Bitte je Frage kurz antworten (Nummer + Antwort). Ich setze die Antworten danach
 | **P6** | **Aufgezählte Leistungen:** Für Acne inversa und Mohs gibt es jetzt Seiten. Für Psoriasis, Wundbehandlung, ECMP und Narbentherapie noch nicht. | Siehe E4. |
 | **P7** | **Text auf 24 Seiten:** Der neue Einleitungssatz lautet „In der Praxis Dermetrics … behandeln wir [Thema]“. Für das Anti-Aging-Protokoll steht „beraten wir zur Hautpflege“, für Mosaic 3D „behandeln wir Narben auch mit Laser“. Bitte die Formulierungen bestätigen. | `patienteninformationen/*`, `behandlungsprotokolle/*`, EN-Pendants |
 | ~~P8~~ | **Erledigt:** C1 ist geklärt; die Formulierungen bleiben wie sie sind. | Startseite |
+
+## Relaunch Phase 3: Startseite DE «Nach Anliegen» (5.11.2026, Branch `relaunch-anliegen`, nicht live)
+
+| # | Punkt | Wo |
+|---|---|---|
+| **R3-1** | **Neutext zur Freigabe:** Kacheltext «Ein Fleck oder Muttermal verändert sich»: „Wir beurteilen die Veränderung und besprechen, ob eine Kontrolle oder eine Entfernung sinnvoll ist.“ Dafür gab es keinen bestehenden Text. | `index.html`, Abschnitt `#anliegen` |
+| **R3-2** | **Neue FAQ-Fragen zur Freigabe:** „Übernimmt die Krankenkasse die Kosten?“ (Antwort aus dem bisherigen Kassen-Text, U4 weiterhin offen) und „Was ist der Hautkrebs-Pre-Check?“ (Antwort aus dem bisherigen Pre-Check-Text). | `index.html`, `#faq` |
+| **R3-3** | **Vorläufige Linkziele bis Phase 4:** «Mehr über Ihren Arzt» → `#qualifikation` (später `/praxis/dr-paul-georg.html`); «Alle Standorte» → `impressum.html#standorte` (später `/praxis/standorte.html`); Zuweisende → `medix.html` (später `/zuweisende.html`); App-Seite fehlt (später `/projekte/dermetrics-app.html`). | `index.html` |
+| **R3-4** | **Go-live blockiert:** Die 6 Anliegen-Kacheln und das Dropdown zeigen auf `anliegen/*.html`. Diese Seiten entstehen erst in Phase 4. Bis dahin ergäben sie 404. | `index.html` |
+| **R3-5** | **Verschobene Inhalte ohne neue Heimat bis Phase 4:** Drei Säulen, Was wir messen, Clinic-Galerie, Laser-Block, App-Vorschau, MediX-QR-Block, 4 FAQ (Mohs, Wunden, Narben, Zusammenarbeit u. a.). Sie stehen in `git show HEAD~:index.html` bzw. im Inhaltsinventar. Der Pre-Check ist umgezogen nach `hautkrebs-pre-check.html`. | `relaunch/INHALTSINVENTAR.md` |
+| **R3-6** | **Sprechstunde «Montag 10:00–18:00 Uhr»** steht im Standortblock wie bisher; in `data/praxis.json` ist sie als nicht bestätigt markiert. | `index.html`, `#kontakt` |
+| **R3-7** | **EN-Startseite** folgt erst nach Freigabe der DE-Version. | `en/index.html` |
