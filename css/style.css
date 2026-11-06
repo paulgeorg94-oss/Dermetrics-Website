@@ -1154,3 +1154,14 @@ table.plain td { color: var(--ink); }
 .faq-steps .weg-steps li strong { display: block; color: var(--ink); font-weight: 500; }
 .faq-steps .weg-claim { margin: 0 0 8px; }
 .faq-item[id] { scroll-margin-top: 96px; }
+
+/* ---------- Aufklappbare Bereiche (Akkordeon, standardmässig eingeklappt) ---------- */
+details.acc { border: 1px solid var(--line); border-radius: var(--r-md); background: #fff; margin: 24px 0 0; }
+details.acc > summary { cursor: pointer; list-style: none; padding: 18px 22px; font-size: 15.5px; font-weight: 500; color: var(--ink); display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 48px; }
+details.acc > summary::-webkit-details-marker { display: none; }
+details.acc > summary::after { content: "+"; font-size: 22px; font-weight: 300; color: var(--aubergine); line-height: 1; }
+details.acc[open] > summary::after { content: "–"; }
+details.acc > summary:focus-visible { outline: 2px solid var(--aubergine-mid); outline-offset: 2px; border-radius: var(--r-md); }
+.acc-body { padding: 0 22px 22px; }
+.acc-body > .intro:first-child p:first-child { margin-top: 0; }
+@media print { details.acc > summary::after { content: ""; } }
