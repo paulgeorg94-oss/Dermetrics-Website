@@ -8,6 +8,8 @@ Hinweis: Alle Inhalte dienen der Information und ersetzen keine ärztliche Berat
 - [Startseite](https://dermetrics.ch/): Überblick, Auf einen Blick, Leistungen, Qualifikation, FAQ, Kontakt
 - [Hautkrebs-Pre-Check](https://dermetrics.ch/#precheck): 13 Fragen, kein Diagnoseinstrument
 - [Patienteninformationen & Behandlungspläne](https://dermetrics.ch/hauterkrankungen-erklaert.html): Übersicht der Krankheitsbilder und Behandlungspläne
+- [Wie erkenne ich Hautkrebs frühzeitig selbst?](https://dermetrics.ch/hauterkrankungen-erklaert.html#hautkrebs-selbst-erkennen): Anleitung zur Selbstuntersuchung (ABCDE-, EFG- und Ugly-Duckling-Regel)
+- [Anleitung zur Selbstuntersuchung mit Körperkarte (PDF)](https://dermetrics.ch/downloads/selbstuntersuchung-haut-de.pdf)
 - [Wahr oder falsch: Hautkrebsvorsorge](https://dermetrics.ch/hautkrebs-selbsttest.html): 8 Aussagen zur Hautkrebsvorsorge
 - [Eröffnungsapéro Clinic Selnau](https://dermetrics.ch/eroeffnung.html)
 - [Anmeldung: Zuweisung Clinic Selnau (MediX)](https://dermetrics.ch/medix-anmeldung.html)
@@ -47,6 +49,7 @@ Hinweis: Alle Inhalte dienen der Information und ersetzen keine ärztliche Berat
 - [Mohs surgery](https://dermetrics.ch/en/services/mohs-surgery.html): A step-by-step procedure in which the surgical margins are examined systematically so that as little healthy tissue as possible is lost.
 - [True or false: skin cancer prevention](https://dermetrics.ch/en/skin-cancer-self-test.html): 8 statements on skin cancer prevention
 - [Patient Information & Treatment Plans](https://dermetrics.ch/en/skin-conditions-explained.html)
+- [Skin self-examination guide with body map (PDF)](https://dermetrics.ch/downloads/skin-self-examination-en.pdf)
 - [Opening Reception Clinic Selnau](https://dermetrics.ch/en/eroeffnung.html)
 - [Photodynamic therapy (PDT)](https://dermetrics.ch/en/services/photodynamic-therapy.html): The treatment takes place indoors in the practice with the Healite II lamp and therefore does not depend on the weather.
 - [Mosaic 3D](https://dermetrics.ch/en/patient-information/mosaic-3d-erbium-laser.html)
