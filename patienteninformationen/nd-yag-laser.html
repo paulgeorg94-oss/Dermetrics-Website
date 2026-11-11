@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; img-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self' https://formspree.io; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta name="robots" content="noindex, nofollow"><!-- ENTWURF: noindex entfernen, sobald Literaturliste ergänzt und Inhalt ärztlich freigegeben ist -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nd:YAG-Laser — Dermetrics Patienteninformation</title>
+<meta name="description" content="Nd:YAG-Laser: Wie das Lasersystem wirkt, wofür es eingesetzt wird, was Sie vor, während und nach der Behandlung erwartet. Patienteninformation von Dermetrics.">
+<link rel="icon" href="../assets/logo-dermetrics.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<style id="critical-css">:root { --r-sm: 10px; --r-md: 16px; --r-lg: 20px; --aubergine: #300C61; --aubergine-mid: #4B2C86; --ink: #241C2E; --muted: #756B82; --line: #E4DEE8; --ivory: #FBF8F6; --notice-bg: #F5F1FA; }
+@font-face { font-family: Inter; font-style: normal; font-weight: 300; font-display: swap; src: url("../assets/vendor/fonts/Inter-Light.woff2") format("woff2"); }
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font-display: swap; src: url("../assets/vendor/fonts/Inter-Regular.woff2") format("woff2"); }
+@font-face { font-family: Inter; font-style: normal; font-weight: 500; font-display: swap; src: url("../assets/vendor/fonts/Inter-Medium.woff2") format("woff2"); }
+@font-face { font-family: Inter; font-style: normal; font-weight: 600; font-display: swap; src: url("../assets/vendor/fonts/Inter-SemiBold.woff2") format("woff2"); }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0px; background: var(--ivory); color: var(--ink); font-family: Inter, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; line-height: 1.6; font-weight: 400; }
+a { color: var(--aubergine-mid); }
+.wrap { max-width: 1040px; margin: 0px auto; padding: 0px 32px; }
+body { padding-top: 68px; }
+.topnav { position: fixed; top: 0px; left: 0px; right: 0px; z-index: 20; background: rgba(251, 248, 246, 0.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); transition: transform 0.28s; transform: translateZ(0px); will-change: transform; }
+.topnav .wrap { max-width: 1280px; display: flex; align-items: center; justify-content: space-between; padding-top: 14px; padding-bottom: 14px; gap: 24px; }
+.topnav .brandrow { display: flex; align-items: center; gap: 12px; text-decoration: none; margin-bottom: 0px; }
+.topnav .brandrow img { width: auto; height: 30px; display: block; }
+.topnav .brandmark { font-size: 13px; letter-spacing: 0.14em; color: var(--aubergine); font-weight: 500; }
+.topnav nav { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.topnav nav a { white-space: nowrap; font-size: 13px; color: var(--ink); text-decoration: none; font-weight: 400; }
+.topnav nav a:hover { color: var(--aubergine-mid); }
+.topnav .lang { font-size: 12.5px; color: var(--muted); }
+.topnav .lang a { color: var(--muted); text-decoration: none; }
+.topnav .lang a:hover { color: var(--aubergine-mid); }
+.topnav .lang .current { color: var(--ink); font-weight: 500; }
+.topnav .cta { font-size: 13px; font-weight: 500; color: rgb(255, 255, 255); background: var(--aubergine); padding: 9px 18px; line-height: 18px; border-radius: 999px; text-decoration: none; white-space: nowrap; }
+.topnav .navtoggle { display: none; }
+.topnav nav.navlinks .cta { display: none; }
+@media (max-width: 1240px){.topnav nav.navlinks { display: none; }.topnav .cta { display: none; }.topnav .navtoggle { display: inline-flex; background: none; border: 1px solid var(--line); border-radius: var(--r-sm); padding: 8px 12px; min-height: 36px; align-items: center; font-size: 13px; color: var(--ink); }}
+.header { padding: 56px 0px 48px; background: radial-gradient(60% 80% at 18% 12%, rgba(196, 178, 235, 0.55), transparent 62%), radial-gradient(70% 90% at 88% 82%, rgba(245, 190, 150, 0.4), transparent 62%), rgb(251, 246, 241); }
+.header.compact { padding: 40px 0px 34px; }
+.brandrow { display: flex; align-items: center; gap: 14px; margin-bottom: 34px; }
+.brandrow img { width: auto; height: 34px; display: block; }
+.brandmark { font-size: 14px; letter-spacing: 0.14em; color: var(--aubergine); font-weight: 500; }
+.kicker { font-size: 13.5px; color: var(--muted); margin: 0px 0px 16px; letter-spacing: 0.02em; }
+h1 { font-size: 40px; font-weight: 300; line-height: 1.2; letter-spacing: -0.01em; margin: 0px 0px 14px; }
+.header.compact h1 { font-size: 30px; }
+.h1sub { font-size: 15px; font-weight: 400; color: var(--muted); display: block; line-height: 1.45; margin: -10px 0px 14px; }
+.subhead { font-size: 17px; color: var(--muted); max-width: 58ch; margin: 14px 0px 0px; line-height: 1.6; }
+section.block { padding: 64px 0px; border-top: 1px solid var(--line); scroll-margin-top: 76px; }
+h2 { font-size: 28px; font-weight: 300; line-height: 1.3; margin: 0px 0px 18px; letter-spacing: -0.005em; }
+.intro p { font-size: 15.5px; color: var(--ink); line-height: 1.7; margin: 0px 0px 16px; max-width: 74ch; }
+.intro p:last-child { margin-bottom: 0px; }
+.options { display: flex; gap: 28px; margin: 32px 0px 0px; flex-wrap: wrap; }
+.option { flex: 1 1 260px; min-width: 220px; padding: 26px 24px; background: rgb(255, 255, 255); border: 1px solid var(--line); border-radius: var(--r-md); }
+.notice { background: var(--notice-bg); border-radius: var(--r-md); padding: 22px 26px; margin: 28px 0px; }
+.notice p { font-size: 14px; color: var(--ink); line-height: 1.6; margin: 0px; }
+.block .wrap > .notice:first-child { margin-top: 0px; }
+.notice strong { color: var(--aubergine); }
+.page-lead { font-size: 14.5px; color: var(--ink); line-height: 1.6; max-width: 62ch; margin: 16px 0px 0px; }
+.page-lead a { color: var(--aubergine-mid); }
+.page-meta { font-size: 12.5px; color: var(--muted); margin: 6px 0px 0px; }</style>
+<link rel="preload" href="../css/style.css" as="style" data-critical>
+<link rel="canonical" href="https://dermetrics.ch/patienteninformationen/nd-yag-laser.html">
+<link rel="alternate" hreflang="de-CH" href="https://dermetrics.ch/patienteninformationen/nd-yag-laser.html">
+<link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/patienteninformationen/nd-yag-laser.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Dermetrics – Dermatologie Clinic Selnau">
+<meta property="og:title" content="Nd:YAG-Laser — Dermetrics Patienteninformation">
+<meta property="og:description" content="Nd:YAG-Laser: Wie das Lasersystem wirkt, wofür es eingesetzt wird, was Sie vor, während und nach der Behandlung erwartet. Patienteninformation von Dermetrics.">
+<meta property="og:url" content="https://dermetrics.ch/patienteninformationen/nd-yag-laser.html">
+<meta property="og:image" content="https://dermetrics.ch/assets/logo-dermetrics-512.png">
+<meta property="og:locale" content="de_CH">
+<meta property="article:published_time" content="2026-11-11">
+<meta property="article:modified_time" content="2026-11-11">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nd:YAG-Laser — Dermetrics Patienteninformation">
+<meta name="twitter:description" content="Nd:YAG-Laser: Wie das Lasersystem wirkt, wofür es eingesetzt wird, was Sie vor, während und nach der Behandlung erwartet. Patienteninformation von Dermetrics.">
+<meta name="twitter:image" content="https://dermetrics.ch/assets/logo-dermetrics-512.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"MedicalWebPage","@id":"https://dermetrics.ch/patienteninformationen/nd-yag-laser.html#webpage","url":"https://dermetrics.ch/patienteninformationen/nd-yag-laser.html","name":"Nd:YAG-Laser — Dermetrics Patienteninformation","description":"Nd:YAG-Laser: Wie das Lasersystem wirkt, wofür es eingesetzt wird, was Sie vor, während und nach der Behandlung erwartet. Patienteninformation von Dermetrics.","inLanguage":"de-CH","about":{"@type":"MedicalProcedure","name":"Nd:YAG-Laser-Behandlung der Haut"},"author":{"@id":"https://dermetrics.ch/#dr-georg"},"reviewedBy":{"@id":"https://dermetrics.ch/#dr-georg"},"publisher":{"@id":"https://dermetrics.ch/#practice"},"datePublished":"2026-11-11","dateModified":"2026-11-11","lastReviewed":"2026-11-11","medicalAudience":{"@type":"Patient"},"isPartOf":{"@id":"https://dermetrics.ch/#practice"},"breadcrumb":{"@id":"https://dermetrics.ch/patienteninformationen/nd-yag-laser.html#breadcrumb"}},{"@type":"BreadcrumbList","@id":"https://dermetrics.ch/patienteninformationen/nd-yag-laser.html#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Dermetrics","item":"https://dermetrics.ch/"},{"@type":"ListItem","position":2,"name":"Patienteninformationen & Behandlungspläne","item":"https://dermetrics.ch/hauterkrankungen-erklaert.html"},{"@type":"ListItem","position":3,"name":"Nd:YAG-Laser","item":"https://dermetrics.ch/patienteninformationen/nd-yag-laser.html"}]}]}</script>
+</head>
+<body>
+
+<header class="topnav" id="topnav">
+  <div class="wrap">
+    <a class="brandrow" href="/">
+      <img src="../assets/logo-dermetrics.svg" alt="Dermetrics Signet" width="20" height="30">
+      <span class="brandmark">DERMETRICS</span>
+    </a>
+    <nav class="navlinks">
+      <a href="/#kernbereiche">Leistungen</a>
+      <a href="/#precheck">Pre-Check</a>
+      <a href="/#weg">Ihr Weg</a>
+      <a href="/#clinic-selnau">Clinic Selnau</a>
+      <a href="/#praxis">Praxis</a>
+      <a href="/#laserbehandlungen">Laserbehandlungen</a>
+      <a href="../hauterkrankungen-erklaert.html">Patienteninformationen &amp; Behandlungspläne</a>
+      <a href="/#kontakt">Kontakt</a>
+      <span class="lang"><span class="current">DE</span>&nbsp;/&nbsp;<a href="../en/index.html">EN</a></span>
+      <a class="cta-termin cta" href="/#termin" data-cta="termin">Termin buchen</a>
+    </nav>
+    <a class="cta-termin cta cta-desktop" href="/#termin" data-cta="termin">Termin buchen</a>
+    <button class="navtoggle" id="navtoggle" aria-label="Menü öffnen">Menü</button>
+  </div>
+</header>
+<main><article>
+
+<section class="header compact">
+  <div class="wrap">
+    <p class="kicker"><a href="/#wissen" style="color:var(--muted);">Dermetrics</a> / <a href="../hauterkrankungen-erklaert.html" style="color:var(--muted);">Patienteninformation</a></p>
+    <h1>Nd:YAG-Laser</h1>
+    <p class="h1sub">Wellenlänge 1064 nm</p>
+    <p class="subhead">Ein in der Dermatologie etabliertes Lasersystem, das in der Tiefe der Haut wirkt und die Oberfläche meist weitgehend schont.</p>
+    <p class="page-lead">In der Praxis Dermetrics von Dr. med. Paul J. Georg in der Clinic Selnau, Zürich Selnau/Enge, besprechen wir mit Ihnen, ob diese Behandlung für Sie infrage kommt. <a href="/#leistungsuebersicht">Zur Leistungsübersicht</a></p>
+    <p class="page-meta">Verantwortlich: Dr. med. Paul J. Georg, Facharzt für Dermatologie und Venerologie · Zuletzt geprüft: 11. November 2026</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="notice">
+      <p><strong>Kurz gesagt:</strong> Der Nd:YAG-Laser erwärmt die Haut gezielt in tieferen Schichten, die Oberfläche bleibt meist weitgehend intakt. Er wird zum Beispiel bei Äderchen, Rötungen, Pigmentflecken und zur Hautverjüngung eingesetzt. Ergebnisse entwickeln sich über Wochen bis Monate. Er kann Zeichen der Hautalterung mildern, aber nicht rückgängig machen. Sonnenschutz bleibt die wichtigste Vorbeugung.</p>
+    </div>
+    <h2>Übersicht</h2>
+    <div class="intro">
+      <p>Der Neodym-dotierte Yttrium-Aluminium-Granat-Laser, kurz Nd:YAG-Laser, wird in der Dermatologie seit Jahren eingesetzt. Diese Seite bezieht sich auf die Wellenlänge 1064 nm, die bei der Hautverjüngung am häufigsten verwendet wird. Der Laser gehört zu den nicht-ablativen bzw. minimal-ablativen Lasern: Die oberste Hautschicht (Epidermis) bleibt in der Regel weitgehend intakt, die Wirkung entsteht in tieferen Hautschichten.</p>
+      <p><strong>So wirkt er:</strong> Das Laserlicht wird von bestimmten Zielstrukturen in der Haut aufgenommen, vor allem von Wasser, aber auch von Melanin (Hautpigment) und Hämoglobin (rotem Blutfarbstoff). Dabei entsteht eine kontrollierte, begrenzte Erwärmung. Sie kann feine Blutgefässe verschliessen, überschüssiges Pigment beeinflussen, Haarfollikel bei der Haarentfernung schädigen und in der mittleren Hautschicht (Dermis) einen gezielten Reiz setzen.</p>
+      <p>Je nach Impulsdauer unterscheidet man Langpuls-, gütegeschaltete (Q-switched) und Pikosekunden-Nd:YAG-Laser. Sie geben die Energie unterschiedlich ab und werden deshalb für verschiedene Ziele eingesetzt: Gefässe, Pigment, Haarentfernung oder Hautverjüngung.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <h2>Wirkung auf Hautalterung und Hautverjüngung</h2>
+    <div class="intro">
+      <p>Ein wichtiger Effekt beruht auf der sogenannten dermalen Remodellierung: Die kontrollierte Wärme in der Dermis aktiviert körpereigene Reparaturprozesse. Nach dem Fachtext, der dieser Seite zugrunde liegt, kann das zu Folgendem beitragen:</p>
+    </div>
+    <ul class="simplelist">
+      <li>vermehrte Neubildung von Kollagen und elastischen Fasern</li>
+      <li>mehr Hautdicke und Festigkeit</li>
+      <li>feinere Linien, Fältchen und eine bessere Hautstruktur</li>
+      <li>ein gleichmässigeres Hautbild durch weniger Rötungen, erweiterte Äderchen und Pigmentflecken</li>
+      <li>möglicherweise feinere Poren und eine bessere Hauttextur</li>
+    </ul>
+    <p class="small" style="margin:8px 0 0;">Wie stark das bei Ihnen ausfällt, lässt sich nicht vorhersagen.</p>
+    <div class="notice" style="margin-top:28px;">
+      <p><strong>Wichtig:</strong> Die Effekte sind nicht sofort sichtbar. Die Kollagenneubildung braucht Zeit, das Ergebnis entwickelt sich über Wochen bis Monate. In Studien war das Ergebnis meist erst nach drei bis sechs Monaten voll ausgeprägt. Meist sind mehrere Sitzungen nötig. Der Laser kann bestehende Zeichen der Hautalterung durch Sonnenschäden oder natürliche Alterung mildern. Er macht sie aber nicht rückgängig und verhindert eine weitere Hautalterung nicht dauerhaft.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <h2>Weitere Einsatzgebiete</h2>
+    <p class="small" style="margin:0 0 4px;">Neben der Hautverjüngung wird der Nd:YAG-Laser unter anderem eingesetzt bei:</p>
+    <div class="options">
+      <div class="option"><h3>Äderchen und Rötungen</h3><p>Besenreiser, oberflächliche Äderchen und Rötungen, auch bei Rosazea.</p></div>
+      <div class="option"><h3>Pigment</h3><p>Altersflecken und bestimmte Pigmentstörungen.</p></div>
+      <div class="option"><h3>Haarentfernung</h3><p>Der Laser schädigt die Haarfollikel.</p></div>
+      <div class="option"><h3>Akne und Aknenarben</h3><p>Bei aktiver Akne und bei Aknenarben.</p></div>
+      <div class="option"><h3>Gutartige Hautveränderungen</h3><p>Bestimmte gutartige Veränderungen der Haut.</p></div>
+    </div>
+    <p class="small" style="margin:24px 0 0;">Bei Dermetrics bieten wir das gesamte Spektrum dieser Anwendungen an.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <h2>Ablauf, Nebenwirkungen und Nachsorge</h2>
+
+    <h3 style="margin-top:8px;">Ablauf der Behandlung</h3>
+    <ul class="simplelist">
+      <li>Vor der Behandlung wird die Haut meist gereinigt, teils wird eine Kühlung oder Betäubungscreme aufgetragen.</li>
+      <li>Während der Behandlung ist ein kurzes, stechendes oder wärmendes Gefühl möglich.</li>
+      <li>Je nach Lasertyp und Behandlungsziel sind mehrere Sitzungen üblich. Meist sind 2 bis 4 Sitzungen nötig, im Abstand von zwei bis vier Wochen.</li>
+    </ul>
+
+    <h3 style="margin-top:40px;">Nach der Behandlung: Was ist normal?</h3>
+    <ul class="simplelist">
+      <li>Vorübergehende Rötung und leichte Schwellung, meist Stunden bis wenige Tage.</li>
+      <li>Gelegentlich leichte Krustenbildung bei intensiveren Einstellungen.</li>
+      <li>Hoher Lichtschutzfaktor ist in den Wochen danach besonders wichtig.</li>
+    </ul>
+
+    <h3 style="margin-top:40px;">Mögliche Nebenwirkungen</h3>
+    <p class="small" style="margin:8px 0 12px;">Der Fachtext beschreibt die Behandlung als vergleichsweise nebenwirkungsarm, auch bei dunkleren Hauttypen, da der Laser nur wenig Melanin absorbiert. Selten können auftreten:</p>
+    <ul class="simplelist">
+      <li>vorübergehende Hyperpigmentierung (dunklere Flecken)</li>
+      <li>Rötungen oder Schwellungen über mehrere Tage</li>
+      <li>in Einzelfällen Blasen oder Narben, etwa bei falscher Einstellung</li>
+    </ul>
+
+    <div class="notice" style="margin-top:28px;">
+      <p><strong>Wann sollten Sie sich melden?</strong> Bei anhaltender Rötung, Schmerzen, Blasen, Zeichen einer Infektion oder ungewöhnlichen Hautveränderungen nach der Behandlung. Kontaktieren Sie dann bitte die Praxis.</p>
+    </div>
+
+    <h3 style="margin-top:40px;">Praktisches</h3>
+    <div class="facts">
+      <div class="fact"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><p class="k">Sitzungen</p><p class="v">meist 2 bis 4</p><p>Im Abstand von zwei bis vier Wochen.</p></div>
+      <div class="fact"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg><p class="k">Ausfallzeit</p><p class="v">Gering</p><p>Meist nur leichte Rötungen, höchstens 3 bis 5 Tage.</p></div>
+      <div class="fact fact--wide"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M14.5 9.2c-.6-.8-1.5-1.2-2.6-1.2-1.5 0-2.4.8-2.4 1.9 0 2.7 5 1.3 5 4 0 1.1-1 2-2.6 2-1.2 0-2.2-.5-2.8-1.4"/></svg><p class="k">Kosten</p><p class="v">ab 300 CHF pro Sitzung</p><p>Siehe Preisliste. Die Kosten besprechen wir vorab mit Ihnen. Ob Ihre Versicherung Kosten übernimmt, klären Sie bitte vorab mit ihr.</p></div>
+      <div class="fact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5s6 6.2 6 10.5a6 6 0 0 1-12 0C6 9.700 12 3.500 12 3.500z"/></svg><p class="k">Vor der Behandlung</p><p class="v">12 Stunden</p><p>Keine Cremes und kein Make-up in den 12 Stunden vor dem Eingriff. Reinigen Sie das Gesicht nur mit Wasser.</p></div>
+      <div class="fact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.500l7 2.500v5.500c0 4.200-2.800 7.500-7 9-4.200-1.500-7-4.800-7-9V6z"/></svg><p class="k">Danach</p><p class="v">Pflegeprotokoll</p><p>Nach der Behandlung erhalten Sie von uns ein spezielles Pflegeprotokoll. Hoher Lichtschutzfaktor bleibt wichtig.</p></div>
+      <div class="fact"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.500"/><path d="M6 6l12 12"/></svg><p class="k">Nicht geeignet bei</p><p class="v">Wundheilungsstörungen</p><p>Auch bei aktiven Tumoren. Weitere Gegenanzeigen klären wir im ärztlichen Gespräch.</p></div>
+      <div class="fact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l9 15.500H3z"/><path d="M12 10v4M12 17v.5"/></svg><p class="k">Wann melden</p><p class="v">Bei Auffälligkeiten</p><p>Bei anhaltender Rötung, Schmerzen, Blasen, Zeichen einer Infektion oder ungewöhnlichen Hautveränderungen nach der Behandlung. Bitte kontaktieren Sie dann die Praxis.</p></div>
+    </div>
+
+    <div class="pullquote" style="margin-top:40px;">
+      <p>Der Laser kann Zeichen der Hautalterung mildern, aber nicht rückgängig machen. Konsequenter Sonnenschutz bleibt die wichtigste Massnahme gegen weitere Hautschäden.</p>
+    </div>
+
+    <div class="sources" style="margin-top:40px;">
+      <h4>Quellen</h4>
+      <p class="small" style="margin:0 0 12px;">Literaturliste der Praxis. Die Links sind nicht einzeln geöffnet, und die einzelnen Aussagen im Text sind den Quellen nicht zugeordnet. Mehrere Einträge betreffen Pikosekunden- oder Q-Switch-Varianten des 1064-nm-Lasers.</p>
+      <ol>
+          <li id="q1">Yang Z, Xiang H, Duan X, et al., <a href="https://doi.org/10.1007/s10103-018-2683-6" target="_blank" rel="noopener">Q-switched 1064-nm dymium-doped yttrium aluminum garnet laser irradiation induces skin collagen synthesis by stimulating MAPKs pathway</a>, Lasers in Medical Science, 2019.</li>
+          <li id="q2">Fusco A, Savio V, Perfetto B, et al., <a href="https://doi.org/10.1007/s10103-023-03953-5" target="_blank" rel="noopener">Q-switched Nd:YAG laser protects human keratinocytes from oxidative stress and inflammation via AhR–Nrf2 pathway</a>, Lasers in Medical Science, 2023.</li>
+          <li id="q3">Avdulaj A, Moscovici S, Noyman Y, Olshinka A., <a href="https://doi.org/10.1007/s10103-026-04833-4" target="_blank" rel="noopener">Fractional Q-switched Nd: YAG 1064 nm laser treatment improves facial skin quality with zero downtime</a>, Lasers in Medical Science, 2026.</li>
+          <li id="q4">Kaya TI, Guvenc U., <a href="https://pubmed.ncbi.nlm.nih.gov/30964592" target="_blank" rel="noopener">Long Pulse 1,064-Nm Neodymium-Doped Yttrium Aluminum Garnet Laser in Aesthetic Dermatology</a>, Dermatologic Therapy, 2019.</li>
+          <li id="q5">Munavalli GS, Leight-Dunn HM., <a href="https://pubmed.ncbi.nlm.nih.gov/38592205" target="_blank" rel="noopener">Pilot Study to Demonstrate Improvement in Skin Tone and Texture by Treatment With a 1064 Nm Q-Switched Neodymium-Doped Yttrium Aluminum Garnet Laser</a>, Journal of Clinical Medicine, 2024.</li>
+          <li id="q6">Le TVT, Nguyen PT, Le VA, et al., <a href="https://doi.org/10.1007/s10103-025-04453-4" target="_blank" rel="noopener">Fractional 1064 nm Nd:YAG picosecond laser for Asian skin rejuvenation: clinical efficacy and the role of photoprotective behaviours</a>, Lasers in Medical Science, 2025.</li>
+          <li id="q7">Husein-ElAhmed H, Steinhoff M., <a href="https://doi.org/10.1007/s10103-020-03200-1" target="_blank" rel="noopener">Laser and light-based therapies in the management of rosacea: an updated systematic review</a>, Lasers in Medical Science, 2021.  [Studientyp laut Liste: Systematische Übersichtsarbeit]</li>
+          <li id="q8">Hwang CY, Chen CC., <a href="https://doi.org/10.1111/phpp.12505" target="_blank" rel="noopener">Serial change in laser‐induced optical breakdown by 1064‐nm Nd:YAG picosecond laser</a>, Photodermatology, Photoimmunology &amp; Photomedicine, 2020.  [Studientyp laut Liste: Meinungsbeitrag]</li>
+          <li id="q9">Wu X, Guo L, Wu X, et al., <a href="https://doi.org/10.1007/s10103-025-04754-8" target="_blank" rel="noopener">Effect of the combination of long-pulse 1064 nm neodymium-doped yttrium aluminum garnet laser and picosecond 755 nm alexandrite laser with diffractive lens array on skin photoaging: a randomized, split-face multicenter clinical trial</a>, Lasers in Medical Science, 2025.  [Studientyp laut Liste: Randomisierte Studie]</li>
+      </ol>
+    </div>
+    <div class="wa-cta">
+      <p class="wa-cta-text"><strong>Termin buchen</strong><span>Telefon, WhatsApp oder Anfrageformular</span></p>
+      <a class="cta-termin wa-btn" href="/#termin" data-cta="termin">Termin buchen</a>
+    </div>
+    <div class="qrshare">
+      <div class="qrshare-code">
+        <div id="qrcode" aria-hidden="true"></div>
+      </div>
+      <div class="qrshare-text">
+        <h3>Diese Seite teilen</h3>
+        <p>QR-Code scannen oder Link direkt teilen — z.&nbsp;B. für die Visitenkarte oder per Nachricht.</p>
+        <div class="qrshare-actions">
+          <button type="button" id="share-btn" class="share-btn">Seite teilen</button>
+          <span id="share-feedback" class="share-feedback" aria-live="polite"></span>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top:28px;"><a href="../hauterkrankungen-erklaert.html">← Alle Patienteninformationen</a></p>
+  </div>
+</section>
+
+</article></main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="col">
+      <p class="tagline">Longevity meets<br>measurable science.</p>
+      <p class="practice" style="margin-top:26px;">Dermetrics – Dr. med. Paul J. Georg</p>
+      <p class="footer-area">Hautarzt in Zürich Kreis 2 (Selnau/Enge) · Dermatologie und Venerologie</p>
+      <p>Clinic Selnau<br>Brandschenkestrasse 45<br>8002 Zürich</p>
+      <p><a href="tel:+41432345555">+41 43 234 55 55</a></p>
+      <p><a href="https://share.google/EMOgfxDGYLcdnslC7" target="_blank" rel="noopener">Google-Profil der Clinic Selnau</a></p>
+    </div>
+    <div class="col">
+      <p class="footer-heading">Rechtliches</p>
+      <ul>
+        <li><a href="../impressum.html">Impressum</a></li>
+        <li><a href="../impressum.html#datenschutz">Datenschutzerklärung</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap">
+    <p class="fmh-note">Diese Seite dient der allgemeinen Patienteninformation und ersetzt keine individuelle ärztliche Beratung.</p>
+    <p class="fmh-note">Diese Website dient der sachlichen Information gemäss den Standesregeln der FMH.</p>
+    <div class="legalrow">
+      <span><time datetime="2026">© 2026</time> Dermetrics – Dr. med. Paul J. Georg</span>
+    </div>
+  </div>
+</footer>
+
+<link rel="stylesheet" href="../css/style.css" data-full-css>
+<script src="../assets/nav.js" defer></script>
+<script src="../assets/vendor/qrcode.js" defer></script>
+<script src="../assets/qrshare.js" defer></script>
+<script src="../assets/cookiebanner.js" defer></script>
+<script src="../assets/opening-popup.js" defer></script>
+
+<script src="../assets/termin.js" defer></script>
+</body>
+</html>

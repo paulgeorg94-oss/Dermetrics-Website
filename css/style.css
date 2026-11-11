@@ -1179,3 +1179,14 @@ details.acc > summary .acc-title { margin: 0; font-size: 20px; font-weight: 400;
 .faq-answer strong { color: var(--ink); font-weight: 500; }
 .faq-answer a, .faq-more a { color: var(--aubergine-mid); }
 .faq-note { font-size: 13px; color: var(--muted); margin: 14px 0 16px; }
+
+/* Praktisches: Fakten-Kacheln (Patienteninformationen) */
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: 24px 0 0; }
+.fact { background: #fff; border: 1px solid var(--line); border-radius: var(--r-md); padding: 24px; box-shadow: 0 1px 2px rgba(36, 28, 46, 0.04), 0 4px 12px rgba(36, 28, 46, 0.03); display: flex; flex-direction: column; gap: 8px; }
+.fact--wide { grid-column: span 2; background: var(--notice-bg); border-color: transparent; box-shadow: none; }
+.fact svg { width: 24px; height: 24px; stroke: var(--aubergine); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+.fact .k { font-size: 12.5px; font-weight: 500; color: var(--muted); letter-spacing: 0.03em; text-transform: uppercase; margin: 0; }
+.fact .v { font-size: 24px; font-weight: 300; line-height: 1.15; color: var(--aubergine); margin: 0; text-wrap: balance; }
+.fact p { font-size: 14px; color: var(--ink); line-height: 1.6; margin: 0; text-wrap: pretty; }
+.fact p.muted { color: var(--muted); }
+@media (max-width: 720px) { .fact--wide { grid-column: auto; } }

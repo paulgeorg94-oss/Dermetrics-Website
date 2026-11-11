@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; img-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self' https://formspree.io; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta name="robots" content="noindex, nofollow"><!-- ENTWURF: noindex entfernen, sobald Literaturliste ergänzt und Inhalt ärztlich freigegeben ist -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pico-Laser — Dermetrics Patienteninformation</title>
+<meta name="description" content="Pico-Laser: Wie das Lasersystem mit Pikosekunden-Impulsen wirkt, wofür es eingesetzt wird, was Sie vor, während und nach der Behandlung erwartet. Patienteninformation von Dermetrics.">
+<link rel="icon" href="../assets/logo-dermetrics.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<style id="critical-css">:root { --r-sm: 10px; --r-md: 16px; --r-lg: 20px; --aubergine: #300C61; --aubergine-mid: #4B2C86; --ink: #241C2E; --muted: #756B82; --line: #E4DEE8; --ivory: #FBF8F6; --notice-bg: #F5F1FA; }
+@font-face { font-family: Inter; font-style: normal; font-weight: 300; font-display: swap; src: url("../assets/vendor/fonts/Inter-Light.woff2") format("woff2"); }
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font-display: swap; src: url("../assets/vendor/fonts/Inter-Regular.woff2") format("woff2"); }
+@font-face { font-family: Inter; font-style: normal; font-weight: 500; font-display: swap; src: url("../assets/vendor/fonts/Inter-Medium.woff2") format("woff2"); }
+@font-face { font-family: Inter; font-style: normal; font-weight: 600; font-display: swap; src: url("../assets/vendor/fonts/Inter-SemiBold.woff2") format("woff2"); }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0px; background: var(--ivory); color: var(--ink); font-family: Inter, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; line-height: 1.6; font-weight: 400; }
+a { color: var(--aubergine-mid); }
+.wrap { max-width: 1040px; margin: 0px auto; padding: 0px 32px; }
+body { padding-top: 68px; }
+.topnav { position: fixed; top: 0px; left: 0px; right: 0px; z-index: 20; background: rgba(251, 248, 246, 0.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); transition: transform 0.28s; transform: translateZ(0px); will-change: transform; }
+.topnav .wrap { max-width: 1280px; display: flex; align-items: center; justify-content: space-between; padding-top: 14px; padding-bottom: 14px; gap: 24px; }
+.topnav .brandrow { display: flex; align-items: center; gap: 12px; text-decoration: none; margin-bottom: 0px; }
+.topnav .brandrow img { width: auto; height: 30px; display: block; }
+.topnav .brandmark { font-size: 13px; letter-spacing: 0.14em; color: var(--aubergine); font-weight: 500; }
+.topnav nav { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.topnav nav a { white-space: nowrap; font-size: 13px; color: var(--ink); text-decoration: none; font-weight: 400; }
+.topnav nav a:hover { color: var(--aubergine-mid); }
+.topnav .lang { font-size: 12.5px; color: var(--muted); }
+.topnav .lang a { color: var(--muted); text-decoration: none; }
+.topnav .lang a:hover { color: var(--aubergine-mid); }
+.topnav .lang .current { color: var(--ink); font-weight: 500; }
+.topnav .cta { font-size: 13px; font-weight: 500; color: rgb(255, 255, 255); background: var(--aubergine); padding: 9px 18px; line-height: 18px; border-radius: 999px; text-decoration: none; white-space: nowrap; }
+.topnav .navtoggle { display: none; }
+.topnav nav.navlinks .cta { display: none; }
+@media (max-width: 1240px){.topnav nav.navlinks { display: none; }.topnav .cta { display: none; }.topnav .navtoggle { display: inline-flex; background: none; border: 1px solid var(--line); border-radius: var(--r-sm); padding: 8px 12px; min-height: 36px; align-items: center; font-size: 13px; color: var(--ink); }}
+.header { padding: 56px 0px 48px; background: radial-gradient(60% 80% at 18% 12%, rgba(196, 178, 235, 0.55), transparent 62%), radial-gradient(70% 90% at 88% 82%, rgba(245, 190, 150, 0.4), transparent 62%), rgb(251, 246, 241); }
+.header.compact { padding: 40px 0px 34px; }
+.brandrow { display: flex; align-items: center; gap: 14px; margin-bottom: 34px; }
+.brandrow img { width: auto; height: 34px; display: block; }
+.brandmark { font-size: 14px; letter-spacing: 0.14em; color: var(--aubergine); font-weight: 500; }
+.kicker { font-size: 13.5px; color: var(--muted); margin: 0px 0px 16px; letter-spacing: 0.02em; }
+h1 { font-size: 40px; font-weight: 300; line-height: 1.2; letter-spacing: -0.01em; margin: 0px 0px 14px; }
+.header.compact h1 { font-size: 30px; }
+.h1sub { font-size: 15px; font-weight: 400; color: var(--muted); display: block; line-height: 1.45; margin: -10px 0px 14px; }
+.subhead { font-size: 17px; color: var(--muted); max-width: 58ch; margin: 14px 0px 0px; line-height: 1.6; }
+section.block { padding: 64px 0px; border-top: 1px solid var(--line); scroll-margin-top: 76px; }
+h2 { font-size: 28px; font-weight: 300; line-height: 1.3; margin: 0px 0px 18px; letter-spacing: -0.005em; }
+.intro p { font-size: 15.5px; color: var(--ink); line-height: 1.7; margin: 0px 0px 16px; max-width: 74ch; }
+.intro p:last-child { margin-bottom: 0px; }
+.options { display: flex; gap: 28px; margin: 32px 0px 0px; flex-wrap: wrap; }
+.option { flex: 1 1 260px; min-width: 220px; padding: 26px 24px; background: rgb(255, 255, 255); border: 1px solid var(--line); border-radius: var(--r-md); }
+.notice { background: var(--notice-bg); border-radius: var(--r-md); padding: 22px 26px; margin: 28px 0px; }
+.notice p { font-size: 14px; color: var(--ink); line-height: 1.6; margin: 0px; }
+.block .wrap > .notice:first-child { margin-top: 0px; }
+.notice strong { color: var(--aubergine); }
+.page-lead { font-size: 14.5px; color: var(--ink); line-height: 1.6; max-width: 62ch; margin: 16px 0px 0px; }
+.page-lead a { color: var(--aubergine-mid); }
+.page-meta { font-size: 12.5px; color: var(--muted); margin: 6px 0px 0px; }</style>
+<link rel="preload" href="../css/style.css" as="style" data-critical>
+<link rel="canonical" href="https://dermetrics.ch/patienteninformationen/pico-laser.html">
+<link rel="alternate" hreflang="de-CH" href="https://dermetrics.ch/patienteninformationen/pico-laser.html">
+<link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/patienteninformationen/pico-laser.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Dermetrics – Dermatologie Clinic Selnau">
+<meta property="og:title" content="Pico-Laser — Dermetrics Patienteninformation">
+<meta property="og:description" content="Pico-Laser: Wie das Lasersystem mit Pikosekunden-Impulsen wirkt, wofür es eingesetzt wird, was Sie vor, während und nach der Behandlung erwartet. Patienteninformation von Dermetrics.">
+<meta property="og:url" content="https://dermetrics.ch/patienteninformationen/pico-laser.html">
+<meta property="og:image" content="https://dermetrics.ch/assets/logo-dermetrics-512.png">
+<meta property="og:locale" content="de_CH">
+<meta property="article:published_time" content="2026-11-11">
+<meta property="article:modified_time" content="2026-11-11">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pico-Laser — Dermetrics Patienteninformation">
+<meta name="twitter:description" content="Pico-Laser: Wie das Lasersystem mit Pikosekunden-Impulsen wirkt, wofür es eingesetzt wird, was Sie vor, während und nach der Behandlung erwartet. Patienteninformation von Dermetrics.">
+<meta name="twitter:image" content="https://dermetrics.ch/assets/logo-dermetrics-512.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"MedicalWebPage","@id":"https://dermetrics.ch/patienteninformationen/pico-laser.html#webpage","url":"https://dermetrics.ch/patienteninformationen/pico-laser.html","name":"Pico-Laser — Dermetrics Patienteninformation","description":"Pico-Laser: Wie das Lasersystem mit Pikosekunden-Impulsen wirkt, wofür es eingesetzt wird, was Sie vor, während und nach der Behandlung erwartet. Patienteninformation von Dermetrics.","inLanguage":"de-CH","about":{"@type":"MedicalProcedure","name":"Pico-Laser-Behandlung der Haut"},"author":{"@id":"https://dermetrics.ch/#dr-georg"},"reviewedBy":{"@id":"https://dermetrics.ch/#dr-georg"},"publisher":{"@id":"https://dermetrics.ch/#practice"},"datePublished":"2026-11-11","dateModified":"2026-11-11","lastReviewed":"2026-11-11","medicalAudience":{"@type":"Patient"},"isPartOf":{"@id":"https://dermetrics.ch/#practice"},"breadcrumb":{"@id":"https://dermetrics.ch/patienteninformationen/pico-laser.html#breadcrumb"}},{"@type":"BreadcrumbList","@id":"https://dermetrics.ch/patienteninformationen/pico-laser.html#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Dermetrics","item":"https://dermetrics.ch/"},{"@type":"ListItem","position":2,"name":"Patienteninformationen & Behandlungspläne","item":"https://dermetrics.ch/hauterkrankungen-erklaert.html"},{"@type":"ListItem","position":3,"name":"Pico-Laser","item":"https://dermetrics.ch/patienteninformationen/pico-laser.html"}]}]}</script>
+</head>
+<body>
+
+<header class="topnav" id="topnav">
+  <div class="wrap">
+    <a class="brandrow" href="/">
+      <img src="../assets/logo-dermetrics.svg" alt="Dermetrics Signet" width="20" height="30">
+      <span class="brandmark">DERMETRICS</span>
+    </a>
+    <nav class="navlinks">
+      <a href="/#kernbereiche">Leistungen</a>
+      <a href="/#precheck">Pre-Check</a>
+      <a href="/#weg">Ihr Weg</a>
+      <a href="/#clinic-selnau">Clinic Selnau</a>
+      <a href="/#praxis">Praxis</a>
+      <a href="/#laserbehandlungen">Laserbehandlungen</a>
+      <a href="../hauterkrankungen-erklaert.html">Patienteninformationen &amp; Behandlungspläne</a>
+      <a href="/#kontakt">Kontakt</a>
+      <span class="lang"><span class="current">DE</span>&nbsp;/&nbsp;<a href="../en/index.html">EN</a></span>
+      <a class="cta-termin cta" href="/#termin" data-cta="termin">Termin buchen</a>
+    </nav>
+    <a class="cta-termin cta cta-desktop" href="/#termin" data-cta="termin">Termin buchen</a>
+    <button class="navtoggle" id="navtoggle" aria-label="Menü öffnen">Menü</button>
+  </div>
+</header>
+<main><article>
+
+<section class="header compact">
+  <div class="wrap">
+    <p class="kicker"><a href="/#wissen" style="color:var(--muted);">Dermetrics</a> / <a href="../hauterkrankungen-erklaert.html" style="color:var(--muted);">Patienteninformation</a></p>
+    <h1>Pico-Laser</h1>
+    <p class="h1sub">Pikosekunden-Laser</p>
+    <p class="subhead">Ein Lasersystem mit extrem kurzen Lichtimpulsen, das vor allem bei Pigment, Narben und Tattoos eingesetzt wird.</p>
+    <p class="page-lead">In der Praxis Dermetrics von Dr. med. Paul J. Georg in der Clinic Selnau, Zürich Selnau/Enge, besprechen wir mit Ihnen, ob diese Behandlung für Sie infrage kommt. <a href="/#leistungsuebersicht">Zur Leistungsübersicht</a></p>
+    <p class="page-meta">Verantwortlich: Dr. med. Paul J. Georg, Facharzt für Dermatologie und Venerologie · Zuletzt geprüft: 11. November 2026</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="notice">
+      <p><strong>Kurz gesagt:</strong> Der Pico-Laser gibt extrem kurze Lichtimpulse im Pikosekundenbereich ab. Sie wirken vor allem mechanisch statt durch Hitze und zerlegen Pigment, Tattoo-Tinte und Melanin in kleine Partikel, die der Körper abbaut. Er wird bei Pigmentflecken, Melasma, Narben, Hautverjüngung und Tattoos eingesetzt. Das Ergebnis hängt von Hautbefund und Hauttyp ab.</p>
+    </div>
+    <h2>Übersicht</h2>
+    <div class="intro">
+      <p>Der Pico-Laser gibt Lichtimpulse im Pikosekundenbereich ab, eine Pikosekunde ist eine Billionstel Sekunde. Durch diese ultrakurze Impulsdauer entsteht im Gewebe vor allem ein mechanischer, sogenannter photoakustischer Effekt. Bei älteren Lasertypen, zum Beispiel Q-Switch-Lasern, steht dagegen die Wärme im Vordergrund.</p>
+      <p><strong>So wirkt er:</strong> Farbpigmente, Tattoo-Tinte und Melanin (Hautpigment) werden in sehr kleine Partikel zerlegt. Das körpereigene Immunsystem baut diese Partikel danach ab. Nach dem Fachtext, der dieser Seite zugrunde liegt, wird dabei die umliegende Haut weniger belastet als bei älteren Lasertypen.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <h2>Wofür wird der Pico-Laser eingesetzt?</h2>
+    <p class="small" style="margin:0 0 4px;">Ursprünglich wurde der Pico-Laser für die Entfernung von Tattoos entwickelt. Seine Einsatzgebiete in der Dermatologie haben sich seither erweitert.</p>
+    <div class="options">
+      <div class="option"><h3>Tattoos</h3><p>Der Laser zerlegt die Tattoo-Tinte, die der Körper danach abbaut. Hierfür gilt er nach dem Fachtext weiterhin als Goldstandard: Tattoos unterschiedlichster Farben lassen sich oft mit weniger Sitzungen entfernen als mit älteren Lasersystemen.</p></div>
+      <div class="option"><h3>Pigmentflecken</h3><p>Altersflecken (Lentigines), Sonnenflecken, Sommersprossen, Café-au-lait-Flecken und Nävus Ota. Nach dem Fachtext sprechen sie gut auf die Behandlung an, auch bei dunkleren Hauttypen.</p></div>
+      <div class="option"><h3>Melasma</h3><p>Eine schwer zu behandelnde Pigmentstörung, die vor allem Frauen betrifft. Der Pico-Laser kann ergänzend eingesetzt werden, oft in Kombination mit Wirkstoffen zum Auftragen wie Tranexamsäure, was die Ergebnisse nach dem Fachtext weiter verbessern kann. Den Einsatz solcher Wirkstoffe beurteilen wir ärztlich.</p></div>
+      <div class="option"><h3>Aknenarben</h3><p>Bei leichten bis mittelschweren eingesunkenen (atrophen) Narben kann der fraktionierte Pico-Laser die Kollagenbildung anregen und die Hautstruktur verbessern, bei meist kürzerer Ausfallzeit als bei anderen Lasertypen.</p></div>
+      <div class="option"><h3>Hautverjüngung</h3><p>Feine Linien, grössere Poren, unebene Hautstruktur und allgemeine Lichtschäden der Haut (Photoaging).</p></div>
+      <div class="option"><h3>Dehnungsstreifen und Narben</h3><p>Bei hellen Dehnungsstreifen (Striae alba) sind die erreichbaren Verbesserungen meist moderat. Chirurgische oder durch Verletzung entstandene Narben können ergänzend zu anderen Therapien behandelt werden.</p></div>
+    </div>
+    <p class="small" style="margin:24px 0 0;">Wie stark das Ergebnis bei Ihnen ausfällt, lässt sich nicht vorhersagen. Bei Dermetrics bieten wir das gesamte Spektrum dieser Anwendungen an.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <h2>Ablauf, Nebenwirkungen und Nachsorge</h2>
+
+    <h3 style="margin-top:8px;">Ablauf der Behandlung</h3>
+    <ul class="simplelist">
+      <li>Je nach Anwendungsgebiet sind mehrere Sitzungen nötig, meist 2 bis 4, im Abstand von 2 bis 8 Wochen.</li>
+      <li>Vorab kann eine örtliche Betäubungscreme aufgetragen werden.</li>
+      <li>Während der Behandlung ist ein kurzes, stechendes Gefühl möglich, das manche mit dem Schnalzen eines Gummibands vergleichen.</li>
+      <li><strong>Dauer einer Sitzung:</strong> meist nur wenige Minuten bis etwa eine halbe Stunde.</li>
+    </ul>
+
+    <h3 style="margin-top:40px;">Nach der Behandlung: Was ist normal?</h3>
+    <ul class="simplelist">
+      <li>Vorübergehende Rötung, leichte Schwellung oder punktförmige Blutungen (Petechien) im behandelten Bereich. Sie klingen meist innerhalb weniger Tage ab.</li>
+      <li>Bei Pigmentflecken und Tattoos kann die behandelte Stelle kurz weisslich erscheinen und danach eine Kruste bilden.</li>
+      <li>Die Ausfallzeit ist nach dem Fachtext in der Regel gering, im Alltag sind Sie meist wenig eingeschränkt. <strong>Ausfallzeit:</strong> Gering, meist nur leichte Rötungen, höchstens 3 bis 5 Tage.</li>
+    </ul>
+
+    <h3 style="margin-top:40px;">Mögliche Nebenwirkungen</h3>
+    <ul class="simplelist">
+      <li>Vorübergehende Nachdunkelung der Haut (postinflammatorische Hyperpigmentierung). Das Risiko ist bei dunkleren Hauttypen etwas höher.</li>
+      <li>Konsequenter Sonnenschutz vor und nach der Behandlung ist wichtig, um dieses Risiko zu senken.</li>
+    </ul>
+    <p class="small" style="margin:8px 0 0;">Wie häufig und wie stark Nebenwirkungen auftreten, hängt von Hautbefund, Hauttyp und Anwendungsgebiet ab. Das besprechen wir vor der Behandlung mit Ihnen.</p>
+
+    <h3 style="margin-top:40px;">Wer sollte die Behandlung nicht erhalten?</h3>
+    <ul class="simplelist">
+      <li>Wundheilungsstörungen</li>
+      <li>aktive Tumoren</li>
+      <li>aktive Hautinfektionen oder offene Wunden im Behandlungsbereich</li>
+      <li>Schwangerschaft (aus Vorsicht, auch wenn keine besonderen Risiken bekannt sind)</li>
+      <li>Einnahme bestimmter Medikamente, die die Haut lichtempfindlicher machen</li>
+      <li>frisch gebräunte Haut, wegen des Risikos für Pigmentveränderungen</li>
+      <li>Neigung zu Keloiden (wulstigen Narben): bei bestimmten Narbenbehandlungen ist besondere Vorsicht nötig</li>
+    </ul>
+    <div class="notice" style="margin-top:28px;">
+      <p><strong>Vor der Behandlung</strong> klären wir im ärztlichen Gespräch, ob sie für Sie geeignet ist. Dabei besprechen wir Vorerkrankungen, Medikamente und Ihren Hauttyp. Anzahl der Sitzungen, Ergebnis und mögliche Nebenwirkungen hängen stark von Hautbefund, Hauttyp und Anwendungsgebiet ab.</p>
+    </div>
+
+    <h3 style="margin-top:40px;">Praktisches</h3>
+    <div class="facts">
+      <div class="fact"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><p class="k">Sitzungen</p><p class="v">meist 2 bis 4</p><p>Je nach Anwendungsgebiet im Abstand von 2 bis 8 Wochen.</p></div>
+      <div class="fact"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.500" r="7"/><path d="M12 10v3.500l2 1.500M9.500 3.500h5"/></svg><p class="k">Dauer einer Sitzung</p><p class="v">Kurz</p><p>Meist nur wenige Minuten bis etwa eine halbe Stunde.</p></div>
+      <div class="fact"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg><p class="k">Ausfallzeit</p><p class="v">Gering</p><p>Meist nur leichte Rötungen, höchstens 3 bis 5 Tage.</p></div>
+      <div class="fact fact--wide"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M14.5 9.2c-.6-.8-1.5-1.2-2.6-1.2-1.5 0-2.4.8-2.4 1.9 0 2.7 5 1.3 5 4 0 1.1-1 2-2.6 2-1.2 0-2.2-.5-2.8-1.4"/></svg><p class="k">Kosten</p><p class="v">ab 300 CHF pro Sitzung</p><p>Siehe Preisliste. Die Kosten besprechen wir vorab mit Ihnen. Ob Ihre Versicherung Kosten übernimmt, klären Sie bitte vorab mit ihr.</p></div>
+      <div class="fact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5s6 6.2 6 10.5a6 6 0 0 1-12 0C6 9.700 12 3.500 12 3.500z"/></svg><p class="k">Vor der Behandlung</p><p class="v">12 Stunden</p><p>Keine Cremes und kein Make-up in den 12 Stunden vor dem Eingriff. Reinigen Sie das Gesicht nur mit Wasser.</p></div>
+      <div class="fact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.500l7 2.500v5.500c0 4.200-2.800 7.500-7 9-4.200-1.500-7-4.800-7-9V6z"/></svg><p class="k">Danach</p><p class="v">Pflegeprotokoll</p><p>Nach der Behandlung erhalten Sie von uns ein spezielles Pflegeprotokoll. Hoher Lichtschutzfaktor bleibt wichtig.</p></div>
+      <div class="fact"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.500"/><path d="M6 6l12 12"/></svg><p class="k">Nicht geeignet bei</p><p class="v">Wundheilungsstörungen</p><p>Auch bei aktiven Tumoren. Weitere Gegenanzeigen finden Sie in der Liste oben.</p></div>
+      <div class="fact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l9 15.500H3z"/><path d="M12 10v4M12 17v.5"/></svg><p class="k">Wann melden</p><p class="v">Bei Auffälligkeiten</p><p>Bei anhaltender Rötung, Schmerzen, Blasen, Zeichen einer Infektion oder ungewöhnlichen Hautveränderungen nach der Behandlung. Bitte kontaktieren Sie dann die Praxis.</p></div>
+    </div>
+
+    <div class="pullquote" style="margin-top:40px;">
+      <p>Das Ergebnis hängt von Hautbefund, Hauttyp und Anwendungsgebiet ab. Konsequenter Sonnenschutz vor und nach der Behandlung gehört dazu.</p>
+    </div>
+
+    <div class="sources" style="margin-top:40px;">
+      <h4>Quellen</h4>
+      <p class="small" style="margin:0 0 12px;">Literaturliste der Praxis. Die Links sind nicht einzeln geöffnet, und die einzelnen Aussagen im Text sind den Quellen nicht zugeordnet. Eintrag 2 ist laut Titel ein Posterband.</p>
+      <ol>
+          <li id="q1">Wu DC, Goldman MP, Wat H, Chan HHL., <a href="https://doi.org/10.1002/lsm.23244" target="_blank" rel="noopener">A Systematic Review of Picosecond Laser in Dermatology: Evidence and Recommendations</a>, Lasers in Surgery and Medicine, 2021.  [Studientyp laut Liste: Systematische Übersichtsarbeit]</li>
+          <li id="q2">American Society for Laser Medicine and Surgery, <a href="https://doi.org/10.1002/lsm.23068" target="_blank" rel="noopener">American Society for Laser Medicine and Surgery 2019 Electronic Posters (ePosters)</a>, Lasers in Surgery and Medicine, 2019.  [Studientyp laut Liste: Posterband, keine eigenständige Studie]</li>
+          <li id="q3">Pulumati A, Jaalouk D, Algarin YA, Nouri K., <a href="https://doi.org/10.1007/s00403-023-02794-0" target="_blank" rel="noopener">The role of 755-nm alexandrite picosecond laser in melasma management</a>, Archives of Dermatological Research, 2023.  [Studientyp laut Liste: Übersichtsarbeit]</li>
+          <li id="q4">Salameh F, Shumaker PR, Goodman GJ, et al., <a href="https://doi.org/10.1002/lsm.23484" target="_blank" rel="noopener">Energy‐based devices for the treatment of Acne Scars: 2022 International consensus recommendations</a>, Lasers in Surgery and Medicine, 2022.  [Studientyp laut Liste: Übersichtsarbeit]</li>
+          <li id="q5">Torbeck RL, Schilling L, Khorasani H, et al., <a href="https://pubmed.ncbi.nlm.nih.gov/30702447" target="_blank" rel="noopener">Evolution of the Picosecond Laser: A Review of Literature</a>, Dermatologic Surgery, 2019.  [Studientyp laut Liste: Übersichtsarbeit]</li>
+          <li id="q6">Haykal D, Cartier H, Maire C, Mordon S., <a href="https://doi.org/10.1007/s10103-023-03945-5" target="_blank" rel="noopener">Picosecond lasers in cosmetic dermatology: where are we now? An overview of types and indications</a>, Lasers in Medical Science, 2023.  [Studientyp laut Liste: Übersichtsarbeit]</li>
+          <li id="q7">Li Y, Yao C, Zhang H, Li L, Song Y., <a href="https://doi.org/10.1007/s10103-022-03566-4" target="_blank" rel="noopener">Efficacy and safety of 755-nm picosecond alexandrite laser with topical tranexamic acid versus laser monotherapy for melasma and facial rejuvenation: a multicenter, randomized, double-blinded, split-face study in Chinese patients</a>, Lasers in Medical Science, 2022.  [Studientyp laut Liste: Randomisierte Studie]</li>
+          <li id="q8">Yuan Y, He Y, Fang J, Zhang M, Wu Q., <a href="https://pubmed.ncbi.nlm.nih.gov/38924534" target="_blank" rel="noopener">Comparison of the Fractionated Nd: YAG 1064-Nm Picosecond Laser With Holographic Optics and the Fractional CO2 Laser in Atrophic Acne Scar Treatment: A Prospective, Randomized, Split-Face Study</a>, International Journal of Dermatology, 2025.  [Studientyp laut Liste: Randomisierte Studie]</li>
+          <li id="q9">Daniele SG, Kim SR, Grada A, et al., <a href="https://doi.org/10.1007/s40257-022-00746-4" target="_blank" rel="noopener">Truncal Acne and Scarring: A Comprehensive Review of Current Medical and Cosmetic Approaches to Treatment and Patient Management</a>, American Journal of Clinical Dermatology, 2023.  [Studientyp laut Liste: Übersichtsarbeit]</li>
+          <li id="q10">Zhou Y, Hamblin MR, Wen X., <a href="https://doi.org/10.1007/s10103-022-03704-y" target="_blank" rel="noopener">An update on fractional picosecond laser treatment: histology and clinical applications</a>, Lasers in Medical Science, 2023.  [Studientyp laut Liste: Übersichtsarbeit]</li>
+      </ol>
+    </div>
+    <div class="wa-cta">
+      <p class="wa-cta-text"><strong>Termin buchen</strong><span>Telefon, WhatsApp oder Anfrageformular</span></p>
+      <a class="cta-termin wa-btn" href="/#termin" data-cta="termin">Termin buchen</a>
+    </div>
+    <div class="qrshare">
+      <div class="qrshare-code">
+        <div id="qrcode" aria-hidden="true"></div>
+      </div>
+      <div class="qrshare-text">
+        <h3>Diese Seite teilen</h3>
+        <p>QR-Code scannen oder Link direkt teilen — z.&nbsp;B. für die Visitenkarte oder per Nachricht.</p>
+        <div class="qrshare-actions">
+          <button type="button" id="share-btn" class="share-btn">Seite teilen</button>
+          <span id="share-feedback" class="share-feedback" aria-live="polite"></span>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top:28px;"><a href="../hauterkrankungen-erklaert.html">← Alle Patienteninformationen</a></p>
+  </div>
+</section>
+
+</article></main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="col">
+      <p class="tagline">Longevity meets<br>measurable science.</p>
+      <p class="practice" style="margin-top:26px;">Dermetrics – Dr. med. Paul J. Georg</p>
+      <p class="footer-area">Hautarzt in Zürich Kreis 2 (Selnau/Enge) · Dermatologie und Venerologie</p>
+      <p>Clinic Selnau<br>Brandschenkestrasse 45<br>8002 Zürich</p>
+      <p><a href="tel:+41432345555">+41 43 234 55 55</a></p>
+      <p><a href="https://share.google/EMOgfxDGYLcdnslC7" target="_blank" rel="noopener">Google-Profil der Clinic Selnau</a></p>
+    </div>
+    <div class="col">
+      <p class="footer-heading">Rechtliches</p>
+      <ul>
+        <li><a href="../impressum.html">Impressum</a></li>
+        <li><a href="../impressum.html#datenschutz">Datenschutzerklärung</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap">
+    <p class="fmh-note">Diese Seite dient der allgemeinen Patienteninformation und ersetzt keine individuelle ärztliche Beratung.</p>
+    <p class="fmh-note">Diese Website dient der sachlichen Information gemäss den Standesregeln der FMH.</p>
+    <div class="legalrow">
+      <span><time datetime="2026">© 2026</time> Dermetrics – Dr. med. Paul J. Georg</span>
+    </div>
+  </div>
+</footer>
+
+<link rel="stylesheet" href="../css/style.css" data-full-css>
+<script src="../assets/nav.js" defer></script>
+<script src="../assets/vendor/qrcode.js" defer></script>
+<script src="../assets/qrshare.js" defer></script>
+<script src="../assets/cookiebanner.js" defer></script>
+<script src="../assets/opening-popup.js" defer></script>
+
+<script src="../assets/termin.js" defer></script>
+</body>
+</html>
