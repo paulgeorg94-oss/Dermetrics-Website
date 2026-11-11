@@ -480,4 +480,24 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/medix.html"/>
   </url>
 
+  <url>
+    <loc>https://dermetrics.ch/en/patient-information/skin-self-examination.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/patienteninformationen/selbstuntersuchung-haut.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/patient-information/skin-self-examination.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/patienteninformationen/selbstuntersuchung-haut.html"/>
+  </url>
+
+  <url>
+    <loc>https://dermetrics.ch/patienteninformationen/selbstuntersuchung-haut.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/patienteninformationen/selbstuntersuchung-haut.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/patient-information/skin-self-examination.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/patienteninformationen/selbstuntersuchung-haut.html"/>
+  </url>
+
 </urlset>
