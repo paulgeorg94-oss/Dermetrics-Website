@@ -1167,3 +1167,15 @@ details.acc > summary .acc-title { margin: 0; font-size: 20px; font-weight: 400;
 .btn-outline { display: inline-block; padding: 10px 18px; border-radius: 999px; border: 1px solid var(--aubergine); color: var(--aubergine); text-decoration: none; font-size: 14px; }
 .acc-body > .intro:first-child p:first-child { margin-top: 0; }
 @media print { details.acc > summary::after { content: ""; } }
+
+/* ---------- FAQ-Erweiterung: Kategorien (tools/build-faq-erweiterung.py) ---------- */
+.faq-cat { margin-top: 40px; }
+.faq-cat h3 { margin: 0; font-size: 17px; }
+.faq-cat .faq-list { margin-top: 12px; }
+.faq-answer { font-size: 14.5px; color: var(--muted); line-height: 1.65; max-width: 74ch; padding-bottom: 18px; }
+.faq-answer p { margin: 0 0 10px; }
+.faq-answer ul { margin: 0 0 10px; padding-left: 20px; }
+.faq-answer li { margin: 0 0 6px; }
+.faq-answer strong { color: var(--ink); font-weight: 500; }
+.faq-answer a, .faq-more a { color: var(--aubergine-mid); }
+.faq-note { font-size: 13px; color: var(--muted); margin: 14px 0 16px; }

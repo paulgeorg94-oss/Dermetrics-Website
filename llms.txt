@@ -5,7 +5,7 @@
 Hinweis: Alle Inhalte dienen der Information und ersetzen keine ärztliche Beratung. Der Online-Pre-Check ist ein statistisches Orientierungsinstrument und keine Diagnose.
 
 ## Praxis und Leistungen
-- [Startseite](https://dermetrics.ch/): Überblick, Auf einen Blick, Leistungen, Qualifikation, FAQ, Kontakt
+- [Startseite](https://dermetrics.ch/): Überblick, Auf einen Blick, Leistungen, Qualifikation, FAQ (u. a. Kosten der Hautkrebs-Vorsorge), Kontakt
 - [Hautkrebs-Pre-Check](https://dermetrics.ch/#precheck): 13 Fragen, kein Diagnoseinstrument
 - [Patienteninformationen & Behandlungspläne](https://dermetrics.ch/hauterkrankungen-erklaert.html): Übersicht der Krankheitsbilder und Behandlungspläne
 - [Wie erkenne ich Hautkrebs frühzeitig selbst?](https://dermetrics.ch/hauterkrankungen-erklaert.html#hautkrebs-selbst-erkennen): Anleitung zur Selbstuntersuchung (ABCDE-, EFG- und Ugly-Duckling-Regel)

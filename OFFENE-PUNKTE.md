@@ -52,3 +52,18 @@ Bitte je Frage kurz antworten (Nummer + Antwort). Ich setze die Antworten danach
 | **P6** | **Aufgezählte Leistungen:** Für Acne inversa und Mohs gibt es jetzt Seiten. Für Psoriasis, Wundbehandlung, ECMP und Narbentherapie noch nicht. | Siehe E4. |
 | **P7** | **Text auf 24 Seiten:** Der neue Einleitungssatz lautet „In der Praxis Dermetrics … behandeln wir [Thema]“. Für das Anti-Aging-Protokoll steht „beraten wir zur Hautpflege“, für Mosaic 3D „behandeln wir Narben auch mit Laser“. Bitte die Formulierungen bestätigen. | `patienteninformationen/*`, `behandlungsprotokolle/*`, EN-Pendants |
 | ~~P8~~ | **Erledigt:** C1 ist geklärt; die Formulierungen bleiben wie sie sind. | Startseite |
+
+## FAQ-Erweiterung (Import vom 10.11.2026)
+
+Datenquelle: `data/faq-erweiterung.json` (nicht öffentlich). Veröffentlicht wird nur, was dort `"status": "frei"` hat: `python3 tools/build-faq-erweiterung.py`, danach `tools/check-faq.py`, `tools/critical-css.js index.html`.
+
+| # | Stand | Was fehlt |
+|---|---|---|
+| **A4** | **Live** (Startseite, Kategorie «Muttermale und Hautkrebs») | Intern offen: Stellung der Grundversicherung (OKP); «ca. 160 CHF» oder «ab»/exakt; gilt ab Eröffnung 7.12.2026? |
+| A1–A3, A5–A7, B1, B2, B4, D1–D3, E1–E3, F1–F3, H1–H13 | `pruefen`, nicht veröffentlicht | Quelle (Leitlinie/Publikation) pro Frage; Wirkstoffe im Arzneimittelkompendium; danach Status auf `frei` |
+| B3, G1, G2, G3 | `offen`, nicht veröffentlicht | Antworttext (Schweizer Angaben) von Dr. Georg |
+| D1 | Satz zu Off-Label (Botulinumtoxin, 5-Fluorouracil) | nicht im Antworttext, steht nur im internen Feld; erst nach Prüfung aufnehmen |
+| E3 | Satz «Wir behandeln Neurodermitis und Ekzeme in der Praxis» | im Antworttext; Leistungsseite fehlt |
+| H8 | «Evidenzlage: widersprüchliche Studienergebnisse» | als interne Quellen-Notiz geführt, nicht im Antworttext. Bitte bestätigen. |
+| EN | englische Fassung | separat, nicht automatisch übersetzt |
+| Relaunch | Startseite «Nach Anliegen» hat genau 5 FAQ | Kategorien gehören dort auf Anliegen- und Leistungsseiten (Phase 4) |
