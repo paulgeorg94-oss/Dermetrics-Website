@@ -59,11 +59,11 @@ Datenquelle: `data/faq-erweiterung.json` (nicht öffentlich). Veröffentlicht wi
 
 | # | Stand | Was fehlt |
 |---|---|---|
-| **A4** | **Live** (Startseite, Kategorie «Muttermale und Hautkrebs») | Intern offen: Stellung der Grundversicherung (OKP); «ca. 160 CHF» oder «ab»/exakt; gilt ab Eröffnung 7.12.2026? |
-| A1–A3, A5–A7, B1, B2, B4, D1–D3, E1–E3, F1–F3, H1–H13 | `pruefen`, nicht veröffentlicht | Quelle (Leitlinie/Publikation) pro Frage; Wirkstoffe im Arzneimittelkompendium; danach Status auf `frei` |
+| A1–A7, B1, B2, B4, D1–D3, E1–E3, F1–F3, H1–H13 (32 Fragen) | **Live** seit 11.11.2026 (Freigabe Dr. Georg) | Quelle (Leitlinie/Publikation) pro Frage und Prüfung der Wirkstoffe im Arzneimittelkompendium sind nicht eingetragen (Feld `quelle`). |
+| A4 | Live | Offen: Stellung der Grundversicherung (OKP); «ca. 160 CHF» oder «ab»/exakt; gilt ab Eröffnung 7.12.2026? |
+| D1 | Live, Off-Label-Satz gekennzeichnet | Leistungsseite Narbentherapie fehlt (Verlinkung) |
+| E1, E3, F2 | Live | Leistungsseiten Psoriasis, Neurodermitis/Ekzem, Wunden fehlen (Verlinkung) |
 | B3, G1, G2, G3 | `offen`, nicht veröffentlicht | Antworttext (Schweizer Angaben) von Dr. Georg |
-| D1 | Satz zu Off-Label (Botulinumtoxin, 5-Fluorouracil) | nicht im Antworttext, steht nur im internen Feld; erst nach Prüfung aufnehmen |
-| E3 | Satz «Wir behandeln Neurodermitis und Ekzeme in der Praxis» | im Antworttext; Leistungsseite fehlt |
-| H8 | «Evidenzlage: widersprüchliche Studienergebnisse» | als interne Quellen-Notiz geführt, nicht im Antworttext. Bitte bestätigen. |
 | EN | englische Fassung | separat, nicht automatisch übersetzt |
 | Relaunch | Startseite «Nach Anliegen» hat genau 5 FAQ | Kategorien gehören dort auf Anliegen- und Leistungsseiten (Phase 4) |
+| PDT-Dauer | «Aktinische Keratosen» sagt «rund zwei Stunden», PDT-Seite 1 h Einwirkzeit + 10–30 Min. Licht | Angleichen? |

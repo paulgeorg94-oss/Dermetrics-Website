@@ -1,199 +1,410 @@
 {
-  "_hinweis": "Quelle: «FAQ-Erweiterung dermetrics.ch (DE) – Import-Datei für Claude Code», Stand 2026-11-10, von Dr. med. Paul J. Georg. Veröffentlicht werden nur Fragen mit status «frei» (tools/build-faq-erweiterung.py). «pruefen» = nicht veröffentlichen, bevor die Quelle ergänzt ist. «offen» = Antwort fehlt. Felder «quelle» und «offen» sind intern und erscheinen nicht auf der Website. Dieser Ordner (data/) wird nicht auf dermetrics.ch veröffentlicht (_config.yml).",
-  "stand": "2026-11-10",
-  "hinweis_kategorie": "Diese Informationen ersetzen keine ärztliche Beurteilung.",
-  "kategorien": [
+ "_hinweis": "Quelle: «FAQ-Erweiterung dermetrics.ch (DE) – Import-Datei für Claude Code», Stand 2026-11-10, von Dr. med. Paul J. Georg. Veröffentlicht werden nur Fragen mit status «frei» (tools/build-faq-erweiterung.py). «pruefen» = nicht veröffentlichen. Am 2026-11-11 hat Dr. Georg alle Fragen mit Antwort freigegeben. «offen» = Antwort fehlt. Felder «quelle» und «offen» sind intern und erscheinen nicht auf der Website. Dieser Ordner (data/) wird nicht auf dermetrics.ch veröffentlicht (_config.yml).",
+ "stand": "2026-11-10",
+ "hinweis_kategorie": "Diese Informationen ersetzen keine ärztliche Beurteilung.",
+ "kategorien": [
+  {
+   "id": "faq-muttermale-hautkrebs",
+   "titel": "Muttermale und Hautkrebs",
+   "fragen": [
     {
-      "id": "faq-muttermale-hautkrebs",
-      "titel": "Muttermale und Hautkrebs",
-      "fragen": [
-        {"id": "A1", "status": "pruefen", "quelle": "{{OFFEN}} (Entwurfsquelle: AFP «Atypical Moles» 2026, Inhalt nicht geprüft)",
-         "frage": "Wann muss ich mit einem Muttermal zum Hautarzt?",
-         "antwort": "<p>Kommen Sie, wenn ein Muttermal neu auftritt, sich verändert oder auffällig aussieht. Hilfreich ist die ABCDE-Regel:</p><ul><li><strong>A</strong>symmetrie: Die eine Hälfte sieht anders aus als die andere.</li><li><strong>B</strong>egrenzung: Der Rand ist unregelmässig oder verwaschen.</li><li><strong>C</strong>olor (Farbe): Der Fleck hat mehrere Farbtöne.</li><li><strong>D</strong>urchmesser: grösser als 6 mm.</li><li><strong>E</strong>volution: Grösse, Form oder Farbe verändern sich.</li></ul><p>Auch ein Muttermal, das ganz anders aussieht als Ihre übrigen («hässliches Entlein»), sollten Sie abklären lassen. Ein einzelnes Zeichen genügt für eine ärztliche Beurteilung.</p>",
-         "links": ["hauterkrankungen-erklaert.html#hautkrebs-selbst-erkennen"]},
-        {"id": "A2", "status": "pruefen", "quelle": "{{OFFEN}}",
-         "frage": "Wie sieht Hautkrebs am Anfang aus?",
-         "antwort": "<ul><li><strong>Schwarzer Hautkrebs (Melanom):</strong> ein unregelmässiger, oft mehrfarbiger Fleck, der wächst oder sich verändert. Manche Melanome sind erhaben und fest und wachsen innert Wochen (EFG-Zeichen: erhaben, fest, wachsend).</li><li><strong>Weisser Hautkrebs (Basalzellkarzinom):</strong> oft ein perlmuttartiger, glänzender Knoten mit kleinen Äderchen. Er wächst langsam, blutet manchmal oder heilt nicht ab. Er kann auch wie eine flache, schuppende, rötliche Stelle aussehen.</li></ul><p>Jede Hautveränderung, die blutet, nässt oder nach einigen Wochen nicht abheilt, sollte untersucht werden.</p>",
-         "links": ["patienteninformationen/basalzellkarzinom.html"]},
-        {"id": "A3", "status": "pruefen", "quelle": "{{OFFEN}} (SGDV/EADV-Leitlinie angeben)",
-         "frage": "Wie oft sollte ich Muttermale kontrollieren lassen?",
-         "antwort": "<p>Schauen Sie Ihre Haut regelmässig selbst an (siehe Anleitung zur Selbstuntersuchung). Wie oft eine ärztliche Ganzkörperkontrolle sinnvoll ist, hängt von Ihrem Risiko ab, zum Beispiel von der Zahl der Muttermale, auffälligen Muttermalen, Hautkrebs in der Familie und Ihrem Hauttyp. Wir legen den Abstand gemeinsam mit Ihnen fest. Nach einer früheren Hautkrebserkrankung sind regelmässige Kontrollen in der Regel dauerhaft nötig.</p>",
-         "links": []},
-        {"id": "A4", "status": "frei", "quelle": "Praxisangabe Dr. Georg, 2026-11-10",
-         "frage": "Was kostet eine Hautkrebs-Vorsorge, und wer übernimmt die Kosten?",
-         "antwort": "<p>Ein Hautcheck des ganzen Körpers dauert etwa 20 Minuten und kostet ca. 160 CHF. Die Kosten können als VVG-Leistung über eine Zusatzversicherung übernommen werden, in der Regel mit geringem Selbstbehalt. Ob und in welchem Umfang Ihre Versicherung zahlt, hängt von Ihrem Vertrag ab. Fragen Sie vorab bei Ihrer Versicherung nach.</p>",
-         "offen": "Stellung der Grundversicherung (OKP) bei Vorsorge bzw. bei Verdacht nicht angegeben, deshalb nicht erwähnt. Preis «ca. 160 CHF» ggf. als «ab» oder exakt festlegen. Gültig ab Eröffnung 7.12.2026?",
-         "links": []},
-        {"id": "A5", "status": "pruefen", "quelle": "{{OFFEN}}",
-         "frage": "Wird ein entferntes Muttermal untersucht?",
-         "antwort": "<p>Ja. Jedes entfernte Muttermal und jede Hautveränderung mit Krebsverdacht untersuchen wir feingeweblich (histologisch) im Labor. So ist sicher, ob die Veränderung gut- oder bösartig war.</p>",
-         "offen": "Ob harmlose Veränderungen (z. B. Fibrome) ebenfalls eingeschickt werden, entscheidet Dr. Georg. Nicht öffentlich ohne seine Freigabe formulieren.",
-         "links": []},
-        {"id": "A6", "status": "pruefen", "quelle": "{{OFFEN}} (Leitlinie angeben)",
-         "frage": "Wie wird ein Basalzellkarzinom (weisser Hautkrebs) behandelt?",
-         "antwort": "<p>Die Behandlung hängt vom Rückfallrisiko ab, also von Lage, Wachstumsart und Grösse.</p><ul><li><strong>Geringes Risiko:</strong> operative Entfernung mit Sicherheitsabstand, bei oberflächlichen Tumoren auch Salben, Vereisung oder photodynamische Therapie.</li><li><strong>Höheres Risiko</strong> (zum Beispiel im Gesicht oder bei Rückfall): mikrographisch kontrollierte Chirurgie (Mohs) oder Operation mit lückenloser Randkontrolle. Wenn eine Operation nicht möglich ist, kommt Bestrahlung infrage.</li><li><strong>Fortgeschritten:</strong> Besprechung im interdisziplinären Team.</li></ul><p>Welcher Weg für Sie passt, klären wir in der ärztlichen Beurteilung.</p>",
-         "offen": "Therapieangaben im Arzneimittelkompendium prüfen. Keine Sicherheitsabstände nennen.",
-         "links": ["patienteninformationen/basalzellkarzinom.html", "leistungen/mohs-chirurgie.html", "leistungen/photodynamische-therapie.html"]},
-        {"id": "A7", "status": "pruefen", "quelle": "{{OFFEN}}",
-         "frage": "Muss ich nach einer Hautkrebs-Operation zur Nachkontrolle?",
-         "antwort": "<p>Ja. Nach jeder Hautkrebsbehandlung sind regelmässige Kontrollen wichtig, um Rückfälle und neue Hauttumoren früh zu erkennen. Wie oft, legen wir nach Befund und Risiko fest. Oft sind die Kontrollen dauerhaft sinnvoll.</p>",
-         "links": []}
-      ]
+     "id": "A1",
+     "status": "frei",
+     "quelle": "{{OFFEN}} (Entwurfsquelle: AFP «Atypical Moles» 2026, Inhalt nicht geprüft)",
+     "frage": "Wann muss ich mit einem Muttermal zum Hautarzt?",
+     "antwort": "<p>Kommen Sie, wenn ein Muttermal neu auftritt, sich verändert oder auffällig aussieht. Hilfreich ist die ABCDE-Regel:</p><ul><li><strong>A</strong>symmetrie: Die eine Hälfte sieht anders aus als die andere.</li><li><strong>B</strong>egrenzung: Der Rand ist unregelmässig oder verwaschen.</li><li><strong>C</strong>olor (Farbe): Der Fleck hat mehrere Farbtöne.</li><li><strong>D</strong>urchmesser: grösser als 6 mm.</li><li><strong>E</strong>volution: Grösse, Form oder Farbe verändern sich.</li></ul><p>Auch ein Muttermal, das ganz anders aussieht als Ihre übrigen («hässliches Entlein»), sollten Sie abklären lassen. Ein einzelnes Zeichen genügt für eine ärztliche Beurteilung.</p>",
+     "links": [
+      "hauterkrankungen-erklaert.html#hautkrebs-selbst-erkennen"
+     ],
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
     },
     {
-      "id": "faq-entfernung",
-      "titel": "Entfernung von Hautveränderungen",
-      "fragen": [
-        {"id": "B1", "status": "pruefen", "quelle": "{{OFFEN}}",
-         "frage": "Wie werden Leberflecke, Fibrome, Alterswarzen und Lipome entfernt?",
-         "antwort": "<p>Die Methode hängt von der Veränderung ab:</p><ul><li><strong>Leberflecke (Muttermale):</strong> Abtragen oder vollständige Entfernung mit schmalem Sicherheitsabstand, je nach Verdacht.</li><li><strong>Fibrome und Stielwarzen:</strong> Abtragen mit Skalpell, Schere oder Elektrokauter.</li><li><strong>Alterswarzen (seborrhoische Keratosen):</strong> Abschaben, Vereisen oder Laser.</li><li><strong>Lipome (Fettgeschwülste):</strong> kleine Operation mit Hautschnitt.</li></ul><p>Welche Methode für Sie geeignet ist, besprechen wir vor dem Eingriff.</p>",
-         "links": ["leistungen/gutartige-hautveraenderungen.html"]},
-        {"id": "B2", "status": "pruefen", "quelle": "{{OFFEN}}",
-         "frage": "Tut die Entfernung weh? Bleibt eine Narbe?",
-         "antwort": "<p>Wir arbeiten unter lokaler Betäubung. Beim Einspritzen spüren Sie ein kurzes Ziehen, während des Eingriffs in der Regel keinen Schmerz. Danach kann die Stelle einige Tage empfindlich sein. Eine kleine Narbe, Rötung oder Pigmentveränderung ist möglich, vor allem bei grösseren Veränderungen oder bei einer Operation mit Naht. Bei oberflächlichen Verfahren bleibt meist nur wenig sichtbar.</p>",
-         "links": []},
-        {"id": "B3", "status": "offen", "quelle": "{{OFFEN}}",
-         "frage": "Was kostet die Entfernung, und wer übernimmt die Kosten?",
-         "antwort": "",
-         "offen": "Schweizer Angaben von Dr. Georg: medizinische Indikation vs. ästhetische Indikation, Kostenübernahme, Preisrahmen, Vorab-Besprechung. Im Entwurf standen nur deutsche Begriffe, die entfernt wurden.",
-         "links": []},
-        {"id": "B4", "status": "pruefen", "quelle": "{{OFFEN}}",
-         "frage": "Wie lange dauert die Heilung?",
-         "antwort": "<p>Oberflächliche Verfahren heilen meist schneller als eine Operation mit Naht. Bei einer Naht werden die Fäden nach einer Weile entfernt, und die Narbe braucht danach noch lange, bis sie ausgereift ist. Wie lange es bei Ihnen dauert, hängt von Stelle, Grösse und Methode ab. Das besprechen wir vor dem Eingriff.</p>",
-         "links": []}
-      ]
+     "id": "A2",
+     "status": "frei",
+     "quelle": "{{OFFEN}}",
+     "frage": "Wie sieht Hautkrebs am Anfang aus?",
+     "antwort": "<ul><li><strong>Schwarzer Hautkrebs (Melanom):</strong> ein unregelmässiger, oft mehrfarbiger Fleck, der wächst oder sich verändert. Manche Melanome sind erhaben und fest und wachsen innert Wochen (EFG-Zeichen: erhaben, fest, wachsend).</li><li><strong>Weisser Hautkrebs (Basalzellkarzinom):</strong> oft ein perlmuttartiger, glänzender Knoten mit kleinen Äderchen. Er wächst langsam, blutet manchmal oder heilt nicht ab. Er kann auch wie eine flache, schuppende, rötliche Stelle aussehen.</li></ul><p>Jede Hautveränderung, die blutet, nässt oder nach einigen Wochen nicht abheilt, sollte untersucht werden.</p>",
+     "links": [
+      "patienteninformationen/basalzellkarzinom.html"
+     ],
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
     },
     {
-      "id": "faq-narben",
-      "titel": "Narben",
-      "fragen": [
-        {"id": "D1", "status": "pruefen", "quelle": "{{OFFEN}} (Leitlinie zu Keloiden/hypertrophen Narben angeben)",
-         "frage": "Wie werden Narben, Keloide und Aknenarben behandelt?",
-         "antwort": "<p>Die Behandlung hängt von der Art der Narbe ab.</p><ul><li><strong>Wulstige Narben und Keloide:</strong> Silikonauflagen oder -gele, Kortison-Spritzen in die Narbe, Druckverbände.</li><li><strong>Weitere Möglichkeiten:</strong> Vereisung von innen, Laser, Kombinationen.</li><li><strong>Aknenarben:</strong> je nach Narbentyp Laser, Microneedling, Peelings oder gezielte kleine Eingriffe.</li><li><strong>Ausgeprägte Keloide:</strong> Entfernung, kombiniert mit einer Nachbehandlung gegen das Wiederkehren.</li></ul>",
-         "offen": "Im Entwurf zusätzlich: «Manche Verfahren sind Off-Label (z. B. Botulinumtoxin oder 5-Fluorouracil bei Keloiden): prüfen im Arzneimittelkompendium, wenn überhaupt genannt». Dieser Satz ist bis zur Prüfung nicht im Antworttext. Verlinkung: Leistungsseite Narbentherapie, falls vorhanden.",
-         "links": []},
-        {"id": "D2", "status": "pruefen", "quelle": "{{OFFEN}}",
-         "frage": "Wie lange dauert es, bis eine Narbe verblasst?",
-         "antwort": "<p>Frische Narben sind zu Beginn oft gerötet und leicht erhaben. Die Reifung dauert lange. Manche wulstige Narben bessern sich mit der Zeit noch von selbst. Wenn eine Narbe stört, juckt oder wächst, lohnt sich eine Beurteilung.</p>",
-         "links": []},
-        {"id": "D3", "status": "pruefen", "quelle": "{{OFFEN}}",
-         "frage": "Was hilft gegen wulstige oder rote Narben?",
-         "antwort": "<p>Als erste Massnahme werden Silikonprodukte eingesetzt, regelmässig und über längere Zeit angewendet. Bei stärkerer Ausprägung oder Juckreiz kommen Kortison-Spritzen dazu. Laser kann Rötung und Dicke zusätzlich verringern.</p>",
-         "links": []}
-      ]
+     "id": "A3",
+     "status": "frei",
+     "quelle": "{{OFFEN}} (SGDV/EADV-Leitlinie angeben)",
+     "frage": "Wie oft sollte ich Muttermale kontrollieren lassen?",
+     "antwort": "<p>Schauen Sie Ihre Haut regelmässig selbst an (siehe Anleitung zur Selbstuntersuchung). Wie oft eine ärztliche Ganzkörperkontrolle sinnvoll ist, hängt von Ihrem Risiko ab, zum Beispiel von der Zahl der Muttermale, auffälligen Muttermalen, Hautkrebs in der Familie und Ihrem Hauttyp. Wir legen den Abstand gemeinsam mit Ihnen fest. Nach einer früheren Hautkrebserkrankung sind regelmässige Kontrollen in der Regel dauerhaft nötig.</p>",
+     "links": [
+      "hauterkrankungen-erklaert.html#hautkrebs-selbst-erkennen"
+     ],
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
     },
     {
-      "id": "faq-chronisch",
-      "titel": "Chronische Hauterkrankungen",
-      "fragen": [
-        {"id": "E1", "status": "pruefen", "quelle": "{{OFFEN}} (Entwurfsquelle: JAMA-Review 2020, Inhalt nicht geprüft; SGDV/EADV-Leitlinie ergänzen)",
-         "frage": "Psoriasis: Was hilft, und ist sie ansteckend?",
-         "antwort": "<p>Psoriasis (Schuppenflechte) ist eine chronische Entzündung der Haut und <strong>nicht ansteckend</strong>. Heilbar ist sie nach heutigem Wissen nicht, aber gut behandelbar.</p><ul><li><strong>Leichte Formen:</strong> Cremes und Salben (z. B. Kortison, Vitamin-D-Abkömmlinge), Lichttherapie.</li><li><strong>Mittelschwere bis schwere Formen:</strong> Tabletten oder Spritzen, die das Immunsystem gezielt beeinflussen, darunter Biologika. Diese wirken auch bei Gelenkbeteiligung.</li></ul><p>Welche Therapie passt, klären wir nach Ausmass, Begleiterkrankungen und Ihren Wünschen.</p>",
-         "offen": "Wirkstoffnamen und Zulassung im Arzneimittelkompendium prüfen. Verlinkung: Leistungsseite Psoriasis, falls vorhanden.",
-         "links": []},
-        {"id": "E2", "status": "pruefen", "quelle": "{{OFFEN}}",
-         "frage": "Akne inversa: Was ist das, und was hilft bei Knoten in Achseln oder Leiste?",
-         "antwort": "<p>Akne inversa (Hidradenitis suppurativa) ist eine chronische Entzündung der Haarfollikel. Sie verursacht schmerzhafte Knoten und Abszesse in Hautfalten wie Achseln und Leiste. Später können Gänge unter der Haut und Narben entstehen. Sie ist nicht ansteckend und hat nichts mit mangelnder Hygiene zu tun.</p><p>Die Behandlung richtet sich nach dem Schweregrad: Salben, Antibiotika, Biologika oder kleine Operationen. Auch der Lebensstil (z. B. Rauchstopp, Gewicht) spielt eine Rolle.</p>",
-         "offen": "Schweregrad-Stufen und Wirkstoffe nur mit Leitlinie und Arzneimittelkompendium übernehmen.",
-         "links": ["leistungen/acne-inversa.html"]},
-        {"id": "E3", "status": "pruefen", "quelle": "{{OFFEN}}",
-         "frage": "Neurodermitis und Ekzem: Was hilft gegen den Juckreiz?",
-         "antwort": "<p>Die Grundlage ist konsequente Hautpflege mit rückfettenden Cremes. Bei aktiven Schüben helfen Kortisoncremes oder entzündungshemmende Salben ohne Kortison. Kühlen und das Meiden von Reizstoffen wie Wolle können den Juckreiz lindern. Bei schwerem Verlauf gibt es Lichttherapie oder Medikamente, die im ganzen Körper wirken.</p><p>Wir behandeln Neurodermitis und Ekzeme in der Praxis.</p>",
-         "offen": "«Wir behandeln Neurodermitis und Ekzeme in der Praxis» = Angabe Dr. Georg, 2026-11-10. Wirkstoffe im Arzneimittelkompendium prüfen. Leistungsseite anlegen und verlinken.",
-         "links": []}
-      ]
+     "id": "A4",
+     "status": "frei",
+     "quelle": "Praxisangabe Dr. Georg, 2026-11-10",
+     "frage": "Was kostet eine Hautkrebs-Vorsorge, und wer übernimmt die Kosten?",
+     "antwort": "<p>Ein Hautcheck des ganzen Körpers dauert etwa 20 Minuten und kostet ca. 160 CHF. Die Kosten können als VVG-Leistung über eine Zusatzversicherung übernommen werden, in der Regel mit geringem Selbstbehalt. Ob und in welchem Umfang Ihre Versicherung zahlt, hängt von Ihrem Vertrag ab. Fragen Sie vorab bei Ihrer Versicherung nach.</p>",
+     "offen": "Stellung der Grundversicherung (OKP) bei Vorsorge bzw. bei Verdacht nicht angegeben, deshalb nicht erwähnt. Preis «ca. 160 CHF» ggf. als «ab» oder exakt festlegen. Gültig ab Eröffnung 7.12.2026?",
+     "links": []
     },
     {
-      "id": "faq-wunden",
-      "titel": "Wunden",
-      "fragen": [
-        {"id": "F1", "status": "pruefen", "quelle": "{{OFFEN}}",
-         "frage": "Warum heilt meine Wunde nicht?",
-         "antwort": "<p>Wenn eine Wunde nicht heilt, steckt oft eine Ursache dahinter, die mitbehandelt werden muss: Durchblutungsstörungen der Arterien oder Venen, Diabetes, Infektionen, anhaltender Druck oder Mangelernährung. Ohne Behandlung dieser Ursache heilt die Wunde oft trotz guter Wundversorgung nicht.</p><p>Lassen Sie eine Wunde, die nicht heilt, ärztlich abklären.</p>",
-         "links": []},
-        {"id": "F2", "status": "pruefen", "quelle": "{{OFFEN}}",
-         "frage": "Was tun bei einem offenen Bein (Ulcus cruris)?",
-         "antwort": "<p>Beim offenen Bein aufgrund kranker Venen steht die Kompression im Zentrum, also Bandagen oder Strümpfe. Dazu kommen feuchte Wundversorgung, Reinigung der Wunde, Bewegung und die Behandlung der kranken Venen. Vor einer Kompression müssen die Arterien geprüft werden, weil bei Durchblutungsstörungen zu starke Kompression schaden kann. Beginnen Sie deshalb nicht auf eigene Faust mit einer Kompression.</p>",
-         "offen": "Verlinkung: Leistungsseite Wunden, falls vorhanden.",
-         "links": []},
-        {"id": "F3", "status": "pruefen", "quelle": "{{OFFEN}}",
-         "frage": "Wann sollte ich mit einer Wunde zum Spezialisten?",
-         "antwort": "<p>Kommen Sie, wenn Ihre Wunde trotz Behandlung über längere Zeit nicht besser wird, wenn Zeichen einer Infektion bestehen (Rötung, Wärme, Eiter, Fieber), wenn eine Durchblutungsstörung vermutet wird oder die Ursache unklar ist.</p><p>Bei Fieber oder rasch zunehmender Rötung suchen Sie umgehend ärztliche Hilfe.</p>",
-         "links": []}
-      ]
+     "id": "A5",
+     "status": "frei",
+     "quelle": "{{OFFEN}}",
+     "frage": "Wird ein entferntes Muttermal untersucht?",
+     "antwort": "<p>Ja. Jedes entfernte Muttermal und jede Hautveränderung mit Krebsverdacht untersuchen wir feingeweblich (histologisch) im Labor. So ist sicher, ob die Veränderung gut- oder bösartig war.</p>",
+     "offen": "Ob harmlose Veränderungen (z. B. Fibrome) ebenfalls eingeschickt werden, entscheidet Dr. Georg. Nicht öffentlich ohne seine Freigabe formulieren.",
+     "links": [],
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
     },
     {
-      "id": "faq-akne",
-      "titel": "Akne",
-      "_intern": "Alle Antworten ohne Dosierungen und ohne genaue Zeiträume. Quellen und Wirkstoffe vor Veröffentlichung prüfen.",
-      "fragen": [
-        {"id": "H1", "status": "pruefen", "quelle": "{{OFFEN}}",
-         "frage": "Was ist Akne, und woher kommt sie?",
-         "antwort": "<p>Akne ist eine häufige Entzündung der Talgdrüsen. Mehrere Dinge spielen zusammen: viel Talg, verstopfte Haarfollikel, Hautbakterien und Entzündung. Hormone und erbliche Veranlagung beeinflussen sie. Akne hat nichts mit mangelnder Sauberkeit zu tun.</p>",
-         "links": ["patienteninformationen/akne-formen.html", "leistungen/akne-rosazea.html"]},
-        {"id": "H2", "status": "pruefen", "quelle": "{{OFFEN}}",
-         "frage": "Welche Aknearten gibt es?",
-         "antwort": "<p>Es gibt milde Formen mit Mitessern und kleinen Pickeln und stärkere Formen mit entzündeten Knoten und tiefen Zysten. Die Art und der Schweregrad bestimmen die Behandlung. Von der Akne zu unterscheiden sind die Rosazea und die Akne inversa. Das sind eigene Erkrankungen mit anderer Behandlung.</p>",
-         "links": ["patienteninformationen/akne-formen.html", "patienteninformationen/rosazea.html", "leistungen/acne-inversa.html"]},
-        {"id": "H3", "status": "pruefen", "quelle": "{{OFFEN}}",
-         "frage": "Wann sollte ich mit Akne zum Hautarzt?",
-         "antwort": "<p>Kommen Sie, wenn rezeptfreie Pflege nach angemessener Zeit nichts bringt, wenn die Akne entzündet, tief oder schmerzhaft ist, wenn sie Narben hinterlässt oder wenn sie Sie psychisch belastet. Je früher die Behandlung beginnt, desto eher lassen sich Narben vermeiden.</p>",
-         "links": []},
-        {"id": "H4", "status": "pruefen", "quelle": "{{OFFEN}} (Leitlinie angeben)",
-         "frage": "Was hilft gegen Akne?",
-         "antwort": "<p>Die Behandlung richtet sich nach dem Schweregrad.</p><ul><li><strong>Leichte Akne:</strong> Cremes und Gels, die die Poren frei halten und Bakterien reduzieren (z. B. Retinoide, Benzoylperoxid).</li><li><strong>Mittelschwere Akne:</strong> zusätzlich Antibiotika zum Einnehmen oder bei Frauen teilweise eine hormonelle Behandlung.</li><li><strong>Schwere oder vernarbende Akne:</strong> ein Medikament zum Einnehmen, das die Talgproduktion stark senkt (Isotretinoin). Es braucht ärztliche Begleitung und Kontrollen.</li></ul><p>Gute Hautpflege und Geduld gehören immer dazu.</p>",
-         "offen": "Wirkstoffe, Zulassung und Hinweise im Arzneimittelkompendium prüfen. Keine Dosierungen angeben.",
-         "links": []},
-        {"id": "H5", "status": "pruefen", "quelle": "{{OFFEN}}",
-         "frage": "Wie lange dauert es, bis die Behandlung wirkt?",
-         "antwort": "<p>Akne-Behandlungen wirken nicht über Nacht. Es braucht Geduld und konsequente Anwendung. Anfangs kann die Haut sogar trockener oder gereizter werden. Wir besprechen mit Ihnen, was zu erwarten ist und wann wir die Behandlung anpassen.</p>",
-         "links": []},
-        {"id": "H6", "status": "pruefen", "quelle": "{{OFFEN}}",
-         "frage": "Was ist Isotretinoin, und was muss ich beachten?",
-         "antwort": "<p>Isotretinoin ist ein starkes Medikament für schwere oder hartnäckige Akne. Es kann Nebenwirkungen haben, etwa trockene Haut und trockene Lippen, und es erfordert ärztliche Kontrollen. <strong>In der Schwangerschaft darf es nicht angewendet werden</strong>, weil es das ungeborene Kind schwer schädigen kann. Frauen im gebärfähigen Alter brauchen deshalb zuverlässigen Schwangerschaftsschutz. Ob es für Sie infrage kommt, klären wir in der Beratung.</p>",
-         "offen": "Sicherheitsangaben nach Fachinformation im Arzneimittelkompendium prüfen. Keine Dosierungen angeben.",
-         "links": []},
-        {"id": "H7", "status": "pruefen", "quelle": "{{OFFEN}}",
-         "frage": "Darf ich Pickel ausdrücken?",
-         "antwort": "<p>Besser nicht. Beim Ausdrücken kann die Entzündung tiefer gehen, und es können Narben und dunkle Flecken entstehen. Lassen Sie hartnäckige Pickel lieber behandeln.</p>",
-         "links": []},
-        {"id": "H8", "status": "pruefen", "quelle": "{{OFFEN}} (Evidenzlage: widersprüchliche Studienergebnisse)",
-         "frage": "Verursachen Schokolade, Fett oder mangelnde Hygiene Akne?",
-         "antwort": "<p>Mangelnde Sauberkeit verursacht keine Akne. Zu häufiges, kräftiges Waschen kann die Haut sogar reizen. Bei der Ernährung ist die Studienlage uneinheitlich. Ein klarer Einfluss bestimmter Lebensmittel ist nicht für alle Betroffenen belegt.</p>",
-         "links": []},
-        {"id": "H9", "status": "pruefen", "quelle": "{{OFFEN}}",
-         "frage": "Welche Pflege und welches Make-up sind bei Akne geeignet?",
-         "antwort": "<p>Verwenden Sie milde Reinigung und leichte Pflegeprodukte, die die Poren nicht verstopfen (auf «nicht komedogen» achten). Sonnenschutz ist wichtig, besonders wenn Sie Aknemittel anwenden, die die Haut empfindlicher machen. Welche Produkte zu Ihrer Behandlung passen, besprechen wir mit Ihnen.</p>",
-         "links": []},
-        {"id": "H10", "status": "pruefen", "quelle": "{{OFFEN}}",
-         "frage": "Akne bei Erwachsenen: Warum habe ich mit 30 oder 40 noch Pickel?",
-         "antwort": "<p>Akne ist nicht nur ein Teenager-Thema. Auch Erwachsene, besonders Frauen, haben Akne, oft im unteren Gesicht und am Kiefer. Hormonelle Schwankungen, Veranlagung und Stress können eine Rolle spielen. Auch Erwachsenenakne ist gut behandelbar.</p>",
-         "links": []},
-        {"id": "H11", "status": "pruefen", "quelle": "{{OFFEN}}",
-         "frage": "Was hilft bei Aknenarben und dunklen Flecken nach Akne?",
-         "antwort": "<p>Je nach Narbenart helfen Laser, Microneedling, Peelings oder gezielte kleine Eingriffe. Dunkle Flecken nach Akne (postinflammatorische Hyperpigmentierung) verblassen oft mit der Zeit und lassen sich zusätzlich behandeln. Wichtig ist, zuerst die aktive Akne unter Kontrolle zu bringen.</p>",
-         "offen": "Prüfen, ob patienteninformationen/mosaik-3d-erbium-laser.html Aknenarben behandelt, bevor sie verlinkt wird.",
-         "links": ["patienteninformationen/postinflammatorische-hyperpigmentierung.html"]},
-        {"id": "H12", "status": "pruefen", "quelle": "{{OFFEN}}",
-         "frage": "Was ist der Unterschied zwischen Akne und Rosazea?",
-         "antwort": "<p>Beide verursachen Rötung und Pickel. Rosazea betrifft meist das mittlere Gesicht, tritt eher im Erwachsenenalter auf, geht mit Rötung und sichtbaren Äderchen einher und hat keine Mitesser. Die Behandlung ist anders. Eine ärztliche Abklärung schafft Klarheit.</p>",
-         "links": ["patienteninformationen/rosazea.html"]},
-        {"id": "H13", "status": "pruefen", "quelle": "{{OFFEN}}",
-         "frage": "Was ist der Unterschied zwischen Akne und Akne inversa?",
-         "antwort": "<p>Trotz des ähnlichen Namens sind es verschiedene Erkrankungen. Akne betrifft vor allem Gesicht, Brust und Rücken. Akne inversa betrifft Hautfalten wie Achseln und Leiste, mit schmerzhaften Knoten und Abszessen. Die Behandlung unterscheidet sich.</p>",
-         "links": ["leistungen/acne-inversa.html"]}
-      ]
+     "id": "A6",
+     "status": "frei",
+     "quelle": "{{OFFEN}} (Leitlinie angeben)",
+     "frage": "Wie wird ein Basalzellkarzinom (weisser Hautkrebs) behandelt?",
+     "antwort": "<p>Die Behandlung hängt vom Rückfallrisiko ab, also von Lage, Wachstumsart und Grösse.</p><ul><li><strong>Geringes Risiko:</strong> operative Entfernung mit Sicherheitsabstand, bei oberflächlichen Tumoren auch Salben, Vereisung oder photodynamische Therapie.</li><li><strong>Höheres Risiko</strong> (zum Beispiel im Gesicht oder bei Rückfall): mikrographisch kontrollierte Chirurgie (Mohs) oder Operation mit lückenloser Randkontrolle. Wenn eine Operation nicht möglich ist, kommt Bestrahlung infrage.</li><li><strong>Fortgeschritten:</strong> Besprechung im interdisziplinären Team.</li></ul><p>Welcher Weg für Sie passt, klären wir in der ärztlichen Beurteilung.</p>",
+     "offen": "Therapieangaben im Arzneimittelkompendium prüfen. Keine Sicherheitsabstände nennen.",
+     "links": [
+      "patienteninformationen/basalzellkarzinom.html",
+      "leistungen/mohs-chirurgie.html",
+      "leistungen/photodynamische-therapie.html"
+     ],
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
     },
     {
-      "id": "faq-praktisches",
-      "titel": "Praktisches",
-      "fragen": [
-        {"id": "G1", "status": "offen", "quelle": "", "frage": "Brauche ich eine Überweisung?", "antwort": "", "links": []},
-        {"id": "G2", "status": "offen", "quelle": "", "frage": "Wer übernimmt die Kosten einer Behandlung bei Dermetrics?", "antwort": "",
-         "offen": "Teilangabe nur für den Ganzkörper-Hautcheck vorhanden, siehe A4; Behandlungen/Eingriffe fehlen.", "links": []},
-        {"id": "G3", "status": "offen", "quelle": "", "frage": "Wie schnell bekomme ich einen Termin?", "antwort": "",
-         "offen": "Sprechzeit Clinic Selnau montags, Terminwege wie in bestehender FAQ.", "links": []}
-      ]
+     "id": "A7",
+     "status": "frei",
+     "quelle": "{{OFFEN}}",
+     "frage": "Muss ich nach einer Hautkrebs-Operation zur Nachkontrolle?",
+     "antwort": "<p>Ja. Nach jeder Hautkrebsbehandlung sind regelmässige Kontrollen wichtig, um Rückfälle und neue Hauttumoren früh zu erkennen. Wie oft, legen wir nach Befund und Risiko fest. Oft sind die Kontrollen dauerhaft sinnvoll.</p>",
+     "links": [],
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
     }
-  ]
+   ]
+  },
+  {
+   "id": "faq-entfernung",
+   "titel": "Entfernung von Hautveränderungen",
+   "fragen": [
+    {
+     "id": "B1",
+     "status": "frei",
+     "quelle": "{{OFFEN}}",
+     "frage": "Wie werden Leberflecke, Fibrome, Alterswarzen und Lipome entfernt?",
+     "antwort": "<p>Die Methode hängt von der Veränderung ab:</p><ul><li><strong>Leberflecke (Muttermale):</strong> Abtragen oder vollständige Entfernung mit schmalem Sicherheitsabstand, je nach Verdacht.</li><li><strong>Fibrome und Stielwarzen:</strong> Abtragen mit Skalpell, Schere oder Elektrokauter.</li><li><strong>Alterswarzen (seborrhoische Keratosen):</strong> Abschaben, Vereisen oder Laser.</li><li><strong>Lipome (Fettgeschwülste):</strong> kleine Operation mit Hautschnitt.</li></ul><p>Welche Methode für Sie geeignet ist, besprechen wir vor dem Eingriff.</p>",
+     "links": [
+      "leistungen/gutartige-hautveraenderungen.html"
+     ],
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+    },
+    {
+     "id": "B2",
+     "status": "frei",
+     "quelle": "{{OFFEN}}",
+     "frage": "Tut die Entfernung weh? Bleibt eine Narbe?",
+     "antwort": "<p>Wir arbeiten unter lokaler Betäubung. Beim Einspritzen spüren Sie ein kurzes Ziehen, während des Eingriffs in der Regel keinen Schmerz. Danach kann die Stelle einige Tage empfindlich sein. Eine kleine Narbe, Rötung oder Pigmentveränderung ist möglich, vor allem bei grösseren Veränderungen oder bei einer Operation mit Naht. Bei oberflächlichen Verfahren bleibt meist nur wenig sichtbar.</p>",
+     "links": [],
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+    },
+    {
+     "id": "B3",
+     "status": "offen",
+     "quelle": "{{OFFEN}}",
+     "frage": "Was kostet die Entfernung, und wer übernimmt die Kosten?",
+     "antwort": "",
+     "offen": "Schweizer Angaben von Dr. Georg: medizinische Indikation vs. ästhetische Indikation, Kostenübernahme, Preisrahmen, Vorab-Besprechung. Im Entwurf standen nur deutsche Begriffe, die entfernt wurden.",
+     "links": []
+    },
+    {
+     "id": "B4",
+     "status": "frei",
+     "quelle": "{{OFFEN}}",
+     "frage": "Wie lange dauert die Heilung?",
+     "antwort": "<p>Oberflächliche Verfahren heilen meist schneller als eine Operation mit Naht. Bei einer Naht werden die Fäden nach einer Weile entfernt, und die Narbe braucht danach noch lange, bis sie ausgereift ist. Wie lange es bei Ihnen dauert, hängt von Stelle, Grösse und Methode ab. Das besprechen wir vor dem Eingriff.</p>",
+     "links": [],
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+    }
+   ]
+  },
+  {
+   "id": "faq-narben",
+   "titel": "Narben",
+   "fragen": [
+    {
+     "id": "D1",
+     "status": "frei",
+     "quelle": "{{OFFEN}} (Leitlinie zu Keloiden/hypertrophen Narben angeben)",
+     "frage": "Wie werden Narben, Keloide und Aknenarben behandelt?",
+     "antwort": "<p>Die Behandlung hängt von der Art der Narbe ab.</p><ul><li><strong>Wulstige Narben und Keloide:</strong> Silikonauflagen oder -gele, Kortison-Spritzen in die Narbe, Druckverbände.</li><li><strong>Weitere Möglichkeiten:</strong> Vereisung von innen, Laser, Kombinationen. Manche Verfahren sind <strong>Off-Label</strong> (z. B. Botulinumtoxin oder 5-Fluorouracil bei Keloiden).</li><li><strong>Aknenarben:</strong> je nach Narbentyp Laser, Microneedling, Peelings oder gezielte kleine Eingriffe.</li><li><strong>Ausgeprägte Keloide:</strong> Entfernung, kombiniert mit einer Nachbehandlung gegen das Wiederkehren.</li></ul>",
+     "offen": "Verlinkung: Leistungsseite Narbentherapie, falls vorhanden.",
+     "links": [],
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+    },
+    {
+     "id": "D2",
+     "status": "frei",
+     "quelle": "{{OFFEN}}",
+     "frage": "Wie lange dauert es, bis eine Narbe verblasst?",
+     "antwort": "<p>Frische Narben sind zu Beginn oft gerötet und leicht erhaben. Die Reifung dauert lange. Manche wulstige Narben bessern sich mit der Zeit noch von selbst. Wenn eine Narbe stört, juckt oder wächst, lohnt sich eine Beurteilung.</p>",
+     "links": [],
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+    },
+    {
+     "id": "D3",
+     "status": "frei",
+     "quelle": "{{OFFEN}}",
+     "frage": "Was hilft gegen wulstige oder rote Narben?",
+     "antwort": "<p>Als erste Massnahme werden Silikonprodukte eingesetzt, regelmässig und über längere Zeit angewendet. Bei stärkerer Ausprägung oder Juckreiz kommen Kortison-Spritzen dazu. Laser kann Rötung und Dicke zusätzlich verringern.</p>",
+     "links": [],
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+    }
+   ]
+  },
+  {
+   "id": "faq-chronisch",
+   "titel": "Chronische Hauterkrankungen",
+   "fragen": [
+    {
+     "id": "E1",
+     "status": "frei",
+     "quelle": "{{OFFEN}} (Entwurfsquelle: JAMA-Review 2020, Inhalt nicht geprüft; SGDV/EADV-Leitlinie ergänzen)",
+     "frage": "Psoriasis: Was hilft, und ist sie ansteckend?",
+     "antwort": "<p>Psoriasis (Schuppenflechte) ist eine chronische Entzündung der Haut und <strong>nicht ansteckend</strong>. Heilbar ist sie nach heutigem Wissen nicht, aber gut behandelbar.</p><ul><li><strong>Leichte Formen:</strong> Cremes und Salben (z. B. Kortison, Vitamin-D-Abkömmlinge), Lichttherapie.</li><li><strong>Mittelschwere bis schwere Formen:</strong> Tabletten oder Spritzen, die das Immunsystem gezielt beeinflussen, darunter Biologika. Diese wirken auch bei Gelenkbeteiligung.</li></ul><p>Welche Therapie passt, klären wir nach Ausmass, Begleiterkrankungen und Ihren Wünschen.</p>",
+     "offen": "Wirkstoffnamen und Zulassung im Arzneimittelkompendium prüfen. Verlinkung: Leistungsseite Psoriasis, falls vorhanden.",
+     "links": [],
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+    },
+    {
+     "id": "E2",
+     "status": "frei",
+     "quelle": "{{OFFEN}}",
+     "frage": "Akne inversa: Was ist das, und was hilft bei Knoten in Achseln oder Leiste?",
+     "antwort": "<p>Akne inversa (Hidradenitis suppurativa) ist eine chronische Entzündung der Haarfollikel. Sie verursacht schmerzhafte Knoten und Abszesse in Hautfalten wie Achseln und Leiste. Später können Gänge unter der Haut und Narben entstehen. Sie ist nicht ansteckend und hat nichts mit mangelnder Hygiene zu tun.</p><p>Die Behandlung richtet sich nach dem Schweregrad: Salben, Antibiotika, Biologika oder kleine Operationen. Auch der Lebensstil (z. B. Rauchstopp, Gewicht) spielt eine Rolle.</p>",
+     "offen": "Schweregrad-Stufen und Wirkstoffe nur mit Leitlinie und Arzneimittelkompendium übernehmen.",
+     "links": [
+      "leistungen/acne-inversa.html"
+     ],
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+    },
+    {
+     "id": "E3",
+     "status": "frei",
+     "quelle": "{{OFFEN}}",
+     "frage": "Neurodermitis und Ekzem: Was hilft gegen den Juckreiz?",
+     "antwort": "<p>Die Grundlage ist konsequente Hautpflege mit rückfettenden Cremes. Bei aktiven Schüben helfen Kortisoncremes oder entzündungshemmende Salben ohne Kortison. Kühlen und das Meiden von Reizstoffen wie Wolle können den Juckreiz lindern. Bei schwerem Verlauf gibt es Lichttherapie oder Medikamente, die im ganzen Körper wirken.</p><p>Wir behandeln Neurodermitis und Ekzeme in der Praxis.</p>",
+     "offen": "Leistungsseite anlegen und verlinken.",
+     "links": [],
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+    }
+   ]
+  },
+  {
+   "id": "faq-wunden",
+   "titel": "Wunden",
+   "fragen": [
+    {
+     "id": "F1",
+     "status": "frei",
+     "quelle": "{{OFFEN}}",
+     "frage": "Warum heilt meine Wunde nicht?",
+     "antwort": "<p>Wenn eine Wunde nicht heilt, steckt oft eine Ursache dahinter, die mitbehandelt werden muss: Durchblutungsstörungen der Arterien oder Venen, Diabetes, Infektionen, anhaltender Druck oder Mangelernährung. Ohne Behandlung dieser Ursache heilt die Wunde oft trotz guter Wundversorgung nicht.</p><p>Lassen Sie eine Wunde, die nicht heilt, ärztlich abklären.</p>",
+     "links": [],
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+    },
+    {
+     "id": "F2",
+     "status": "frei",
+     "quelle": "{{OFFEN}}",
+     "frage": "Was tun bei einem offenen Bein (Ulcus cruris)?",
+     "antwort": "<p>Beim offenen Bein aufgrund kranker Venen steht die Kompression im Zentrum, also Bandagen oder Strümpfe. Dazu kommen feuchte Wundversorgung, Reinigung der Wunde, Bewegung und die Behandlung der kranken Venen. Vor einer Kompression müssen die Arterien geprüft werden, weil bei Durchblutungsstörungen zu starke Kompression schaden kann. Beginnen Sie deshalb nicht auf eigene Faust mit einer Kompression.</p>",
+     "offen": "Verlinkung: Leistungsseite Wunden, falls vorhanden.",
+     "links": [],
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+    },
+    {
+     "id": "F3",
+     "status": "frei",
+     "quelle": "{{OFFEN}}",
+     "frage": "Wann sollte ich mit einer Wunde zum Spezialisten?",
+     "antwort": "<p>Kommen Sie, wenn Ihre Wunde trotz Behandlung über längere Zeit nicht besser wird, wenn Zeichen einer Infektion bestehen (Rötung, Wärme, Eiter, Fieber), wenn eine Durchblutungsstörung vermutet wird oder die Ursache unklar ist.</p><p>Bei Fieber oder rasch zunehmender Rötung suchen Sie umgehend ärztliche Hilfe.</p>",
+     "links": [],
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+    }
+   ]
+  },
+  {
+   "id": "faq-akne",
+   "titel": "Akne",
+   "_intern": "Alle Antworten ohne Dosierungen und ohne genaue Zeiträume. Quellen und Wirkstoffe vor Veröffentlichung prüfen.",
+   "fragen": [
+    {
+     "id": "H1",
+     "status": "frei",
+     "quelle": "{{OFFEN}}",
+     "frage": "Was ist Akne, und woher kommt sie?",
+     "antwort": "<p>Akne ist eine häufige Entzündung der Talgdrüsen. Mehrere Dinge spielen zusammen: viel Talg, verstopfte Haarfollikel, Hautbakterien und Entzündung. Hormone und erbliche Veranlagung beeinflussen sie. Akne hat nichts mit mangelnder Sauberkeit zu tun.</p>",
+     "links": [
+      "patienteninformationen/akne-formen.html",
+      "leistungen/akne-rosazea.html"
+     ],
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+    },
+    {
+     "id": "H2",
+     "status": "frei",
+     "quelle": "{{OFFEN}}",
+     "frage": "Welche Aknearten gibt es?",
+     "antwort": "<p>Es gibt milde Formen mit Mitessern und kleinen Pickeln und stärkere Formen mit entzündeten Knoten und tiefen Zysten. Die Art und der Schweregrad bestimmen die Behandlung. Von der Akne zu unterscheiden sind die Rosazea und die Akne inversa. Das sind eigene Erkrankungen mit anderer Behandlung.</p>",
+     "links": [
+      "patienteninformationen/akne-formen.html",
+      "patienteninformationen/rosazea.html",
+      "leistungen/acne-inversa.html"
+     ],
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+    },
+    {
+     "id": "H3",
+     "status": "frei",
+     "quelle": "{{OFFEN}}",
+     "frage": "Wann sollte ich mit Akne zum Hautarzt?",
+     "antwort": "<p>Kommen Sie, wenn rezeptfreie Pflege nach angemessener Zeit nichts bringt, wenn die Akne entzündet, tief oder schmerzhaft ist, wenn sie Narben hinterlässt oder wenn sie Sie psychisch belastet. Je früher die Behandlung beginnt, desto eher lassen sich Narben vermeiden.</p>",
+     "links": [],
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+    },
+    {
+     "id": "H4",
+     "status": "frei",
+     "quelle": "{{OFFEN}} (Leitlinie angeben)",
+     "frage": "Was hilft gegen Akne?",
+     "antwort": "<p>Die Behandlung richtet sich nach dem Schweregrad.</p><ul><li><strong>Leichte Akne:</strong> Cremes und Gels, die die Poren frei halten und Bakterien reduzieren (z. B. Retinoide, Benzoylperoxid).</li><li><strong>Mittelschwere Akne:</strong> zusätzlich Antibiotika zum Einnehmen oder bei Frauen teilweise eine hormonelle Behandlung.</li><li><strong>Schwere oder vernarbende Akne:</strong> ein Medikament zum Einnehmen, das die Talgproduktion stark senkt (Isotretinoin). Es braucht ärztliche Begleitung und Kontrollen.</li></ul><p>Gute Hautpflege und Geduld gehören immer dazu.</p>",
+     "offen": "Wirkstoffe, Zulassung und Hinweise im Arzneimittelkompendium prüfen. Keine Dosierungen angeben.",
+     "links": [],
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+    },
+    {
+     "id": "H5",
+     "status": "frei",
+     "quelle": "{{OFFEN}}",
+     "frage": "Wie lange dauert es, bis die Behandlung wirkt?",
+     "antwort": "<p>Akne-Behandlungen wirken nicht über Nacht. Es braucht Geduld und konsequente Anwendung. Anfangs kann die Haut sogar trockener oder gereizter werden. Wir besprechen mit Ihnen, was zu erwarten ist und wann wir die Behandlung anpassen.</p>",
+     "links": [],
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+    },
+    {
+     "id": "H6",
+     "status": "frei",
+     "quelle": "{{OFFEN}}",
+     "frage": "Was ist Isotretinoin, und was muss ich beachten?",
+     "antwort": "<p>Isotretinoin ist ein starkes Medikament für schwere oder hartnäckige Akne. Es kann Nebenwirkungen haben, etwa trockene Haut und trockene Lippen, und es erfordert ärztliche Kontrollen. <strong>In der Schwangerschaft darf es nicht angewendet werden</strong>, weil es das ungeborene Kind schwer schädigen kann. Frauen im gebärfähigen Alter brauchen deshalb zuverlässigen Schwangerschaftsschutz. Ob es für Sie infrage kommt, klären wir in der Beratung.</p>",
+     "offen": "Sicherheitsangaben nach Fachinformation im Arzneimittelkompendium prüfen. Keine Dosierungen angeben.",
+     "links": [],
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+    },
+    {
+     "id": "H7",
+     "status": "frei",
+     "quelle": "{{OFFEN}}",
+     "frage": "Darf ich Pickel ausdrücken?",
+     "antwort": "<p>Besser nicht. Beim Ausdrücken kann die Entzündung tiefer gehen, und es können Narben und dunkle Flecken entstehen. Lassen Sie hartnäckige Pickel lieber behandeln.</p>",
+     "links": [],
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+    },
+    {
+     "id": "H8",
+     "status": "frei",
+     "quelle": "{{OFFEN}}",
+     "frage": "Verursachen Schokolade, Fett oder mangelnde Hygiene Akne?",
+     "antwort": "<p>Mangelnde Sauberkeit verursacht keine Akne. Zu häufiges, kräftiges Waschen kann die Haut sogar reizen. Bei der Ernährung ist die Studienlage uneinheitlich. Ein klarer Einfluss bestimmter Lebensmittel ist nicht für alle Betroffenen belegt.</p>",
+     "links": [],
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+    },
+    {
+     "id": "H9",
+     "status": "frei",
+     "quelle": "{{OFFEN}}",
+     "frage": "Welche Pflege und welches Make-up sind bei Akne geeignet?",
+     "antwort": "<p>Verwenden Sie milde Reinigung und leichte Pflegeprodukte, die die Poren nicht verstopfen (auf «nicht komedogen» achten). Sonnenschutz ist wichtig, besonders wenn Sie Aknemittel anwenden, die die Haut empfindlicher machen. Welche Produkte zu Ihrer Behandlung passen, besprechen wir mit Ihnen.</p>",
+     "links": [],
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+    },
+    {
+     "id": "H10",
+     "status": "frei",
+     "quelle": "{{OFFEN}}",
+     "frage": "Akne bei Erwachsenen: Warum habe ich mit 30 oder 40 noch Pickel?",
+     "antwort": "<p>Akne ist nicht nur ein Teenager-Thema. Auch Erwachsene, besonders Frauen, haben Akne, oft im unteren Gesicht und am Kiefer. Hormonelle Schwankungen, Veranlagung und Stress können eine Rolle spielen. Auch Erwachsenenakne ist gut behandelbar.</p>",
+     "links": [],
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+    },
+    {
+     "id": "H11",
+     "status": "frei",
+     "quelle": "{{OFFEN}}",
+     "frage": "Was hilft bei Aknenarben und dunklen Flecken nach Akne?",
+     "antwort": "<p>Je nach Narbenart helfen Laser, Microneedling, Peelings oder gezielte kleine Eingriffe. Dunkle Flecken nach Akne (postinflammatorische Hyperpigmentierung) verblassen oft mit der Zeit und lassen sich zusätzlich behandeln. Wichtig ist, zuerst die aktive Akne unter Kontrolle zu bringen.</p>",
+     "links": [
+      "patienteninformationen/postinflammatorische-hyperpigmentierung.html",
+      "patienteninformationen/mosaik-3d-erbium-laser.html"
+     ],
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+    },
+    {
+     "id": "H12",
+     "status": "frei",
+     "quelle": "{{OFFEN}}",
+     "frage": "Was ist der Unterschied zwischen Akne und Rosazea?",
+     "antwort": "<p>Beide verursachen Rötung und Pickel. Rosazea betrifft meist das mittlere Gesicht, tritt eher im Erwachsenenalter auf, geht mit Rötung und sichtbaren Äderchen einher und hat keine Mitesser. Die Behandlung ist anders. Eine ärztliche Abklärung schafft Klarheit.</p>",
+     "links": [
+      "patienteninformationen/rosazea.html"
+     ],
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+    },
+    {
+     "id": "H13",
+     "status": "frei",
+     "quelle": "{{OFFEN}}",
+     "frage": "Was ist der Unterschied zwischen Akne und Akne inversa?",
+     "antwort": "<p>Trotz des ähnlichen Namens sind es verschiedene Erkrankungen. Akne betrifft vor allem Gesicht, Brust und Rücken. Akne inversa betrifft Hautfalten wie Achseln und Leiste, mit schmerzhaften Knoten und Abszessen. Die Behandlung unterscheidet sich.</p>",
+     "links": [
+      "leistungen/acne-inversa.html"
+     ],
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+    }
+   ]
+  },
+  {
+   "id": "faq-praktisches",
+   "titel": "Praktisches",
+   "fragen": [
+    {
+     "id": "G1",
+     "status": "offen",
+     "quelle": "",
+     "frage": "Brauche ich eine Überweisung?",
+     "antwort": "",
+     "links": []
+    },
+    {
+     "id": "G2",
+     "status": "offen",
+     "quelle": "",
+     "frage": "Wer übernimmt die Kosten einer Behandlung bei Dermetrics?",
+     "antwort": "",
+     "offen": "Teilangabe nur für den Ganzkörper-Hautcheck vorhanden, siehe A4; Behandlungen/Eingriffe fehlen.",
+     "links": []
+    },
+    {
+     "id": "G3",
+     "status": "offen",
+     "quelle": "",
+     "frage": "Wie schnell bekomme ich einen Termin?",
+     "antwort": "",
+     "offen": "Sprechzeit Clinic Selnau montags, Terminwege wie in bestehender FAQ.",
+     "links": []
+    }
+   ]
+  }
+ ]
 }
