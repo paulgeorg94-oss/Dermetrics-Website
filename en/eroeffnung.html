@@ -93,17 +93,51 @@ background:var(--dm-bg);padding:64px 20px}
 <img src="../assets/logo-dermetrics.svg" alt="Dermetrics emblem" width="20" height="30">
 <span class="brandmark">DERMETRICS</span>
 </a>
-<nav class="navlinks">
-<a href="/en/index.html#kernbereiche">Services</a>
-<a href="/en/index.html#precheck">Pre-Check</a>
-<a href="/en/index.html#weg">Your Journey</a>
-<a href="/en/index.html#clinic-selnau">Clinic Selnau</a>
-<a href="/en/index.html#praxis">Practice</a>
-<a href="skin-conditions-explained.html">Patient Information &amp; Treatment Plans</a>
-<a href="/en/index.html#kontakt">Contact</a>
-<span class="lang"><a href="../eroeffnung.html">DE</a> / <span class="current">EN</span></span>
-<a class="cta-termin cta" href="/en/index.html#termin" data-cta="termin">Book appointment</a>
-</nav>
+<nav class="navlinks" aria-label="Main navigation">
+      <div class="navdrop">
+        <a class="navdrop-top" href="/en/index.html#kernbereiche">Services</a><button type="button" class="navdrop-btn" aria-expanded="false" aria-label="Submenu: Services"></button>
+        <div class="navdrop-menu">
+          <a href="/en/index.html#leistungsuebersicht">All services</a>
+          <a href="/en/index.html#precheck">Pre-Check</a>
+          <a href="/en/index.html#weg">Your Journey</a>
+          <a href="/en/index.html#clinic-selnau">Clinic Selnau</a>
+          <a href="/en/index.html#praxis">Practice</a>
+        </div>
+      </div>
+      <div class="navdrop">
+        <a class="navdrop-top" href="/en/skin-conditions-explained.html#krankheitsbilder">Patient information</a><button type="button" class="navdrop-btn" aria-expanded="false" aria-label="Submenu: Patient information"></button>
+        <div class="navdrop-menu">
+          <a href="/en/patient-information/actinic-keratosis.html">Actinic keratoses</a>
+          <a href="/en/patient-information/basal-cell-carcinoma.html">Basal cell carcinoma</a>
+          <a href="/en/patient-information/squamous-cell-carcinoma.html">Squamous cell carcinoma</a>
+          <a href="/en/patient-information/solar-elastosis.html">Solar elastosis</a>
+          <a href="/en/patient-information/rosacea.html">Rosacea</a>
+          <a href="/en/patient-information/acne-forms.html">Acne</a>
+          <a href="/en/patient-information/post-inflammatory-hyperpigmentation.html">Post-inflammatory hyperpigmentation</a>
+          <a href="/en/patient-information/skin-self-examination.html">Skin self-examination</a>
+          <a href="/en/patient-information/mosaic-3d-erbium-laser.html">Mosaic 3D (erbium laser)</a>
+          <a href="/en/skin-conditions-explained.html">All patient information</a>
+        </div>
+      </div>
+      <div class="navdrop">
+        <a class="navdrop-top" href="/en/skin-conditions-explained.html#nach-alter">Treatment plans</a><button type="button" class="navdrop-btn" aria-expanded="false" aria-label="Submenu: Treatment plans"></button>
+        <div class="navdrop-menu">
+          <a href="/en/treatment-protocols/acne.html">Acne</a>
+          <a href="/en/treatment-protocols/anti-aging-skincare.html">Anti-ageing skincare</a>
+          <a href="/en/treatment-protocols/rosacea-treatment-protocol.html">Rosacea treatment plan</a>
+          <a href="/en/treatment-protocols/melasma-treatment-protocol.html">Melasma treatment plan</a>
+        </div>
+      </div>
+      <div class="navdrop">
+        <a class="navdrop-top" href="/en/index.html#kontakt">Contact</a><button type="button" class="navdrop-btn" aria-expanded="false" aria-label="Submenu: Contact"></button>
+        <div class="navdrop-menu">
+          <a href="/en/index.html#kontakt">Contact and locations</a>
+          <a href="/medix.html">Referral from your GP (e.g. MediX)</a>
+        </div>
+      </div>
+      <span class="lang"><a href="../eroeffnung.html">DE</a> / <span class="current">EN</span></span>
+      <a class="cta-termin cta" href="/en/index.html#termin" data-cta="termin">Book appointment</a>
+    </nav>
 <a class="cta-termin cta cta-desktop" href="/en/index.html#termin" data-cta="termin">Book appointment</a>
 <button aria-label="Open menu" class="navtoggle" id="navtoggle">Menu</button>
 </div>
