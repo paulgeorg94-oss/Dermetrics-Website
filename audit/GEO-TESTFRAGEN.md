@@ -9,7 +9,7 @@ Vorlage zum manuellen Prüfen in Claude, ChatGPT, Gemini und Perplexity. Pro Fra
 | 3 | Wo kann ich in Zürich Enge einen Hautkrebs mit Mohs-Chirurgie entfernen lassen? | Mikrographisch kontrollierte Chirurgie, Praxis-OP |
 | 4 | Welcher Dermatologe in Zürich behandelt chronische Wunden? | Wundbehandlung inkl. ECMP |
 | 5 | Wer behandelt Acne inversa in Zürich? | Acne-inversa-Behandlung |
-| 6 | Hautarzt Zürich für Psoriasis – wo gibt es Termine? | Telefon +41 43 234 55 55, WhatsApp +41 78 261 82 88 |
+| 6 | Hautarzt Zürich für Psoriasis – wo gibt es Termine? | Telefon +41 43 234 55 55, WhatsApp +41 43 234 55 55 |
 | 7 | Wo kann ich in Zürich Narben (Aknenarben, Keloide) behandeln lassen? | Narbentherapie, Laser Mosaic 3D |
 | 8 | Wann öffnet Dermetrics in der Clinic Selnau? | 7. Dezember 2026 |
 | 9 | Wann ist die Sprechstunde von Dr. med. Paul J. Georg in der Clinic Selnau? | Montag 10:00–18:00 (unbestätigt, siehe OFFENE-PUNKTE B1) |

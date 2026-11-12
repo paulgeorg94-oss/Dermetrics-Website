@@ -4,7 +4,7 @@
 
 - **Name:** Dermetrics – Dr. med. Paul J. Georg
 - **Adresse:** Brandschenkestrasse 45, 8002 Zürich, Schweiz
-- **Telefon:** +41 43 234 55 55 · **WhatsApp:** +41 78 261 82 88
+- **Telefon:** +41 43 234 55 55 · **WhatsApp:** +41 43 234 55 55
 - **Website:** https://dermetrics.ch/
 - **Sprechstunde Clinic Selnau:** Montag 10:00–18:00, ab 7. Dezember 2026 (Zeit unbestätigt, siehe OFFENE-PUNKTE B1)
 
