@@ -324,6 +324,14 @@
     document.body.appendChild(btn);
   }
 
+  // Links mit data-cc-open (z. B. «Cookie-Einstellungen» in der Fusszeile) öffnen die Einstellungen
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest ? e.target.closest("[data-cc-open]") : null;
+    if (!a) return;
+    e.preventDefault();
+    openModal();
+  });
+
   var consent = readConsent();
   if (!consent) {
     openModal();

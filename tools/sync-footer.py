@@ -4,7 +4,7 @@ data/praxis.json: voller Name, Adresse, Telefon, Link zum Google-Profil.
 Idempotent. Aufruf aus dem Repository-Wurzelverzeichnis."""
 import glob, json, re
 P = json.load(open('data/praxis.json', encoding='utf-8'))
-NAME = P['praxisname']                       # Dermetrics – Dr. med. Paul J. Georg
+NAME = P['praxisname']                       # Dermetrics – Dermatologie Clinic Selnau
 A = P['adresse']; ADDR = f"{A['strasse']}<br>{A['plz']} {A['ort']}"
 TEL = f'<a href="tel:{P["telefon_e164"]}">{P["telefon"]}</a>'
 GOOGLE = {'de': 'Google-Profil der Clinic Selnau', 'en': 'Clinic Selnau on Google'}
