@@ -3,6 +3,7 @@
    unter prefers-reduced-motion. Der Pause-Knopf ist nicht optional: WCAG 2.2.2
    verlangt bei Bewegung über 5 Sekunden eine echte Stopp-Möglichkeit. */
 (function () {
+  var EN = (document.documentElement.lang || "").toLowerCase().indexOf("en") === 0;
   "use strict";
 
   function init(root) {
@@ -65,7 +66,7 @@
       show(playIcon, !next);
       toggle.setAttribute(
         "aria-label",
-        next ? "Automatisches Weiterblättern pausieren" : "Automatisches Weiterblättern starten"
+        EN ? (next ? "Pause automatic rotation" : "Start automatic rotation") : (next ? "Automatisches Weiterblättern pausieren" : "Automatisches Weiterblättern starten")
       );
       schedule();
     }

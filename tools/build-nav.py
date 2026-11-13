@@ -19,7 +19,8 @@ DE_BP = [('akne', 'Akne'), ('anti-aging-hautpflege', 'Anti-Aging-Hautpflege'),
 EN_PI = [('actinic-keratosis', 'Actinic keratoses'), ('basal-cell-carcinoma', 'Basal cell carcinoma'),
          ('squamous-cell-carcinoma', 'Squamous cell carcinoma'), ('solar-elastosis', 'Solar elastosis'), ('rosacea', 'Rosacea'),
          ('acne-forms', 'Acne'), ('post-inflammatory-hyperpigmentation', 'Post-inflammatory hyperpigmentation'),
-         ('skin-self-examination', 'Skin self-examination'), ('mosaic-3d-erbium-laser', 'Mosaic 3D (erbium laser)')]
+         ('skin-self-examination', 'Skin self-examination'), ('mosaic-3d-erbium-laser', 'Mosaic 3D (erbium laser)'),
+         ('nd-yag-laser', 'Nd:YAG laser'), ('pico-laser', 'Pico laser')]
 EN_BP = [('acne', 'Acne'), ('anti-aging-skincare', 'Anti-ageing skincare'),
          ('rosacea-treatment-protocol', 'Rosacea treatment plan'), ('melasma-treatment-protocol', 'Melasma treatment plan')]
 
