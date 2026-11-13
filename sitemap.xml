@@ -144,7 +144,7 @@
 
   <url>
     <loc>https://dermetrics.ch/en/skin-cancer-self-test.html</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/hautkrebs-selbsttest.html"/>
@@ -314,7 +314,7 @@
 
   <url>
     <loc>https://dermetrics.ch/en/skin-conditions-explained.html</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/hauterkrankungen-erklaert.html"/>
@@ -324,7 +324,7 @@
 
   <url>
     <loc>https://dermetrics.ch/en/legal.html</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/impressum.html"/>
@@ -444,7 +444,7 @@
 
   <url>
     <loc>https://dermetrics.ch/en/eroeffnung.html</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/eroeffnung.html"/>
@@ -468,15 +468,37 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/medix-anmeldung.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/medix-anmeldung.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/medix-anmeldung.html"/>
+  </url>
+
+  <url>
+    <loc>https://dermetrics.ch/en/medix-anmeldung.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/medix-anmeldung.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/medix-anmeldung.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/medix-anmeldung.html"/>
   </url>
 
   <url>
     <loc>https://dermetrics.ch/medix.html</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/medix.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/medix.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/medix.html"/>
+  </url>
+
+  <url>
+    <loc>https://dermetrics.ch/en/medix.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/medix.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/medix.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/medix.html"/>
   </url>
 

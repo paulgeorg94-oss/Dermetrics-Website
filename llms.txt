@@ -40,7 +40,7 @@ Hinweis: Alle Inhalte dienen der Information und ersetzen keine ärztliche Berat
 - [Melasma-Behandlungsprotokoll](https://dermetrics.ch/behandlungsprotokolle/melasma-behandlungsprotokoll.html)
 
 ## English
-- [Home](https://dermetrics.ch/en/index.html): overview, at a glance, services, qualifications, FAQ, contact
+- [Home](https://dermetrics.ch/en/index.html): overview, at a glance, services, laser treatments, qualifications, FAQ (moles and skin cancer, removal of skin lesions, scars, chronic skin conditions, wounds, acne; cost of skin cancer checks), contact
 - [Skin cancer Pre-Check](https://dermetrics.ch/en/index.html#precheck): 13 questions, not a diagnostic tool
 - [Hidradenitis suppurativa](https://dermetrics.ch/en/services/hidradenitis-suppurativa.html): A chronic inflammation of the skin in the body folds. Medication and surgery can be combined.
 - [Acne and rosacea](https://dermetrics.ch/en/services/acne-rosacea.html): Both conditions often affect the face but are treated differently.
@@ -52,6 +52,8 @@ Hinweis: Alle Inhalte dienen der Information und ersetzen keine ärztliche Berat
 - [How can I spot skin cancer early myself?](https://dermetrics.ch/en/patient-information/skin-self-examination.html): skin self-examination guide (ABCDE, EFG and ugly duckling rules)
 - [Skin self-examination guide with body map (PDF)](https://dermetrics.ch/downloads/skin-self-examination-en.pdf)
 - [Opening Reception Clinic Selnau](https://dermetrics.ch/en/eroeffnung.html)
+- [Registration: referral to Clinic Selnau (MediX)](https://dermetrics.ch/en/medix-anmeldung.html)
+- [Referral to Clinic Selnau](https://dermetrics.ch/en/medix.html)
 - [Photodynamic therapy (PDT)](https://dermetrics.ch/en/services/photodynamic-therapy.html): The treatment takes place indoors in the practice with the Healite II lamp and therefore does not depend on the weather.
 - [Mosaic 3D](https://dermetrics.ch/en/patient-information/mosaic-3d-erbium-laser.html)
 - [Post-inflammatory hyperpigmentation](https://dermetrics.ch/en/patient-information/post-inflammatory-hyperpigmentation.html)

@@ -16,7 +16,14 @@
      "links": [
       "patienteninformationen/selbstuntersuchung-haut.html"
      ],
-     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)",
+     "en": {
+      "frage": "When should I see a dermatologist about a mole?",
+      "antwort": "<p>Come if a mole is new, changes or looks unusual. The ABCDE rule can help:</p><ul><li><strong>A</strong>symmetry: one half looks different from the other.</li><li><strong>B</strong>order: the edge is irregular or blurred.</li><li><strong>C</strong>olour: the spot has several shades.</li><li><strong>D</strong>iameter: larger than 6 mm.</li><li><strong>E</strong>volution: size, shape or colour change.</li></ul><p>A mole that looks quite different from your other moles (the «ugly duckling») should also be checked. A single sign is enough for a medical assessment.</p>",
+      "links": [
+       "patient-information/skin-self-examination.html"
+      ]
+     }
     },
     {
      "id": "A2",
@@ -27,7 +34,14 @@
      "links": [
       "patienteninformationen/basalzellkarzinom.html"
      ],
-     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)",
+     "en": {
+      "frage": "What does skin cancer look like at the beginning?",
+      "antwort": "<ul><li><strong>Black skin cancer (melanoma):</strong> an irregular, often multicoloured spot that grows or changes. Some melanomas are raised and firm and grow within weeks (EFG signs: elevated, firm, growing).</li><li><strong>White skin cancer (basal cell carcinoma):</strong> often a pearly, shiny nodule with small blood vessels. It grows slowly, sometimes bleeds or does not heal. It can also look like a flat, scaly, reddish patch.</li></ul><p>Any skin change that bleeds, weeps or does not heal after a few weeks should be examined.</p>",
+      "links": [
+       "patient-information/basal-cell-carcinoma.html"
+      ]
+     }
     },
     {
      "id": "A3",
@@ -38,7 +52,14 @@
      "links": [
       "patienteninformationen/selbstuntersuchung-haut.html"
      ],
-     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)",
+     "en": {
+      "frage": "How often should I have my moles checked?",
+      "antwort": "<p>Look at your skin yourself regularly (see the guide to skin self-examination). How often a full-body medical check makes sense depends on your risk, for example the number of moles, unusual moles, skin cancer in the family and your skin type. We set the interval together with you. After a previous skin cancer, regular checks are usually needed for life.</p>",
+      "links": [
+       "patient-information/skin-self-examination.html"
+      ]
+     }
     },
     {
      "id": "A4",
@@ -47,7 +68,12 @@
      "frage": "Was kostet eine Hautkrebs-Vorsorge, und wer übernimmt die Kosten?",
      "antwort": "<p>Ein Hautcheck des ganzen Körpers dauert etwa 20 Minuten und kostet ca. 160 CHF. Die Kosten werden je nach Indikation von der Grundversicherung oder der Zusatzversicherung übernommen. Ob und in welchem Umfang Ihre Versicherung zahlt, hängt von Ihrem Vertrag ab. Fragen Sie vorab bei Ihrer Versicherung nach.</p>",
      "offen": "Preis «ca. 160 CHF» ggf. als «ab» oder exakt festlegen. Gültig ab Eröffnung 7.12.2026? (Kostenübernahme am 2026-11-13 von Dr. Georg festgelegt.)",
-     "links": []
+     "links": [],
+     "en": {
+      "frage": "What does a skin cancer check cost, and who pays for it?",
+      "antwort": "<p>A full-body skin check takes about 20 minutes and costs approx. CHF 160. Depending on the indication, the costs are covered by basic insurance or supplementary insurance. Whether and to what extent your insurance pays depends on your policy. Ask your insurer in advance.</p>",
+      "links": []
+     }
     },
     {
      "id": "A5",
@@ -57,7 +83,12 @@
      "antwort": "<p>Ja. Jedes entfernte Muttermal und jede Hautveränderung mit Krebsverdacht untersuchen wir feingeweblich (histologisch) im Labor. So ist sicher, ob die Veränderung gut- oder bösartig war.</p>",
      "offen": "Ob harmlose Veränderungen (z. B. Fibrome) ebenfalls eingeschickt werden, entscheidet Dr. Georg. Nicht öffentlich ohne seine Freigabe formulieren.",
      "links": [],
-     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)",
+     "en": {
+      "frage": "Is a removed mole examined?",
+      "antwort": "<p>Yes. Every removed mole and every skin change suspected of cancer is examined under the microscope (histologically) in the laboratory. This makes it certain whether the change was benign or malignant.</p>",
+      "links": []
+     }
     },
     {
      "id": "A6",
@@ -71,7 +102,16 @@
       "leistungen/mohs-chirurgie.html",
       "leistungen/photodynamische-therapie.html"
      ],
-     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)",
+     "en": {
+      "frage": "How is basal cell carcinoma (white skin cancer) treated?",
+      "antwort": "<p>Treatment depends on the risk of recurrence, that is, on location, growth pattern and size.</p><ul><li><strong>Low risk:</strong> surgical removal with a safety margin; for superficial tumours also creams, freezing or photodynamic therapy.</li><li><strong>Higher risk</strong> (for example on the face or after recurrence): micrographically controlled surgery (Mohs) or surgery with complete margin control. If surgery is not possible, radiotherapy is an option.</li><li><strong>Advanced:</strong> discussion in the interdisciplinary team.</li></ul><p>We clarify which approach suits you in the medical assessment.</p>",
+      "links": [
+       "patient-information/basal-cell-carcinoma.html",
+       "services/mohs-surgery.html",
+       "services/photodynamic-therapy.html"
+      ]
+     }
     },
     {
      "id": "A7",
@@ -80,9 +120,15 @@
      "frage": "Muss ich nach einer Hautkrebs-Operation zur Nachkontrolle?",
      "antwort": "<p>Ja. Nach jeder Hautkrebsbehandlung sind regelmässige Kontrollen wichtig, um Rückfälle und neue Hauttumoren früh zu erkennen. Wie oft, legen wir nach Befund und Risiko fest. Oft sind die Kontrollen dauerhaft sinnvoll.</p>",
      "links": [],
-     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)",
+     "en": {
+      "frage": "Do I need follow-up checks after skin cancer surgery?",
+      "antwort": "<p>Yes. After any skin cancer treatment, regular checks are important to detect recurrences and new skin tumours early. How often is decided according to findings and risk. The checks are often useful for life.</p>",
+      "links": []
+     }
     }
-   ]
+   ],
+   "titel_en": "Moles and skin cancer"
   },
   {
    "id": "faq-entfernung",
@@ -97,7 +143,14 @@
      "links": [
       "leistungen/gutartige-hautveraenderungen.html"
      ],
-     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)",
+     "en": {
+      "frage": "How are moles, fibromas, seborrhoeic warts and lipomas removed?",
+      "antwort": "<p>The method depends on the lesion:</p><ul><li><strong>Moles:</strong> shave removal or complete removal with a narrow safety margin, depending on the suspicion.</li><li><strong>Fibromas and skin tags:</strong> removal with scalpel, scissors or electrocautery.</li><li><strong>Seborrhoeic warts (seborrhoeic keratoses):</strong> scraping, freezing or laser.</li><li><strong>Lipomas (fatty lumps):</strong> minor surgery with a skin incision.</li></ul><p>We discuss which method is suitable for you before the procedure.</p>",
+      "links": [
+       "services/benign-skin-lesions.html"
+      ]
+     }
     },
     {
      "id": "B2",
@@ -106,7 +159,12 @@
      "frage": "Tut die Entfernung weh? Bleibt eine Narbe?",
      "antwort": "<p>Wir arbeiten unter lokaler Betäubung. Beim Einspritzen spüren Sie ein kurzes Ziehen, während des Eingriffs in der Regel keinen Schmerz. Danach kann die Stelle einige Tage empfindlich sein. Eine kleine Narbe, Rötung oder Pigmentveränderung ist möglich, vor allem bei grösseren Veränderungen oder bei einer Operation mit Naht. Bei oberflächlichen Verfahren bleibt meist nur wenig sichtbar.</p>",
      "links": [],
-     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)",
+     "en": {
+      "frage": "Does removal hurt? Will there be a scar?",
+      "antwort": "<p>We work under local anaesthesia. You feel a brief pulling sensation during the injection, and usually no pain during the procedure. Afterwards the area may be tender for a few days. A small scar, redness or pigment change is possible, especially with larger lesions or surgery with stitches. With superficial procedures, usually little remains visible.</p>",
+      "links": []
+     }
     },
     {
      "id": "B3",
@@ -124,9 +182,15 @@
      "frage": "Wie lange dauert die Heilung?",
      "antwort": "<p>Oberflächliche Verfahren heilen meist schneller als eine Operation mit Naht. Bei einer Naht werden die Fäden nach einer Weile entfernt, und die Narbe braucht danach noch lange, bis sie ausgereift ist. Wie lange es bei Ihnen dauert, hängt von Stelle, Grösse und Methode ab. Das besprechen wir vor dem Eingriff.</p>",
      "links": [],
-     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)",
+     "en": {
+      "frage": "How long does healing take?",
+      "antwort": "<p>Superficial procedures usually heal faster than surgery with stitches. With stitches, the threads are removed after a while, and the scar then still needs a long time to mature. How long it takes for you depends on the site, size and method. We discuss this before the procedure.</p>",
+      "links": []
+     }
     }
-   ]
+   ],
+   "titel_en": "Removal of skin lesions"
   },
   {
    "id": "faq-narben",
@@ -140,7 +204,12 @@
      "antwort": "<p>Die Behandlung hängt von der Art der Narbe ab.</p><ul><li><strong>Wulstige Narben und Keloide:</strong> Silikonauflagen oder -gele, Kortison-Spritzen in die Narbe, Druckverbände.</li><li><strong>Weitere Möglichkeiten:</strong> Vereisung von innen, Laser, Kombinationen. Manche Verfahren sind <strong>Off-Label</strong> (z. B. Botulinumtoxin oder 5-Fluorouracil bei Keloiden).</li><li><strong>Aknenarben:</strong> je nach Narbentyp Laser, Microneedling, Peelings oder gezielte kleine Eingriffe.</li><li><strong>Ausgeprägte Keloide:</strong> Entfernung, kombiniert mit einer Nachbehandlung gegen das Wiederkehren.</li></ul>",
      "offen": "Verlinkung: Leistungsseite Narbentherapie, falls vorhanden.",
      "links": [],
-     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)",
+     "en": {
+      "frage": "How are scars, keloids and acne scars treated?",
+      "antwort": "<p>Treatment depends on the type of scar.</p><ul><li><strong>Raised scars and keloids:</strong> silicone sheets or gels, cortisone injections into the scar, pressure dressings.</li><li><strong>Other options:</strong> freezing from within, laser, combinations. Some procedures are <strong>off-label</strong> (e.g. botulinum toxin or 5-fluorouracil for keloids).</li><li><strong>Acne scars:</strong> depending on the scar type, laser, microneedling, peels or targeted minor procedures.</li><li><strong>Pronounced keloids:</strong> removal, combined with follow-up treatment to prevent recurrence.</li></ul>",
+      "links": []
+     }
     },
     {
      "id": "D2",
@@ -149,7 +218,12 @@
      "frage": "Wie lange dauert es, bis eine Narbe verblasst?",
      "antwort": "<p>Frische Narben sind zu Beginn oft gerötet und leicht erhaben. Die Reifung dauert lange. Manche wulstige Narben bessern sich mit der Zeit noch von selbst. Wenn eine Narbe stört, juckt oder wächst, lohnt sich eine Beurteilung.</p>",
      "links": [],
-     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)",
+     "en": {
+      "frage": "How long does it take for a scar to fade?",
+      "antwort": "<p>Fresh scars are often red and slightly raised at first. Maturation takes a long time. Some raised scars still improve on their own over time. If a scar bothers you, itches or grows, an assessment is worthwhile.</p>",
+      "links": []
+     }
     },
     {
      "id": "D3",
@@ -158,9 +232,15 @@
      "frage": "Was hilft gegen wulstige oder rote Narben?",
      "antwort": "<p>Als erste Massnahme werden Silikonprodukte eingesetzt, regelmässig und über längere Zeit angewendet. Bei stärkerer Ausprägung oder Juckreiz kommen Kortison-Spritzen dazu. Laser kann Rötung und Dicke zusätzlich verringern.</p>",
      "links": [],
-     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)",
+     "en": {
+      "frage": "What helps with raised or red scars?",
+      "antwort": "<p>Silicone products are used as the first measure, applied regularly and over a longer period. For more pronounced scars or itching, cortisone injections are added. Laser can additionally reduce redness and thickness.</p>",
+      "links": []
+     }
     }
-   ]
+   ],
+   "titel_en": "Scars"
   },
   {
    "id": "faq-chronisch",
@@ -174,7 +254,12 @@
      "antwort": "<p>Psoriasis (Schuppenflechte) ist eine chronische Entzündung der Haut und <strong>nicht ansteckend</strong>. Heilbar ist sie nach heutigem Wissen nicht, aber gut behandelbar.</p><ul><li><strong>Leichte Formen:</strong> Cremes und Salben (z. B. Kortison, Vitamin-D-Abkömmlinge), Lichttherapie.</li><li><strong>Mittelschwere bis schwere Formen:</strong> Tabletten oder Spritzen, die das Immunsystem gezielt beeinflussen, darunter Biologika. Diese wirken auch bei Gelenkbeteiligung.</li></ul><p>Welche Therapie passt, klären wir nach Ausmass, Begleiterkrankungen und Ihren Wünschen.</p>",
      "offen": "Wirkstoffnamen und Zulassung im Arzneimittelkompendium prüfen. Verlinkung: Leistungsseite Psoriasis, falls vorhanden.",
      "links": [],
-     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)",
+     "en": {
+      "frage": "Psoriasis: what helps, and is it contagious?",
+      "antwort": "<p>Psoriasis is a chronic inflammation of the skin and <strong>not contagious</strong>. According to current knowledge it cannot be cured, but it can be treated well.</p><ul><li><strong>Mild forms:</strong> creams and ointments (e.g. cortisone, vitamin D derivatives), light therapy.</li><li><strong>Moderate to severe forms:</strong> tablets or injections that act specifically on the immune system, including biologics. These also work when the joints are affected.</li></ul><p>We clarify which therapy fits according to extent, accompanying conditions and your wishes.</p>",
+      "links": []
+     }
     },
     {
      "id": "E2",
@@ -186,7 +271,14 @@
      "links": [
       "leistungen/acne-inversa.html"
      ],
-     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)",
+     "en": {
+      "frage": "Hidradenitis suppurativa: what is it, and what helps with lumps in the armpits or groin?",
+      "antwort": "<p>Hidradenitis suppurativa (acne inversa) is a chronic inflammation of the hair follicles. It causes painful lumps and abscesses in skin folds such as the armpits and groin. Later, tunnels under the skin and scars can develop. It is not contagious and has nothing to do with poor hygiene.</p><p>Treatment depends on severity: ointments, antibiotics, biologics or minor surgery. Lifestyle (e.g. stopping smoking, weight) also plays a role.</p>",
+      "links": [
+       "services/hidradenitis-suppurativa.html"
+      ]
+     }
     },
     {
      "id": "E3",
@@ -196,9 +288,15 @@
      "antwort": "<p>Die Grundlage ist konsequente Hautpflege mit rückfettenden Cremes. Bei aktiven Schüben helfen Kortisoncremes oder entzündungshemmende Salben ohne Kortison. Kühlen und das Meiden von Reizstoffen wie Wolle können den Juckreiz lindern. Bei schwerem Verlauf gibt es Lichttherapie oder Medikamente, die im ganzen Körper wirken.</p><p>Wir behandeln Neurodermitis und Ekzeme in der Praxis.</p>",
      "offen": "Leistungsseite anlegen und verlinken.",
      "links": [],
-     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)",
+     "en": {
+      "frage": "Atopic dermatitis and eczema: what helps with the itching?",
+      "antwort": "<p>The basis is consistent skin care with moisturising creams. During active flares, cortisone creams or anti-inflammatory ointments without cortisone help. Cooling and avoiding irritants such as wool can relieve the itching. For severe cases, there is light therapy or medication that acts throughout the body.</p><p>We treat atopic dermatitis and eczema in the practice.</p>",
+      "links": []
+     }
     }
-   ]
+   ],
+   "titel_en": "Chronic skin conditions"
   },
   {
    "id": "faq-wunden",
@@ -211,7 +309,12 @@
      "frage": "Warum heilt meine Wunde nicht?",
      "antwort": "<p>Wenn eine Wunde nicht heilt, steckt oft eine Ursache dahinter, die mitbehandelt werden muss: Durchblutungsstörungen der Arterien oder Venen, Diabetes, Infektionen, anhaltender Druck oder Mangelernährung. Ohne Behandlung dieser Ursache heilt die Wunde oft trotz guter Wundversorgung nicht.</p><p>Lassen Sie eine Wunde, die nicht heilt, ärztlich abklären.</p>",
      "links": [],
-     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)",
+     "en": {
+      "frage": "Why is my wound not healing?",
+      "antwort": "<p>When a wound does not heal, there is often an underlying cause that also needs treatment: circulatory disorders of the arteries or veins, diabetes, infections, persistent pressure or malnutrition. Without treating this cause, the wound often does not heal despite good wound care.</p><p>Have a wound that does not heal assessed by a doctor.</p>",
+      "links": []
+     }
     },
     {
      "id": "F2",
@@ -221,7 +324,12 @@
      "antwort": "<p>Beim offenen Bein aufgrund kranker Venen steht die Kompression im Zentrum, also Bandagen oder Strümpfe. Dazu kommen feuchte Wundversorgung, Reinigung der Wunde, Bewegung und die Behandlung der kranken Venen. Vor einer Kompression müssen die Arterien geprüft werden, weil bei Durchblutungsstörungen zu starke Kompression schaden kann. Beginnen Sie deshalb nicht auf eigene Faust mit einer Kompression.</p>",
      "offen": "Verlinkung: Leistungsseite Wunden, falls vorhanden.",
      "links": [],
-     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)",
+     "en": {
+      "frage": "What should I do about a leg ulcer (ulcus cruris)?",
+      "antwort": "<p>For a leg ulcer caused by diseased veins, compression is central, that is, bandages or stockings. In addition there is moist wound care, cleaning of the wound, exercise and treatment of the diseased veins. Before compression, the arteries must be checked, because too much compression can cause harm if circulation is impaired. So do not start compression on your own.</p>",
+      "links": []
+     }
     },
     {
      "id": "F3",
@@ -230,9 +338,15 @@
      "frage": "Wann sollte ich mit einer Wunde zum Spezialisten?",
      "antwort": "<p>Kommen Sie, wenn Ihre Wunde trotz Behandlung über längere Zeit nicht besser wird, wenn Zeichen einer Infektion bestehen (Rötung, Wärme, Eiter, Fieber), wenn eine Durchblutungsstörung vermutet wird oder die Ursache unklar ist.</p><p>Bei Fieber oder rasch zunehmender Rötung suchen Sie umgehend ärztliche Hilfe.</p>",
      "links": [],
-     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)",
+     "en": {
+      "frage": "When should I see a specialist about a wound?",
+      "antwort": "<p>Come if your wound does not improve over a longer period despite treatment, if there are signs of infection (redness, warmth, pus, fever), if a circulatory disorder is suspected or if the cause is unclear.</p><p>If you have a fever or rapidly increasing redness, seek medical help immediately.</p>",
+      "links": []
+     }
     }
-   ]
+   ],
+   "titel_en": "Wounds"
   },
   {
    "id": "faq-akne",
@@ -249,7 +363,15 @@
       "patienteninformationen/akne-formen.html",
       "leistungen/akne-rosazea.html"
      ],
-     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)",
+     "en": {
+      "frage": "What is acne, and where does it come from?",
+      "antwort": "<p>Acne is a common inflammation of the sebaceous glands. Several factors interact: a lot of sebum, blocked hair follicles, skin bacteria and inflammation. Hormones and hereditary predisposition influence it. Acne has nothing to do with poor cleanliness.</p>",
+      "links": [
+       "patient-information/acne-forms.html",
+       "services/acne-rosacea.html"
+      ]
+     }
     },
     {
      "id": "H2",
@@ -262,7 +384,16 @@
       "patienteninformationen/rosazea.html",
       "leistungen/acne-inversa.html"
      ],
-     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)",
+     "en": {
+      "frage": "What types of acne are there?",
+      "antwort": "<p>There are mild forms with blackheads and small spots, and more severe forms with inflamed nodules and deep cysts. The type and severity determine the treatment. Rosacea and hidradenitis suppurativa (acne inversa) must be distinguished from acne. These are separate conditions with different treatment.</p>",
+      "links": [
+       "patient-information/acne-forms.html",
+       "patient-information/rosacea.html",
+       "services/hidradenitis-suppurativa.html"
+      ]
+     }
     },
     {
      "id": "H3",
@@ -271,7 +402,12 @@
      "frage": "Wann sollte ich mit Akne zum Hautarzt?",
      "antwort": "<p>Kommen Sie, wenn rezeptfreie Pflege nach angemessener Zeit nichts bringt, wenn die Akne entzündet, tief oder schmerzhaft ist, wenn sie Narben hinterlässt oder wenn sie Sie psychisch belastet. Je früher die Behandlung beginnt, desto eher lassen sich Narben vermeiden.</p>",
      "links": [],
-     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)",
+     "en": {
+      "frage": "When should I see a dermatologist about acne?",
+      "antwort": "<p>Come if over-the-counter care does not help after a reasonable time, if the acne is inflamed, deep or painful, if it leaves scars or if it is a psychological burden for you. The earlier treatment begins, the more likely scars can be avoided.</p>",
+      "links": []
+     }
     },
     {
      "id": "H4",
@@ -281,7 +417,12 @@
      "antwort": "<p>Die Behandlung richtet sich nach dem Schweregrad.</p><ul><li><strong>Leichte Akne:</strong> Cremes und Gels, die die Poren frei halten und Bakterien reduzieren (z. B. Retinoide, Benzoylperoxid).</li><li><strong>Mittelschwere Akne:</strong> zusätzlich Antibiotika zum Einnehmen oder bei Frauen teilweise eine hormonelle Behandlung.</li><li><strong>Schwere oder vernarbende Akne:</strong> ein Medikament zum Einnehmen, das die Talgproduktion stark senkt (Isotretinoin). Es braucht ärztliche Begleitung und Kontrollen.</li></ul><p>Gute Hautpflege und Geduld gehören immer dazu.</p>",
      "offen": "Wirkstoffe, Zulassung und Hinweise im Arzneimittelkompendium prüfen. Keine Dosierungen angeben.",
      "links": [],
-     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)",
+     "en": {
+      "frage": "What helps against acne?",
+      "antwort": "<p>Treatment depends on severity.</p><ul><li><strong>Mild acne:</strong> creams and gels that keep the pores clear and reduce bacteria (e.g. retinoids, benzoyl peroxide).</li><li><strong>Moderate acne:</strong> additionally oral antibiotics or, for women, in some cases hormonal treatment.</li><li><strong>Severe or scarring acne:</strong> an oral medication that strongly reduces sebum production (isotretinoin). It requires medical supervision and check-ups.</li></ul><p>Good skin care and patience are always part of it.</p>",
+      "links": []
+     }
     },
     {
      "id": "H5",
@@ -290,7 +431,12 @@
      "frage": "Wie lange dauert es, bis die Behandlung wirkt?",
      "antwort": "<p>Akne-Behandlungen wirken nicht über Nacht. Es braucht Geduld und konsequente Anwendung. Anfangs kann die Haut sogar trockener oder gereizter werden. Wir besprechen mit Ihnen, was zu erwarten ist und wann wir die Behandlung anpassen.</p>",
      "links": [],
-     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)",
+     "en": {
+      "frage": "How long does it take for treatment to work?",
+      "antwort": "<p>Acne treatments do not work overnight. Patience and consistent use are needed. At first the skin may even become drier or more irritated. We discuss with you what to expect and when we adjust the treatment.</p>",
+      "links": []
+     }
     },
     {
      "id": "H6",
@@ -300,7 +446,12 @@
      "antwort": "<p>Isotretinoin ist ein starkes Medikament für schwere oder hartnäckige Akne. Es kann Nebenwirkungen haben, etwa trockene Haut und trockene Lippen, und es erfordert ärztliche Kontrollen. <strong>In der Schwangerschaft darf es nicht angewendet werden</strong>, weil es das ungeborene Kind schwer schädigen kann. Frauen im gebärfähigen Alter brauchen deshalb zuverlässigen Schwangerschaftsschutz. Ob es für Sie infrage kommt, klären wir in der Beratung.</p>",
      "offen": "Sicherheitsangaben nach Fachinformation im Arzneimittelkompendium prüfen. Keine Dosierungen angeben.",
      "links": [],
-     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)",
+     "en": {
+      "frage": "What is isotretinoin, and what do I need to bear in mind?",
+      "antwort": "<p>Isotretinoin is a strong medication for severe or persistent acne. It can have side effects, such as dry skin and dry lips, and it requires medical check-ups. <strong>It must not be used during pregnancy</strong>, because it can seriously harm the unborn child. Women of childbearing age therefore need reliable contraception. We clarify in the consultation whether it is an option for you.</p>",
+      "links": []
+     }
     },
     {
      "id": "H7",
@@ -309,7 +460,12 @@
      "frage": "Darf ich Pickel ausdrücken?",
      "antwort": "<p>Besser nicht. Beim Ausdrücken kann die Entzündung tiefer gehen, und es können Narben und dunkle Flecken entstehen. Lassen Sie hartnäckige Pickel lieber behandeln.</p>",
      "links": [],
-     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)",
+     "en": {
+      "frage": "May I squeeze spots?",
+      "antwort": "<p>Better not. Squeezing can push the inflammation deeper, and scars and dark marks can develop. Have persistent spots treated instead.</p>",
+      "links": []
+     }
     },
     {
      "id": "H8",
@@ -318,7 +474,12 @@
      "frage": "Verursachen Schokolade, Fett oder mangelnde Hygiene Akne?",
      "antwort": "<p>Mangelnde Sauberkeit verursacht keine Akne. Zu häufiges, kräftiges Waschen kann die Haut sogar reizen. Bei der Ernährung ist die Studienlage uneinheitlich. Ein klarer Einfluss bestimmter Lebensmittel ist nicht für alle Betroffenen belegt.</p>",
      "links": [],
-     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)",
+     "en": {
+      "frage": "Do chocolate, fat or poor hygiene cause acne?",
+      "antwort": "<p>Poor cleanliness does not cause acne. Washing too often and too vigorously can even irritate the skin. The evidence on diet is inconsistent. A clear effect of particular foods has not been shown for everyone affected.</p>",
+      "links": []
+     }
     },
     {
      "id": "H9",
@@ -327,7 +488,12 @@
      "frage": "Welche Pflege und welches Make-up sind bei Akne geeignet?",
      "antwort": "<p>Verwenden Sie milde Reinigung und leichte Pflegeprodukte, die die Poren nicht verstopfen (auf «nicht komedogen» achten). Sonnenschutz ist wichtig, besonders wenn Sie Aknemittel anwenden, die die Haut empfindlicher machen. Welche Produkte zu Ihrer Behandlung passen, besprechen wir mit Ihnen.</p>",
      "links": [],
-     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)",
+     "en": {
+      "frage": "Which skin care and make-up are suitable for acne?",
+      "antwort": "<p>Use mild cleansing and light care products that do not block the pores (look for «non-comedogenic»). Sun protection is important, especially if you use acne treatments that make the skin more sensitive. We discuss with you which products fit your treatment.</p>",
+      "links": []
+     }
     },
     {
      "id": "H10",
@@ -336,7 +502,12 @@
      "frage": "Akne bei Erwachsenen: Warum habe ich mit 30 oder 40 noch Pickel?",
      "antwort": "<p>Akne ist nicht nur ein Teenager-Thema. Auch Erwachsene, besonders Frauen, haben Akne, oft im unteren Gesicht und am Kiefer. Hormonelle Schwankungen, Veranlagung und Stress können eine Rolle spielen. Auch Erwachsenenakne ist gut behandelbar.</p>",
      "links": [],
-     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)",
+     "en": {
+      "frage": "Adult acne: why do I still have spots at 30 or 40?",
+      "antwort": "<p>Acne is not just a teenage issue. Adults, especially women, also have acne, often on the lower face and jaw. Hormonal fluctuations, predisposition and stress can play a role. Adult acne can also be treated well.</p>",
+      "links": []
+     }
     },
     {
      "id": "H11",
@@ -348,7 +519,15 @@
       "patienteninformationen/postinflammatorische-hyperpigmentierung.html",
       "patienteninformationen/mosaik-3d-erbium-laser.html"
      ],
-     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)",
+     "en": {
+      "frage": "What helps with acne scars and dark marks after acne?",
+      "antwort": "<p>Depending on the type of scar, laser, microneedling, peels or targeted minor procedures can help. Dark marks after acne (post-inflammatory hyperpigmentation) often fade over time and can also be treated. It is important to bring the active acne under control first.</p>",
+      "links": [
+       "patient-information/post-inflammatory-hyperpigmentation.html",
+       "patient-information/mosaic-3d-erbium-laser.html"
+      ]
+     }
     },
     {
      "id": "H12",
@@ -359,7 +538,14 @@
      "links": [
       "patienteninformationen/rosazea.html"
      ],
-     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)",
+     "en": {
+      "frage": "What is the difference between acne and rosacea?",
+      "antwort": "<p>Both cause redness and spots. Rosacea usually affects the central face, tends to occur in adulthood, comes with redness and visible small blood vessels and has no blackheads. The treatment is different. A medical assessment brings clarity.</p>",
+      "links": [
+       "patient-information/rosacea.html"
+      ]
+     }
     },
     {
      "id": "H13",
@@ -370,9 +556,17 @@
      "links": [
       "leistungen/acne-inversa.html"
      ],
-     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)"
+     "freigabe": "Dr. Georg, 2026-11-11 (Quelle/Arzneimittelkompendium noch nicht eingetragen)",
+     "en": {
+      "frage": "What is the difference between acne and hidradenitis suppurativa (acne inversa)?",
+      "antwort": "<p>Despite the similar name, they are different conditions. Acne mainly affects the face, chest and back. Hidradenitis suppurativa affects skin folds such as the armpits and groin, with painful lumps and abscesses. The treatment differs.</p>",
+      "links": [
+       "services/hidradenitis-suppurativa.html"
+      ]
+     }
     }
-   ]
+   ],
+   "titel_en": "Acne"
   },
   {
    "id": "faq-praktisches",
@@ -406,5 +600,6 @@
     }
    ]
   }
- ]
+ ],
+ "hinweis_kategorie_en": "This information does not replace a medical assessment."
 }

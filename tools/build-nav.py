@@ -48,10 +48,10 @@ def nav(lang, home):
     bp = [(f'/en/treatment-protocols/{f}.html', t) for f, t in EN_BP if os.path.exists(f'en/treatment-protocols/{f}.html')]
     return '\n'.join([
         drop('Services', f'{H}#kernbereiche', [(f'{H}#leistungsuebersicht', 'All services'), (f'{H}#precheck', 'Pre-Check'), (f'{H}#weg', 'Your Journey'),
-                                                (f'{H}#clinic-selnau', 'Clinic Selnau'), (f'{H}#praxis', 'Practice')], 'Submenu'),
+                                                (f'{H}#clinic-selnau', 'Clinic Selnau'), (f'{H}#praxis', 'Practice'), (f'{H}#laserbehandlungen', 'Laser treatments')], 'Submenu'),
         drop('Patient information', '/en/skin-conditions-explained.html#krankheitsbilder', pi + [('/en/skin-conditions-explained.html', 'All patient information')], 'Submenu'),
         drop('Treatment plans', '/en/skin-conditions-explained.html#nach-alter', bp, 'Submenu'),
-        drop('Contact', f'{H}#kontakt', [(f'{H}#kontakt', 'Contact and locations'), ('/medix.html', 'Referral from your GP (e.g. MediX)')], 'Submenu')])
+        drop('Contact', f'{H}#kontakt', [(f'{H}#kontakt', 'Contact and locations'), ('/en/medix.html', 'Referral from your GP (e.g. MediX)')], 'Submenu')])
 
 
 pages = sorted(p for p in glob.glob('*.html') + glob.glob('*/*.html') + glob.glob('*/*/*.html')
