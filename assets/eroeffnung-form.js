@@ -1,6 +1,6 @@
 // Dermetrics — Anmeldeformular Eröffnungsapéro (eroeffnung.html / en/eroeffnung.html).
 // Ist data-endpoint am <form> leer, öffnet das Formular eine vorbereitete E-Mail an
-// clinicselnau@hin.ch. Ist ein Formular-Backend hinterlegt, wird JSON per POST gesendet.
+// paul.georg@hin.ch. Ist ein Formular-Backend hinterlegt, wird JSON per POST gesendet.
 (function () {
   "use strict";
 
@@ -9,10 +9,10 @@
   var t = isEn
     ? {
         validation: "Please provide your first name, last name and your relationship to Clinic Selnau.",
-        sendError: "The registration could not be sent. Please register by email at clinicselnau@hin.ch.",
+        sendError: "The registration could not be sent. Please register by email at paul.georg@hin.ch.",
         thanksPrefix: "Thank you, ",
         thanksSuffix: ". Your registration has been received.",
-        mailtoNotice: "Your email program will open a prepared registration to clinicselnau@hin.ch. Please send the email.",
+        mailtoNotice: "Your email program will open a prepared registration to paul.georg@hin.ch. Please send the email.",
         mailtoFallbackLink: "Email didn't open? Click here",
         subjectLine: "Registration opening reception 14.12.2026 – ",
         eventLabel: "Opening reception Clinic Selnau, Monday, 14.12.2026, 6:00–8:30 pm",
@@ -23,10 +23,10 @@
       }
     : {
         validation: "Bitte Vorname, Nachname und Ihr Verhältnis zur Clinic Selnau angeben.",
-        sendError: "Die Anmeldung konnte nicht gesendet werden. Bitte melden Sie sich per E-Mail an clinicselnau@hin.ch an.",
+        sendError: "Die Anmeldung konnte nicht gesendet werden. Bitte melden Sie sich per E-Mail an paul.georg@hin.ch an.",
         thanksPrefix: "Vielen Dank, ",
         thanksSuffix: ". Ihre Anmeldung ist eingegangen.",
-        mailtoNotice: "Ihr E-Mail-Programm öffnet eine vorbereitete Anmeldung an clinicselnau@hin.ch. Bitte senden Sie die E-Mail ab.",
+        mailtoNotice: "Ihr E-Mail-Programm öffnet eine vorbereitete Anmeldung an paul.georg@hin.ch. Bitte senden Sie die E-Mail ab.",
         mailtoFallbackLink: "E-Mail hat sich nicht geöffnet? Hier klicken",
         subjectLine: "Anmeldung Eröffnungsapéro 14.12.2026 – ",
         eventLabel: "Eröffnungsapéro Clinic Selnau, Montag, 14.12.2026, 18:00–20:30 Uhr",
@@ -87,7 +87,7 @@
       t.bodyLastName + d.nachname + "\n" +
       t.bodyRole + d.rolle + "\n";
     var href =
-      "mailto:clinicselnau@hin.ch?subject=" +
+      "mailto:paul.georg@hin.ch?subject=" +
       encodeURIComponent(t.subjectLine + d.vorname + " " + d.nachname) +
       "&body=" + encodeURIComponent(body);
 

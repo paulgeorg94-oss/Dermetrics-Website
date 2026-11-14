@@ -13,7 +13,7 @@ Bitte je Frage kurz antworten (Nummer + Antwort). Ich setze die Antworten danach
 | ~~C2~~ | **Erledigt (4.11.2026):** „Zertifizierter Praxis-OP“ bleibt so; laut Ihrer Angabe liegen die Nachweise vor. | | |
 | ~~C3~~ | **Erledigt (4.11.2026):** Beschreibung der Mohs-Chirurgie bleibt so (Ihre Angabe). | | |
 | ~~C4~~ | **Erledigt (4.11.2026):** Link zum Google-Profil bleibt so (Ihre Angabe). | | |
-| ~~A2~~ | **Erledigt (3.11.2026):** `clinicselnau@hin.ch` für Zuweisungen, Konsile, Kontaktformular und Datenschutz; Apéro-Anmeldung zuerst `paul.georg@hin.ch` (Angabe vom 4.11.2026), seit 15.11.2026 ebenfalls `clinicselnau@hin.ch` (Anweisung Dr. Georg: alle E-Mail-Adressen auf clinicselnau@hin.ch). | | |
+| ~~A2~~ | **Erledigt (3.11.2026):** `clinicselnau@hin.ch` für Zuweisungen, Konsile, Kontaktformular und Datenschutz; Apéro-Anmeldung zuerst `paul.georg@hin.ch` (Angabe vom 4.11.2026), am 15.11.2026 kurz auf `clinicselnau@hin.ch` umgestellt und am selben Tag auf Anweisung wieder auf `paul.georg@hin.ch` gesetzt; telemedizinische Konsile von Zuweisenden ebenfalls an `paul.georg@hin.ch`. | | |
 | **A3** | Datenschutztext Google Maps (Abschnitt 13, DE/EN) ist ein Entwurf. Bitte rechtlich prüfen lassen, besonders die Aussagen zu Cookies und Datenübermittlung in die USA. | Ich habe den Text nicht juristisch geprüft. | `impressum.html#google-maps`, `en/legal.html#google-maps` |
 | ~~A4~~ | **Erledigt (4.11.2026):** Überall „DeviScan“ (vorher „DB-Scan“ auf der Screening-Seite). | | |
 

@@ -32,7 +32,7 @@
   "whatsapp": "+41 43 234 55 55",
   "whatsapp_link": "https://wa.me/41432345555",
   "email_zuweisungen": "clinicselnau@hin.ch",
-  "email_konsile": "clinicselnau@hin.ch",
+  "email_konsile": "paul.georg@hin.ch",
   "email_rollen_bestaetigt": true,
   "sprechstunde_selnau": {
     "tag": "Montag",
@@ -81,7 +81,7 @@
   "zsr": "D352734",
   "gln": "7601007717767",
   "geo": null,
-  "email_hinweis": "clinicselnau@hin.ch ist laut Ihrer Angabe vom 03.11.2026 die Klinikadresse für Anmeldungen, Zuweisungen und den Versand medizinischer Informationen. Seit 15.11.2026 laut Ihrer Anweisung auch für Anmeldungen zum Eröffnungs-Apéro (vorher paul.georg@hin.ch, Angabe vom 04.11.2026). Auf der Website wird nur noch clinicselnau@hin.ch verwendet.",
-  "email_apero": "clinicselnau@hin.ch",
+  "email_hinweis": "Angabe von Dr. Georg vom 15.11.2026: paul.georg@hin.ch für die Anmeldung zum Eröffnungs-Apéro und für telemedizinische Konsile von Zuweisenden; alles andere (Zuweisungen, Kontaktformular, MediX-Anmeldung, Datenschutz) an clinicselnau@hin.ch.",
+  "email_apero": "paul.georg@hin.ch",
   "_stand_geprueft": "05.11.2026: gegen alle 48 Seiten geprüft (tools/check-nap.py, 0 Abweichungen); Widersprüche zum Relaunch-Prompt in relaunch/INHALTSINVENTAR.md, Abschnitt 4"
 }
