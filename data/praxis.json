@@ -5,6 +5,8 @@
   "arzt": {
     "name": "Dr. med. Paul J. Georg",
     "titel": "Facharzt für Dermatologie und Venerologie",
+    "titel_dermatochirurgie": "Experte für Dermatochirurgie",
+    "titel_dermatochirurgie_quelle": "Angabe von Dr. Georg am 14.11.2026: offizieller Weiterbildungstitel, wörtlich wie im Titelnachweis",
     "mitgliedschaften": [
       "Schweizerische Gesellschaft für Dermatologie und Venerologie (SGDV)",
       "European Academy of Dermatology and Venereology (EADV)"
