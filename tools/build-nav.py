@@ -42,7 +42,7 @@ def nav(lang, home):
                                                        (f'{H}#clinic-selnau', 'Clinic Selnau'), (f'{H}#praxis', 'Praxis'), (f'{H}#laserbehandlungen', 'Laserbehandlungen')], 'Untermenü'),
             drop('Patienteninformationen', '/hauterkrankungen-erklaert.html#krankheitsbilder', pi + [('/hauterkrankungen-erklaert.html', 'Alle Patienteninformationen')], 'Untermenü'),
             drop('Behandlungspläne', '/hauterkrankungen-erklaert.html#nach-alter', bp, 'Untermenü'),
-            drop('Kontakt', f'{H}#kontakt', [(f'{H}#kontakt', 'Kontakt und Standorte'), ('/medix.html', 'Zuweisung Hausarzt (z. B. MediX)')], 'Untermenü')])
+            drop('Kontakt', f'{H}#kontakt', [(f'{H}#kontakt', 'Kontakt und Standorte'), ('/standort.html', 'Standort Zürich Enge, Kreis 2'), ('/medix.html', 'Zuweisung Hausarzt (z. B. MediX)')], 'Untermenü')])
     H = '' if home else '/en/index.html'
     pi = [(f'/en/patient-information/{f}.html', t) for f, t in EN_PI if os.path.exists(f'en/patient-information/{f}.html')]
     bp = [(f'/en/treatment-protocols/{f}.html', t) for f, t in EN_BP if os.path.exists(f'en/treatment-protocols/{f}.html')]
@@ -51,7 +51,7 @@ def nav(lang, home):
                                                 (f'{H}#clinic-selnau', 'Clinic Selnau'), (f'{H}#praxis', 'Practice'), (f'{H}#laserbehandlungen', 'Laser treatments')], 'Submenu'),
         drop('Patient information', '/en/skin-conditions-explained.html#krankheitsbilder', pi + [('/en/skin-conditions-explained.html', 'All patient information')], 'Submenu'),
         drop('Treatment plans', '/en/skin-conditions-explained.html#nach-alter', bp, 'Submenu'),
-        drop('Contact', f'{H}#kontakt', [(f'{H}#kontakt', 'Contact and locations'), ('/en/medix.html', 'Referral from your GP (e.g. MediX)')], 'Submenu')])
+        drop('Contact', f'{H}#kontakt', [(f'{H}#kontakt', 'Contact and locations'), ('/en/location.html', 'Location Zurich Enge, district 2'), ('/en/medix.html', 'Referral from your GP (e.g. MediX)')], 'Submenu')])
 
 
 pages = sorted(p for p in glob.glob('*.html') + glob.glob('*/*.html') + glob.glob('*/*/*.html')
