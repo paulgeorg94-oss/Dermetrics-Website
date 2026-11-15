@@ -4,7 +4,7 @@
 
   <url>
     <loc>https://dermetrics.ch/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/"/>
@@ -70,6 +70,69 @@
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/leistungen/photodynamische-therapie.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/services/photodynamic-therapy.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/leistungen/photodynamische-therapie.html"/>
+  </url>
+
+  <url>
+    <loc>https://dermetrics.ch/leistungen/chronische-wunden.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/leistungen/chronische-wunden.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/leistungen/chronische-wunden.html"/>
+  </url>
+
+  <url>
+    <loc>https://dermetrics.ch/leistungen/dermatochirurgie.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/leistungen/dermatochirurgie.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/leistungen/dermatochirurgie.html"/>
+  </url>
+
+  <url>
+    <loc>https://dermetrics.ch/leistungen/longevity-beratung.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/leistungen/longevity-beratung.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/leistungen/longevity-beratung.html"/>
+  </url>
+
+  <url>
+    <loc>https://dermetrics.ch/leistungen/melanom.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/leistungen/melanom.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/leistungen/melanom.html"/>
+  </url>
+
+  <url>
+    <loc>https://dermetrics.ch/leistungen/narben-keloide.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/leistungen/narben-keloide.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/leistungen/narben-keloide.html"/>
+  </url>
+
+  <url>
+    <loc>https://dermetrics.ch/leistungen/neurodermitis.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/leistungen/neurodermitis.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/leistungen/neurodermitis.html"/>
+  </url>
+
+  <url>
+    <loc>https://dermetrics.ch/leistungen/psoriasis.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/leistungen/psoriasis.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/leistungen/psoriasis.html"/>
   </url>
 
   <url>
@@ -540,6 +603,46 @@
     <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/standort.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/location.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/standort.html"/>
+  </url>
+
+  <url>
+    <loc>https://dermetrics.ch/en/patient-information/nd-yag-laser.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/patienteninformationen/nd-yag-laser.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/patient-information/nd-yag-laser.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/patienteninformationen/nd-yag-laser.html"/>
+  </url>
+
+  <url>
+    <loc>https://dermetrics.ch/en/patient-information/pico-laser.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/patienteninformationen/pico-laser.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/patient-information/pico-laser.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/patienteninformationen/pico-laser.html"/>
+  </url>
+
+  <url>
+    <loc>https://dermetrics.ch/patienteninformationen/nd-yag-laser.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/patienteninformationen/nd-yag-laser.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/patient-information/nd-yag-laser.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/patienteninformationen/nd-yag-laser.html"/>
+  </url>
+
+  <url>
+    <loc>https://dermetrics.ch/patienteninformationen/pico-laser.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de-ch" href="https://dermetrics.ch/patienteninformationen/pico-laser.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermetrics.ch/en/patient-information/pico-laser.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermetrics.ch/patienteninformationen/pico-laser.html"/>
   </url>
 
 </urlset>

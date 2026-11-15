@@ -23,6 +23,13 @@ Hinweis: Alle Inhalte dienen der Information und ersetzen keine ärztliche Berat
 - [Photodynamische Therapie (PDT)](https://dermetrics.ch/leistungen/photodynamische-therapie.html): Die Behandlung findet im Inneren der Praxis mit der Healite-II-Lampe statt und ist deshalb nicht vom Wetter abhängig.
 - [Hautkrebs-Screening](https://dermetrics.ch/leistungen/hautkrebs-screening.html): Die Haut wird systematisch auf auffällige Veränderungen untersucht. Wie oft das sinnvoll ist, hängt von Ihrem persönlichen Risiko ab.
 - [Mohs-Chirurgie](https://dermetrics.ch/leistungen/mohs-chirurgie.html): Ein schrittweises Verfahren, bei dem die Schnittränder systematisch untersucht werden, damit möglichst wenig gesundes Gewebe verloren geht.
+- [Dermatochirurgie](https://dermetrics.ch/leistungen/dermatochirurgie.html): Termine zur Entfernung gutartiger und bösartiger Läsionen, inklusive histologischer Abklärung.
+- [Longevity-Beratung](https://dermetrics.ch/leistungen/longevity-beratung.html): Spezifische Konsultationen zur Vermeidung und Verbesserung der Hautalterung.
+- [Psoriasis (Schuppenflechte)](https://dermetrics.ch/leistungen/psoriasis.html): Eine chronische Entzündung, die mehr als die Haut betrifft. Moderne Therapien hemmen gezielt die Entzündung.
+- [Neurodermitis und Ekzeme](https://dermetrics.ch/leistungen/neurodermitis.html): Trockene Haut und quälender Juckreiz. Moderne Therapien beruhigen die Entzündung langfristig.
+- [Narben und Keloide](https://dermetrics.ch/leistungen/narben-keloide.html): Jede Narbe ist anders. Die Behandlung richtet sich nach dem Narbentyp.
+- [Chronische Wunden](https://dermetrics.ch/leistungen/chronische-wunden.html): Wenn eine Wunde nicht heilt, steckt meist eine Ursache dahinter. Die finden und behandeln wir.
+- [Schwarzer Hautkrebs (Melanom)](https://dermetrics.ch/leistungen/melanom.html): Früh erkannt, ist ein Melanom gut behandelbar. Selbstkontrolle und ärztliche Untersuchung greifen ineinander.
 
 ## Patienteninformationen
 - [Aktinische Keratosen](https://dermetrics.ch/patienteninformationen/aktinische-keratosen.html)
@@ -33,6 +40,8 @@ Hinweis: Alle Inhalte dienen der Information und ersetzen keine ärztliche Berat
 - [Akne](https://dermetrics.ch/patienteninformationen/akne-formen.html)
 - [Mosaic 3D](https://dermetrics.ch/patienteninformationen/mosaik-3d-erbium-laser.html)
 - [Postinflammatorische Hyperpigmentierung](https://dermetrics.ch/patienteninformationen/postinflammatorische-hyperpigmentierung.html)
+- [Nd:YAG-Laser](https://dermetrics.ch/patienteninformationen/nd-yag-laser.html)
+- [Pico-Laser](https://dermetrics.ch/patienteninformationen/pico-laser.html)
 
 ## Behandlungsprotokolle
 - [Akne (Behandlungsprotokoll)](https://dermetrics.ch/behandlungsprotokolle/akne.html)
@@ -59,6 +68,8 @@ Hinweis: Alle Inhalte dienen der Information und ersetzen keine ärztliche Berat
 - [Photodynamic therapy (PDT)](https://dermetrics.ch/en/services/photodynamic-therapy.html): The treatment takes place indoors in the practice with the Healite II lamp and therefore does not depend on the weather.
 - [Mosaic 3D](https://dermetrics.ch/en/patient-information/mosaic-3d-erbium-laser.html)
 - [Post-inflammatory hyperpigmentation](https://dermetrics.ch/en/patient-information/post-inflammatory-hyperpigmentation.html)
+- [Nd:YAG laser](https://dermetrics.ch/en/patient-information/nd-yag-laser.html)
+- [Pico laser](https://dermetrics.ch/en/patient-information/pico-laser.html)
 - [Actinic Keratoses](https://dermetrics.ch/en/patient-information/actinic-keratosis.html)
 - [Basal Cell Carcinoma](https://dermetrics.ch/en/patient-information/basal-cell-carcinoma.html)
 - [Squamous Cell Carcinoma](https://dermetrics.ch/en/patient-information/squamous-cell-carcinoma.html)
