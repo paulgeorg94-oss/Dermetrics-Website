@@ -62,8 +62,9 @@
     "@font-face{font-family:'Jost';font-style:normal;font-weight:400;font-display:swap;src:url('" + toRoot + "assets/vendor/fonts/Jost-Regular.woff2') format('woff2');}" +
     "@font-face{font-family:'Jost';font-style:normal;font-weight:500;font-display:swap;src:url('" + toRoot + "assets/vendor/fonts/Jost-Medium.woff2') format('woff2');}" +
     ".dmp{--f:Jost,'Futura','Century Gothic','Helvetica Neue',Arial,sans-serif;--bg:#F8F6F2;--ink:#2A2238;--deep:#300C61;--mid:#4B2C86;--soft:#5E5470;--muted:#6B6178;--line:#E3DDE8;" +
-    "position:fixed;inset:0;z-index:65;display:none;align-items:center;justify-content:center;padding:16px;background:rgba(36,28,46,.55);font-family:var(--f);}" +
-    ".dmp.dmp-visible{display:flex;}" +
+    "border:0;margin:auto;padding:0;width:calc(100% - 32px);max-width:440px;max-height:calc(100dvh - 32px);background:transparent;color:inherit;overflow:auto;font-family:var(--f);}" +
+    ".dmp:modal{overscroll-behavior:contain;}" +
+    ".dmp::backdrop{background:rgba(36,28,46,.55);overflow:hidden;overscroll-behavior:contain;}" +
     ".dmp *{box-sizing:border-box;}" +
     ".dmp [hidden]{display:none!important;}" +
     ".dmp-box{position:relative;width:100%;max-width:440px;background:var(--bg);color:var(--ink);border-radius:6px;padding:40px 32px 30px;text-align:center;box-shadow:0 24px 60px rgba(36,28,46,.25);animation:dmpIn .35s ease-out;}" +
@@ -88,20 +89,25 @@
   document.head.appendChild(style);
 
   // ---------- Markup ----------
-  var overlay = document.createElement("div");
+  // Natives <dialog> (showModal): Seite dahinter inert, Fokus bleibt im Fenster, Esc schliesst,
+  // Fokus kehrt danach zurück; Klick daneben schliesst (closedby="any", Fallback unten).
+  var overlay = document.createElement("dialog");
   overlay.className = "dmp";
   overlay.id = "dmp";
+  overlay.setAttribute("aria-labelledby", "dmp-h");
+  overlay.setAttribute("closedby", "any");
+  if (typeof overlay.showModal !== "function") return; // sehr alte Browser: kein Popup
 
   var box = document.createElement("div");
   box.className = "dmp-box";
-  box.setAttribute("role", "dialog");
-  box.setAttribute("aria-modal", "true");
-  box.setAttribute("aria-labelledby", "dmp-h");
 
   var closeBtn = document.createElement("button");
   closeBtn.className = "dmp-x";
   closeBtn.type = "button";
   closeBtn.setAttribute("aria-label", t.close);
+  closeBtn.setAttribute("commandfor", "dmp");
+  closeBtn.setAttribute("command", "close");
+  closeBtn.setAttribute("autofocus", "");
   closeBtn.textContent = "✕";
   box.appendChild(closeBtn);
 
@@ -176,7 +182,6 @@
   var target = Date.parse(TARGET);
   var countdownTimer = null;
   var autoCloseTimer = null;
-  var lastFocused = null;
 
   function pad(n) { return n < 10 ? "0" + n : "" + n; }
 
@@ -195,33 +200,32 @@
     cells.s.textContent = pad(s % 60);
   }
 
-  function close() {
-    overlay.classList.remove("dmp-visible");
+  function cleanup() {
     clearInterval(countdownTimer);
     clearTimeout(autoCloseTimer);
-    document.removeEventListener("keydown", onKey);
-    if (lastFocused && lastFocused.focus) lastFocused.focus();
   }
+  overlay.addEventListener("close", cleanup);
 
-  function onKey(e) {
-    if (e.key === "Escape") close();
+  if (!("commandForElement" in HTMLButtonElement.prototype)) {
+    closeBtn.addEventListener("click", function () { overlay.close(); });
   }
-
-  closeBtn.addEventListener("click", close);
-  overlay.addEventListener("click", function (e) {
-    if (e.target === overlay) close();
-  });
+  if (!("closedBy" in HTMLDialogElement.prototype)) {
+    var outside = function (e) {
+      var r = overlay.getBoundingClientRect();
+      return e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom;
+    };
+    var pressedOutside = false;
+    overlay.addEventListener("pointerdown", function (e) { pressedOutside = outside(e); });
+    overlay.addEventListener("pointerup", function (e) { if (pressedOutside && outside(e)) overlay.close(); });
+  }
 
   setTimeout(function () {
-    lastFocused = document.activeElement;
     tick();
     countdownTimer = setInterval(tick, 1000);
-    overlay.classList.add("dmp-visible");
+    overlay.showModal();
     // Als gesehen merken, sobald es erscheint: auch wer es nicht schliesst,
     // bekommt es auf der nächsten Seite nicht noch einmal
     try { window.localStorage.setItem(STORAGE_KEY, "1"); } catch (e) { /* ignore */ }
-    document.addEventListener("keydown", onKey);
-    closeBtn.focus();
-    autoCloseTimer = setTimeout(close, AUTO_CLOSE_MS);
+    autoCloseTimer = setTimeout(function () { overlay.close(); }, AUTO_CLOSE_MS);
   }, SHOW_DELAY_MS);
 })();

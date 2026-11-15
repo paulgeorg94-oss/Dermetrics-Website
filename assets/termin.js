@@ -14,7 +14,8 @@
   // ---------- Styles (eigene, damit auch Seiten ohne css/style.css gleich aussehen) ----------
   var css =
     ".dm-termin{border:0;padding:0;border-radius:20px;max-width:440px;width:calc(100% - 32px);box-shadow:0 20px 60px rgba(36,28,46,.25);color:#241C2E;font-family:'Inter',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;}" +
-    ".dm-termin::backdrop{background:rgba(36,28,46,.55);}" +
+    ".dm-termin::backdrop{background:rgba(36,28,46,.55);overflow:hidden;overscroll-behavior:contain;}" +
+    ".dm-termin:modal{overscroll-behavior:contain;}" +
     ".dm-termin-in{padding:28px 26px 24px;position:relative;}" +
     ".dm-termin h2{font-size:22px;font-weight:400;margin:0 0 6px;line-height:1.3;}" +
     ".dm-termin p{font-size:14px;line-height:1.55;color:#756B82;margin:0 0 4px;}" +
@@ -51,10 +52,10 @@
   }
 
   // ---------- Fenster ----------
-  var dlg = el("dialog", { "class": "dm-termin", id: "termin-dialog", "aria-labelledby": "dm-termin-h" });
+  var dlg = el("dialog", { "class": "dm-termin", id: "termin-dialog", "aria-labelledby": "dm-termin-h", closedby: "any" });
   if (typeof dlg.showModal !== "function") return; // alter Browser: Links führen auf #termin
   var inner = el("div", { "class": "dm-termin-in" });
-  var close = el("button", { type: "button", "class": "dm-termin-close", "aria-label": T.close }, "×");
+  var close = el("button", { type: "button", "class": "dm-termin-close", "aria-label": T.close, commandfor: "termin-dialog", command: "close" }, "×");
   inner.appendChild(close);
   inner.appendChild(el("h2", { id: "dm-termin-h" }, T.title));
   inner.appendChild(el("p", {}, T.intro));
@@ -68,8 +69,20 @@
   dlg.appendChild(inner);
   document.body.appendChild(dlg);
 
-  close.addEventListener("click", function () { dlg.close(); });
-  dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
+  // Schliessen-Knopf: deklarativ (command="close"); ohne Invoker Commands per Skript
+  if (!("commandForElement" in HTMLButtonElement.prototype)) {
+    close.addEventListener("click", function () { dlg.close(); });
+  }
+  // Klick neben das Fenster: deklarativ (closedby="any"); ohne closedby (z. B. Safari) per Zeigerposition
+  if (!("closedBy" in HTMLDialogElement.prototype)) {
+    var outside = function (e) {
+      var r = dlg.getBoundingClientRect();
+      return e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom;
+    };
+    var pressedOutside = false;
+    dlg.addEventListener("pointerdown", function (e) { pressedOutside = outside(e); });
+    dlg.addEventListener("pointerup", function (e) { if (pressedOutside && outside(e)) dlg.close(); });
+  }
   form.addEventListener("click", function () { dlg.close(); });
 
   document.addEventListener("click", function (e) {

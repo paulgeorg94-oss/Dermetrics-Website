@@ -75,6 +75,8 @@ for p in pages:
     if not langsw or not cta: print('ÜBERSPRUNGEN (Sprache/CTA fehlt)', p); continue
     label = 'Hauptnavigation' if lang == 'de' else 'Main navigation'
     new = (f'<nav class="navlinks" aria-label="{label}">\n{nav(lang, home)}\n      {langsw.group(0).strip()}\n      {cta.group(0)}\n    </nav>')
+    # aktuelle Seite im Menü kennzeichnen (aria-current, Styling in css/style.css)
+    new = new.replace(f'<a href="/{p}">', f'<a href="/{p}" aria-current="page">')
     s = s.replace(m.group(0), new)
     if s != o:
         open(p, 'w', encoding='utf-8').write(s); print('nav', p)
