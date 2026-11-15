@@ -14,6 +14,11 @@ DE_PI = [('aktinische-keratosen', 'Aktinische Keratosen'), ('basalzellkarzinom',
          ('postinflammatorische-hyperpigmentierung', 'Postinflammatorische Hyperpigmentierung'),
          ('selbstuntersuchung-haut', 'Selbstuntersuchung der Haut'), ('mosaik-3d-erbium-laser', 'Mosaic 3D (Erbium-Laser)'),
          ('nd-yag-laser', 'Nd:YAG-Laser'), ('pico-laser', 'Pico-Laser')]
+# Freigegebene Leistungsseiten, die zusätzlich unter «Patienteninformationen» erscheinen (Anweisung Dr. Georg, 15.11.2026).
+# Seiten mit noindex werden automatisch weggelassen.
+DE_LS = [('dermatochirurgie', 'Dermatochirurgie'), ('melanom', 'Melanom (schwarzer Hautkrebs)'), ('psoriasis', 'Psoriasis'),
+         ('neurodermitis', 'Neurodermitis und Ekzeme'), ('narben-keloide', 'Narben und Keloide'), ('chronische-wunden', 'Chronische Wunden'),
+         ('longevity-beratung', 'Longevity-Beratung')]
 DE_BP = [('akne', 'Akne'), ('anti-aging-hautpflege', 'Anti-Aging-Hautpflege'),
          ('rosazea-behandlungsprotokoll', 'Rosazea-Behandlungsplan'), ('melasma-behandlungsprotokoll', 'Melasma-Behandlungsplan')]
 EN_PI = [('actinic-keratosis', 'Actinic keratoses'), ('basal-cell-carcinoma', 'Basal cell carcinoma'),
@@ -37,6 +42,8 @@ def nav(lang, home):
         H = '' if home else '/'
         pi = [(f'/patienteninformationen/{f}.html', t) for f, t in DE_PI if os.path.exists(f'patienteninformationen/{f}.html')]
         bp = [(f'/behandlungsprotokolle/{f}.html', t) for f, t in DE_BP if os.path.exists(f'behandlungsprotokolle/{f}.html')]
+        pi += [(f'/leistungen/{f}.html', t) for f, t in DE_LS if os.path.exists(f'leistungen/{f}.html')
+               and 'noindex' not in open(f'leistungen/{f}.html', encoding='utf-8').read()]
         return '\n'.join([
             drop('Leistungen', f'{H}#kernbereiche', [(f'{H}#leistungsuebersicht', 'Alle Leistungen'), (f'{H}#precheck', 'Pre-Check'), (f'{H}#weg', 'Ihr Weg'),
                                                        (f'{H}#clinic-selnau', 'Clinic Selnau'), (f'{H}#praxis', 'Praxis'), (f'{H}#laserbehandlungen', 'Laserbehandlungen')], 'Untermenü'),
