@@ -15,6 +15,7 @@ Bitte je Frage kurz antworten (Nummer + Antwort). Ich setze die Antworten danach
 | ~~C4~~ | **Erledigt (4.11.2026):** Link zum Google-Profil bleibt so (Ihre Angabe). | | |
 | ~~A2~~ | **Erledigt (3.11.2026):** `clinicselnau@hin.ch` für Zuweisungen, Konsile, Kontaktformular und Datenschutz; Apéro-Anmeldung zuerst `paul.georg@hin.ch` (Angabe vom 4.11.2026), am 15.11.2026 kurz auf `clinicselnau@hin.ch` umgestellt und am selben Tag auf Anweisung wieder auf `paul.georg@hin.ch` gesetzt; telemedizinische Konsile von Zuweisenden ebenfalls an `paul.georg@hin.ch`. | | |
 | **A3** | Datenschutztext Google Maps (Abschnitt 13, DE/EN) ist ein Entwurf. Bitte rechtlich prüfen lassen, besonders die Aussagen zu Cookies und Datenübermittlung in die USA. | Ich habe den Text nicht juristisch geprüft. | `impressum.html#google-maps`, `en/legal.html#google-maps` |
+| **A5** | Google Analytics 4 (Branch `claude/analytics-ga4-consent`): GA4-Mess-ID in `assets/analytics.js` eintragen; in GA4 Datenaufbewahrung festlegen und Google Signals aus lassen; Datenschutz-Abschnitt 14 (DE/EN) und Cookie-Dialog rechtlich prüfen lassen (US-Übermittlung, Einwilligung). | Text ist ein Entwurf, nicht juristisch geprüft. | `assets/analytics.js`, `impressum.html#google-analytics`, `en/legal.html#google-analytics` |
 | ~~A4~~ | **Erledigt (4.11.2026):** Überall „DeviScan“ (vorher „DB-Scan“ auf der Screening-Seite). | | |
 
 ## Priorität 2: Fakten bestätigen oder ergänzen
