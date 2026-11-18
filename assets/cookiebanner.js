@@ -1,6 +1,6 @@
 /* Dermetrics — Mehrstufiger Cookie-Consent-Dialog.
-   Statistik-Kategorie steuert Google Analytics 4 (assets/analytics.js);
-   bei Änderung wird das Ereignis «dermetrics:consent» ausgelöst. Der Dialog ist dennoch als echtes Kategorien-
+   Diese Website setzt aktuell keine Cookies ein (keine Funktions-, Statistik-
+   oder Marketing-Cookies). Der Dialog ist dennoch als echtes Kategorien-
    Consent-Modal gebaut (Toggles je Kategorie, ausklappbare Detailtexte,
    "Alle akzeptieren" / "Nur Auswahl akzeptieren" / "Alle ablehnen"), damit
    die Struktur sofort trägt, sobald künftig tatsächlich ein Dienst in einer
@@ -28,8 +28,8 @@
       locked: true,
       label: isEn ? "Strictly necessary" : "Unbedingt erforderlich",
       detail: isEn
-        ? "Technically required for the basic operation of the website. Your cookie choice is stored locally in your browser (no cookie). Cannot be switched off."
-        : "Für den grundlegenden Betrieb der Website technisch notwendig. Ihre Cookie-Auswahl wird lokal in Ihrem Browser gespeichert (kein Cookie). Kann nicht deaktiviert werden."
+        ? "Technically required for the basic operation of the website. This website currently sets no cookies at all; this category is listed for transparency and cannot be switched off."
+        : "Für den grundlegenden Betrieb der Website technisch notwendig. Diese Website setzt aktuell keinerlei Cookies; diese Kategorie wird aus Transparenzgründen aufgeführt und kann nicht deaktiviert werden."
     },
     {
       key: "functional",
@@ -44,8 +44,8 @@
       locked: false,
       label: isEn ? "Statistics" : "Statistik",
       detail: isEn
-        ? "Google Analytics 4: anonymous audience measurement (page views, clicks on WhatsApp, phone, e-mail, referral pages). Sets cookies (_ga) and transfers data to Google, possibly to the USA. Only with your consent; no advertising."
-        : "Google Analytics 4: Reichweitenmessung (Seitenaufrufe, Klicks auf WhatsApp, Telefon, E-Mail, Zuweiserseiten). Setzt Cookies (_ga) und übermittelt Daten an Google, ggf. in die USA. Nur mit Ihrer Einwilligung; keine Werbung."
+        ? "Would help understand how visitors use the website (audience measurement). Not currently in use."
+        : "Würden helfen zu verstehen, wie Besucher:innen die Website nutzen (Reichweitenmessung). Aktuell nicht im Einsatz."
     },
     {
       key: "marketing",
@@ -60,7 +60,7 @@
   var t = isEn
     ? {
         title: "Cookie settings",
-        intro: "With your consent we use Google Analytics to measure how the website is used (category «Statistics»). Without consent, no cookies are set and nothing is loaded from Google. You can change your choice at any time. More in our ",
+        intro: "This website uses only strictly necessary cookies — in fact, it currently sets no cookies at all. No functional, statistics or marketing cookies are used. More in our ",
         introLinkImprint: "Imprint",
         introLinkAnd: " and ",
         introLinkPrivacy: "Privacy Policy",
@@ -73,7 +73,7 @@
       }
     : {
         title: "Cookie-Einstellungen",
-        intro: "Mit Ihrer Einwilligung messen wir mit Google Analytics, wie die Website genutzt wird (Kategorie «Statistik»). Ohne Einwilligung werden keine Cookies gesetzt und nichts von Google geladen. Sie können Ihre Wahl jederzeit ändern. Mehr dazu im ",
+        intro: "Diese Website verwendet nur unbedingt notwendige Cookies — tatsächlich setzt sie aktuell gar keine Cookies ein. Es werden keine Funktions-, Statistik- oder Marketing-Cookies genutzt. Mehr dazu im ",
         introLinkImprint: "Impressum",
         introLinkAnd: " und in der ",
         introLinkPrivacy: "Datenschutzerklärung",
@@ -292,9 +292,6 @@
 
     function finish(resultState) {
       writeConsent(resultState);
-      try {
-        document.dispatchEvent(new CustomEvent("dermetrics:consent", { detail: resultState }));
-      } catch (e) { /* sehr alte Browser: Messung bleibt aus */ }
       overlay.remove();
       showReopenTrigger();
     }

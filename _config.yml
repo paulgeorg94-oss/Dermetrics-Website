@@ -6,3 +6,4 @@ exclude:
   - src
   - OFFENE-PUNKTE.md
   - relaunch
+  - stats-server
