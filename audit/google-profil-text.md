@@ -9,3 +9,25 @@ Dermetrics – Dermatologie Clinic Selnau ist die Hautarztpraxis von Dr. med. Pa
 ## Leistungen (Bereich «Dienstleistungen» im Profil)
 
 Hautkrebs-Screening · Mohs-Chirurgie · Dermatochirurgie · Photodynamische Therapie (PDT) · Schwarzer Hautkrebs (Melanom) · Chronische Wunden · Narben und Keloide · Psoriasis (Schuppenflechte) · Neurodermitis und Ekzeme · Akne und Rosazea · Acne inversa · Gutartige Hautveränderungen · Longevity-Beratung
+
+## Direkte Links zu den Leistungen
+
+Alle Seiten sind indexiert und stehen in der Sitemap (geprüft am 24.11.2026).
+
+Leistungsübersicht: https://dermetrics.ch/#leistungsuebersicht
+
+| Leistung | Link |
+|---|---|
+| Hautkrebs-Screening | https://dermetrics.ch/leistungen/hautkrebs-screening.html |
+| Mohs-Chirurgie | https://dermetrics.ch/leistungen/mohs-chirurgie.html |
+| Dermatochirurgie | https://dermetrics.ch/leistungen/dermatochirurgie.html |
+| Photodynamische Therapie (PDT) | https://dermetrics.ch/leistungen/photodynamische-therapie.html |
+| Schwarzer Hautkrebs (Melanom) | https://dermetrics.ch/leistungen/melanom.html |
+| Chronische Wunden | https://dermetrics.ch/leistungen/chronische-wunden.html |
+| Narben und Keloide | https://dermetrics.ch/leistungen/narben-keloide.html |
+| Psoriasis (Schuppenflechte) | https://dermetrics.ch/leistungen/psoriasis.html |
+| Neurodermitis und Ekzeme | https://dermetrics.ch/leistungen/neurodermitis.html |
+| Akne und Rosazea | https://dermetrics.ch/leistungen/akne-rosazea.html |
+| Acne inversa | https://dermetrics.ch/leistungen/acne-inversa.html |
+| Gutartige Hautveränderungen | https://dermetrics.ch/leistungen/gutartige-hautveraenderungen.html |
+| Longevity-Beratung | https://dermetrics.ch/leistungen/longevity-beratung.html |
