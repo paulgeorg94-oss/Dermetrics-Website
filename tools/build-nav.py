@@ -26,6 +26,7 @@ EN_PI = [('actinic-keratosis', 'Actinic keratoses'), ('basal-cell-carcinoma', 'B
          ('acne-forms', 'Acne'), ('post-inflammatory-hyperpigmentation', 'Post-inflammatory hyperpigmentation'),
          ('skin-self-examination', 'Skin self-examination'), ('mosaic-3d-erbium-laser', 'Mosaic 3D (erbium laser)'),
          ('nd-yag-laser', 'Nd:YAG laser'), ('pico-laser', 'Pico laser')]
+EN_LS = [('melanoma', 'Melanoma (black skin cancer)'), ('psoriasis', 'Psoriasis')]  # EN-Fassungen der Leistungsseiten, sobald vorhanden
 EN_BP = [('acne', 'Acne'), ('anti-aging-skincare', 'Anti-ageing skincare'),
          ('rosacea-treatment-protocol', 'Rosacea treatment plan'), ('melasma-treatment-protocol', 'Melasma treatment plan')]
 
@@ -53,6 +54,8 @@ def nav(lang, home):
     H = '' if home else '/en/index.html'
     pi = [(f'/en/patient-information/{f}.html', t) for f, t in EN_PI if os.path.exists(f'en/patient-information/{f}.html')]
     bp = [(f'/en/treatment-protocols/{f}.html', t) for f, t in EN_BP if os.path.exists(f'en/treatment-protocols/{f}.html')]
+    pi += [(f'/en/services/{f}.html', t) for f, t in EN_LS if os.path.exists(f'en/services/{f}.html')
+           and 'noindex' not in open(f'en/services/{f}.html', encoding='utf-8').read()]
     return '\n'.join([
         drop('Services', f'{H}#kernbereiche', [(f'{H}#leistungsuebersicht', 'All services'), (f'{H}#precheck', 'Pre-Check'), (f'{H}#weg', 'Your Journey'),
                                                 (f'{H}#clinic-selnau', 'Clinic Selnau'), (f'{H}#praxis', 'Practice'), (f'{H}#laserbehandlungen', 'Laser treatments')], 'Submenu'),
