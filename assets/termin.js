@@ -43,8 +43,9 @@
     if (text) e.textContent = text;
     return e;
   }
-  function way(href, label, value, ext) {
+  function way(href, label, value, ext, ev) {
     var a = el("a", { "class": "dm-termin-way", href: href });
+    if (ev) a.setAttribute("data-umami-event", ev); // Klick-Ziel für Umami (Reichweitenmessung)
     if (ext) { a.target = "_blank"; a.rel = "noopener"; }
     a.appendChild(el("span", {}, label));
     a.appendChild(el("strong", {}, value));
@@ -61,8 +62,8 @@
   inner.appendChild(el("p", {}, T.intro));
   inner.appendChild(el("p", {}, T.place + " · " + T.hours));
   var ways = el("div", { "class": "dm-termin-ways" });
-  ways.appendChild(way(D.phone_href, T.phone_label, D.phone));
-  ways.appendChild(way(D.wa_href, T.wa_label, D.wa, true));
+  ways.appendChild(way(D.phone_href, T.phone_label, D.phone, false, "Telefon-Klick"));
+  ways.appendChild(way(D.wa_href, T.wa_label, D.wa, true, "WhatsApp-Klick"));
   var form = way(T.form_href, T.form_label, T.form_text);
   ways.appendChild(form);
   inner.appendChild(ways);

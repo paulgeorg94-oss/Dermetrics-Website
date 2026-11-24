@@ -6,7 +6,7 @@ import glob, json, re
 P = json.load(open('data/praxis.json', encoding='utf-8'))
 NAME = P['praxisname']                       # Dermetrics – Dermatologie Clinic Selnau
 A = P['adresse']; ADDR = f"{A['strasse']}<br>{A['plz']} {A['ort']}"
-TEL = f'<a href="tel:{P["telefon_e164"]}">{P["telefon"]}</a>'
+TEL = f'<a href="tel:{P["telefon_e164"]}" data-umami-event="Telefon-Klick">{P["telefon"]}</a>'  # Klick-Ziel für Umami
 GOOGLE = {'de': 'Dermetrics auf Google Maps', 'en': 'Dermetrics on Google Maps'}
 pages = [p for p in sorted(glob.glob('*.html') + glob.glob('*/*.html') + glob.glob('*/*/*.html'))
          if not p.startswith(('src/', 'assets/', 'tools/', 'audit/'))]

@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; img-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self' https://formspree.io; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cloud.umami.is; img-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self' https://formspree.io https://gateway.umami.is https://cloud.umami.is https://api-gateway.umami.dev; object-src 'none'; base-uri 'self'; form-action 'self'">
+<script defer src="https://cloud.umami.is/script.js" data-website-id="379f257d-7bdf-4475-9bf1-cfd267e8cfac" data-domains="dermetrics.ch,www.dermetrics.ch"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Registration: GP referral (e.g. MediX) | Dermetrics</title>
 <meta name="description" content="Registration form for patients of MediX Praxis Altstetten: appointment with Dr. med. Paul J. Georg at Clinic Selnau, Monday 10:00–18:00.">
@@ -193,7 +194,7 @@ h2 { font-size: 28px; font-weight: 300; line-height: 1.3; margin: 0px 0px 18px; 
       <button type="submit" class="submit">Send registration</button>
       <p class="form-note" id="medix-msg" role="status" aria-live="polite"></p>
       <p class="form-note">«Send registration» opens your email program with a prepared email to <a href="mailto:clinicselnau@hin.ch">clinicselnau@hin.ch</a>. Your details are not stored on this website. Please do not send detailed medical information.</p>
-      <noscript><p class="form-error">The form requires JavaScript. Please register by email to clinicselnau@hin.ch, by <a href="https://wa.me/41432345555" target="_blank" rel="noopener">WhatsApp</a> or by phone on <a href="tel:+41432345555">+41 43 234 55 55</a>.</p></noscript>
+      <noscript><p class="form-error">The form requires JavaScript. Please register by email to clinicselnau@hin.ch, by <a href="https://wa.me/41432345555" target="_blank" rel="noopener" data-umami-event="WhatsApp-Klick">WhatsApp</a> or by phone on <a href="tel:+41432345555" data-umami-event="Telefon-Klick">+41 43 234 55 55</a>.</p></noscript>
     </form>
     <p style="margin-top:28px;"><a href="medix.html">← Back to the overview for MediX patients</a></p>
   </div>
@@ -206,7 +207,7 @@ h2 { font-size: 28px; font-weight: 300; line-height: 1.3; margin: 0px 0px 18px; 
       <p class="practice" style="margin-top:26px;">Dermetrics – Dermatologie Clinic Selnau</p>
       <p class="footer-area">Dermatologist in Zurich district 2 (Selnau/Enge) · Dermatology and venereology</p>
       <p>Clinic Selnau<br>Brandschenkestrasse 45<br>8002 Zürich</p>
-      <p><a href="tel:+41432345555">+41 43 234 55 55</a></p>
+      <p><a href="tel:+41432345555" data-umami-event="Telefon-Klick">+41 43 234 55 55</a></p>
       <p><a href="https://share.google/EMOgfxDGYLcdnslC7" target="_blank" rel="noopener">Dermetrics on Google Maps</a></p>
       <p><a href="/en/location.html">Location: Zurich Enge, district 2</a></p>
     </div>

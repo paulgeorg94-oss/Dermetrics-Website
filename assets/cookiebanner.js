@@ -1,6 +1,10 @@
 /* Dermetrics — Mehrstufiger Cookie-Consent-Dialog.
    Diese Website setzt aktuell keine Cookies ein (keine Funktions-, Statistik-
-   oder Marketing-Cookies). Der Dialog ist dennoch als echtes Kategorien-
+   oder Marketing-Cookies). Die Reichweitenmessung mit Umami Cloud läuft ohne
+   Cookies und standardmässig (berechtigtes Interesse). Schaltet die Besucherin
+   oder der Besucher «Statistik» aus (oder wählt «Alle ablehnen»), setzt dieses
+   Skript den localStorage-Eintrag «umami.disabled»; das Umami-Skript sendet
+   dann nichts mehr. Wieder einschalten entfernt den Eintrag. Der Dialog ist dennoch als echtes Kategorien-
    Consent-Modal gebaut (Toggles je Kategorie, ausklappbare Detailtexte,
    "Alle akzeptieren" / "Nur Auswahl akzeptieren" / "Alle ablehnen"), damit
    die Struktur sofort trägt, sobald künftig tatsächlich ein Dienst in einer
@@ -44,8 +48,8 @@
       locked: false,
       label: isEn ? "Statistics" : "Statistik",
       detail: isEn
-        ? "Would help understand how visitors use the website (audience measurement). Not currently in use."
-        : "Würden helfen zu verstehen, wie Besucher:innen die Website nutzen (Reichweitenmessung). Aktuell nicht im Einsatz."
+        ? "Audience measurement with Umami Cloud, without cookies: page views and clicks on phone, WhatsApp and the contact form are evaluated statistically. Active by default; switching it off stops the measurement in this browser."
+        : "Reichweitenmessung mit Umami Cloud, ohne Cookies: Seitenaufrufe sowie Klicks auf Telefon, WhatsApp und Kontaktformular werden statistisch ausgewertet. Standardmässig aktiv; Ausschalten beendet die Messung in diesem Browser."
     },
     {
       key: "marketing",
@@ -60,7 +64,7 @@
   var t = isEn
     ? {
         title: "Cookie settings",
-        intro: "This website uses only strictly necessary cookies — in fact, it currently sets no cookies at all. No functional, statistics or marketing cookies are used. More in our ",
+        intro: "This website uses only strictly necessary cookies — in fact, it currently sets no cookies at all. No functional, statistics or marketing cookies are used. We measure audience reach with Umami, without cookies; you can switch this off under «Statistics». More in our ",
         introLinkImprint: "Imprint",
         introLinkAnd: " and ",
         introLinkPrivacy: "Privacy Policy",
@@ -73,7 +77,7 @@
       }
     : {
         title: "Cookie-Einstellungen",
-        intro: "Diese Website verwendet nur unbedingt notwendige Cookies — tatsächlich setzt sie aktuell gar keine Cookies ein. Es werden keine Funktions-, Statistik- oder Marketing-Cookies genutzt. Mehr dazu im ",
+        intro: "Diese Website verwendet nur unbedingt notwendige Cookies — tatsächlich setzt sie aktuell gar keine Cookies ein. Es werden keine Funktions-, Statistik- oder Marketing-Cookies genutzt. Die Reichweite messen wir mit Umami, ohne Cookies; Sie können das unter «Statistik» ausschalten. Mehr dazu im ",
         introLinkImprint: "Impressum",
         introLinkAnd: " und in der ",
         introLinkPrivacy: "Datenschutzerklärung",
@@ -100,6 +104,15 @@
     } catch (e) {
       /* localStorage nicht verfügbar (z. B. privater Modus) — Dialog erscheint dann bei jedem Besuch erneut. */
     }
+    syncUmami(obj);
+  }
+
+  // Umami prüft vor jedem Senden localStorage «umami.disabled» (im Skript cloud.umami.is/script.js nachgelesen).
+  function syncUmami(obj) {
+    try {
+      if (obj && obj.statistics === false) window.localStorage.setItem("umami.disabled", "1");
+      else window.localStorage.removeItem("umami.disabled");
+    } catch (e) { /* ohne localStorage kein Opt-out-Speicher möglich */ }
   }
 
   function defaultState(allOn) {
@@ -107,6 +120,13 @@
     CATEGORIES.forEach(function (c) {
       state[c.key] = c.locked ? true : !!allOn;
     });
+    return state;
+  }
+
+  // Ausgangslage ohne gespeicherte Wahl: nur «Statistik» (Umami, ohne Cookies) ist aktiv.
+  function startState() {
+    var state = defaultState(false);
+    state.statistics = true;
     return state;
   }
 
@@ -299,9 +319,10 @@
     btnAccept.addEventListener("click", function () { finish(defaultState(true)); });
     btnReject.addEventListener("click", function () { finish(defaultState(false)); });
     btnSelected.addEventListener("click", function () { finish(state); });
-    closeBtn.addEventListener("click", function () { finish(defaultState(false)); });
+    // Schliessen ohne Auswahl ändert nichts an der Messung: gespeicherte Wahl bzw. Ausgangslage bleibt.
+    closeBtn.addEventListener("click", function () { finish(readConsent() || startState()); });
     overlay.addEventListener("click", function (e) {
-      if (e.target === overlay) finish(defaultState(false));
+      if (e.target === overlay) finish(readConsent() || startState());
     });
 
     return overlay;
@@ -310,7 +331,7 @@
   function openModal() {
     var existing = document.querySelector(".dm-cc-overlay");
     if (existing) return;
-    var stored = readConsent() || defaultState(false);
+    var stored = readConsent() || startState();
     document.body.appendChild(buildModal(stored));
   }
 
@@ -333,6 +354,7 @@
   });
 
   var consent = readConsent();
+  syncUmami(consent);
   if (!consent) {
     openModal();
   } else {
