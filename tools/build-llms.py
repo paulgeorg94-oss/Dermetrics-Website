@@ -21,7 +21,7 @@ MON = ['Januar','Februar','März','April','Mai','Juni','Juli','August','Septembe
 a, arzt = P['adresse'], P['arzt']
 sp = P['sprechstunde_selnau']
 summary = (f"Dermatologische Praxis (Hautarzt) in Zürich {a['kreis']} ({a['quartier']}), {a['strasse']}, {a['plz']} {a['ort']}. {arzt['name']}, {arzt['titel']}, "
-           f"Mitglied SGDV und EADV. Schwerpunkte: Hautkrebs-Screening, Tumorchirurgie der Haut, mikrographisch kontrollierte Chirurgie (Mohs), "
+           f"Mitglied FMH, Ärztegesellschaft des Kantons Zürich, Albisdocs, SGDV, EADV, SAfW und EWMA. Schwerpunkte: Hautkrebs-Screening, Tumorchirurgie der Haut, mikrographisch kontrollierte Chirurgie (Mohs), "
            f"Wundbehandlung (inkl. ECMP), Narbentherapie, Psoriasis, Acne inversa. Zertifizierter Praxis-OP, interdisziplinäre Zusammenarbeit mit der "
            f"Plastischen Chirurgie ({P['partner']['name']}, {P['partner']['titel']}, {P['partner']['team']}). Sprechstunde {sp['tag']} {sp['von']}–{sp['bis']} Uhr, "
            f"Eröffnung {d.day}. {MON[d.month-1]} {d.year}. Tel. {P['telefon']}. WhatsApp {P['whatsapp']}. Zuweisungen: {P['email_zuweisungen']}. "
