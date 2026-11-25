@@ -13,7 +13,9 @@ import glob, html, re, sys
 LBL = {'de': 'Termin buchen', 'en': 'Book appointment'}
 PRE = {'de': 'Hautkrebs-Pre-Check starten', 'en': 'Start skin cancer pre-check'}
 pages = [p for p in sorted(glob.glob('*.html') + glob.glob('*/*.html') + glob.glob('*/*/*.html'))
-         if not p.startswith(('src/', 'assets/', 'tools/', 'audit/', 'relaunch/'))]
+         if not p.startswith(('src/', 'assets/', 'tools/', 'audit/', 'relaunch/'))
+         # Einbettungsseiten (tools/build-embed.py) führen bewusst direkt zu WhatsApp, ohne Termin-Fenster
+         and not p.startswith(('embed/', 'en/embed/'))]
 bad = ok = 0
 for p in pages:
     s = open(p, encoding='utf-8').read()

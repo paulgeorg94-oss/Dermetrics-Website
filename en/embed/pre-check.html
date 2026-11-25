@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cloud.umami.is; img-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self' https://gateway.umami.is https://cloud.umami.is https://api-gateway.umami.dev; object-src 'none'; base-uri 'self'; form-action 'self'">
+<script defer src="https://cloud.umami.is/script.js" data-website-id="379f257d-7bdf-4475-9bf1-cfd267e8cfac" data-domains="dermetrics.ch,www.dermetrics.ch"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skin cancer Pre-Check and appointment – Dermetrics</title>
+<meta name="description" content="Skin cancer Pre-Check and appointment booking via WhatsApp at Dermetrics, Clinic Selnau Zurich.">
+<meta name="robots" content="noindex, follow">
+<link rel="icon" href="../../assets/logo-dermetrics.svg" type="image/svg+xml">
+<link rel="icon" href="../../assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="stylesheet" href="../../css/style.css">
+<style>
+body.embed { padding-top: 0; background: var(--ivory); margin: 0; }
+.embed main { padding: 8px 0 4px; }
+.embed section.block { padding: 24px 0; border-top: 0; }
+.embed .embed-brand { font-size: 13px; color: var(--muted); margin: 0 0 6px; }
+.embed .embed-brand a { color: var(--aubergine); font-weight: 600; text-decoration: none; }
+.embed .embed-termin { border-top: 1px solid var(--line); padding: 28px 0 8px; }
+.embed .embed-termin h2 { margin: 0 0 8px; }
+.embed .embed-termin p { margin: 0 0 16px; color: var(--muted); }
+.embed .embed-termin .embed-tel { margin: 14px 0 0; font-size: 14px; }
+.embed .embed-foot { font-size: 12px; color: var(--muted); border-top: 1px solid var(--line); margin: 24px 0 0; padding: 14px 0 8px; }
+.embed .embed-foot a { color: var(--aubergine-mid); }
+</style>
+</head>
+<body class="embed">
+<!-- Automatisch erzeugt von tools/build-embed.py aus en/index.html. Nicht von Hand ändern. -->
+<main>
+<section class="block" id="precheck">
+<div class="wrap">
+<p class="embed-brand"><a href="https://dermetrics.ch/en/index.html" target="_blank" rel="noopener">Dermetrics</a> · Dr. med. Paul J. Georg, specialist in Dermatology and Venereology FMH</p>
+<div class="precheck-content">
+<p class="eyebrow">Risk Triage</p>
+<h2>How high is your skin cancer risk?</h2>
+<div class="intro">
+<p>Thirteen questions about your history, skin type and UV exposure. The result places you within a body of research — it is not a diagnosis.</p>
+</div>
+<div class="pc-card">
+<div class="pc-qphase" id="pcQPhase">
+<div class="pc-meta">
+<p class="pc-blocklabel" id="pcBlock"></p>
+<p class="pc-step" id="pcStep"></p>
+</div>
+<div class="pc-bar"><i id="pcBar"></i></div>
+<p class="pc-question" id="pcQuestion"></p>
+<p class="pc-hint" id="pcHint" hidden></p>
+<div class="pc-options" id="pcOptions"></div>
+<div class="pc-controls">
+<button type="button" class="pc-back" id="pcBack">Back</button>
+<p class="pc-note">Based on validated risk models (incl. QSkin/MP16) · Does not replace a medical diagnosis.</p>
+</div>
+</div>
+
+<div class="pc-rphase" id="pcRPhase" hidden>
+<div class="pc-scale" id="pcScale"></div>
+<p class="pc-resulthead" id="pcResultHead"></p>
+<p class="pc-resulttext" id="pcResultText"></p>
+<div class="pc-scorerow">
+<p class="pc-scorelabel">Risk score</p>
+<div class="pc-scorevalue"><b id="pcScoreValue"></b><span>&nbsp;points</span></div>
+</div>
+<div class="pc-disclaimer"><b>Not a diagnostic tool.</b> This pre-check is a statistical orientation tool. The rates referred to come from epidemiological studies of risk groups and say nothing about actual disease in an individual case: a low result does not rule out melanoma, and a high one is not a diagnosis. Only a medical examination can confirm or exclude skin cancer.</div>
+
+<div class="pc-pdfbox">
+<p class="pc-pdfbox-label">Get your result as a PDF</p>
+<p class="pc-pdfbox-text">Save your result as an anonymous PDF — without your name or any other personal details. The button opens your browser's print dialog; choose "Save as PDF" as the destination there. You can then optionally send the saved PDF to yourself via your own email program.</p>
+<div class="pc-pdfbox-row">
+<input type="email" id="pcEmail" class="pc-pdfbox-input" placeholder="Your email address (for the optional send)" autocomplete="email">
+<button type="button" class="btn btn-secondary" id="pcPdfDownload">Save as PDF</button>
+<button type="button" class="btn btn-secondary" id="pcPdfMail" disabled>Send by email</button>
+</div>
+<p class="pc-pdfbox-status" id="pcPdfStatus" hidden></p>
+<p class="pc-pdfbox-disclaimer"><strong>Note on transmission:</strong> This PDF is created entirely locally on your device and contains no personal details — it is not transmitted to or stored on any server. The optional email send uses your own email program as a regular, <strong>unencrypted</strong> transmission — comparable to ordinary email. Unencrypted email is not suitable for highly sensitive health information; please do not forward the PDF to third parties.</p>
+</div>
+
+<div class="pc-actions">
+<a class="btn btn-primary" id="pcCta" href="https://wa.me/41432345555?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment%20at%20Dermetrics%20at%20Clinic%20Selnau." target="_blank" rel="noopener" data-umami-event="WhatsApp-Klick" data-umami-event-quelle="einbettung">Request an appointment via WhatsApp</a>
+<button type="button" class="btn btn-secondary" id="pcRestart">Start again</button>
+</div>
+</div>
+
+<noscript>
+<div class="pc-noscript">
+<h3>The 13 pre-check questions</h3>
+<ol>
+<li><strong>Have you personally ever been diagnosed with skin cancer?</strong> <span>(melanoma or non-melanoma skin cancer)</span> — Yes / No</li>
+<li><strong>Have you noticed a recent change in a mole?</strong> <span>(e.g. itching, bleeding, colour change or rapid new growth)</span> — Yes / No</li>
+<li><strong>Do you have immunosuppression or a genetic risk syndrome?</strong> <span>(e.g. after organ transplantation, HIV, haematological disease, xeroderma pigmentosum, Gorlin syndrome)</span> — Yes / No</li>
+<li><strong>Have you already been treated for actinic keratoses or skin cancer precursors?</strong> <span>(chronic sun damage, rough patches of skin)</span> — Yes / No</li>
+<li><strong>Has a first-degree relative been diagnosed with skin cancer?</strong> <span>(parents, siblings or your own children)</span> — Yes / No</li>
+<li><strong>Which best describes the density of moles across your whole body?</strong> — High density (more than 50 moles, irregular or unusual shapes) / Moderate density (16–50 ordinary moles) / Low density (fewer than 15 ordinary moles)</li>
+<li><strong>How does your unprotected skin react to the first strong summer sun?</strong> — Type I (always burns immediately, never tans – very fair skin, often freckles) / Type II (usually burns, tans only with difficulty) / Type III (burns rarely, tans well and evenly) / Type IV–VI (rarely or never burns, naturally darker skin)</li>
+<li><strong>What is your natural hair colour (at around age 20)?</strong> — Red / light blond / Brown / black</li>
+<li><strong>Have you had severe, painful or blistering sunburns during your life?</strong> — Yes, more than 3 times / Yes, 1–2 times / No, none</li>
+<li><strong>Did severe sunburns already occur in childhood or adolescence (under 13)?</strong> — Yes / No / Not applicable</li>
+<li><strong>On average, how many hours a day do you spend outdoors?</strong> <span>(for work or during intensive leisure activities)</span> — More than 4 hours daily / Occasionally, 1–4 hours a day / Mostly indoors</li>
+<li><strong>Do you use, or have you ever used, a sunbed?</strong> — Yes, regularly (first use before the age of 35) / Yes, occasionally / rarely / No, never</li>
+<li><strong>Which applies to you?</strong> — Over 50 years old and male / Over 50 years old or male / Neither</li>
+</ol>
+<p>Please enable JavaScript to use the interactive pre-check with automatic risk evaluation.</p>
+</div>
+</noscript>
+</div>
+</div>
+</div>
+</section>
+<section class="embed-termin" id="termin">
+  <div class="wrap">
+    <h2>Book an appointment via WhatsApp</h2>
+    <p>Consultations at Clinic Selnau, Brandschenkestrasse 45, 8002 Zürich: Monday 10:00–18:00.</p>
+    <a class="btn btn-primary" href="https://wa.me/41432345555?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment%20at%20Dermetrics%20at%20Clinic%20Selnau." target="_blank" rel="noopener" data-umami-event="WhatsApp-Klick" data-umami-event-quelle="einbettung">Request an appointment via WhatsApp</a>
+    <p class="embed-tel">Or by phone: <a href="tel:+41432345555" data-umami-event="Telefon-Klick" data-umami-event-quelle="einbettung">+41 43 234 55 55</a></p>
+    <p class="embed-foot">Pre-Check and appointment booking by Dermetrics. Your Pre-Check answers stay in your browser and are not transmitted. We count page views and clicks without cookies using Umami. <a href="https://dermetrics.ch/en/legal.html#umami" target="_blank" rel="noopener">Privacy</a> · <a href="https://dermetrics.ch/en/index.html" target="_blank" rel="noopener">dermetrics.ch</a></p>
+  </div>
+</section>
+</main>
+<div class="pc-print-area" id="pcPrintArea" aria-hidden="true">
+<p class="pc-print-title">Dermetrics — Pre-Check Result</p>
+<p class="pc-print-meta" id="pcPrintDate"></p>
+<p class="pc-print-subhead" id="pcPrintResultHead"></p>
+<p class="pc-print-resulttext" id="pcPrintResultText"></p>
+<p class="pc-print-score" id="pcPrintScore"></p>
+<p class="pc-print-note">Not a diagnostic tool: This pre-check is a statistical orientation tool and does not replace a medical examination. A low result does not rule out melanoma, and a high one is not a diagnosis. Only a medical examination can confirm or exclude skin cancer.</p>
+<p class="pc-print-subhead">Your answers</p>
+<ol class="pc-print-answers" id="pcPrintAnswers"></ol>
+<p class="pc-print-note">Note on transmission: This document was created locally on your device — anonymous, without your name or contact details, and without transmission to any server.</p>
+<p class="pc-print-note"><strong>Please bring this document, along with the records of your previous dermatologist visits, to your appointment.</strong></p>
+</div>
+<script>
+// Pre-Check — full 13-question risk score with evaluation
+// Clinically validated rule set (based on QSkin/MP16), carried over unchanged.
+(function () {
+  var root = document.getElementById('pcQPhase');
+  if (!root) return;
+
+  var THRESHOLD = 7;
+
+  var QUESTIONS = [
+    { block: 'Block A · Medical history',
+      q: 'Have you personally ever been diagnosed with skin cancer?',
+      hint: 'Melanoma or non-melanoma skin cancer',
+      opts: [{ l: 'Yes', flag: true }, { l: 'No', pts: 0 }] },
+    { block: 'Block A · Medical history',
+      q: 'Have you noticed a recent change in a mole?',
+      hint: 'e.g. itching, bleeding, colour change or rapid new growth',
+      opts: [{ l: 'Yes', flag: true }, { l: 'No', pts: 0 }] },
+    { block: 'Block A · Medical history',
+      q: 'Do you have immunosuppression or a genetic risk syndrome?',
+      hint: 'e.g. after organ transplantation, HIV, haematological disease, xeroderma pigmentosum, Gorlin syndrome',
+      opts: [{ l: 'Yes', flag: true }, { l: 'No', pts: 0 }] },
+    { block: 'Block A · Medical history',
+      q: 'Have you already been treated for actinic keratoses or skin cancer precursors?',
+      hint: 'Chronic sun damage, rough patches of skin',
+      opts: [{ l: 'Yes', pts: 3 }, { l: 'No', pts: 0 }] },
+    { block: 'Block A · Medical history',
+      q: 'Has a first-degree relative been diagnosed with skin cancer?',
+      hint: 'Parents, siblings or your own children',
+      opts: [{ l: 'Yes', pts: 4 }, { l: 'No', pts: 0 }] },
+    { block: 'Block B · Physical characteristics',
+      q: 'Which best describes the density of moles across your whole body?',
+      opts: [
+        { l: 'High density', s: 'More than 50 moles, irregular or unusual shapes', pts: 5 },
+        { l: 'Moderate density', s: '16–50 ordinary moles', pts: 2 },
+        { l: 'Low density', s: 'Fewer than 15 ordinary moles', pts: 0 }] },
+    { block: 'Block B · Physical characteristics',
+      q: 'How does your unprotected skin react to the first strong summer sun?',
+      opts: [
+        { l: 'Type I', s: 'Always burns immediately, never tans – very fair skin, often freckles', pts: 3 },
+        { l: 'Type II', s: 'Usually burns, tans only with difficulty', pts: 2 },
+        { l: 'Type III', s: 'Burns rarely, tans well and evenly', pts: 1 },
+        { l: 'Type IV–VI', s: 'Rarely or never burns, naturally darker skin', pts: 0 }] },
+    { block: 'Block B · Physical characteristics',
+      q: 'What is your natural hair colour (at around age 20)?',
+      opts: [{ l: 'Red / light blond', pts: 2 }, { l: 'Brown / black', pts: 0 }] },
+    { block: 'Block C · UV exposure',
+      q: 'Have you had severe, painful or blistering sunburns during your life?',
+      opts: [
+        { l: 'Yes, more than 3 times', pts: 3 },
+        { l: 'Yes, 1–2 times', pts: 1 },
+        { l: 'No, none', pts: 0 }] },
+    { block: 'Block C · UV exposure',
+      q: 'Did severe sunburns already occur in childhood or adolescence (under 13)?',
+      opts: [{ l: 'Yes', pts: 1 }, { l: 'No / not applicable', pts: 0 }] },
+    { block: 'Block C · UV exposure',
+      q: 'On average, how many hours a day do you spend outdoors?',
+      hint: 'For work or during intensive leisure activities',
+      opts: [
+        { l: 'More than 4 hours daily', pts: 2 },
+        { l: 'Occasionally, 1–4 hours a day', pts: 1 },
+        { l: 'Mostly indoors', pts: 0 }] },
+    { block: 'Block C · UV exposure',
+      q: 'Do you use, or have you ever used, a sunbed?',
+      opts: [
+        { l: 'Yes, regularly', s: 'First use before the age of 35', pts: 3 },
+        { l: 'Yes, occasionally / rarely', pts: 1 },
+        { l: 'No, never', pts: 0 }] },
+    { block: 'Block D · Demographics',
+      q: 'Which applies to you?',
+      opts: [
+        { l: 'Over 50 years old and male', pts: 2 },
+        { l: 'Over 50 years old or male', pts: 1 },
+        { l: 'Neither', pts: 0 }] }
+  ];
+
+  var MAX_PTS = QUESTIONS.reduce(function (s, q) {
+    return s + Math.max.apply(null, q.opts.map(function (o) { return o.pts || 0; }));
+  }, 0);
+
+  var RESULT = {
+    3: { head: 'Strongly increased rates in studies',
+         text: 'At least one medical warning sign (red flag) is present. In epidemiological studies, groups with comparable characteristics show strongly increased rates of melanoma. Prompt dermatological assessment is advisable; in this case the 3D full-body scan would be covered by Swiss basic insurance (KVG).' },
+    2: { head: 'Increased rates in studies',
+         text: 'Your score is above the threshold. In epidemiological studies, groups with a comparable score show increased rates of melanoma. A regular, standardised 3D skin examination is a sensible step and is assigned to Swiss basic insurance (KVG).' },
+    1: { head: 'Low rates in studies',
+         text: 'No warning signs, and your score is below the threshold. In epidemiological studies, groups with a comparable profile show low rates of melanoma. Consistent sun protection and regular self-examination nevertheless remain important.' }
+  };
+
+  var TIERS = ['Low rates', 'Increased rates', 'Strongly increased rates'];
+  var TIER_WIDTHS = ['34%', '64%', '100%'];
+  var YOUR_RESULT_LABEL = 'Your result';
+
+  var idx = 0;
+  var answers = new Array(QUESTIONS.length).fill(null);
+  var phase = 'question';
+  var busy = false;
+
+  function $(id) { return document.getElementById(id); }
+  function pad(n) { return String(n).padStart(2, '0'); }
+
+  function evaluate() {
+    var flagged = QUESTIONS.some(function (q, i) {
+      return answers[i] !== null && !!q.opts[answers[i]].flag;
+    });
+    var score = QUESTIONS.reduce(function (s, q, i) {
+      return s + (answers[i] !== null ? (q.opts[answers[i]].pts || 0) : 0);
+    }, 0);
+    if (flagged) { return { tier: 3, score: score, cta: true }; }
+    if (score > THRESHOLD) { return { tier: 2, score: score, cta: true }; }
+    return { tier: 1, score: score, cta: false };
+  }
+
+  function renderQuestion() {
+    var q = QUESTIONS[idx];
+    var progress = (idx / QUESTIONS.length) * 100;
+
+    $('pcBlock').textContent = q.block;
+    $('pcStep').textContent = 'Question ' + pad(idx + 1) + ' / ' + pad(QUESTIONS.length);
+    $('pcBar').style.width = progress + '%';
+    $('pcQuestion').textContent = q.q;
+
+    $('pcHint').textContent = q.hint || '';
+    $('pcHint').hidden = !q.hint;
+
+    var box = $('pcOptions');
+    box.innerHTML = '';
+    q.opts.forEach(function (o, i) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'pc-option';
+      var strong = document.createElement('b');
+      strong.textContent = o.l;
+      b.appendChild(strong);
+      if (o.s) {
+        var small = document.createElement('small');
+        small.textContent = o.s;
+        b.appendChild(small);
+      }
+      b.addEventListener('click', function () { select(i); });
+      box.appendChild(b);
+    });
+
+    $('pcBack').disabled = idx === 0;
+  }
+
+  function renderResult() {
+    var r = evaluate();
+    var txt = RESULT[r.tier];
+
+    var scale = $('pcScale');
+    scale.innerHTML = '';
+
+    TIERS.forEach(function (label, i) {
+      var row = document.createElement('div');
+      row.className = 'pc-scalerow' + (r.tier === i + 1 ? ' on' : '');
+
+      var num = document.createElement('span');
+      num.className = 'pc-scalenum';
+      num.textContent = pad(i + 1);
+
+      var track = document.createElement('span');
+      track.className = 'pc-track';
+      var fill = document.createElement('i');
+      track.appendChild(fill);
+
+      var tag = document.createElement('span');
+      tag.className = 'pc-tag';
+      tag.appendChild(document.createTextNode(label));
+      if (r.tier === i + 1) {
+        var m = document.createElement('span');
+        m.className = 'pc-marker';
+        m.textContent = YOUR_RESULT_LABEL;
+        tag.appendChild(m);
+      }
+
+      row.appendChild(num);
+      row.appendChild(track);
+      row.appendChild(tag);
+      scale.appendChild(row);
+
+      window.setTimeout(function () { fill.style.width = TIER_WIDTHS[i]; }, 80 + i * 100);
+    });
+
+    $('pcResultHead').textContent = txt.head;
+    $('pcResultText').textContent = txt.text;
+    $('pcScoreValue').textContent = r.score + ' / ' + MAX_PTS;
+    $('pcCta').hidden = !r.cta;
+
+    pdfPrinted = false;
+    $('pcEmail').value = '';
+    $('pcPdfStatus').hidden = true;
+    $('pcPdfMail').disabled = true;
+  }
+
+  // PDF export via the browser's native print dialog ("Save as PDF") —
+  // anonymous, entirely local on the device, no third-party library and
+  // none of its character-encoding pitfalls. Optional send via mailto:
+  // through the user's own email program.
+  var pdfPrinted = false;
+
+  function populatePrintArea() {
+    var r = evaluate();
+    var txt = RESULT[r.tier];
+    $('pcPrintDate').textContent = 'Created on ' + new Date().toLocaleDateString('en-GB') + ' · anonymous, no personal details';
+    $('pcPrintResultHead').textContent = txt.head;
+    $('pcPrintResultText').textContent = txt.text;
+    $('pcPrintScore').textContent = 'Risk score: ' + r.score + ' / ' + MAX_PTS + ' points';
+
+    var list = $('pcPrintAnswers');
+    list.innerHTML = '';
+    QUESTIONS.forEach(function (q, i) {
+      var chosen = answers[i] !== null ? q.opts[answers[i]].l : '—';
+      var li = document.createElement('li');
+      var strong = document.createElement('strong');
+      strong.textContent = q.q;
+      li.appendChild(strong);
+      var ansLine = document.createElement('div');
+      ansLine.textContent = 'Answer: ' + chosen;
+      li.appendChild(ansLine);
+      list.appendChild(li);
+    });
+  }
+
+  function isValidEmail(value) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+  }
+
+  function updateMailButtonState() {
+    $('pcPdfMail').disabled = !(pdfPrinted && isValidEmail($('pcEmail').value.trim()));
+  }
+
+  $('pcEmail').addEventListener('input', updateMailButtonState);
+
+  $('pcPdfDownload').addEventListener('click', function () {
+    populatePrintArea();
+    window.print();
+  });
+
+  window.addEventListener('afterprint', function () {
+    if ($('pcRPhase').hidden) { return; }
+    pdfPrinted = true;
+    var status = $('pcPdfStatus');
+    status.hidden = false;
+    status.textContent = 'Print dialog closed — if you chose "Save as PDF", you will find the file in your downloads folder.';
+    updateMailButtonState();
+  });
+
+  $('pcPdfMail').addEventListener('click', function () {
+    var email = $('pcEmail').value.trim();
+    if (!isValidEmail(email)) { return; }
+    var r = evaluate();
+    var subject = 'My Dermetrics pre-check result';
+    var body = 'Result: ' + RESULT[r.tier].head + ' (score ' + r.score + ' / ' + MAX_PTS + ' points)\n\n' +
+      'Please attach the document you just saved as a PDF to this email before sending it.\n\n' +
+      'Please bring the records of your previous dermatologist visits and the results of this questionnaire to your appointment.\n\n' +
+      'Note: this email is sent unencrypted via your own email program — as with ordinary email communication.';
+    window.location.href = 'mailto:' + encodeURIComponent(email) + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  });
+
+  function render() {
+    $('pcQPhase').hidden = phase !== 'question';
+    $('pcRPhase').hidden = phase !== 'result';
+    if (phase === 'question') { renderQuestion(); } else { renderResult(); }
+  }
+
+  function select(optIndex) {
+    if (busy) { return; }
+    answers[idx] = optIndex;
+    busy = true;
+    $('pcQPhase').classList.add('fade');
+    window.setTimeout(function () {
+      if (idx < QUESTIONS.length - 1) { idx += 1; } else { phase = 'result'; }
+      busy = false;
+      $('pcQPhase').classList.remove('fade');
+      render();
+    }, 240);
+  }
+
+  $('pcBack').addEventListener('click', function () {
+    if (idx > 0 && !busy) { idx -= 1; render(); }
+  });
+
+  $('pcRestart').addEventListener('click', function () {
+    answers = new Array(QUESTIONS.length).fill(null);
+    idx = 0;
+    phase = 'question';
+    render();
+  });
+
+  render();
+})();
+</script>
+<script>
+// Höhe an die einbettende Seite melden (nur Zahl, keine Inhalte).
+(function () {
+  if (window.parent === window) return;
+  var last = 0;
+  function send() {
+    var h = Math.ceil(document.body.getBoundingClientRect().height);
+    if (Math.abs(h - last) < 2) return;
+    last = h;
+    window.parent.postMessage({ type: 'dermetrics-embed-height', height: h }, '*');
+  }
+  if ('ResizeObserver' in window) new ResizeObserver(send).observe(document.body);
+  window.addEventListener('load', send);
+  send();
+})();
+</script>
+</body>
+</html>

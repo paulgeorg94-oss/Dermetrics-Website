@@ -8,7 +8,9 @@ checks = [
     ('Telefon anders formatiert', r'\+41\s?43\s?234\s?55\s?55|043\s?234\s?55\s?55', None),
     ('PLZ/Ort englisch', r'8002 Zurich\b', False),
 ]
-pages = [p for p in sorted(glob.glob('*.html') + glob.glob('*/*.html') + glob.glob('*/*/*.html')) if not p.startswith(('src/', 'assets/'))]
+pages = [p for p in sorted(glob.glob('*.html') + glob.glob('*/*.html') + glob.glob('*/*/*.html')) if not p.startswith(('src/', 'assets/'))
+         # Einbettungsseiten (tools/build-embed.py) haben bewusst keine Fusszeile
+         and not p.startswith(('embed/', 'en/embed/'))]
 issues = 0
 for p in pages:
     s = open(p, encoding='utf-8').read()
